@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<LotteryDlg Name="LotteryDlg" Rect="0,0,636,466" Border="0,0,0,0">
+		<Children>
+			<CXDockPanel Name="BkgPanel">
+				<Properties>
+					<Background>
+						<CXBrush Color="255,255,255"></CXBrush>
+					</Background>
+				</Properties>
+				<Children>
+			<CXDockPanel NCHittest="2">
+				<Children>
+					<CXDockPanel DockType="1" Rect="0,0,0,30" NCHittest="2">
+						<Children>
+							<CXDockPanel DockType="0" Rect="0,0,400,0" Margin="0,-1,7,0" NCHittest="2">
+								<Children>
+									<CXFrame Rect="0,0,16,16" DockType="0"  Margin="10,5,5,5" MarginType="2" NCHittest="2">
+										<Properties>
+											<Background>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\softmanager.png" CutRect="0,0,16,16"></C360Image>
+											</Background>
+										</Properties>
+									</CXFrame>	
+									<CXStatic NCHittest="2" Name="StaticTitle" DockType="0" Text="360软件管家" AutoWidth="true" AutoHeight="true" Margin="0,5,0,5" NormalColor="255,255,255" MarginType="2"></CXStatic>	
+								</Children>
+							</CXDockPanel>
+							<CXDockPanel DockType="2" Rect="0,0,100,0" Margin="0,-1,7,0" NCHittest="2">
+								<Children>
+									<CXButton Name="BtnClose" DockType="2" Rect="0,0,27,22" AutoHeight="true" Margin="0,0,0,0" >
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="0,0,27,22"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="27,0,54,22" ></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="54,0,81,22"></C360Image>
+											</BkgDown>
+										</Properties>
+									</CXButton>
+									<CXButton Name="BtnRefresh" DockType="2" Rect="0,0,40,30" TextColor="255,255,255" AutoHeight="true" Margin="0,0,5,0" Text="刷新" HandleCursor="true">
+									</CXButton>
+								</Children>
+							</CXDockPanel>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel DockType="4" Margin="3,3,3,3" Name="WebContainer">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+					</CXDockPanel>
+				</Children>
+			</CXDockPanel>
+		</Children>
+	</LotteryDlg>
+</UI>

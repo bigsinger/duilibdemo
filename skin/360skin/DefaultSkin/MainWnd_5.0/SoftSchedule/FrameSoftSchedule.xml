@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CPageMySoft2 Name="PageMySoftSchedule" DockType="4" >
+		<Properties>
+			<Background>
+				<C360Image File="\MainWnd_5.0\Update\bkg.png" DrawType="2" Transparent="true" TileRect="50,30,70,60">
+				</C360Image>
+			</Background>
+		</Properties>
+		<Children>
+			<CXDockPanel Name="PanelLeft" DockType="4">
+				<Children>
+					<CXDockPanel Name="TabContainer" DockType="4">
+					</CXDockPanel>		
+					<CXDockPanel Name="PanelLogin"  DockType="7" Rect="0,0,200,38" Margin="0,0,0,0" >
+						<Children>
+							<CXButton Name="ButtonLogin" DockType="2" Visible="true" Rect="0,0,80,25" Text="点击登录" CursorType="1" AutoWidth="true" AutoHeight="true" Margin="5,5,0,0" TextMargin="15,0,0,0" TextColor="102,172,82" IconDockType="0" IconMargin="6,0,0,0">
+								<Properties>
+									<Icon>
+										<C360Image  DrawType="0" File="\MainWnd_5.0\SoftSchedule\login.png" ></C360Image>
+									</Icon>
+								</Properties>
+							</CXButton>
+							<CXButton Name="ButtonLogOut" DockType="2" Visible="false" Rect="0,0,16,16" AutoWidth="true"  MarginType="2" AutoHeight="true" Margin="2,5,5,0" CursorType="1">
+								<Properties>
+									<BkgNormal>
+										<C360Image  Transparent="true" DrawType="0"  File="\MainWnd_5.0\SoftSchedule\droplistarrow.png"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\SoftSchedule\droplistarrow.png"></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\SoftSchedule\droplistarrow.png"></C360Image>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+							<CXStatic Name="NickName" DockType="2" Visible="false" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0"  NormalColor="102,172,82" MarginType="2"></CXStatic>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel DockType="10" Rect="0,0,0,34" Margin="0,38,0,0" >
+						<Properties>
+							<Background>
+								<C360Image DrawType="2" TileRect="10,10,20,24"  Transparent="true" File="\MainWnd_5.0\zjbb_tab_bkg.png" ></C360Image>
+							</Background>		
+						</Properties>
+						<Children>
+							<CXButton Name="ButtonInstalledSoft" DockType="0" Rect="0,0,82,23" Margin="9,5,0,0" Text="已安装软件" TextColorNormal="0,0,0" TextColorOn="0,0,0" TextColorDown="255,255,255" TextColorPushed="255,255,255" TextMargin="3,0,15,5" >
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="0,0,82,23"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="82,0,164,23"></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="164,0,246,23"></C360Image>
+									</BkgDown>
+									<BkgPushed>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="164,0,246,23"></C360Image>
+									</BkgPushed>
+								</Properties>
+							</CXButton>
+
+							<CXTabCtrl DockType="0" AutoWidth="true" Name="TabCtrlSoftSchedule" Rect="0,0,0,23" MarginType="2">
+								<Children>
+									<CXTabItem Name="MySoftSchedule" Data="1" Rect="0,0,82,23" Margin="6,0,0,0" Text="我的装机单" TextColorNormal="0,0,0" TextColorOn="0,0,0" TextColorDown="255,255,255" TextColorPushed="255,255,255" TextMargin="0,0,15,0" >
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="0,0,82,23"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="82,0,164,23"></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="164,0,246,23"></C360Image>
+											</BkgDown>
+											<BkgPushed>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="164,0,246,23"></C360Image>
+											</BkgPushed>
+										</Properties>
+									</CXTabItem>
+									<CXTabItem Name="Popular" Data="0" Rect="0,0,82,23" Margin="6,0,0,0" Text="普通机" TextColorNormal="0,0,0" TextColorOn="0,0,0" TextColorDown="255,255,255" TextColorPushed="255,255,255" TextMargin="0,0,14,0" >
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="0,0,82,23"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="82,0,164,23"></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="164,0,246,23"></C360Image>
+											</BkgDown>
+											<BkgPushed>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="164,0,246,23"></C360Image>
+											</BkgPushed>
+										</Properties>
+									</CXTabItem>
+									<CXTabItem Name="ForStudent" Data="3" Rect="0,0,82,23" Margin="6,0,0,0" Text="学生机" TextColorNormal="0,0,0" TextColorOn="0,0,0" TextColorDown="255,255,255" TextColorPushed="255,255,255" TextMargin="0,0,14,0" >
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="0,0,82,23"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="82,0,164,23"></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="164,0,246,23"></C360Image>
+											</BkgDown>
+											<BkgPushed>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="164,0,246,23"></C360Image>
+											</BkgPushed>
+										</Properties>
+									</CXTabItem>
+									<CXTabItem Name="ForOffice" Data="4" Rect="0,0,82,23" Margin="6,0,0,0" Text="办公机" TextColorNormal="0,0,0" TextColorOn="0,0,0" TextColorDown="255,255,255" TextColorPushed="255,255,255" TextMargin="0,0,14,0" >
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="0,0,82,23"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="82,0,164,23"></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="164,0,246,23"></C360Image>
+											</BkgDown>
+											<BkgPushed>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="164,0,246,23"></C360Image>
+											</BkgPushed>
+										</Properties>
+									</CXTabItem>
+									<CXTabItem Name="ForAmuse" Data="5" Rect="0,0,82,23" Margin="6,0,0,0" Text="娱乐机" TextColorNormal="0,0,0" TextColorOn="0,0,0" TextColorDown="255,255,255" TextColorPushed="255,255,255" TextMargin="0,0,14,0" >
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="0,0,82,23"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="82,0,164,23"></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="164,0,246,23"></C360Image>
+											</BkgDown>
+											<BkgPushed>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\zjbb_tab_btn3.png"  CutRect="164,0,246,23"></C360Image>
+											</BkgPushed>
+										</Properties>
+									</CXTabItem>
+								</Children>
+							</CXTabCtrl>
+						</Children>
+					</CXDockPanel>
+				</Children>
+			</CXDockPanel>	
+		</Children>
+	</CPageMySoft2>
+</UI>

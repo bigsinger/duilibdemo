@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UI>
+  <Window name="MainDlg" width="370" height="180">
+    <ExtraAttri>
+      <Texture img_src="..\..\Image\PublicRes\back.png" h_margin2="8" h_margin3="95" v_margin2="50" v_margin3="172" />
+      <Light img_src="..\..\Image\PublicRes\BackgroundLight_SettingCenter_p.png"  h_margin2="8" h_margin3="96" v_margin2="50" v_margin3="140"/>
+    </ExtraAttri>
+
+    <SysButton id="5000" name="sysClose" img_src="..\..\Image\PublicRes\close.png" block="4" layout_x="margin" layout_xdata="0" y="0"/>
+
+    <Image name="InfoSImage" img_src="..\..\Image\MessageBox\INfo_s.png" x="10" y="8"/>
+
+    <Static  x="30" y="8" name="Title" text="360安全桌面 - 提示" class="MF_MessageBoxText" margin="5, 0, 0, 0"/>
+
+    <Image name="FlashPlayerPng" img_src="..\..\Image\WebApp\FlashPlayer.png" x="18" y="52"/>
+
+    <StackPanel name="Panel" orit="H" x="85" y="50">
+      <LText name="DownloadInfo" color="51,51,51" text="正在下载新版 Flash Player，请稍候..." margin="0, 0, 0, 0"/>
+    </StackPanel>
+    <Static name="FailNetwork" color="206,57,32" text="下载失败，请检查网络是否连通，然后重试..." margin="0, 0, 0, 0" x="85" y="50" />
+
+    <Static name="PercentFinished" color="51,51,51" text="已完成 0 %" margin="0, 0, 0, 0" x="85" y="95" />
+
+    <Button_state4 id="5003" name="buttonCancel" h_margin2="28" h_margin3="29" v_margin2="10" v_margin3="11" layout_y="margin" layout_x="margin" layout_ydata="8" layout_xdata="12" img_src="..\..\Image\PublicRes\button_state4.png" block="4" text="取消下载" color="51,51,51"/>
+  </Window>
+</UI>

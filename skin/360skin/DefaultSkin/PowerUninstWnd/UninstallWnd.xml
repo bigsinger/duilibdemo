@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+  <CUninstallWnd Name="UninstallWnd" Rect="0,0,520,387" Border="0,0,0,0">
+    <Children>
+      <CXDockPanel Name="RootPanel" NCHittest="1">
+        <Properties>
+          <Background>
+            <C360Image DrawType="2" File="\PowerUninstWnd\dlg_bkg.png" TileRect="5,140,55,300"></C360Image>
+          </Background>
+        </Properties>
+
+        <Children>
+          <CXDockPanel Name="TitleBar" DockType="1" Rect="0,0,0,30" NCHittest="2">
+            <Children>
+              <CXFrame Rect="0,0,16,16" DockType="0" Margin="10,8,0,0">
+                <Properties>
+                  <Background>
+                    <C360Image File="\softmanager.png" DrawType="0" >
+                    </C360Image>
+                  </Background>
+                </Properties>
+              </CXFrame>
+              
+              <CXDockPanel DockType="0" Rect="0,0,200,12" Margin="5,10,0,8" NCHittest="2">
+                <Children>
+                  <CXStatic Text="360软件管家 强力卸载" DockType="0" AutoHeight="true" AutoWidth="true" NormalColor="255,255,255" NCHittest="2">
+                  </CXStatic>
+                </Children>
+              </CXDockPanel>
+              
+              <CXButton Name="BtnClose" DockType="2" Rect="0,0,27,22" Margin="0,2,3,0" AutoHeight="true">
+                <Properties>
+                  <BkgNormal>
+                    <C360Image File="\MainWnd_5.0\sysbtn_close.png" CutRect="0,0,27,22"></C360Image>
+                  </BkgNormal>
+                  <BkgOn>
+                    <C360Image File="\MainWnd_5.0\sysbtn_close.png" CutRect="27,0,54,22"></C360Image>
+                  </BkgOn>
+                  <BkgDown>
+                    <C360Image File="\MainWnd_5.0\sysbtn_close.png" CutRect="54,0,81,22"></C360Image>
+                  </BkgDown>
+                </Properties>
+              </CXButton>
+
+              <CXButton Name="BtnSetting" Text="设置" DockType="2" Rect="0,0,15,12" Margin="0,8,10,10" TextColor="255,255,255" AutoHeight="true" HandleCursor="true">
+              </CXButton>
+            </Children>
+          </CXDockPanel>
+
+          <CXDockPanel Name="UninstPanel" DockType="4" >
+            <Children>
+              <CXDockPanel DockType="1" Rect="0,0,0,70" NCHittest="2">
+                <Children>
+                  <CXFrame Rect="0,0,48,48" DockType="0" Margin="20,10,0,0" NCHittest="2">
+                    <Properties>
+                      <Background>
+                        <C360Image File="\UselessPopupWnd\logo.png" DrawType="0" >
+                        </C360Image>
+                      </Background>
+                    </Properties>
+                  </CXFrame>
+
+                  <CXDockPanel DockType="1" Rect="0,0,0,30" Margin="10,20,10,0" NCHittest="2">
+                    <Children>
+                      <CXStatic Name="Static1" Text="卸载" Size="20" DockType="0" AutoHeight="true" AutoWidth="true" Bold="false" NormalColor="255,255,255" Margin="0,3,5,0" NCHittest="2"></CXStatic>
+                      <CXStatic Name="StaticName" Size="24" Text="搜狗拼音输入法" DockType="0" AutoHeight="true" AutoWidth="true" NormalColor="255,255,255" Bold="true" NCHittest="2"></CXStatic>
+                      <CXStatic Name="Static2" Text="后发现" Size="20" DockType="0" AutoHeight="true" AutoWidth="true"  Bold="false"  NormalColor="255,255,255" Margin="5,3,5,0" NCHittest="2"></CXStatic>
+                      <CXStatic Name="StaticCount" Size="26" Text="33" DockType="0" AutoHeight="true" AutoWidth="true" NormalColor="255,255,255" Bold="true" NCHittest="2" ></CXStatic>
+                      <CXStatic Name="Static3" Text="个残留文件" Size="20" DockType="0" AutoHeight="true" AutoWidth="true"  Bold="false" NormalColor="255,255,255" Margin="5,3,0,0" NCHittest="2"></CXStatic>
+                    </Children>
+                  </CXDockPanel>
+                </Children>
+              </CXDockPanel>
+              
+              <CXDockPanel DockType="1" Rect="0,0,0,26" Margin="10,8,0,0" NCHittest="2">
+                <Children>
+                  <CXFrame Rect="0,0,18,18" DockType="0" NCHittest="2">
+                    <Properties>
+                      <Background>
+                        <C360Image File="\MainWnd_5.0\uninstall\uninstall.png" DrawType="0" >
+                        </C360Image>
+                      </Background>
+                    </Properties>
+                  </CXFrame>
+                  
+                  <CXStatic Text="请选择需要删除的残留文件和注册表项：" DockType="0" AutoHeight="true" AutoWidth="true" Margin="0,4,0,10" NCHittest="2"></CXStatic>
+                </Children>
+              </CXDockPanel>
+
+              <CXDockPanel DockType="3" Rect="0,0,0,60" NCHittest="2">
+                <Children>
+                  <CXButton Name="BtnCancel" Text="取消" TextSize="17" DockType="2" Rect="0,0,100,35" Margin="0,8,20,0" AutoHeight="true" TextColor="0,0,0">
+                    <Properties>
+                      <BkgNormal>
+                        <C360Image File="\PowerUninstWnd\btn_gray.png" CutRect="0,0,100,35"></C360Image>
+                      </BkgNormal>
+                      <BkgOn>
+                        <C360Image File="\PowerUninstWnd\btn_gray.png" CutRect="100,0,200,35"></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image File="\PowerUninstWnd\btn_gray.png" CutRect="200,0,300,35"></C360Image>
+                      </BkgDown>
+                    </Properties>
+                  </CXButton>
+                  <CXButton Name="BtnOk" Text="删除所选文件" TextSize="17" DockType="2" Rect="0,0,120,35" Margin="0,8,15,0" AutoHeight="true" TextColor="255,255,255">
+                    <Properties>
+                      <BkgNormal>
+                        <C360Image DrawType="2" File="\PowerUninstWnd\btn_green.png" CutRect="0,0,100,35" TileRect="5,5,95,30"></C360Image>
+                      </BkgNormal>
+                      <BkgOn>
+                        <C360Image DrawType="2" File="\PowerUninstWnd\btn_green.png" CutRect="100,0,200,35" TileRect="5,5,95,30"></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="2" File="\PowerUninstWnd\btn_green.png" CutRect="200,0,300,35" TileRect="5,5,95,30"></C360Image>
+                      </BkgDown>
+                    </Properties>
+                  </CXButton>
+
+                  <CXButton Name="BtnNoRemind" Text="以后不再提醒" DockType="0" Rect="0,0,100,12" Margin="20,20,0,28" TextColor="109,162,234" AutoHeight="true" HandleCursor="true">
+                  </CXButton>
+                </Children>
+              </CXDockPanel>
+
+              <CXScrollFrame Name="ScrollFrame" DockType="4" NeedMouseOn="true" SetScrollBarOverContent="true" Margin="5,2,5,7">
+                <Properties>
+                  <VBkg>
+                    <C360Image File="\MainWnd_5.0\scroll_bkg.png" DrawType="2" TileRect="5,20,8,70"></C360Image>
+                  </VBkg>
+                  <VDrawNormal>
+                    <C360Image File="\MainWnd_5.0\scroll.png" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+                  </VDrawNormal>
+                  <VDrawOn>
+                    <C360Image File="\MainWnd_5.0\scroll.png" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+                  </VDrawOn>
+                  <VDrawDown>
+                    <C360Image File="\MainWnd_5.0\scroll.png" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+                  </VDrawDown>
+                </Properties>
+
+              </CXScrollFrame>
+              
+            </Children>
+          </CXDockPanel>
+
+          <CXDockPanel Name="CompletePanel" DockType="4" >
+            <Children>
+
+              <CXDockPanel DockType="3" Rect="0,0,0,60" NCHittest="2">
+                <Children>
+                  <CXButton Name="BtnExit" Text="退出" TextSize="17" DockType="2" Rect="0,0,100,35" Margin="0,8,20,0" AutoHeight="true" TextColor="0,0,0">
+                    <Properties>
+                      <BkgNormal>
+                        <C360Image File="\PowerUninstWnd\btn_gray.png" CutRect="0,0,100,35"></C360Image>
+                      </BkgNormal>
+                      <BkgOn>
+                        <C360Image File="\PowerUninstWnd\btn_gray.png" CutRect="100,0,200,35"></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image File="\PowerUninstWnd\btn_gray.png" CutRect="200,0,300,35"></C360Image>
+                      </BkgDown>
+                    </Properties>
+                  </CXButton>
+                  <CXButton Name="BtnContinue" Text="继续卸载软件" TextSize="17" DockType="2" Rect="0,0,120,35" Margin="0,8,15,0" AutoHeight="true" TextColor="0,0,0">
+                    <Properties>
+                      <BkgNormal>
+                        <C360Image DrawType="2" File="\PowerUninstWnd\btn_gray.png" CutRect="0,0,100,35" TileRect="5,5,95,30"></C360Image>
+                      </BkgNormal>
+                      <BkgOn>
+                        <C360Image DrawType="2" File="\PowerUninstWnd\btn_gray.png" CutRect="100,0,200,35" TileRect="5,5,95,30"></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="2" File="\PowerUninstWnd\btn_gray.png" CutRect="200,0,300,35" TileRect="5,5,95,30"></C360Image>
+                      </BkgDown>
+                    </Properties>
+                  </CXButton>
+
+                </Children>
+              </CXDockPanel>
+
+              <CXDockPanel DockType="4" NCHittest="2">
+                <Children>
+                  <CXFrame Rect="0,0,130,140" DockType="0" Margin="50,60,0,0" NCHittest="2">
+                    <Properties>
+                      <Background>
+                        <C360Image File="\PowerUninstWnd\complete_icon.png" DrawType="0" >
+                        </C360Image>
+                      </Background>
+                    </Properties>
+                  </CXFrame>
+
+                  <CXDockPanel DockType="1" Rect="0,0,0,30" Margin="30,110,0,0" NCHittest="2">
+                    <Children>
+                      <CXStatic Name="Static4" Text="残留文件删除完成！" Size="33" DockType="0" AutoHeight="true" AutoWidth="true" Bold="true" NormalColor="255,255,255" NCHittest="2"></CXStatic>
+                    </Children>
+                  </CXDockPanel>
+                  
+                  <CXDockPanel DockType="1" Rect="0,0,0,30" Margin="30,20,0,0" NCHittest="2">
+                    <Children>
+                      <CXStatic Text="共删除 " DockType="0" AutoHeight="true" AutoWidth="true" Bold="false" NormalColor="255,255,255" NCHittest="2"></CXStatic>
+                      <CXStatic Name="StaticDelCount" Text="33" DockType="0" AutoHeight="true" AutoWidth="true" NormalColor="255,255,255" Bold="true" NCHittest="2"></CXStatic>
+                      <CXStatic Text=" 个文件，节省 " DockType="0" AutoHeight="true" AutoWidth="true"  Bold="false"  NormalColor="255,255,255" NCHittest="2"></CXStatic>
+                      <CXStatic Name="StaticSize" Text="22MB" DockType="0" AutoHeight="true" AutoWidth="true" NormalColor="255,255,255" Bold="true" NCHittest="2" ></CXStatic>
+                      <CXStatic Text=" 空间" DockType="0" AutoHeight="true" AutoWidth="true"  Bold="false" NormalColor="255,255,255"  NCHittest="2"></CXStatic>
+                    </Children>
+                  </CXDockPanel>
+                </Children>
+              </CXDockPanel>
+              
+            </Children>
+          </CXDockPanel>
+
+        </Children>
+      </CXDockPanel>
+    </Children>
+  </CUninstallWnd>
+</UI>

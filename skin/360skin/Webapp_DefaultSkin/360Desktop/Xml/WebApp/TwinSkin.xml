@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UI>
+  <Window name="MainDlg"  width="702" height="473">
+    <ExtraAttri>
+      <Texture img_src="..\..\Image\PublicRes\back.png" h_margin2="8" h_margin3="95" v_margin2="50" v_margin3="172" />
+    </ExtraAttri>
+
+	<StackPanel orit="H" x="5" y="6">
+		<Static name="Title" text="Web应用" class="MF_WebAppText" margin="0,-1,0,0" />
+	</StackPanel>
+
+    <Panel name="AppViewPanel" x="1" y="26" width="300" height="200" layout_xdata="1" layout_ydata="1" layout_x="stretch" layout_y="stretch"/>
+    <StackPanel orit="H" x="0" y="0" name="TitleButton" layout_x="margin" layout_xdata="0">
+      <SysButton id="2001" name="sysClose" tooltip="关闭" img_src="..\..\Image\PublicRes\close.png" block="4"/>
+    </StackPanel>
+  </Window>
+</UI>

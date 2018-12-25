@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<main_dlg width="403" height="270" img_src="bk_setting_old.png"  margin2="6" margin3="7" vmargin2="40" vmargin3="42">
+	<font id="1" b="1" size="12" name="Tahoma" color="255,255,255"/>
+	<win_ctrl id="104" name="image" x="7" y="4" w = "16" h="16" img_src="logo.png"/>
+	<win_ctrl id="101" name="text" x="24" y="4" text="$<1360开机小助手-设置$>"/>
+
+	<win_ctrl id="2" name="button_state3" x="368" y="1" w="27" h="22" img_src="sys_button_close.png" block="4"/>
+
+	<win_ctrl id="505" name="button_state4" x="100" y="10"  w="62" h="26"  text="推荐" img_src="btn_greenL.png" block="4"/>
+	<win_ctrl id="506" name="button_state4" x="163" y="10"  w="62" h="26"  text="默认" img_src="btn_greenL.png" block="4"/>
+
+	<win_ctrl id="201" name="check_box" img_src="checkbox.png" block="12" x="28" y="42" text="显示360开机小助手" notify="1"/>
+	<win_ctrl id="182" name="text" x="46" y="64" text="设置小助手显示时间：              秒"/>
+
+	<win_ctrl id="400" name="check_box" img_src="checkbox.png" block="9" x="28" y="95" text="接受封面广告的推送" notify="1" />
+	<win_ctrl id="401" name="check_box" img_src="checkbox.png" block="9" x="28" y="120" text="开机时记录开机时间" notify="1" />
+
+	<win_ctrl id="203" name="check_box" img_src="checkbox.png" block="9" x="28" y="198" text="我愿意参加360开机时间调查" notify="1" />
+	<win_ctrl id="102" name="ltext" x="209" y="198" text="{&amp;#a=http://bbs.360.cn/forum.php?mod=viewthread$tid=20820$extra=page%3D1$page=1$archive_src=bbs_safe}了解详情"/>
+
+	<win_ctrl id="402" name="check_box" img_src="checkbox.png" block="9" x="28" y="145" text="小助手底部显示：" notify="1" />
+	<win_ctrl id="403" name="check_box" img_src="checkbox.png" block="9" x="50" y="170" text="新闻" notify="1" />
+	<win_ctrl id="202" name="check_box" img_src="checkbox.png" block="9" x="118" y="170" text="天气" notify="1" />
+	<win_ctrl id="205" name="ltext" x="170" y="170" text="{&amp;#a=button:32776}切换城市" />
+	<win_ctrl id="405" name="check_box" img_src="checkbox.png" block="9" x="237" y="170" text="推荐信息" notify="1" />
+	
+	<win_ctrl id="204" name="button_state4" x="241" y="236"  w="70" h="23"  text="保存" img_src="btn_greenL.png" block="4"/>
+	<win_ctrl id="2" name="button_state4" x="318" y="236"  w="70" h="23"  text="取消" img_src="btn_greenL.png" block="4"/>
+</main_dlg>

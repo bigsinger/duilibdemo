@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UI>
+  <Window name="MainDlg" width="379" height="149">
+    <ExtraAttri>
+      <texture img_src="..\..\Image\WebApp\notify\notifybk.png" bCenterTile="true"/>
+
+    </ExtraAttri>
+
+    <SysButton id="5000" name="sysClose" img_src="..\..\Image\WebApp\notify\close.png" block="4" layout_x="margin" layout_xdata="5" y="3"/>
+
+    <Image name="WebAppIcon" x="22" y="30" img_src="..\..\Image\PublicRes\logo.png"/>
+    <StackPanel orit="V" x="90" y="30">
+      <LText name="text" class="Def_LinkText_White" text="{&amp;#font=6}是否开通“%s”的通知提醒？{&amp;#/font}"  margin="5, 0, 0, 0"/>
+      <MultiLText name="Info" color="255,255,255" text="%s"  margin="5, 10, 0, 0"/>
+    </StackPanel>
+    <StackPanel orit="H" x="220" y="110">
+      <LText name="Setting" class="Def_LinkText_White" text="{&amp;#a=button:5002}{&amp;#acolor=0xffffff}暂不开通{&amp;#/acolor}" margin="0,4,12,0"/>
+      <Button_state4 id="5001" name="buttonOK" h_margin2="28" h_margin3="29" v_margin2="10" v_margin3="11" layout_y="margin" layout_x="margin" layout_ydata="18" layout_xdata="48" img_src="..\..\Image\WebApp\notify\okbutton.png" block="4" text="立即开通" color="177,192,111"/>
+    </StackPanel>
+  </Window>
+</UI>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+  <CPureInstDlg Name="PureInstDlg" Rect="0,0,360,180" Border="0,0,0,0">
+    <Children>
+      <CXDockPanel NCHittest="2">
+        <Properties>
+          <Background>
+            <C360Image DrawType="2" Transparent="true" File="\MainWnd_5.0\Dialog\bkg_pureinst.png" TileRect="10,65,85,80"></C360Image>
+          </Background>
+        </Properties>
+        <Children>
+          <CXDockPanel DockType="1" Rect="0,0,0,60" Margin="4,4,4,0" NCHittest="2">
+            <Children>
+
+              <CXDockPanel Name="TopBar2" DockType="0" Rect="0,0,360,38" NCHittest="2" Margin="4,0,0,0"  >
+                <Children>
+
+                  <CXImageFrame Name="SoftImg" DockType="0" Rect="0,0,36,36" AutoHeight="true" AutoWidth="true" Margin="15,0,0,0" MarginType="2">
+                    <Properties>
+                      <Background>
+                        <C360Image DrawType="1" Transparent="true" File=""></C360Image>
+                      </Background>
+                    </Properties>
+                  </CXImageFrame>
+
+                  <CXDockPanel DockType="4" Margin="8,0,0,0">
+                    <Children>
+                      <CXStatic Name="SoftName" Text="酷狗音乐" Size="-15" DockType="0" Color="255,255,255" AutoHeight="true" AutoWidth="true" MarginType="2" ></CXStatic>
+                      <CXStatic Text="纯净安装成功" Size="-13" DockType="0" Color="255,255,255" AutoWidth="true" AutoHeight="true" Margin="5,0,0,0" MarginType="2" ></CXStatic>
+                    </Children>
+                  </CXDockPanel>
+                  
+                </Children>
+              </CXDockPanel>
+
+              <CXDockPanel Name="TopBar" DockType="2" Rect="0,0,60,22" NCHittest="2">
+                <Children>
+                  <CXButton Name="BtnClose" DockType="2" Rect="0,0,27,22" AutoHeight="true" Margin="0,0,5,0" >
+                    <Properties>
+                      <BkgNormal>
+                        <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="0,0,27,22"></C360Image>
+                      </BkgNormal>
+                      <BkgOn>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="27,0,54,22" ></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="54,0,81,22"></C360Image>
+                      </BkgDown>
+                    </Properties>
+                  </CXButton>
+
+                  <CXButton Name="BtnSetting" Text="设置" DockType="2" Rect="0,0,15,12" Margin="0,7,10,0" TextColor="255,255,255" AutoHeight="true" HandleCursor="true">
+                  </CXButton>
+                </Children>
+              </CXDockPanel>
+              
+            </Children>
+          </CXDockPanel>
+
+          <CXDockPanel Name="InterceptPanel" DockType="4" Margin="4,2,4,5" >
+          </CXDockPanel>
+          
+        </Children>
+      </CXDockPanel>
+    </Children>
+  </CPureInstDlg>
+</UI>

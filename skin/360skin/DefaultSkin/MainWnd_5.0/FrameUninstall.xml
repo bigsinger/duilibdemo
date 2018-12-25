@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CFrameUninstall Name="FrameUninstall" DockType="4" >
+		<Properties>
+			<Background>
+				<C360Image File="\MainWnd_5.0\uninstall\bkg.png" DrawType="2" Transparent="true" TileRect="50,150,160,180">
+				</C360Image>
+			</Background>
+		</Properties>
+		<Children>
+			<CXDockPanel DockType="1" Rect="0,0,0,43" >
+				<Children>
+					<CXFrame Rect="0,0,18,18" DockType="0" AutoHeight="true" Margin="10,12,0,0">
+						<Properties>
+							<Background>
+								<C360Image File="\MainWnd_5.0\uninstall\uninstall.png" DrawType="2" Transparent="true" >
+								</C360Image>
+							</Background>
+						</Properties>
+					</CXFrame>
+					<CXStatic DockType="0" Text="已安装软件" AutoWidth="true" AutoHeight="true" Margin="10,13,0,0" ></CXStatic>
+					<CXStatic Name="StaticSoftCount" DockType="0" Text="32" AutoWidth="true" AutoHeight="true" Margin="10,13,0,0" NormalColor="98,170,0"></CXStatic>
+					<CXStatic Name="StaticDiskName" DockType="0" Text="" AutoWidth="true" AutoHeight="true" Margin="10,13,0,0" ></CXStatic>
+					<CXStatic Name="StaticDiskSize" DockType="0" Text="12GB" AutoWidth="true" AutoHeight="true" Margin="10,13,0,0" NormalColor="98,170,0"></CXStatic>
+					
+					<CXStatic Name="StaticRefresh" DockType="2" Text="刷新" AutoWidth="true" AutoHeight="true" Margin="0,13,20,0"  NormalColor="37,116,194" CursorType="1"></CXStatic>
+					
+					<CXFrame Rect="0,0,16,16" DockType="2" AutoHeight="true" Margin="10,12,2,0">
+						<Properties>
+							<Background>
+								<C360Image File="\MainWnd_5.0\update\refresh.png" DrawType="0" Transparent="true" >
+								</C360Image>
+							</Background>
+						</Properties>
+					</CXFrame>
+					
+					<CXButton Name="ButtonSearch" DockType="2" Rect="0,0,56,25" AutoHeight="true"  Text="搜索" TextColor="255,255,255" Bold="true" TextSize="-13" TextAlign="2" TextOffset="0,2" Margin="0,9,10,0">
+						<Properties>
+							<BkgNormal>
+								<C360Image  Transparent="true" File="\MainWnd_5.0\search\button_search.png" CutRect="0,0,56,25"></C360Image>
+							</BkgNormal>
+							<BkgOn>
+								<C360Image Transparent="true" File="\MainWnd_5.0\search\button_search.png" CutRect="56,0,112,25"></C360Image>
+							</BkgOn>
+							<BkgDown>
+								<C360Image Transparent="true" File="\MainWnd_5.0\search\button_search.png" CutRect="112,0,168,25"></C360Image>
+							</BkgDown>
+						</Properties>
+					</CXButton>
+					<CSearchCtrlUninstall Name="SearchCtrl" DockType="2" Rect="0,0,240,26" AutoHeight="true"  DefaltText="输入想卸载的软件名称或拼音" Margin="0,9,10,0">
+					</CSearchCtrlUninstall>
+					
+				</Children>
+			</CXDockPanel>
+			<CMultilineTabCtrl Name="MultilineTabCtrl" DockType="1" Rect="0,0,0,0" AutoHeight="true" ItemGaps="16,2" >
+				<Properties>
+					<Background>
+						<C360Image File="\MainWnd_5.0\uninstall\bkg_tab.png" DrawType="2" TileRect="50,20,160,50" Transparent="true" >
+						</C360Image>
+					</Background>
+				</Properties>
+			</CMultilineTabCtrl>			
+		</Children>
+	</CFrameUninstall>
+
+</UI>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CXDockPanel Name="TabMisc" Margin="30,10,30,10">
+		<Children>
+			<CXDockPanel Rect="0,0,0,105" DockType="1" Margin="0,12,0,0" MarginType="2">
+				<Properties>
+					<Background>
+						<C360Image File="\MainWnd_5.0\SettingDlg\group_bk.png" DrawType="2" TileRect="10,20,20,30">
+						</C360Image>
+					</Background>
+				</Properties>
+				<Children>
+					<CXStatic Rect="0,0,0,20" DockType="1" Text="应用设置" Bold="true" AutoWidth="true" AutoHeight="true" Margin="10,1,1,1" NormalColor="98,170,0" MarginType="2">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+					</CXStatic>	
+					<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,10,0,0" MarginType="2">
+						<Children>
+							<CXStatic DockType="0" Text="应用安装目录（" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>				
+							<CXStatic Name="OpenPatchDir" Text="打开目录" CursorType="1" DockType="0" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="90,175,235" MarginType="2"></CXStatic>
+							<CXStatic DockType="0" Text="）| 可用磁盘空间：" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>
+							<CXStatic Name="RemainPatchDiskSpace" DockType="0" Rect="0,0,100,0" Text="0.0000000000000" AutoHeight="true" Margin="5,13,0,0" NormalColor="98,170,0" MarginType="2"></CXStatic>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Rect="0,0,0,24" DockType="1" Margin="30,5,0,0" MarginType="2">
+						<Children>
+							<CXDockPanel Rect="0,0,275,20" DockType="0" Margin="0,0,0,0" MarginType="2">
+								<Properties>
+									<Background>
+										<C360Image File="\MainWnd_5.0\SettingDlg\edit.png" DrawType="2" TileRect="5,5,15,15">
+										</C360Image>
+									</Background>
+								</Properties>
+								<Children>
+									<CXEdit Name="PatchPathEdit" Rect="0,0,265,17" DockType="4" Style="2048" Enable="false"  Margin="5,1,5,1" AutoHeight="true" NormalColor="98,170,0" MarginType="2"></CXEdit>
+								</Children>
+							</CXDockPanel>
+							<CXButton Name="SelectPatchDirButton" Text="选择目录" Rect="0,0,74,24" DockType="0" AutoWidth="true" AutoHeight="true" Margin="10,5,5,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="0,0,74,24"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="74,0,148,24"></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="148,0,222,24"></C360Image>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+							<CXStatic Name="SetDefaultPatchDir" Text="恢复默认目录" CursorType="1" DockType="0" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="90,175,235" MarginType="2"></CXStatic>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,0,0,0" MarginType="2">
+						<Children>
+							<CXStatic Name="ErrorTips" DockType="0" Rect="0,0,400,0" Text="*" AutoHeight="true" Margin="5,0,0,0" NormalColor="200,0,0" MarginType="2"></CXStatic>
+						</Children>
+					</CXDockPanel>
+				</Children>
+			</CXDockPanel>
+			<CXDockPanel Rect="0,0,0,90" DockType="1" Margin="0,12,0,0" MarginType="2">
+				<Properties>
+					<Background>
+						<C360Image File="\MainWnd_5.0\SettingDlg\group_bk.png" DrawType="2" TileRect="10,20,20,30">
+						</C360Image>
+					</Background>
+				</Properties>
+				<Children>
+					<CXStatic Rect="0,0,0,20" DockType="1" Text="安装包清理" Bold="true" AutoWidth="true" AutoHeight="true" Margin="10,1,1,1" NormalColor="98,170,0" MarginType="2">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+					</CXStatic>	
+					<!--CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,10,0,0" MarginType="2">
+						<Children>	
+							<CXStatic DockType="0" Text="软件安装后删除下载的安装包文件" Rect="0,0,360,20" AutoWidth="false" AutoHeight="true" Margin="5,5,0,0" NormalColor="128,128,128" MarginType="2"></CXStatic>
+						</Children>
+					</CXDockPanel-->
+					<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,10,0,0" MarginType="2">
+						<Children>	
+							<CXCheckBox Name="DeleteInstallPatch" Radio="true" Rect="0,0,230,17" Text="一周后自动删除下载的安装包" DockType="0" IconRect="0,0,15,15" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<CheckNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="60,0,75,15"></C360Image>
+									</CheckNormal>
+									<CheckOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="75,0,90,15"></C360Image>
+									</CheckOn>
+									<CheckDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="90,0,105,15"></C360Image>
+									</CheckDown>
+									<UnCheckNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="0,0,15,15"></C360Image>
+									</UnCheckNormal>
+									<UnCheckOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="15,0,30,15"></C360Image>
+									</UnCheckOn>
+									<UnCheckDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="30,0,45,15"></C360Image>
+									</UnCheckDown>
+								</Properties>
+							</CXCheckBox>
+							<CXCheckBox Name="DeleteAfterInstall" Radio="true" Rect="0,0,210,17" Text="安装完成时自动删除下载的安装包" DockType="0" IconRect="0,0,15,15" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<CheckNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="60,0,75,15"></C360Image>
+									</CheckNormal>
+									<CheckOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="75,0,90,15"></C360Image>
+									</CheckOn>
+									<CheckDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="90,0,105,15"></C360Image>
+									</CheckDown>
+									<UnCheckNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="0,0,15,15"></C360Image>
+									</UnCheckNormal>
+									<UnCheckOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="15,0,30,15"></C360Image>
+									</UnCheckOn>
+									<UnCheckDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="30,0,45,15"></C360Image>
+									</UnCheckDown>
+								</Properties>
+							</CXCheckBox>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,5,0,0" MarginType="2">
+						<Children>	
+							<CXCheckBox Name="NeverDeletePatch" Radio="true" Rect="0,0,230,17" Text="不自动删除" DockType="0" IconRect="0,0,15,15" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<CheckNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="60,0,75,15"></C360Image>
+									</CheckNormal>
+									<CheckOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="75,0,90,15"></C360Image>
+									</CheckOn>
+									<CheckDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="90,0,105,15"></C360Image>
+									</CheckDown>
+									<UnCheckNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="0,0,15,15"></C360Image>
+									</UnCheckNormal>
+									<UnCheckOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="15,0,30,15"></C360Image>
+									</UnCheckOn>
+									<UnCheckDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="30,0,45,15"></C360Image>
+									</UnCheckDown>
+								</Properties>
+							</CXCheckBox>
+						</Children>
+					</CXDockPanel>
+				</Children>
+			</CXDockPanel>			
+			<CXDockPanel Rect="0,0,0,90" DockType="1" Margin="0,12,0,0" MarginType="2">
+				<Properties>
+					<Background>
+						<C360Image File="\MainWnd_5.0\SettingDlg\group_bk.png" DrawType="2" TileRect="10,20,20,30">
+						</C360Image>
+					</Background>
+				</Properties>
+				<Children>
+					<CXStatic Rect="0,0,0,20" DockType="1" Text="下载中关闭软件管家" Bold="true" AutoWidth="true" AutoHeight="true" Margin="10,1,1,1" NormalColor="98,170,0" MarginType="2">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+					</CXStatic>	
+					<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,10,0,0" MarginType="2">
+						<Children>	
+							<CXCheckBox Name="BySilentNoQuit" Radio="true" Rect="0,0,230,17" Text="以安静模式，最小化到托盘继续下载" DockType="0" IconRect="0,0,15,15" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<CheckNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="60,0,75,15"></C360Image>
+									</CheckNormal>
+									<CheckOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="75,0,90,15"></C360Image>
+									</CheckOn>
+									<CheckDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="90,0,105,15"></C360Image>
+									</CheckDown>
+									<UnCheckNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="0,0,15,15"></C360Image>
+									</UnCheckNormal>
+									<UnCheckOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="15,0,30,15"></C360Image>
+									</UnCheckOn>
+									<UnCheckDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="30,0,45,15"></C360Image>
+									</UnCheckDown>
+								</Properties>
+							</CXCheckBox>
+							<CXCheckBox Name="StopAllTaskAndQuit" Radio="true" Rect="0,0,210,17" Text="停止所有下载任务，退出软件管家" DockType="0" IconRect="0,0,15,15" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<CheckNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="60,0,75,15"></C360Image>
+									</CheckNormal>
+									<CheckOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="75,0,90,15"></C360Image>
+									</CheckOn>
+									<CheckDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="90,0,105,15"></C360Image>
+									</CheckDown>
+									<UnCheckNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="0,0,15,15"></C360Image>
+									</UnCheckNormal>
+									<UnCheckOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="15,0,30,15"></C360Image>
+									</UnCheckOn>
+									<UnCheckDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="30,0,45,15"></C360Image>
+									</UnCheckDown>
+								</Properties>
+							</CXCheckBox>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,5,0,0" MarginType="2">
+						<Children>	
+							<CXCheckBox Name="AlwaysAsk" Radio="true" Rect="0,0,230,17" Text="每次询问" DockType="0" IconRect="0,0,15,15" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<CheckNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="60,0,75,15"></C360Image>
+									</CheckNormal>
+									<CheckOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="75,0,90,15"></C360Image>
+									</CheckOn>
+									<CheckDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="90,0,105,15"></C360Image>
+									</CheckDown>
+									<UnCheckNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="0,0,15,15"></C360Image>
+									</UnCheckNormal>
+									<UnCheckOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="15,0,30,15"></C360Image>
+									</UnCheckOn>
+									<UnCheckDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="30,0,45,15"></C360Image>
+									</UnCheckDown>
+								</Properties>
+							</CXCheckBox>
+						</Children>
+					</CXDockPanel>
+				</Children>
+			</CXDockPanel>			
+		</Children>
+	</CXDockPanel>
+
+</UI>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

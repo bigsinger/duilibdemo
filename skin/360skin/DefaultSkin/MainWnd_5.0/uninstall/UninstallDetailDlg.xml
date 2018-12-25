@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+  <CUninstallDetail2 Name="UninstallDetailDlg" Border="0,0,0,0">
+    <Children>
+      <CXDockPanel>
+        <Properties>
+          <Background>
+            <C360Image File="\MainWnd_5.0\update\UpdateDetailDlg\DlgTransparentBk.png" Transparent="true" DrawType="1"></C360Image>
+          </Background>
+        </Properties>
+        <Children>
+          
+          
+          <CXDockPanel Name="DlgBody" DockType="5" Rect="0,0,750,500" NCHittest="2" Margin="0,25,0,0">
+            <Properties>
+              <Background>
+                <C360Image File="\MainWnd_5.0\update\UpdateDetailDlg\MainDlgBk.png" Transparent="true" DrawType="2" TileRect="10,145,80,190"></C360Image>
+              </Background>
+            </Properties>
+            <Children>
+              
+              <CXDockPanel Name="SummaryPanel" DockType="1" Rect="0,0,0,100" Margin="4,2,4,4">
+                <Children>
+                  
+                  <CXButton Name="BtnClose" AutoHeight="true" Margin="0,5,5,0" DockType="2" Rect="0,0,21,21">
+                    <Properties>
+                      <BkgNormal>
+                        <C360Image  Transparent="true" File="\MainWnd_5.0\update\UpdateDetailDlg\close.png" CutRect="0,0,20,20"></C360Image>
+                      </BkgNormal>
+                      <BkgOn>
+                        <C360Image Transparent="true" File="\MainWnd_5.0\update\UpdateDetailDlg\close.png" CutRect="21,0,41,20"></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image Transparent="true" File="\MainWnd_5.0\update\UpdateDetailDlg\close.png" CutRect="42,0,62,20"></C360Image>
+                      </BkgDown>
+                    </Properties>
+                  </CXButton>
+
+                  <CXDockPanel Name="MainSummaryPanel" DockType="4" Margin="40,25,0,10">
+                    <Children>
+                      <CXImageFrame Name="SoftImg" DockType="0" Rect="0,0,48,48" AutoHeight="true" MarginType="2" Margin="0,0,10,0">
+                        <Properties>
+                          <Background>
+                            <C360Image DrawType="1" Transparent="true" File=""></C360Image>
+                          </Background>
+                        </Properties>
+                      </CXImageFrame>
+
+                      
+                      <CXDockPanel Name="OperPanel" DockType="2" Rect="0,0,130,0" >
+                        <Children>
+                          <CXButton Name="BtnUninstall" Text="一键卸载" Enable="true" AutoHeight="true" Margin="0,10,0,0" DockType="1" MarginType="1" Rect="0,0,112,43" TextColor="255,255,255" TextSize="-18">
+                            <Properties>
+                              <BkgNormal>
+                                <C360Image  Transparent="true" File="\MainWnd_5.0\uninstall\btn_uninstall.png" CutRect="0,0,112,43"></C360Image>
+                              </BkgNormal>
+                              <BkgOn>
+                                <C360Image  Transparent="true" File="\MainWnd_5.0\uninstall\btn_uninstall.png" CutRect="112,0,224,43"></C360Image>
+                              </BkgOn>
+                              <BkgDown>
+                                <C360Image  Transparent="true" File="\MainWnd_5.0\uninstall\btn_uninstall.png" CutRect="224,0,336,43"></C360Image>
+                              </BkgDown>
+                            </Properties>
+                          </CXButton>
+                        </Children>
+                      </CXDockPanel>
+
+                      <CXDockPanel DockType="4">
+                        <Children>
+                          <CXDockPanel DockType="1" Rect="0,0,0,40" Margin="0,0,0,0">
+                            <Children>
+                              <CXStatic Name="SoftName" Text="--" Bold="true" Size="-18" DockType="0" Rect="0,0,0,30" AutoWidth="true" Margin="0,0,20,0" MarginType="2"></CXStatic>
+                            </Children>
+                          </CXDockPanel>
+                          <CXDockPanel DockType="1" Rect="0,0,0,22">
+                            <Children>
+                              <CXStatic Name="SoftSize" Text="大小：" DockType="0" Color="50,50,50" AutoWidth="true" Margin="0,0,10,0"></CXStatic>
+                              <CXStatic Name="InstallTime" Text="安装时间：" DockType="0" Color="50,50,50" AutoWidth="true" Margin="0,0,10,0"></CXStatic>
+                              <CXStatic Name="InstallLocation" Text="打开安装目录" DockType="0" Color="34,118,229" AutoWidth="true" Margin="0,0,10,0"></CXStatic>
+                            </Children>
+                          </CXDockPanel>
+                          
+                        </Children>
+
+                      </CXDockPanel>
+
+
+                    </Children>
+                  </CXDockPanel>
+                  
+                </Children>
+              </CXDockPanel>
+              <!-- ================================================================= -->
+              <CXFrame DockType="1" Rect="0,0,0,1" Margin="4,0,4,0">
+                <Properties>
+                  <Background>
+                    <CXBrush Color="150,150,150"></CXBrush>
+                  </Background>
+                </Properties>
+              </CXFrame>
+              <CXDockPanel Name ="PageContainer" Margin="4,0,4,4">
+                
+              </CXDockPanel>
+            </Children>
+          </CXDockPanel>     
+          
+          
+        </Children>
+      </CXDockPanel>
+    </Children>
+  </CUninstallDetail2>
+</UI>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Classes>
+  <class name="DlgTitleFont" metatype="font">
+    <AttribSet fontId="2" bold="true" color="226,244,255">      
+    </AttribSet>
+  </class>
+  <class name="MF_TitleFont" metatype="font">
+    <AttribSet fontId="2" color="226,244,255">
+    </AttribSet>
+  </class>
+  <class name="MF_AppBoxText" metatype="font">
+    <AttribSet fontId="2" color="255,255,255" hoverColor="255,255,255" downColor="255,255,255" disableColor="180,230,255" shadow="true" shadowColor="5,31,78">
+    </AttribSet>
+  </class>
+  <class name="MF_AppBoxTitleFont" metatype="font">
+    <AttribSet fontId="2" color="226,244,255" hoverColor="0,62,105" downColor="0,62,105" disableColor="144,213,248" bold="true">
+    </AttribSet>
+  </class>
+  <class name="MF_TitleNormalFont" metatype="font">
+    <AttribSet fontId="2" color="191,224,246" hoverColor="255,255,255" downColor="255,255,255" disableColor="255,255,255">
+    </AttribSet>
+  </class>
+  <class name="MF_TitleSelectedFont" metatype="font">
+    <AttribSet fontId="2" bold="true" color="191,224,246" hoverColor="255,255,255" downColor="0,62,105" disableColor="232,130,162">
+    </AttribSet>
+  </class>
+  <class name="MF_MenuText" metatype="font">
+    <AttribSet fontId="2" color="255,255,255" hoverColor="11,89,145" disableColor="46,121,178">
+    </AttribSet>
+  </class>
+  <class name="MF_ToolbarText" metatype="font">
+    <AttribSet fontId="2" color="255,255,255">
+    </AttribSet>
+  </class>
+  <class name="MF_ToolbarSelText" metatype="font">
+    <AttribSet fontId="2" color="255,255,255" bold="true">
+    </AttribSet>
+  </class>
+  <class name="TaskMgr_ShowText" metatype="font">
+    <AttribSet fontId="2" color="226,244,255" hoverColor="255,255,255" downColor="255,255,255" disableColor="62,136,199" shadow="true" shadowColor="5,31,78">
+    </AttribSet>
+  </class>
+  <class name="TaskMgrLite_Title" metatype="font">
+    <AttribSet fontId="3" color="226,244,255" bold="true">
+    </AttribSet>
+  </class>
+  <class name="MessageBox_Text" metatype="font">
+    <AttribSet fontId="2" color="23,92,148" hoverColor="255,255,255" downColor="255,255,255" disableColor="62,136,199" shadow="false" shadowColor="5,31,78" bold="false">
+    </AttribSet>
+  </class>
+  <class name="GameMaster_Text" metatype="font">
+    <AttribSet fontId="2" color="0,0,0" bold="false">
+    </AttribSet>
+  </class>
+</Classes>

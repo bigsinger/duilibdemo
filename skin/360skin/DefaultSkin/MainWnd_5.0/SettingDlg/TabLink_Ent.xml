@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CXDockPanel Name="TabUninstallAndLnk" Margin="30,10,30,10">
+		<Children>
+			<CXDockPanel Rect="0,0,0,140" DockType="1" Margin="0,5,0,0" MarginType="2">
+				<Properties>
+					<Background>
+						<C360Image File="\MainWnd_5.0\SettingDlg\group_bk.png" DrawType="2" TileRect="10,20,20,30">
+						</C360Image>
+					</Background>
+				</Properties>
+				<Children>
+					<CXStatic Rect="0,0,0,20" DockType="1" Text="快捷方式" Bold="true" AutoWidth="true" AutoHeight="true" Margin="10,1,1,1" NormalColor="98,170,0" MarginType="2">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+					</CXStatic>	
+					<CXDockPanel Rect="0,0,0,30" DockType="1" Margin="25,10,0,0" MarginType="2">
+						<Children>
+							<CXStatic DockType="0" Text="在桌面上添加“360软件管家”的快捷方式" Rect="0,0,360,20" AutoWidth="false" AutoHeight="true" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>	
+							<CXButton Name="SoftMgrLnkToDesktop" Rect="0,0,74,17" CursorType="1" DockType="0" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown>
+									<BkgNormal2>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal2>
+									<BkgOn2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn2>
+									<BkgDown2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown2>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Name="LnkShowUpdateNumberFrame" Rect="0,0,0,30" DockType="1" Margin="25,5,0,0" MarginType="2">
+						<Children>
+							<CXStatic DockType="0" Text="在“360软件管家”快捷方式上显示可升级软件数" Rect="0,0,360,20" AutoWidth="false" AutoHeight="true" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>	
+							<CXButton Name="LnkShowUpdateNumber" Rect="0,0,74,17" CursorType="1" DockType="0" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown>
+									<BkgNormal2>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal2>
+									<BkgOn2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn2>
+									<BkgDown2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown2>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Rect="0,0,0,30" DockType="1" Margin="25,5,0,0" MarginType="2" Visible="false">
+						<Children>
+							<CXStatic DockType="0" Text="在手机必备图标上显示可升级应用数" Rect="0,0,360,20" AutoWidth="false" AutoHeight="true" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>	
+							<CXButton Name="MobileIconShowUpdateNumber" Rect="0,0,74,17" CursorType="1" DockType="0" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown>
+									<BkgNormal2>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal2>
+									<BkgOn2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn2>
+									<BkgDown2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown2>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+				</Children>
+			</CXDockPanel>			
+		</Children>
+	</CXDockPanel>
+
+</UI>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

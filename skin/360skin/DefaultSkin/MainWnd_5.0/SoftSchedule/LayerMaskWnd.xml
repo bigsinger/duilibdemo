@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CXLayerMaskWnd Name="LayerMaskWnd" Rect="0,0,755,523" Border="0,0,0,0">
+		<Children>
+			<CXDockPanel>
+				<Properties>
+					<Background>
+						<C360Image DrawType="2" File="\MainWnd_5.0\SoftSchedule\mask.png" TileRect="321,263,331,273">
+						</C360Image>
+					</Background>
+				</Properties>
+			</CXDockPanel>
+		</Children>
+	</CXLayerMaskWnd>
+</UI>

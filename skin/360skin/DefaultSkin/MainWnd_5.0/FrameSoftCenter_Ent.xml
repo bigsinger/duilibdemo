@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CFrameSoftCenter Name="FrameSoftCenter" DockType="4">
+		<Children>
+			<CTabListCtrl Name="TabListCtrl" DockType="0" Margin="0,0,0,0" Step="30" Rect="0,0,165,0" NeedMouseOn="true">
+				<Properties>
+					<VBkg>
+						<C360Image File="\MainWnd_5.0\scroll_left_bkg.png" Transparent="true" DrawType="2" TileRect="3,20,6,70"></C360Image>
+					</VBkg>
+					<VDrawNormal>
+						<C360Image File="\MainWnd_5.0\scroll_left.png" Transparent="true" DrawType="2" TileRect="3,20,6,70" ></C360Image>
+					</VDrawNormal>
+					<VDrawOn>
+						<C360Image File="\MainWnd_5.0\scroll_left.png" Transparent="true" DrawType="2" TileRect="3,20,6,70" ></C360Image>
+					</VDrawOn>
+					<VDrawDown>
+						<C360Image File="\MainWnd_5.0\scroll_left.png" Transparent="true" DrawType="2" TileRect="3,20,6,70" ></C360Image>
+					</VDrawDown>
+					<Background>
+						<C360Image File="\MainWnd_5.0\bkg_left.png" Transparent="true" DrawType="2" TileRect="50,50,115,115" ></C360Image>
+					</Background>
+				</Properties>
+				<Children>
+					<CXStackPanel StackType="0" Name="SectionList" Margin="0,0,-1,0">
+						<Children>
+							<CXStackPanel Name="PanelHot">
+								<Children>
+									<CXDockPanel Rect="0,0,0,30">
+										<Properties>
+											<Background>
+												<C360Image File="\MainWnd_5.0\tab_bkg_jpjj.png" DrawType="0" Transparent="true">
+												</C360Image>
+											</Background>
+										</Properties>
+										<Children>
+											<CXFrame DockType="0" Rect="0,0,16,16" AutoHeight="true" AutoWidth="true" Margin="8,6,0,0">
+												<Properties>
+													<Background>
+														<C360Image File="\MainWnd_5.0\tabsection1.png" DrawType="0" Transparent="true">
+														</C360Image>
+													</Background>
+												</Properties>
+											</CXFrame>
+											<CXStatic Text="热门精选" DockType="0" AutoHeight="true" AutoWidth="true" Margin="8,7,0,0" Bold="true">
+											</CXStatic>
+										</Children>
+									</CXDockPanel>
+								</Children>
+							</CXStackPanel>
+							<CXStackPanel Visible="false">
+								<Children>
+									<CXDockPanel Rect="0,0,0,31" >
+										<Properties>
+											<Background>
+												<C360Image File="\MainWnd_5.0\tab_bkg_rjbk.png" DrawType="0" Transparent="true">
+												</C360Image>
+											</Background>
+										</Properties>
+										<Children>
+											<CXFrame DockType="0" Rect="0,0,16,16" AutoHeight="true" AutoWidth="true" Margin="8,8,0,0">
+												<Properties>
+													<Background>
+														<C360Image File="\MainWnd_5.0\tabsection2.png" DrawType="0" Transparent="true">
+														</C360Image>
+													</Background>
+												</Properties>
+											</CXFrame>
+											<CXStatic Text="软件宝库" DockType="0" AutoHeight="true" AutoWidth="true" Margin="8,8,0,0" Bold="true">
+											</CXStatic>
+										</Children>
+									</CXDockPanel>
+								</Children>
+							</CXStackPanel>
+
+              <CXStackPanel>
+                <Children>
+                  <CXDockPanel Rect="0,0,0,31" >
+                    <Properties>
+                      <Background>
+                        <C360Image File="\MainWnd_5.0\tab_bkg_rjbk.png" DrawType="0" Transparent="true">
+                        </C360Image>
+                      </Background>
+                    </Properties>
+                    <Children>
+                      <CXFrame DockType="0" Rect="0,0,16,16" AutoHeight="true" AutoWidth="true" Margin="8,8,0,0">
+                        <Properties>
+                          <Background>
+                            <C360Image File="\MainWnd_5.0\tabsection2.png" DrawType="0" Transparent="true">
+                            </C360Image>
+                          </Background>
+                        </Properties>
+                      </CXFrame>
+                      <CXStatic Text="软件宝库" DockType="0" AutoHeight="true" AutoWidth="true" Margin="8,8,0,0" Bold="true">
+                      </CXStatic>
+                    </Children>
+                  </CXDockPanel>
+                  <CTabListItem Text="最近更新 (0)" >
+                  </CTabListItem>
+                  <CTabListItem Text="全部软件 (0)" >
+                  </CTabListItem>
+                </Children>
+              </CXStackPanel>
+              
+						</Children>
+					</CXStackPanel>
+					
+				</Children>	
+			</CTabListCtrl>
+			
+			<CXDockPanel DockType="4" Name="ContainerPanel">
+				<Properties>
+					<Background>
+						<C360Image File="\MainWnd_5.0\bkg_middle.png" DrawType="2" Transparent="true" TileRect="50,50,115,115">
+						</C360Image>
+					</Background>
+				</Properties>
+				<Children>
+          <CXDockPanel DockType="1" Rect="0,0,0,38">
+            <Properties>
+              <Background>
+                <CXBrush Color="238,238,238">
+                </CXBrush>
+              </Background>
+            </Properties>
+            <Children>
+              <CXStatic DockType="0" Text="全部软件共" AutoWidth="true" AutoHeight="true" Margin="6,13,0,0" NormalColor="102,102,102" MarginType="2"></CXStatic>
+              <CXStatic  DockType="0" Text="0" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="98,170,0" Bold="true" MarginType="2"></CXStatic>
+              <CXStatic DockType="0" Text="款" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0"  NormalColor="102,102,102" MarginType="2"></CXStatic>
+            </Children>
+          </CXDockPanel>
+          <CXDockPanel DockType="4" Rect="0,0,200,24" MarginType="3">
+            <Children>
+              <CXFrame DockType="0" Rect="0,0,24,24" AutoHeight="true" AutoWidth="true" MarginType="2">
+                <Properties>
+                  <Background>
+                    <C360Image File="\MainWnd_5.0\common\icon_noinfo.png" DrawType="0" Transparent="true">
+                    </C360Image>
+                  </Background>
+                </Properties>
+              </CXFrame>
+              <CXStatic DockType="0" Text="目前没有可用的软件" Bold="true" Size="-16" AutoWidth="true" AutoHeight="true" Margin="10,0,0,0" NormalColor="156,154,156" MarginType="2"></CXStatic>
+            </Children>
+          </CXDockPanel>
+				</Children>
+			</CXDockPanel>
+			<CXDockPanel Name="SearchBar" DockType="7" Margin="0,6,10,0" Rect="0,0,316,27" >
+				<Children>
+					<CXButton Name="ButtonSearch" DockType="2" Rect="0,0,56,25" AutoHeight="true" Margin="0,0,0,0" Text="搜索" TextColor="255,255,255" Bold="true" TextSize="-13" TextMargin="0,0,0,1"  >
+						<Properties>
+							<BkgNormal>
+								<C360Image  Transparent="true" File="\MainWnd_5.0\search\button_search.png" CutRect="0,0,56,25"></C360Image>
+							</BkgNormal>
+							<BkgOn>
+								<C360Image Transparent="true" File="\MainWnd_5.0\search\button_search.png" CutRect="56,0,112,25"></C360Image>
+							</BkgOn>
+							<BkgDown>
+								<C360Image Transparent="true" File="\MainWnd_5.0\search\button_search.png" CutRect="112,0,168,25"></C360Image>
+							</BkgDown>
+						</Properties>
+					</CXButton>
+					<CSearchCtrlSoft Name="SearchCtrl" DockType="2" Rect="0,0,240,25" AutoHeight="true" Margin="0,0,0,0" DefaltText="搜索超过10万款软件">
+					</CSearchCtrlSoft>
+				</Children>
+			</CXDockPanel>
+			
+			<CXDockPanel Name="ADBar" DockType="6" Margin="166,6,0,0" Rect="0,0,440,27" Visible="false">
+				<Children>
+					<CXDockPanel Name="laba" DockType="0" Rect="0,0,18,18" Margin="4,0,0,1" MarginType="2" Visible="false" >
+						<Properties>
+							<Background>
+								<C360Image Transparent="true" File="\MainWnd_5.0\laba.png" DrawType="0" TileRect="0,0,18,18">
+								</C360Image>
+							</Background>
+						</Properties>
+					</CXDockPanel>
+					<CXStatic Name="GG"  Visible="false"  DockType="0"  AutoHeight="true" AutoWidth="true" Margin="2,0,0,0" MarginType="2" Text="【公告】"  CursorType="0" Color="231,98,1" TextSize="-13" TextMargin="0,0,0,1"  >
+					</CXStatic>
+					<CXStatic Name="XStaticAD" DockType="0"  AutoHeight="true" AutoWidth="true" Margin="2,0,0,0" MarginType="2" Underline="true" CursorType="1" Color="231,98,1"  TextSize="-13" TextMargin="0,0,0,1"  >
+					</CXStatic>
+
+				</Children>
+			</CXDockPanel>
+			
+		</Children>
+	</CFrameSoftCenter>
+	<CPageZjbb2 Name="PageZjbb" DockType="4" >
+		<Children>
+			<CXDockPanel  DockType="1" Rect="0,0,0,38" >
+				<Children>
+					<CXStatic Name="StaticCatalog" DockType="0" Text="装机必备共" AutoWidth="true" AutoHeight="true" Margin="6,13,0,0" NormalColor="102,102,102" MarginType="2"></CXStatic>
+					<CXStatic Name="StaticAllCount" DockType="0" Text="0" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="98,170,0" Bold="true" MarginType="2"></CXStatic>
+					<CXStatic DockType="0" Text="款软件，已安装" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0"  NormalColor="102,102,102" MarginType="2"></CXStatic>
+					<CXStatic Name="StaticInstalledCount" DockType="0" Text="0" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="98,170,0" Bold="true" MarginType="2"></CXStatic>
+					<CXStatic DockType="0" Text="款" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0"  NormalColor="102,102,102" MarginType="2"></CXStatic>
+					<CXStatic Name="StaticHide" Text="显示已安装软件" DockType="0" AutoWidth="true" AutoHeight="true" Margin="10,13,0,0"  Color="7,137,211" MarginType="2" CursorType="1"></CXStatic>
+					
+				</Children>
+			</CXDockPanel>
+			<CXDockPanel DockType="1" Rect="0,0,0,34" >
+				<Properties>
+					<Background>
+						<C360Image DrawType="2" TileRect="10,10,20,24"  Transparent="true" File="\MainWnd_5.0\zjbb_tab_bkg.png" ></C360Image>
+					</Background>		
+				</Properties>
+				<Children>
+					<CXTabCtrl DockType="0" AutoWidth="true" Name="TabCtrlZjbb" Rect="0,0,0,23" MarginType="2">
+						
+					</CXTabCtrl>
+					
+					<CXButton Name="ButtonLayout" DockType="2" Rect="0,0,26,25"  AutoWidth="true" AutoHeight="true" Margin="0,5,8,0" >
+						<Properties>
+							<BkgNormal>
+								<C360Image  DrawType="0" File="\MainWnd_5.0\button_filter.png" CutRect="0,0,26,25"></C360Image>
+							</BkgNormal>
+							<BkgOn>
+								<C360Image DrawType="0" File="\MainWnd_5.0\button_filter.png" CutRect="26,0,52,25"></C360Image>
+							</BkgOn>
+							<BkgDown>
+								<C360Image DrawType="0" File="\MainWnd_5.0\button_filter.png" CutRect="52,0,78,25"></C360Image>
+							</BkgDown>
+							<BkgNormal2>
+								<C360Image  DrawType="0" File="\MainWnd_5.0\button_filter2.png" CutRect="0,0,26,25"></C360Image>
+							</BkgNormal2>
+							<BkgOn2>
+								<C360Image DrawType="0" File="\MainWnd_5.0\button_filter2.png" CutRect="26,0,52,25"></C360Image>
+							</BkgOn2>
+							<BkgDown2>
+								<C360Image DrawType="0" File="\MainWnd_5.0\button_filter2.png" CutRect="52,0,78,25"></C360Image>
+							</BkgDown2>
+						</Properties>
+					</CXButton>
+					
+					<CXButton Name="ButtonQuickInst" DockType="2" Rect="0,0,85,25" Text="一键装机" AutoWidth="true" AutoHeight="true" Margin="5,5,10,0" TextMargin="15,0,0,0" TextColor="255,255,255"  >
+						<Properties>
+							
+							<BkgNormal>
+								<C360Image  DrawType="0" File="\MainWnd_5.0\button_onekey.png" CutRect="0,0,85,25"></C360Image>
+							</BkgNormal>
+							<BkgOn>
+								<C360Image DrawType="0" File="\MainWnd_5.0\button_onekey.png" CutRect="85,0,170,25"></C360Image>
+							</BkgOn>
+							<BkgDown>
+								<C360Image DrawType="0" File="\MainWnd_5.0\button_onekey.png" CutRect="170,0,255,25"></C360Image>
+							</BkgDown>
+						</Properties>
+					</CXButton>
+				</Children>
+			</CXDockPanel>
+			<CXScrollFrame Name="ScrollFrame" DockType="4" Margin="0,0,3,0" Step="100">
+				<Properties>
+					<VBkg>
+						<C360Image File="\MainWnd_5.0\scroll_bkg.png" Transparent="true" DrawType="2" TileRect="5,20,8,70"></C360Image>
+					</VBkg>
+					<VDrawNormal>
+						<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+					</VDrawNormal>
+					<VDrawOn>
+						<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+					</VDrawOn>
+					<VDrawDown>
+						<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+					</VDrawDown>
+
+				</Properties>
+				
+						
+			</CXScrollFrame>
+		</Children>
+	</CPageZjbb2>
+	<CPageSearch Name="PageSearch" DockType="4" >
+		<Children>
+			<CXDockPanel DockType="1" Rect="0,0,0,38" >
+				<Properties>
+					<Background>
+						<C360Image DrawType="2" TileRect="10,2,20,8"  File="\MainWnd_5.0\splitter_h.png" ></C360Image>
+					</Background>		
+				</Properties>
+				<Children>
+					<CXButton Name="ButtonReturn" DockType="0" Rect="0,0,70,26" Text="返回"  AutoHeight="true" Margin="10,7,0,0" MarginType="2">
+						<Properties>
+							<BkgNormal>
+								<C360Image  Transparent="true" File="\MainWnd_5.0\common\button.png" CutRect="0,0,70,26"></C360Image>
+							</BkgNormal>
+							<BkgOn>
+								<C360Image Transparent="true" File="\MainWnd_5.0\common\button.png" CutRect="70,0,140,26"></C360Image>
+							</BkgOn>
+							<BkgDown>
+								<C360Image Transparent="true" File="\MainWnd_5.0\common\button.png" CutRect="140,0,210,26"></C360Image>
+							</BkgDown>
+						</Properties>
+					</CXButton>
+					
+				</Children>
+			</CXDockPanel>
+			
+			<CXScrollFrame Name="ScrollFrame" DockType="4" Margin="0,0,3,3" Step="70" Visible="false" >
+				<Properties>
+					<VBkg>
+						<C360Image File="\MainWnd_5.0\scroll_bkg.png" Transparent="true" DrawType="2" TileRect="5,20,8,70"></C360Image>
+					</VBkg>
+					<VDrawNormal>
+						<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+					</VDrawNormal>
+					<VDrawOn>
+						<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+					</VDrawOn>
+					<VDrawDown>
+						<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+					</VDrawDown>
+
+				</Properties>
+				<Children>
+					<CXStackPanel >
+						<Children>
+							<CXDockPanel Name="SearchTitle1" Rect="0,0,0,35" Margin="0,-2,0,0">
+								<Properties>
+									<Background>
+										<C360Image DrawType="2" TileRect="10,3,20,7"  Transparent="true" File="\MainWnd_5.0\splitter_h.png" >
+										</C360Image>
+									</Background>
+								</Properties>
+								<Children>
+									<CXStatic Text="以下" DockType="0" AutoHeight="true" AutoWidth="true" Margin="10,10,0,0"></CXStatic>
+									<CXStatic Name="StaticCount1"  DockType="0" AutoHeight="true" AutoWidth="true" Margin="10,10,0,0" NormalColor="255,0,0"></CXStatic>
+									<CXStatic Text="款软件来自360软件管家" DockType="0" AutoHeight="true" AutoWidth="true" Margin="10,10,0,0"></CXStatic>
+									
+									<CXDropListCtrl  Name="DropListCtrl" TextClrNormal="0,0,0" TextClrOver="255,255,255"  DockType="2" AutoHeight="true" Rect="0,0,100,27" MarginType="2" Margin="0,3,10,0" IconDockType="2" IconMargin="0,0,10,0" TextMargin="0,0,20,0" ItemTextOffset="10,0">
+										<Properties>
+											<Icon>
+												<C360Image   File="\MainWnd_5.0\common\droplist_arrow.png" ></C360Image>
+											</Icon>
+											<BkgNormal>
+												<C360Image DrawType="2"   File="\MainWnd_5.0\common\droplist_button.png" CutRect="0,0,85,25" TileRect="10,10,60,17"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="2"  File="\MainWnd_5.0\common\droplist_button.png" CutRect="85,0,170,25" TileRect="10,10,60,17"></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="2"   File="\MainWnd_5.0\common\droplist_button.png" CutRect="170,0,255,25" TileRect="10,10,60,17"></C360Image>
+											</BkgDown>
+											<ListBkg>
+												<C360Image DrawType="2"   File="\MainWnd_5.0\common\droplist_bkg.png"  TileRect="50,20,180,69"></C360Image>
+											</ListBkg>
+											<ItemBkgOn>
+												<C360Image DrawType="2"   File="\MainWnd_5.0\common\droplist_item_over.png"  TileRect="10,10,190,20"></C360Image>
+											</ItemBkgOn>
+											<ItemBkgNormal>
+												<C360Image DrawType="2"   File="\MainWnd_5.0\common\droplist_item_normal.png"  TileRect="10,10,190,20"></C360Image>
+											</ItemBkgNormal>
+											
+										</Properties>
+									</CXDropListCtrl>
+								</Children>
+							</CXDockPanel>
+							<CXStackPanel Name="SearchList1">
+							</CXStackPanel>
+							<CXDockPanel Name="SearchTitle2" Rect="0,0,0,35">
+								<Properties>
+									<Background>
+										<C360Image DrawType="2" TileRect="10,3,20,7"  Transparent="true" File="\MainWnd_5.0\splitter_h.png" >
+										</C360Image>
+									</Background>
+								</Properties>
+								<Children>
+									<CXStatic Text="以下" DockType="0" AutoHeight="true" AutoWidth="true" Margin="10,10,0,0"></CXStatic>
+									<CXStatic Name="StaticCount2"  DockType="0" AutoHeight="true" AutoWidth="true" Margin="10,10,0,0" NormalColor="255,0,0"></CXStatic>
+									<CXStatic Text="款软件来自软件开放搜索" DockType="0" AutoHeight="true" AutoWidth="true" Margin="10,10,0,0"></CXStatic>
+								</Children>
+							</CXDockPanel>
+							<CXStackPanel Name="SearchList2">
+							</CXStackPanel>
+							<CXDockPanel Name="PanelMore" Rect="0,0,0,43">
+								<Children>
+									<CXButton Name="ButtonMore" CursorType="1" DockType="0" Rect="0,0,138,43"  AutoHeight="true" Margin="10,0,0,0" >
+										<Properties>
+											<BkgNormal>
+												<C360Image  Transparent="true" File="\MainWnd_5.0\common\button_more.png" CutRect="0,0,138,43"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image Transparent="true" File="\MainWnd_5.0\common\button_more.png" CutRect="138,0,276,43"></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image Transparent="true" File="\MainWnd_5.0\common\button_more.png" CutRect="276,0,414,43"></C360Image>
+											</BkgDown>
+										</Properties>
+									</CXButton>
+								</Children>
+							</CXDockPanel>
+						</Children>
+					</CXStackPanel>
+				</Children>
+						
+			</CXScrollFrame>
+			<CXDockPanel Name="PanelNoResult" DockType="5" Visible="true" Rect="0,0,376,57" >
+				<Children>
+					<CXDockPanel DockType="1" Rect="0,0,0,24">
+						<Children>
+							<CXFrame Rect="0,0,24,24" DockType="0">
+								<Properties>
+									<Background>
+										<C360Image File="\MainWnd_5.0\common\icon_noinfo.png" DrawType="0" >
+										</C360Image>
+									</Background>
+								</Properties>
+							</CXFrame>
+							<CXStatic DockType="0" Margin="10,1,0,0" AutoHeight="true" AutoWidth="true" Text="没有查找到相关软件，请调整关键词重新搜索" Size="-16" Bold="true" NormalColor="153,153,153">
+							</CXStatic>
+						</Children>
+					</CXDockPanel>
+					<CXStatic Name="StaticSearchApp" DockType="1" Margin="0,15,0,0" MarginType="1" AutoHeight="true" AutoWidth="true" Text="" CursorType="1" NormalColor="3,112,218" Bold="true">
+					</CXStatic>
+				</Children>
+			</CXDockPanel>
+		</Children>
+	</CPageSearch>
+</UI>

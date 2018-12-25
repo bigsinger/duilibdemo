@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<main_dlg width="403" height="310" img_src="bk_setting_old.png"  margin2="6" margin3="7" vmargin2="40" vmargin3="42">
+	<font id="1" b="1" size="12" name="Tahoma" color="255,255,255"/>
+	<win_ctrl id="104" name="image" x="7" y="4" w = "16" h="16" img_src="logo.png"/>
+	<win_ctrl id="101" name="text" x="24" y="4" text="$<1360开机小助手-设置$>"/>
+
+	<win_ctrl id="2" name="button_state3" x="368" y="1" w="27" h="22" img_src="sys_button_close.png" block="4"/>
+
+	<win_ctrl id="505" name="button_state2" x="139" y="40"  w="62" h="26"  text="推荐" img_src="btn_recomend.png" block="2"/>
+	<win_ctrl id="506" name="button_state2" x="201" y="40"  w="62" h="26"  text="默认" img_src="btn_default.png" block="2"/>
+
+	<win_ctrl id="201" name="check_box" img_src="checkbox.png" block="12" x="48" y="146" text="开机后提示本次开机时间" notify="1"/>
+
+	<win_ctrl id="407" name="text" x="66" y="168" text="显示样式："/>
+	<win_ctrl id="501" name="check_box" img_src="radiobox.png" block="8" x="128" y="168" text="精简(win8风格)" notify="1" />
+	<win_ctrl id="502" name="check_box" img_src="radiobox.png" block="8" x="243" y="168" text="经典(带天气、新闻)" notify="1" />
+
+	<win_ctrl id="182" name="text" x="66" y="196" text="设置小助手停留时间：              秒"/>
+
+	<win_ctrl id="600" name="check_box" img_src="checkbox.png" block="9" x="48" y="90" text="智能等待" notify="1" />
+	<win_ctrl id="601" name="ltext" x="117" y="90" text="{&amp;#color=0x999999}  (开机后若鼠标键盘无操作，小助手不消失)"/>
+
+	<win_ctrl id="400" name="check_box" img_src="checkbox.png" block="9" x="48" y="90" text="接送封面推广的推送" notify="1" />
+	<win_ctrl id="507" name="check_box" img_src="checkbox.png" block="9" x="48" y="171" text="优先用360浏览器打开新闻" notify="1" />
+
+	<win_ctrl id="402" name="check_box" img_src="checkbox.png" block="9" x="48" y="118" text="小助手底部显示：" notify="1" />
+	<win_ctrl id="403" name="check_box" img_src="checkbox.png" block="9" x="70" y="143" text="新闻" notify="1" />
+	<win_ctrl id="202" name="check_box" img_src="checkbox.png" block="9" x="138" y="143" text="天气" notify="1" />
+	<win_ctrl id="205" name="ltext" x="190" y="143" text="{&amp;#a=button:32776}切换城市" />
+	<win_ctrl id="405" name="check_box" img_src="checkbox.png" block="9" x="258" y="143" text="推广" notify="1" />
+
+	<win_ctrl id="401" name="check_box" img_src="checkbox.png" block="9" x="48" y="118" text="开机时记录开机时间" notify="1" />
+
+	<win_ctrl id="203" name="check_box" img_src="checkbox.png" block="9" x="48" y="224" text="我愿意参加360开机时间调查" notify="1" />
+	<win_ctrl id="102" name="ltext" x="229" y="224" text="{&amp;#a=http://bbs.360.cn/forum.php?mod=viewthread$tid=20820$extra=page%3D1$page=1$archive_src=bbs_safe}了解详情"/>
+	
+	<win_ctrl id="204" name="button_state4" x="241" y="277"  w="70" h="23"  text="保存" img_src="btn_greenL.png" block="4"/>
+	<win_ctrl id="2" name="button_state4" x="318" y="277"  w="70" h="23"  text="取消" img_src="btn_greenL.png" block="4"/>
+</main_dlg>

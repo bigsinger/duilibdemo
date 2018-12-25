@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UI>
+  <Window name="updatetip" height="36" autosize="0">
+    <ExtraAttri>
+      <Texture img_src="..\..\Image\WebApp\update\bk.png" bTile="true"/>
+    </ExtraAttri>
+
+     <SysButton id="11000" name="close" tooltip="关闭" y="7" layout_x="margin" layout_xdata="10" img_src="..\..\Image\WebApp\update\button.png" block="3"/>
+
+	 <StackPanel orit="H" layout_x="center" layout_xdata="50" y="8">
+		 <Image name="InfoSImage" img_src="..\..\Image\webapp\update\icon.png" />
+		 <LText name="tips" class="MF_WebappUpdateCompleteTips" text="恭喜您，升级成功~" margin="5, -1, 0, 0"/>
+	 </StackPanel>
+	 
+  </Window>
+</UI>

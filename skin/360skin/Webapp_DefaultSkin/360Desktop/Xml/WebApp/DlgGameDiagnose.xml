@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UI>
+  <Window name="MainDlg" width="370" height="200">
+    <ExtraAttri>
+      <Texture img_src="..\..\Image\PublicRes\back.png" h_margin2="8" h_margin3="95" v_margin2="50" v_margin3="172" />
+      <Light img_src="..\..\Image\PublicRes\BackgroundLight_SettingCenter_p.png"  h_margin2="8" h_margin3="96" v_margin2="50" v_margin3="140"/>
+    </ExtraAttri>
+
+    <SysButton id="5000" name="sysClose" img_src="..\..\Image\PublicRes\close.png" block="4" layout_x="margin" layout_xdata="0" y="0"/>
+
+    <Image name="InfoSImage" img_src="..\..\Image\MessageBox\INfo_s.png" x="10" y="8"/>
+
+    <Static  x="30" y="8" name="Title" text="游戏诊断" class="MF_MessageBoxText" margin="5, 0, 0, 0"/>
+
+      <LText name="Info" x="30" y="50" color="0,0,0" text="{&amp;#font=8}如遇无法进入游戏的问题，请尝试修复！{&amp;#/font}" margin="5, 0, 0, 0" />
+	  <Image x="30" y="85" name="IEInfoQureyImage" img_src="..\..\Image\WebApp\GameDiagnose\sj.png" margin="5, 5, 0, 0"/>
+	  <Image x="30" y="85" name="IEInfoImage" img_src="..\..\Image\WebApp\GameDiagnose\Loading.png" margin="5, 5, 0, 0"/>
+	  <Image x="30" y="85" name="IEInfoOKImage" img_src="..\..\Image\WebApp\GameDiagnose\OK.png" margin="0, 5, 0, 0"/>
+	  <LText x="55" y="85" name="IEInfo" color="0,0,0" text="清空浏览器缓存(清空后首次启动游戏耗时会较长)" margin="5, 5, 0, 0" />
+	  <Image x="30" y="113" name="Progress_inIE" img_src="..\..\Image\WebApp\GameDiagnose\Progress_in.png" margin="0, 0, 0, 0"/>
+	  <Image x="30" y="112" name="TotalProgressIE" img_src="..\..\Image\WebApp\GameDiagnose\TotalProgress.png" margin="0, 0, 0, 0"/>
+	  
+	  
+	  <Image x="30" y="110" name="DNSInfoQureyImage" img_src="..\..\Image\WebApp\GameDiagnose\sj.png" margin="5, 5, 0, 0"/>
+	  <Image x="30" y="110" name="DNSInfoImage" img_src="..\..\Image\WebApp\GameDiagnose\Loading.png" margin="5, 5, 0, 0"/>
+	  <Image x="30" y="110" name="DNSInfoOKImage" img_src="..\..\Image\WebApp\GameDiagnose\OK.png" margin="0, 5, 0, 0"/>
+	  <LText x="55" y="110" name="DNSInfo" color="0,0,0" text="更新其他缓存数据" margin="5, 5, 0, 0" />
+	  <Image x="30" y="136" name="Progress_inDNS" img_src="..\..\Image\WebApp\GameDiagnose\Progress_in.png" margin="0, 0, 0, 0"/>
+	  <Image x="30" y="135" name="TotalProgressDNS" img_src="..\..\Image\WebApp\GameDiagnose\TotalProgress.png" margin="0, 0, 0, 0"/>
+	  
+	  
+ 
+    <Button_state4 id="5003" name="buttonCancel" h_margin2="28" h_margin3="29" v_margin2="10" v_margin3="11" layout_y="margin" layout_x="margin" layout_ydata="8" layout_xdata="18" img_src="..\..\Image\PublicRes\button_state4.png" block="4" text=" 取消 " color="0,0,0"/>
+	<Button_state4 id="5002" name="buttonOK" h_margin2="28" h_margin3="29" v_argin2="10" v_margin3="11" layout_y="margin" layout_x="margin" layout_ydata="8" layout_xdata="18" img_src="..\..\Image\PublicRes\button_state4.png" block="4" text=" 完成 " color="0,0,0"/>
+	<Button_state4 id="5002" name="buttonFix" h_margin2="28" h_margin3="29" v_argin2="10" v_margin3="11" layout_y="margin" layout_x="margin" layout_ydata="8" layout_xdata="88" img_src="..\..\Image\PublicRes\button_state4.png" block="4" text=" 一键修复 " color="0,0,0"/>
+	<Button_state4 id="5003" name="buttonClose" h_margin2="28" h_margin3="29" v_argin2="10" v_margin3="11" layout_y="margin" layout_x="margin" layout_ydata="8" layout_xdata="18" img_src="..\..\Image\PublicRes\button_state4.png" block="4" text=" 关闭 " color="0,0,0"/>
+  </Window>
+</UI>

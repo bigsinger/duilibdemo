@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CXDockPanel Name="TabSoftSchedule" Margin="0,0,0,0">
+		<Children>	
+			<CXDockPanel DockType="1" Rect="0,0,0,38" Margin="0,0,0,34">
+				<Children>
+					<CXFrame Rect="0,0,18,18" DockType="0"  Margin="10,13,0,0" MarginType="2">
+						<Properties>
+							<Background>
+								<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SoftSchedule\smallicon.png" CutRect="0,0,18,18"></C360Image>
+							</Background>
+						</Properties>
+					</CXFrame>	
+					<CXStatic Name="StaticLeft" DockType="0" Text="为您推荐" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0"  NormalColor="102,102,102" MarginType="2"></CXStatic>
+					<CXStatic Name="StaticSoftCount" DockType="0" Text="0" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="98,170,0" Bold="true" MarginType="2"></CXStatic>
+					<CXStatic Name="StaticMid" DockType="0" Text="款软件，可一键轻松装机" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0"  NormalColor="102,102,102" MarginType="2"></CXStatic>
+					<CXStatic Name="StaticSoftCountInstalled" DockType="0" Text="0" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="98,170,0" Bold="true" MarginType="2"></CXStatic>
+					<CXStatic Name="StaticRight" DockType="0" Text="款软件已安装" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0"  NormalColor="102,102,102" MarginType="2"></CXStatic>
+				</Children>
+			</CXDockPanel>		
+			<CXDockPanel Name="BottomPanel" Visible="true" DockType="3" Rect="0,0,0,60" Margin="0,2,0,0">	
+				<Properties>
+					<Background>
+						<C360Image DrawType="2"  File="\MainWnd_5.0\SoftSchedule\bkg_bottom.png" TileRect="20,10,100,38" ></C360Image>
+					</Background>
+				</Properties>			
+				<Children>
+					<CXCheckBox Name="CheckBoxAll" DockType="0" Margin="15,20,0,0" Text="全选" Rect="0,0,54,15" AutoHeight="true" TextColor="37,116,194"  IconRect="0,0,15,15" MarginType="2">
+						<Properties>
+							<UnKnownNormal>
+								<C360Image   DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="120,0,135,15"></C360Image>
+							</UnKnownNormal>
+							<UnKnownOn>
+								<C360Image  DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="120,0,135,15"></C360Image>
+							</UnKnownOn>
+							<UnKnownDown>
+								<C360Image  DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="120,0,135,15"></C360Image>
+							</UnKnownDown>
+							<UnCheckNormal>
+								<C360Image  Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="0,0,15,15"></C360Image>
+							</UnCheckNormal>
+							<UnCheckOn>
+								<C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="15,0,30,15"></C360Image>
+							</UnCheckOn>
+							<UnCheckDown>
+								<C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="30,0,45,15"></C360Image>
+							</UnCheckDown>
+							<CheckNormal>
+								<C360Image  Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="60,0,75,15"></C360Image>
+							</CheckNormal>
+							<CheckOn>
+								<C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="75,0,90,15"></C360Image>
+							</CheckOn>
+							<CheckDown>
+								<C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="90,0,105,15"></C360Image>
+							</CheckDown>
+						</Properties>
+					</CXCheckBox>
+          
+					<CXButton Name="ButtonInstallAll" DockType="2" Rect="0,0,110,31" AutoHeight="true" Margin="0,9,10,0" Text="安装全部已选" TextColor="255,255,255"  TextSize="-13" MarginType="2">
+						<Properties>
+							<BkgNormal>
+								<C360Image  Transparent="true" DrawType="0"  File="\MainWnd_5.0\update\button_update_all.png" CutRect="0,0,110,31"></C360Image>
+							</BkgNormal>
+							<BkgOn>
+								<C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\update\button_update_all.png" CutRect="110,0,220,31"></C360Image>
+							</BkgOn>
+							<BkgDown>
+								<C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\update\button_update_all.png" CutRect="220,0,330,31"></C360Image>
+							</BkgDown>
+						</Properties>
+					</CXButton>
+          <CXStatic Name="OneKeyColl" DockType="2" AutoHeight="true" AutoWidth="true" Visible="0" Text="一键收藏已安装的软件" Color="7,137,211" MarginType="2" Margin="0,0,20,0"/>
+        </Children>
+			</CXDockPanel>
+			<CXDockPanel Name="DefaultBkgFrame" DockType="4" Visible="false">
+				<Properties>				
+					<Background>
+						<CXBrush Color="255,255,255"></CXBrush>
+					</Background>
+				</Properties>
+				<Children>
+					<CXDockPanel DockType="5" Rect="0,0,470,480">
+						<Properties>				
+							<Background>
+								<C360Image DrawType="6" Transparent="true" File="\MainWnd_5.0\SoftSchedule\mysoftschedule.png" ></C360Image>
+							</Background>
+						</Properties>
+					</CXDockPanel>
+					<CXDockPanel DockType="3" Rect="0,0,0,46" Margin="0,0,0,20">
+						<Children>
+							<CXButton Name="ButtonExperience" DockType="5" Rect="0,0,230,46">
+								<Properties>
+									<BkgNormal>
+										<C360Image  Transparent="true" DrawType="0"  File="\MainWnd_5.0\SoftSchedule\btn_experience.png" CutRect="0,0,230,46"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\SoftSchedule\btn_experience.png" CutRect="230,0,460,46"></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\SoftSchedule\btn_experience.png" CutRect="460,0,690,46"></C360Image>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+				</Children>
+			</CXDockPanel>
+			
+			<CXScrollFrame Name="ScrollFrame" DockType="4" Margin="0,0,0,0" Step="100" ScrollBarOverContent="true">
+				<Properties>
+					<VBkg>
+						<C360Image File="\MainWnd_5.0\scroll_bkg.png" Transparent="true" DrawType="2" TileRect="5,20,8,70"></C360Image>
+					</VBkg>
+					<VDrawNormal>
+						<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+					</VDrawNormal>
+					<VDrawOn>
+						<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+					</VDrawOn>
+					<VDrawDown>
+						<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+					</VDrawDown>
+				</Properties>	
+				<Children>
+					<CXStackPanel Name="SectionList" Margin="0,0,-10,0" ></CXStackPanel>
+				</Children>				
+			</CXScrollFrame>
+			<CXDockPanel Name="ErrorBkgPanel" DockType="4" Visible="false">
+				<Properties>
+					<Background>
+						<CXBrush Color="255,255,255"></CXBrush>
+					</Background>
+				</Properties>
+				<Children>
+					<CXDockPanel DockType="5" Rect="0,0,360,64" >
+						<Children>
+							<CXDockPanel DockType="0" Rect="0,0,64,64" MarginType="2">
+								<Properties>
+									<Background>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\circle_blue.png" CutRect="0,0,64,64" ></C360Image>
+									</Background>
+								</Properties>
+							</CXDockPanel>
+							<CXDockPanel DockType="4" >
+								<Children>
+									<CXDockPanel DockType="1" Rect="0,0,0,22" Margin="0,7,0,0">
+										<Children>
+											<CXStatic DockType="1" Rect="0,0,0,32" AutoHeight="true" AutoWidth="true" MarginType="2" Text="列表中无软件，请检查网络连接是否畅通" Color="153,153,153" Size="-14" Bold="true">
+											</CXStatic>
+										</Children>
+									</CXDockPanel>
+									<CXDockPanel DockType="1" Rect="0,0,0,22">
+										<Children>
+											<CXStatic DockType="0" Rect="0,0,0,32" AutoHeight="true" AutoWidth="true" MarginType="2" Text="可尝试用" Color="153,153,153" Size="-14" Bold="true">
+											</CXStatic>
+											<CXStatic Name="StaticNetRepair" DockType="0" Rect="0,0,0,32" AutoHeight="true" AutoWidth="true" MarginType="2" Text="360断网急救箱" Color="45,108,180" Size="-14" Bold="true" CursorType="1" Underline="true">
+											</CXStatic>
+											<CXStatic DockType="0" Rect="0,0,0,32" AutoHeight="true" AutoWidth="true" MarginType="2" Text="检查修复" Color="153,153,153" Size="-14" Bold="true">
+											</CXStatic>
+										</Children>
+									</CXDockPanel>
+								</Children>
+							</CXDockPanel>
+							
+						</Children>	
+					</CXDockPanel>
+				</Children>	
+			</CXDockPanel>
+		</Children>				
+	</CXDockPanel>
+
+</UI>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

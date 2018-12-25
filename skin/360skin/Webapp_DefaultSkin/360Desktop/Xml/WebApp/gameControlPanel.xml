@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UI>
+  <Menu name="AppShareContext" class="MF_MenuText">
+    <Background img_src="..\..\Image\Menu\Menu_Main.png" h_margin2="25" h_margin3="63" v_margin2="3" v_margin3="83"/>
+    <ItemBG img_src="..\..\Image\Menu\Menu_Selectbar.png" h_margin2="2" h_margin3="94" v_margin2="2" v_margin3="24"/>
+    <Item id="11011" text="分享给好友"   enable="true" check="false" img_src="..\..\Image\WebApp\msn.png" block="2"/>
+    <Item id="11007" text="新浪微博"   enable="true" check="false" img_src="..\..\Image\WebApp\sina-weibo.png" block="2"/>
+    <Item id="11008" text="人人网"   enable="true" check="false" img_src="..\..\Image\WebApp\renren.png" block="2"/>
+    <Item id="11009" text="网易微博"   enable="true" check="false" img_src="..\..\Image\WebApp\wangyi.png" block="2"/>
+    <!--Item id="11010" text="举报此应用"   enable="true" check="false" img_src="reportbug.png" block="2"/-->
+  </Menu>
+  <Window name="ControlPanel" height="24" autosize="0">
+    <ExtraAttri>
+      <Texture img_src="..\..\Image\WebApp\game\bk.png" bTile="true"/>
+    </ExtraAttri>
+
+    <StackPanel name="ControlPanelGame" orit="H" x="5" y="0">
+      <SysButton id="11025" name="manipulate" tooltip="操作" img_src="..\..\Image\WebApp\game\manipulate.png" block="4" margin="0, 1, 0, 0"/>
+      <SysButton id="11020" name="pause" tooltip="暂停" img_src="..\..\Image\WebApp\game\pause.png" block="4" margin="0, 1, 0, 0"/>
+      <SysButton id="11021" name="replay" tooltip="重玩" img_src="..\..\Image\WebApp\game\replay.png" block="4" margin="3, 1, 0, 0"/>
+      <SysButton id="11022" name="sound" tooltip="声音" img_src="..\..\Image\WebApp\game\sound.png" block="4" margin="1, 1, 0, 0"/>
+      <SysButton id="11026" name="screencapture" tooltip="截图" img_src="..\..\Image\WebApp\game\screencapture.png" block="4" margin="1, 1, 0, 0"/>
+      <SysButton id="11027" name="fullscreen" tooltip="全屏" img_src="..\..\Image\WebApp\game\fullscreen.png" block="4" margin="1, 1, 0, 0"/>
+      <SysButton id="11029" name="load" tooltip="读档" img_src="..\..\Image\WebApp\game\load.png" block="4" margin="1, 1, 0, 0"/>
+      <SysButton id="11030" name="save" tooltip="存档" img_src="..\..\Image\WebApp\game\save.png" block="4" margin="1, 1, 0, 0"/>
+      <SysButton id="11006" name="shareApp" tooltip="分享" img_src="..\..\Image\WebApp\game\share.png" block="4" margin="1, 1, 0, 0"/>
+	  <SysButton id="11040" name="Diagnose" tooltip="诊断" img_src="..\..\Image\WebApp\game\diagnose.png" block="4" margin="1, 1, 0, 0"/>
+      <SysButton id="11020" name="play" tooltip="开始" img_src="..\..\Image\WebApp\game\play.png" block="4" />
+      <SysButton id="11022" name="mute" x="0" y="0" tooltip="静音" img_src="..\..\Image\WebApp\game\mute.png" block="4"/>
+      <SysButton id="11025" name="manipulate1" x="0" y="0" tooltip="操作" img_src="..\..\Image\WebApp\game\manipulate1.png" block="4"/>
+      <SysButton id="11035" name="exitfullscreen" x="0" y="0" tooltip="退出全屏" img_src="..\..\Image\WebApp\game\exitfullscreen.png" block="4"/>
+    </StackPanel>
+    <StackPanel name="ControlPanel" orit="H" x="0" y="0" layout_x="margin" layout_xdata="-35">
+      <SysButton id="11024" name="HideRecommend" tooltip="隐藏" img_src="..\..\Image\WebApp\game\shrink.png" block="4" margin="3, 9, 0, 0"/>
+      <SysButton id="11024" name="ShowRecommend" tooltip="显示" img_src="..\..\Image\WebApp\game\expand.png" block="4" margin="0, 9, 0, 0"/>
+    </StackPanel>
+
+  </Window>
+</UI>

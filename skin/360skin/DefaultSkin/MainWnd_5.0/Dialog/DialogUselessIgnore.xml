@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CDialogUselessIgnore Name="DialogUselessIgnore" Rect="0,0,642,432" Border="0,0,0,0">
+		
+		<Children>
+			<CXDockPanel NCHittest="2">
+				
+				<Children>
+					<CXDockPanel Name="TopBar" DockType="1" Rect="0,0,0,30" NCHittest="2">
+						<Children>
+							<CXFrame Rect="0,0,16,16" DockType="0"  Margin="10,5,5,5" MarginType="2">
+								<Properties>
+									<Background>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\softmanager.png" CutRect="0,0,16,16"></C360Image>
+									</Background>
+								</Properties>
+							</CXFrame>	
+							<CXStatic Name="StaticTitle" DockType="0" Text="360软件管家 - 不常用软件提醒设置" AutoWidth="true" AutoHeight="true" Margin="0,5,0,5" NormalColor="255,255,255" MarginType="2"></CXStatic>	
+							<CXButton Name="BtnClose" DockType="2" Rect="0,0,27,22" AutoHeight="true" Margin="0,0,10,0" >
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="0,0,27,22"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="27,0,54,22" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="54,0,81,22"></C360Image>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+					
+					<CXDockPanel DockType="4" >
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+						<Children>
+							<CXDockPanel Name="TopBar" DockType="1" Rect="0,0,0,50">
+								<Properties>
+									<Background>
+										<C360Image DrawType="2" File="\MainWnd_5.0\dialog\banner_top.png" TileRect="3,10,7,40"></C360Image>
+									</Background>
+								</Properties>
+								<Children>
+									<CXDockPanel DockType="1" Rect="0,0,0,25" Margin="20,5,0,0">
+										<Children>
+											<CXStatic Margin="0,1,0,0" Text="1" DockType="0" AutoWidth="true" AutoHeight="true" Name="StaticCount" NormalColor="255,0,0"/>
+											<CXStatic Margin="3,0,0,0" DockType="0" AutoWidth="true" AutoHeight="true" Text="款软件的不常用提醒已被忽略" Bold="true" Size="-14" />
+										</Children>
+									</CXDockPanel>
+									<CXStatic Margin="20,0,0,0" DockType="1" AutoWidth="true" AutoHeight="true" Text="如果您希望重新获取以下软件的不常用提示，点击&quot;重新提示&quot;'即可" NormalColor="128,128,128" />
+								</Children>
+							</CXDockPanel>
+							<CXDockPanel Name="BottomBar" DockType="3" Rect="0,0,0,50">
+								<Properties>
+									<Background>
+										<C360Image DrawType="2" File="\MainWnd_5.0\dialog\banner_bottom.png" TileRect="3,10,7,30"></C360Image>
+									</Background>
+								</Properties>
+								<Children>
+									<CXCheckBox Name="CheckBoxAll" DockType="0" Margin="25,20,0,0" Text="全选/全不选" Rect="0,0,96,15" AutoHeight="true" TextColor="37,116,194"  IconRect="0,0,15,15">
+										<Properties>
+											<UnKnownNormal>
+												<C360Image   DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="120,0,135,15"></C360Image>
+											</UnKnownNormal>
+											<UnKnownOn>
+												<C360Image  DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="120,0,135,15"></C360Image>
+											</UnKnownOn>
+											<UnKnownDown>
+												<C360Image  DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="120,0,135,15"></C360Image>
+											</UnKnownDown>
+											<UnCheckNormal>
+												<C360Image  Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="0,0,15,15"></C360Image>
+											</UnCheckNormal>
+											<UnCheckOn>
+												<C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="15,0,30,15"></C360Image>
+											</UnCheckOn>
+											<UnCheckDown>
+												<C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="30,0,45,15"></C360Image>
+											</UnCheckDown>
+											<CheckNormal>
+												<C360Image  Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="60,0,75,15"></C360Image>
+											</CheckNormal>
+											<CheckOn>
+												<C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="75,0,90,15"></C360Image>
+											</CheckOn>
+											<CheckDown>
+												<C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="90,0,105,15"></C360Image>
+											</CheckDown>
+										</Properties>
+									</CXCheckBox>
+									<CXButton Name="ButtonAll" Rect="0,0,116,25" DockType="2" MarginType="2" Margin="0,0,10,0" Text="提示全部已选软件">
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="2"  File="\MainWnd_5.0\common\droplist_button.png" CutRect="0,0,85,25" TileRect="10,10,75,15"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="2"  File="\MainWnd_5.0\common\droplist_button.png" CutRect="85,0,170,25"  TileRect="10,10,75,15"></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="2"  File="\MainWnd_5.0\common\droplist_button.png" CutRect="170,0,255,25" TileRect="10,10,75,15"></C360Image>
+											</BkgDown>
+										</Properties>
+									</CXButton>
+									
+									
+								</Children>
+							</CXDockPanel>
+							<CXScrollFrame Name="ScrollFrame" DockType="4" Margin="0,0,3,0" Step="100">
+								<Properties>
+									<VBkg>
+										<C360Image File="\MainWnd_5.0\scroll_bkg.png" Transparent="true" DrawType="2" TileRect="5,20,8,70"></C360Image>
+									</VBkg>
+									<VDrawNormal>
+										<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+									</VDrawNormal>
+									<VDrawOn>
+										<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+									</VDrawOn>
+									<VDrawDown>
+										<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+									</VDrawDown>
+
+								</Properties>
+								<Children>
+									<CXStackPanel Name="List">
+									</CXStackPanel>
+								</Children>
+							</CXScrollFrame>
+						</Children>
+					</CXDockPanel>	
+				</Children>
+			</CXDockPanel>
+		</Children>
+	</CDialogUselessIgnore>
+</UI>

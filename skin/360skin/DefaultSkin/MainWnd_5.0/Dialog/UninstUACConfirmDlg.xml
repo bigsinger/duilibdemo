@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+  <CXUninstBaiduConfirmDlg Name="UninstUACConfirmDlg" Rect="0,0,529,152" Border="0,0,0,0">
+
+    <Children>
+      <CXDockPanel NCHittest="2">
+        <Children>
+          <CXDockPanel Name="TopBar" DockType="1" Rect="0,0,0,30" NCHittest="2">
+            <Children>
+              <CXFrame Rect="0,0,16,16" DockType="0"  Margin="10,5,5,5" NCHittest="2" MarginType="2">
+                <Properties>
+                  <Background>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\softmanager.png" CutRect="0,0,16,16"></C360Image>
+                  </Background>
+                </Properties>
+              </CXFrame>
+              <CXStatic Name="StaticTitle" DockType="0" Text="360软件管家 - 卸载提醒" AutoWidth="true" NCHittest="2" AutoHeight="true" Margin="0,5,0,5" NormalColor="255,255,255" MarginType="2"></CXStatic>
+              <CXButton Name="BtnClose" DockType="2" Rect="0,0,27,22" AutoHeight="true" Margin="0,0,5,0" >
+                <Properties>
+                  <BkgNormal>
+                    <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="0,0,27,22"></C360Image>
+                  </BkgNormal>
+                  <BkgOn>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="27,0,54,22" ></C360Image>
+                  </BkgOn>
+                  <BkgDown>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="54,0,81,22"></C360Image>
+                  </BkgDown>
+                </Properties>
+              </CXButton>
+            </Children>
+          </CXDockPanel>
+
+          <CXDockPanel Name="DockPanelContainer" DockType="4" Visible="true">
+            <Properties>
+              <Background>
+                <CXBrush Color="255,255,255"></CXBrush>
+              </Background>
+            </Properties>
+
+            <Children>
+              <CXDockPanel Rect="0,0,0,24" DockType ="3" Margin="0,0,18,14"  >
+                <Children>
+                  <CXButton Name="BtnCancel"  DockType="2" Rect="0,0,74,24" MarginType="2" Text="否"  >
+                    <Properties>
+                      <BkgNormal>
+                        <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="0,0,74,24"></C360Image>
+                      </BkgNormal>
+                      <BkgOn>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="74,0,148,24" ></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png"  CutRect="148,0,222,24"></C360Image>
+                      </BkgDown>
+                    </Properties>
+                  </CXButton>
+                  <CXButton Name="BtnConfirm"  DockType="2" Rect="0,0,74,24" MarginType="2" Text="是" Margin="0,0,15,0"  >
+                    <Properties>
+                      <BkgNormal>
+                        <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="0,0,74,24"></C360Image>
+                      </BkgNormal>
+                      <BkgOn>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="74,0,148,24" ></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png"  CutRect="148,0,222,24"></C360Image>
+                      </BkgDown>
+                    </Properties>
+                  </CXButton>
+                  <CXCheckBox Name="CheckBoxDefault" DockType="0" Margin="35,4,0,0" Text="以后卸载都按照此设置" Rect="0,0,150,15" AutoHeight="true" TextColor="50,50,50"  IconRect="0,0,15,15">
+                    <Properties>
+                      <UnCheckNormal>
+                        <C360Image  Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="0,0,15,15"></C360Image>
+                      </UnCheckNormal>
+                      <UnCheckOn>
+                        <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="15,0,30,15"></C360Image>
+                      </UnCheckOn>
+                      <UnCheckDown>
+                        <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="30,0,45,15"></C360Image>
+                      </UnCheckDown>
+                      <CheckNormal>
+                        <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="60,0,75,15"></C360Image>
+                      </CheckNormal>
+                      <CheckOn>
+                        <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="75,0,90,15"></C360Image>
+                      </CheckOn>
+                      <CheckDown>
+                        <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="90,0,105,15"></C360Image>
+                      </CheckDown>
+                    </Properties>
+                  </CXCheckBox>
+                </Children>
+              </CXDockPanel>
+
+              <CXDockPanel Rect="0,0,42,42" DockType ="0" Margin="30,18,10,0"  >
+                <Properties>
+                  <Background>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\action.png"></C360Image>
+                  </Background>
+                </Properties>
+              </CXDockPanel>
+
+              <CXDockPanel Rect="0,0,415,30" DockType ="0" Margin="0,18,10,0" >
+                <Children>
+                  <CXStatic AutoHeight="true" AutoWidth="true" Text="您运行的卸载程序需要管理员权限！" DockType="1">
+                  </CXStatic>
+                  <CXStatic AutoHeight="true" AutoWidth="true" Margin="0,5,0,0" Text="拥有管理员权限能对计算机进行更改。您是否允许运行？" DockType="1">
+                  </CXStatic>
+                </Children>
+              </CXDockPanel>
+
+
+
+            </Children>
+          </CXDockPanel>
+
+        </Children>
+      </CXDockPanel>
+    </Children>
+  </CXUninstBaiduConfirmDlg>
+</UI>

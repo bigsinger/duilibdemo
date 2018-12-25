@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+  <CXUninstBaiduConfirmDlg Name="UninstRebootConfirmDlg" Rect="0,0,410,152" Border="0,0,0,0">
+
+    <Children>
+      <CXDockPanel NCHittest="2">
+        <Children>
+          <CXDockPanel Name="TopBar" DockType="1" Rect="0,0,0,30" NCHittest="2">
+            <Children>
+              <CXFrame Rect="0,0,16,16" DockType="0"  Margin="10,5,5,5" NCHittest="2" MarginType="2">
+                <Properties>
+                  <Background>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\softmanager.png" CutRect="0,0,16,16"></C360Image>
+                  </Background>
+                </Properties>
+              </CXFrame>
+              <CXStatic Name="StaticTitle" DockType="0" Text="360软件管家 - 卸载提醒" AutoWidth="true" NCHittest="2" AutoHeight="true" Margin="0,5,0,5" NormalColor="255,255,255" MarginType="2"></CXStatic>
+              <CXButton Name="BtnClose" DockType="2" Rect="0,0,27,22" AutoHeight="true" Margin="0,0,5,0" >
+                <Properties>
+                  <BkgNormal>
+                    <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="0,0,27,22"></C360Image>
+                  </BkgNormal>
+                  <BkgOn>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="27,0,54,22" ></C360Image>
+                  </BkgOn>
+                  <BkgDown>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="54,0,81,22"></C360Image>
+                  </BkgDown>
+                </Properties>
+              </CXButton>
+            </Children>
+          </CXDockPanel>
+
+          <CXDockPanel Name="DockPanelContainer" DockType="4" Visible="true">
+            <Properties>
+              <Background>
+                <CXBrush Color="255,255,255"></CXBrush>
+              </Background>
+            </Properties>
+
+            <Children>
+              <CXDockPanel Rect="0,0,0,24" DockType ="3" Margin="0,0,18,14"  >
+                <Children>
+                  <CXButton Name="BtnCancel"  DockType="2" Rect="0,0,74,24" MarginType="2" Text="稍后再说"  >
+                    <Properties>
+                      <BkgNormal>
+                        <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="0,0,74,24"></C360Image>
+                      </BkgNormal>
+                      <BkgOn>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="74,0,148,24" ></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png"  CutRect="148,0,222,24"></C360Image>
+                      </BkgDown>
+                    </Properties>
+                  </CXButton>
+                  <CXButton Name="BtnConfirm"  DockType="2" Rect="0,0,96,24" MarginType="2" Text="立即卸载并重启" Margin="0,0,15,0"  >
+                    <Properties>
+                      <BkgNormal>
+                        <C360Image DrawType="1"  Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="0,0,74,24"></C360Image>
+                      </BkgNormal>
+                      <BkgOn>
+                        <C360Image DrawType="1" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="74,0,148,24" ></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="1" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png"  CutRect="148,0,222,24"></C360Image>
+                      </BkgDown>
+                    </Properties>
+                  </CXButton>
+ 
+                </Children>
+              </CXDockPanel>
+
+              <CXDockPanel Rect="0,0,40,40" DockType ="0" Margin="30,18,10,0"  >
+                <Properties>
+                  <Background>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\Dialog\warn_icon.png"></C360Image>
+                  </Background>
+                </Properties>
+              </CXDockPanel>
+
+              <CXDockPanel Rect="0,0,415,30" DockType ="0" Margin="0,18,10,0" >
+                <Children>
+                  <CXStatic AutoHeight="true" AutoWidth="true" Text="该软件难以卸载，需要重启电脑后才能卸载干净！建议您" DockType="1">
+                  </CXStatic>
+                  <CXStatic AutoHeight="true" AutoWidth="true" Margin="0,5,0,0" Text="立即重启电脑进行卸载。" DockType="1">
+                  </CXStatic>
+                </Children>
+              </CXDockPanel>
+
+
+
+            </Children>
+          </CXDockPanel>
+
+        </Children>
+      </CXDockPanel>
+    </Children>
+  </CXUninstBaiduConfirmDlg>
+</UI>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UI>
+  <Window name="EyeProtectWnd" width="268" height="79">
+    <ExtraAttri>
+      <Texture img_src="..\..\Image\WebApp\eye_protect_back.png" bCenterTile="true"/>
+    </ExtraAttri>
+
+    <!--眼睛卫士开启设置-->
+    <StackPanel x="14" y="13" orit="H">
+      <Static text="定时启动眼睛卫士" class="MF_EyeProtectText" />
+      
+      <CheckBox id="2001" name="ckEyeProtect" text="" img_src="..\..\Image\WebApp\eye_protect_check.png" block="9" class="MF_WebAppText" margin="18,0,12,0"/>
+      
+      <Static name="stEryProtect" text="开" class="MF_EyeProtectText" />
+    </StackPanel>
+    
+    <!--眼睛卫士时间间隔设置-->
+    <StackPanel x="14" y="40" orit="H">
+      <Static name="stIntervalPre" text="设置启动时间间隔" class="MF_EyeProtectText" />
+      
+      <SliderBarEx name="sldEyeProtectInterval" id="2002" width="103" height="30" margin="14,0,0,0" orit="H" class="MF_EyeProtectText">
+        <Thumb img_src="..\..\Image\PublicRes\SlideBar_Dot.png" block="3" padding="5" />
+        <TrackH img_src="..\..\Image\PublicRes\SlideBar_Back.png" margin2="3" margin3="22" block="1" />
+        <FrequencyH  img_src="..\..\Image\PublicRes\SlideBar_Frequency.png" block="1" />
+        <Param min="30" max="120" step="30" frequency="4" value="60" transparent="1" bk_color="233,238,242" desc="1" desc_orit="bottom" desc_size="13" desc_interval="0"/>
+      </SliderBarEx>
+      
+      <Static name="stIntervalEnd" text="分钟" class="MF_EyeProtectText" margin="3,0,0,0" />
+    </StackPanel>   
+
+  </Window>
+</UI>

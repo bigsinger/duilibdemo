@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+  <CMainWnd Name="MainWnd" Rect="0,0,920,680" Border="0,0,0,0">
+
+    <Children>
+      <CXDockPanel NCHittest="2">
+
+        <Children>
+          <CXDockPanel DockType="1" Rect="0,0,0,90" NCHittest="2">
+            <Children>
+              <CXTabCtrl Name="TabCtrlMain" DockType="0" Rect="0,0,0,75" AutoHeight="true" AutoWidth="true" Margin="10,15,0,0">
+                <Children>
+                  <CMainTabItem Name="softcenter" Rect = "0,0,80,75"  Text="软件大全" TextColor="255,255,255" TextMargin="0,0,0,3" TextDockType="3" IconMargin="0,3,0,0" IconDockType="1" Data="1">
+                    <Properties>
+                      <BkgOn>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\bkg.png" CutRect="0,0,80,75"></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\bkg.png" CutRect="80,0,160,75"></C360Image>
+                      </BkgDown>
+                      <Icon>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\maintab_softcenter.png" ></C360Image>
+                      </Icon>
+                    </Properties>
+                  </CMainTabItem>
+                  <CMainTabItem Name="update" Rect = "0,0,80,75" Margin="0,0,0,0"  Text="软件升级" TextColor="255,255,255" TextMargin="0,0,0,3" TextDockType="3" IconMargin="0,3,0,0" IconDockType="1"  Data="4">
+                    <Properties>
+
+                      <BkgOn>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\bkg.png" CutRect="0,0,80,75"></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\bkg.png" CutRect="80,0,160,75"></C360Image>
+                      </BkgDown>
+                      <Icon>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\maintab_update.png" ></C360Image>
+                      </Icon>
+                    </Properties>
+                  </CMainTabItem>
+                  <CMainTabItem Name="uninstall" Rect = "0,0,80,75" Margin="0,0,0,0"  Text="软件卸载" TextColor="255,255,255" TextMargin="0,0,0,3" TextDockType="3" IconMargin="0,3,0,0" IconDockType="1"  Data="6">
+                    <Properties>
+                      <BkgOn>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\bkg.png" CutRect="0,0,80,75"></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\bkg.png" CutRect="80,0,160,75"></C360Image>
+                      </BkgDown>
+                      <Icon>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\maintab_uninstall.png" ></C360Image>
+                      </Icon>
+                    </Properties>
+                  </CMainTabItem>
+                  <CMainTabItem Name="tools" Rect = "0,0,80,75" Margin="0,0,0,0"  Text="软件体检" TextColor="255,255,255" TextMargin="0,0,0,3" TextDockType="3" IconMargin="0,3,0,0" IconDockType="1" Data="9">
+                    <Properties>
+                      <BkgOn>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\bkg.png" CutRect="0,0,80,75"></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\bkg.png" CutRect="80,0,160,75"></C360Image>
+                      </BkgDown>
+                      <Icon>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\maintab_tools.png" ></C360Image>
+                      </Icon>
+                    </Properties>
+                  </CMainTabItem>
+                  <CMainTabItem Name="gamecenter" Rect = "0,0,80,75" Margin="0,0,0,0"  Text="游戏中心" TextColor="255,255,255" TextMargin="0,0,0,3" TextDockType="3" IconMargin="0,3,0,0" IconDockType="1"  Data="3">
+                    <Properties>
+                      <BkgOn>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\bkg.png" CutRect="0,0,80,75"></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\bkg.png" CutRect="80,0,160,75"></C360Image>
+                      </BkgDown>
+                      <Icon>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\maintab_gamecenter.png" ></C360Image>
+                      </Icon>
+                    </Properties>
+                  </CMainTabItem>
+                  <!--CMainTabItem Name="appcenter" Rect = "0,0,80,75" Margin="0,0,0,0"  Text="应用宝库" TextColor="255,255,255" TextMargin="0,0,0,3" TextDockType="3" IconMargin="0,3,0,0" IconDockType="1"  Data="2">
+										<Properties>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\bkg.png" CutRect="0,0,80,75"></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\bkg.png" CutRect="80,0,160,75"></C360Image>
+											</BkgDown>
+											<Icon>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\maintab_appcenter.png" ></C360Image>
+											</Icon>
+										</Properties>
+									</CMainTabItem!-->
+
+                  <CMainTabItem Name="mobile" Rect = "0,0,80,75" Margin="0,0,0,0"  Text="手机必备" TextColor="255,255,255" TextMargin="0,0,0,3" TextDockType="3" IconMargin="0,3,0,0" IconDockType="1" Data="8">
+                    <Properties>
+                      <BkgOn>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\bkg.png" CutRect="0,0,80,75"></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\bkg.png" CutRect="80,0,160,75"></C360Image>
+                      </BkgDown>
+                      <Icon>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\maintab\maintab_mobile.png" ></C360Image>
+                      </Icon>
+                    </Properties>
+                  </CMainTabItem>
+
+
+
+
+                </Children>
+              </CXTabCtrl>
+              <CXDockPanel DockType="2" Rect="0,0,400,0" Margin="0,-1,7,0" NCHittest="2">
+                <Children>
+                  <CXDockPanel DockType="1" Rect="0,0,0,28" Margin="0,0,0,0"  NCHittest="2">
+                    <Children>
+                      <CXButton Name="BtnClose" DockType="2" Rect="0,0,27,22" AutoHeight="true" Margin="0,0,0,0" >
+                        <Properties>
+                          <BkgNormal>
+                            <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="0,0,27,22"></C360Image>
+                          </BkgNormal>
+                          <BkgOn>
+                            <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="27,0,54,22" ></C360Image>
+                          </BkgOn>
+                          <BkgDown>
+                            <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png"  CutRect="54,0,81,22"></C360Image>
+                          </BkgDown>
+                        </Properties>
+                      </CXButton>
+                      <CXButton Name="BtnMax" DockType="2" Rect="0,0,30,22" AutoHeight="true" Margin="0,0,0,0">
+                        <Properties>
+                          <BkgNormal>
+                            <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_max.png"  CutRect="0,0,27,22"></C360Image>
+                          </BkgNormal>
+                          <BkgOn>
+                            <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_max.png" CutRect="27,0,54,22"></C360Image>
+                          </BkgOn>
+                          <BkgDown>
+                            <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_max.png" CutRect="54,0,81,22"></C360Image>
+                          </BkgDown>
+                          <BkgNormal2>
+                            <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_restore.png"  CutRect="0,0,27,22"></C360Image>
+                          </BkgNormal2>
+                          <BkgOn2>
+                            <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_restore.png" CutRect="27,0,54,22"></C360Image>
+                          </BkgOn2>
+                          <BkgDown2>
+                            <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_restore.png" CutRect="54,0,81,22"></C360Image>
+                          </BkgDown2>
+                        </Properties>
+                      </CXButton>
+                      <CXButton Name="BtnMin" DockType="2" Rect="0,0,30,22" AutoHeight="true" Margin="0,0,0,0">
+                        <Properties>
+                          <BkgNormal>
+                            <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_min.png" CutRect="0,0,27,22"></C360Image>
+                          </BkgNormal>
+                          <BkgOn>
+                            <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_min.png" CutRect="27,0,54,22"></C360Image>
+                          </BkgOn>
+                          <BkgDown>
+                            <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_min.png" CutRect="54,0,81,22"></C360Image>
+                          </BkgDown>
+                        </Properties>
+                      </CXButton>
+                      <CXButton Name="BtnMenu" DockType="2" Rect="0,0,30,22" AutoHeight="true" Margin="0,0,0,0">
+                        <Properties>
+                          <BkgNormal>
+                            <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_menu.png" CutRect="0,0,27,22"></C360Image>
+                          </BkgNormal>
+                          <BkgOn>
+                            <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_menu.png" CutRect="27,0,54,22"></C360Image>
+                          </BkgOn>
+                          <BkgDown>
+                            <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_menu.png" CutRect="54,0,81,22"></C360Image>
+                          </BkgDown>
+                        </Properties>
+                      </CXButton>
+                      <CXButton Name="BtnLottery" DockType="2" Rect="0,0,270,28" AutoHeight="true" Margin="0,4,4,0" CursorType="1">
+                        <Properties>
+                          <BkgNormal>
+                            <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_lottery_tips.png" CutRect="0,0,270,28"></C360Image>
+                          </BkgNormal>
+                          <BkgOn>
+                            <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_lottery_tips.png" CutRect="270,0,540,28"></C360Image>
+                          </BkgOn>
+                          <BkgDown>
+                            <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_lottery_tips.png" CutRect="540,0,810,28"></C360Image>
+                          </BkgDown>
+                          <BkgNormal2>
+                            <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_lottery.png" CutRect="0,0,16,16"></C360Image>
+                          </BkgNormal2>
+                          <BkgOn2>
+                            <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_lottery.png" CutRect="16,0,32,16"></C360Image>
+                          </BkgOn2>
+                          <BkgDown2>
+                            <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_lottery.png" CutRect="32,0,48,16"></C360Image>
+                          </BkgDown2>
+                        </Properties>
+                      </CXButton>
+                    </Children>
+                  </CXDockPanel>
+                  <CXButton Name="ButtonLogo" DockType="9" Rect="0,0,150,60" AutoWidth="true" Margin="0,0,0,0" CursorType="1">
+                    <Properties>
+                      <BkgNormal>
+                        <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\logo.png" ></C360Image>
+                      </BkgNormal>
+                      <BkgOn>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\logo.png" ></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\logo.png" ></C360Image>
+                      </BkgDown>
+                    </Properties>
+                  </CXButton>
+                </Children>
+              </CXDockPanel>
+
+            </Children>
+          </CXDockPanel>
+          <CXDockPanel DockType="3" Rect="0,0,0,28" >
+            <Properties>
+              <Background>
+                <C360Image File="\MainWnd_5.0\bkg_bottom.png" DrawType="2" TileRect="10,10,80,17">
+                </C360Image>
+              </Background>
+            </Properties>
+            <Children>
+              <CXStatic Name="StaticVersion" MarginType="2" Text="软件管家目前版本:5.0.0.0" DockType="0" AutoWidth="true" AutoHeight="true" Margin="10,7,0,0" NormalColor="136,136,136" Size="-12">
+              </CXStatic>
+
+              <CXStatic Name="StaticDownload" DockType="2" NormalColor="136,136,136" OnColor="3,112,218" DownColor="3,112,218" Text="下载管理" AutoHeight="true" AutoWidth="true" MarginType="2" CursorType="1" Margin="0,0,5,0" ></CXStatic>
+              <CXFrame  DockType="2" Rect="0,0,16,16"  AutoHeight="true" MarginType="2" Margin="0,0,1,0">
+                <Properties>
+                  <Background>
+                    <C360Image File="\MainWnd_5.0\icon_download.png" DrawType="0" >
+                    </C360Image>
+                  </Background>
+                </Properties>
+              </CXFrame>
+              <CXButton Name="ButtonSetting" CursorType="1" MarginType="2" DockType="2" AutoHeight="true" Rect="0,0,42,22" Margin="0,3,5,0" Text="设置" TextColor="136,136,136" TextColorOn="3,112,218" TextColorDown="3,112,218" TextMargin="16,0,0,0" IconDockType="0">
+                <Properties>
+                  <Icon>
+                    <C360Image DrawType="0"   File="\MainWnd_5.0\icon_setting.png" ></C360Image>
+                  </Icon>
+
+                </Properties>
+              </CXButton>
+              <CXStatic Name="StaticSML" DockType="2" NormalColor="136,136,136" OnColor="3,112,218" DownColor="3,112,218" Text="软件小助手" AutoHeight="true" AutoWidth="true" MarginType="2" CursorType="1" Margin="0,0,5,0"></CXStatic>
+              <CXFrame  DockType="2" Rect="0,0,16,16"  AutoHeight="true" MarginType="2" Margin="0,0,3,0">
+                <Properties>
+                  <Background>
+                    <C360Image File="\MainWnd_5.0\sml.png" DrawType="0" >
+                    </C360Image>
+                  </Background>
+                </Properties>
+              </CXFrame>
+            </Children>
+          </CXDockPanel>
+          <CXDockPanel DockType="4" Name="PanelContainer"  Margin="0,0,0,0">
+
+          </CXDockPanel>
+
+
+        </Children>
+      </CXDockPanel>
+    </Children>
+  </CMainWnd>
+</UI>

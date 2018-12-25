@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UI>
+  <Window name="ControlPanel" height="24" autosize="0">
+     <ExtraAttri>
+       <Texture img_src="..\..\Image\WebApp\controlpanel_bk.png" bTile="true"/>
+     </ExtraAttri>
+	 
+	<StackPanel name="ControlPanel" orit="H" x="0" y="0" layout_x="margin" layout_xdata="-35">
+		<SysButton id="11023" name="setlevel" tooltip="评分" img_src="..\..\Image\WebApp\score.png" block="4" margin="13, 2, 0, 0"/>
+		<SysButton id="11024" name="HideRecommend" tooltip="隐藏" img_src="..\..\Image\WebApp\game\shrink.png" block="4" margin="13, 2, 0, 0"/>
+		<SysButton id="11024" name="ShowRecommend" tooltip="显示" img_src="..\..\Image\WebApp\game\expand.png" block="4" margin="0, 2, 0, 0"/>
+	</StackPanel>
+	 
+  </Window>
+</UI>

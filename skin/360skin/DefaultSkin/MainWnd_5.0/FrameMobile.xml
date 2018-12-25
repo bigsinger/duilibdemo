@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CXDockPanel Name="FrameMobile" DockType="4"  >
+		<Properties>
+			<Background>
+				<C360Image File="\MainWnd_5.0\uninstall\bkg.png" DrawType="2" Transparent="true" TileRect="50,30,70,60">
+				</C360Image>
+			</Background>
+		</Properties>
+		<Children>
+			<CXDockPanel Name="FrameFill" DockType="4">
+				<Children>
+					<CXStackPanel  Name="StackPanel" DockType="5" Rect="0,0,542,440" Visible="true">
+						
+						<Children>				
+							<CXBoboNumButton Name="ButtonAndroid"  Rect="0,0,0,93" Margin="0,0,0,20" CursorType="1">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\Bgbutton_Android.png" CutRect="0,0,542,93"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\Bgbutton_Android.png" CutRect="542,0,1084,93" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\Bgbutton_Android.png"  CutRect="1084,0,1626,93"></C360Image>
+									</BkgDown>
+								</Properties>
+							 </CXBoboNumButton>
+							 <CXButton Name="ButtonIphone"  Rect="0,0,0,93" Margin="0,0,0,20" CursorType="1">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\Bgbutton_Apple.png" CutRect="0,0,542,93"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\Bgbutton_Apple.png" CutRect="542,0,1084,93" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\Bgbutton_Apple.png"  CutRect="1084,0,1626,93"></C360Image>
+									</BkgDown>
+								</Properties>
+							 </CXButton>	 
+							 <CXButton Name="ButtonSymbian"  Rect="0,0,0,93" Margin="0,0,0,20" CursorType="1">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\Bgbutton_Symbian.png" CutRect="0,0,542,93"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\Bgbutton_Symbian.png" CutRect="542,0,1084,93" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\Bgbutton_Symbian.png"  CutRect="1084,0,1626,93"></C360Image>
+									</BkgDown>
+								</Properties>
+							 </CXButton>
+              <CXButton Name="ButtonMiniWifi"  Rect="0,0,0,93" Margin="0,0,0,20" CursorType="1">
+                <Properties>
+                  <BkgNormal>
+                    <C360Image DrawType="0" File="\MainWnd_5.0\Bgbutton_MiniWifi.png" CutRect="0,0,542,93"></C360Image>
+                  </BkgNormal>
+                  <BkgOn>
+                    <C360Image DrawType="0" File="\MainWnd_5.0\Bgbutton_MiniWifi.png" CutRect="542,0,1084,93"></C360Image>
+                  </BkgOn>
+                  <BkgDown>
+                    <C360Image DrawType="0" File="\MainWnd_5.0\Bgbutton_MiniWifi.png" CutRect="1084,0,1626,93"></C360Image>
+                  </BkgDown> 
+                </Properties>
+              </CXButton>
+            </Children>
+								  
+					</CXStackPanel>
+					
+					
+				</Children>
+			
+			</CXDockPanel>			
+		</Children>
+	</CXDockPanel>	
+</UI>

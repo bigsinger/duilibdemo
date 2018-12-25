@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CPowerUninstallCleanDlg Name="MainWnd" Rect="0,0,400,350" Border="0,0,0,0">
+		<Children>
+			<CXDockPanel>
+				
+				<Children>
+					<CXDockPanel Name="TopPanel" DockType="1" Rect="0,0,0,31" NCHittest="2">
+						<Children>
+							<CXStatic NCHittest="2" Text="一键强力卸载 - 清理配置" Bold="true" DockType="0" AutoHeight="true" AutoWidth="true" Margin="8,8,0,0" NormalColor="255,255,255"/>
+							<CXButton AutoHeight="true" Margin="0,0,5,0" Name="BtnClose" DockType="2" Rect="0,0,27,22">
+								<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="0,0,27,22"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="27,0,54,22" ></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png"  CutRect="54,0,81,22"></C360Image>
+											</BkgDown>
+										</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Name="BottomPanel" DockType="3" Rect="0,0,0,40">
+					<Properties>
+							<Background>
+								<CXBrush Color="255,255,255" />
+							</Background>
+						</Properties>
+						<Children>
+							<CXButton Text="全部清理" AutoHeight="true" Margin="220,5,0,0" Name="BtnOK" DockType="0" Rect="0,0,60,26">
+								<Properties>
+									<BkgNormal>
+										<C360Image Transparent="true" File="\PowerUninstWnd\button_state4.png" CutRect="0,0,60,26"/>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image Transparent="true" File="\PowerUninstWnd\button_state4.png" CutRect="60,0,120,26"/>
+									</BkgOn>
+									<BkgDown>
+										<C360Image Transparent="true" File="\PowerUninstWnd\button_state4.png" CutRect="120,0,180,26"/>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+							<CXButton Text="取消" AutoHeight="true" Margin="0,5,10,0" Name="BtnCancel" DockType="2" Rect="0,0,60,26">
+								<Properties>
+									<BkgNormal>
+										<C360Image Transparent="true" File="\PowerUninstWnd\button_state4.png" CutRect="0,0,60,26"/>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image Transparent="true" File="\PowerUninstWnd\button_state4.png" CutRect="60,0,120,26"/>
+									</BkgOn>
+									<BkgDown>
+										<C360Image Transparent="true" File="\PowerUninstWnd\button_state4.png" CutRect="120,0,180,26"/>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Name="MiddlePanel" DockType="4">
+					<Properties>
+							<Background>
+								<CXBrush Color="255,255,255" />
+							</Background>
+						</Properties>
+						<Children>
+							<CXStatic Text="保留的配置文件一般为软件的个性化配置，如浏览器收藏的网址、QQ聊天记录等。" Rect="0,0,0,40" Multiline="true" DockType="1" Margin="15,10,10,0" NormalColor="0,0,0"/>
+							<CXStatic Text="如果想继续使用该软件，建议不要清除配置。" Bold="true" DockType="1" AutoHeight="true" AutoWidth="true" Margin="15,15,0,0" NormalColor="246,79,0"/>
+							<CXStatic Name="SoftInfo" Text="总共要删除 %d 个文件，共 %d 大小 " DockType="1" AutoHeight="true" AutoWidth="true" Margin="15,15,0,0" NormalColor="129,129,129"/>
+							<CXScrollFrame DockType="4" Margin="10,10,8,2" Name="ScrollFrame" Step="20" SupportKey="false">
+								<Properties>
+									<VBkg>
+										<C360Image File="\PowerUninstWnd\scroll_bkg.png" Transparent="true" DrawType="2" TileRect="4,20,10,70"/>
+									</VBkg>
+									<VDrawNormal>
+										<C360Image File="\PowerUninstWnd\scroll.png" Transparent="true" DrawType="2" TileRect="4,20,10,70" CutRect="0,0,14,90"/>
+									</VDrawNormal>
+									<VDrawOn>
+										<C360Image File="\PowerUninstWnd\scroll.png" Transparent="true" DrawType="2" TileRect="4,20,10,70" CutRect="14,0,28,90"/>
+									</VDrawOn>
+									<VDrawDown>
+										<C360Image File="\PowerUninstWnd\scroll.png" Transparent="true" DrawType="2" TileRect="4,20,10,70" CutRect="28,0,42,90"/>
+									</VDrawDown>
+									<VThum>
+										<C360Image File="\PowerUninstWnd\scroll_thum.png" Transparent="true" CutRect="0,0,14,5" DrawType="0"/>
+									</VThum>
+									<VThumOn>
+										<C360Image File="\PowerUninstWnd\scroll_thum.png" Transparent="true" CutRect="14,0,28,5" DrawType="0"/>
+									</VThumOn>
+									<VThumDown>
+										<C360Image File="\PowerUninstWnd\scroll_thum.png" Transparent="true" CutRect="28,0,42,5" DrawType="0"/>
+									</VThumDown>
+									<TopBtnNormal>
+										<C360Image File="\PowerUninstWnd\scroll_top.png" Transparent="true" DrawType="0" CutRect="0,0,14,14"/>
+									</TopBtnNormal>
+									<TopBtnOn>
+										<C360Image File="\PowerUninstWnd\scroll_top.png" Transparent="true" DrawType="0" CutRect="14,0,28,14"/>
+									</TopBtnOn>
+									<TopBtnDown>
+										<C360Image File="\PowerUninstWnd\scroll_top.png" Transparent="true" DrawType="0" CutRect="28,0,42,14"/>
+									</TopBtnDown>
+									<BottomBtnNormal>
+										<C360Image File="\PowerUninstWnd\scroll_Bottom.png" Transparent="true" DrawType="0" CutRect="0,0,14,14"/>
+									</BottomBtnNormal>
+									<BottomBtnOn>
+										<C360Image File="\PowerUninstWnd\scroll_Bottom.png" Transparent="true" DrawType="0" CutRect="14,0,28,14"/>
+									</BottomBtnOn>
+									<BottomBtnDown>
+										<C360Image File="\PowerUninstWnd\scroll_Bottom.png" Transparent="true" DrawType="0" CutRect="28,0,42,14"/>
+									</BottomBtnDown>
+								</Properties>
+								<Children>
+									<CXTreeCtrl Name="TreeCleanFiles" DockType="4" Rect="0,0,350,0"/>
+								</Children>
+							</CXScrollFrame>
+						</Children>
+					</CXDockPanel>
+				</Children>
+			</CXDockPanel>
+		</Children>
+	</CPowerUninstallCleanDlg>
+</UI>

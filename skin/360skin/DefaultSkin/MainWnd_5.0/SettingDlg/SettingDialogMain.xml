@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CSettingDialogNew Name="SettingDialogMain" Rect="0,0,560,460" Border="0,0,0,0">
+		<Properties>
+			<Background>
+				<CXBrush Color="255,255,255"></CXBrush>
+			</Background>
+		</Properties>
+		<Children>
+			<CXDockPanel NCHittest="2">
+				<Children>
+					<CXDockPanel DockType="1" Rect="0,0,0,30" NCHittest="2">
+						<Children>
+							<CXDockPanel DockType="0" Rect="0,0,400,0" Margin="0,-1,7,0" NCHittest="2">
+								<Children>
+									<CXFrame Rect="0,0,16,16" DockType="0"  Margin="10,5,5,5" MarginType="2" NCHittest="2">
+										<Properties>
+											<Background>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\softmanager.png" CutRect="0,0,16,16"></C360Image>
+											</Background>
+										</Properties>
+									</CXFrame>	
+									<CXStatic NCHittest="2" Name="StaticTitle" DockType="0" Text="360软件管家 - 设置" AutoWidth="true" AutoHeight="true" Margin="0,5,0,5" NormalColor="255,255,255" MarginType="2"></CXStatic>	
+								</Children>
+							</CXDockPanel>
+							<CXDockPanel DockType="2" Rect="0,0,55,0" Margin="0,-1,7,0" NCHittest="2">
+								<Children>
+									<CXButton Name="BtnClose" DockType="2" Rect="0,0,27,22" AutoHeight="true" Margin="0,0,0,0" >
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="0,0,27,22"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="27,0,54,22" ></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="54,0,81,22"></C360Image>
+											</BkgDown>
+										</Properties>
+									</CXButton>
+								</Children>
+							</CXDockPanel>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel DockType="3" Rect="0,0,0,40" >
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+						<Children>
+							<!--CXButton Name="ButtonApply" MarginType="2" DockType="2" Rect="0,0,72,24" Margin="0,6,25,6" Text="应用" TextColor="0,0,0" TextMargin="5,0,5,0">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="0,0,72,28"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="72,0,144,28"></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="144,0,216,28"></C360Image>
+									</BkgDown>
+								</Properties>
+							</CXButton-->
+							<CXButton Name="ButtonCancel" MarginType="2" DockType="2" Rect="0,0,74,24" Margin="0,8,25,8" Text="取消" TextColor="0,0,0" TextMargin="5,0,5,0">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="0,0,74,24"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="74,0,148,24"></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="148,0,222,24"></C360Image>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+							<CXButton Name="ButtonOK" MarginType="2" DockType="2" Rect="0,0,74,24" Margin="0,8,25,8" Text="确定" TextColor="0,0,0" TextMargin="5,0,5,0">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="0,0,74,24"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="74,0,148,24"></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="148,0,222,24"></C360Image>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel DockType="4" Margin="0,0,0,0" NCHittest="2">
+						<Children>
+							<CXTabCtrl Name="TabCtrlSetting" DockType="1" Rect="0,0,0,27" AutoWidth="true" Margin="10,0,0,0">
+								<Properties>
+									<Background>
+										<C360Image File="\MainWnd_5.0\SettingDlg\tab_background.png" DrawType="1">
+										</C360Image>
+									</Background>
+								</Properties>
+								<Children>
+									<CXTabItem Name="setting_download" Data="1" Rect="0,0,90,27" Text="下载设置" TextColor="255,255,255" TextMargin="5,0,5,0" >
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_normal.png" CutRect="0,0,90,27"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_hover.png" CutRect="0,0,90,27"></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_hover.png" CutRect="0,0,90,27"></C360Image>
+											</BkgDown>
+											<BkgPushed>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_pushed.png" CutRect="0,0,90,27"></C360Image>
+											</BkgPushed>
+										</Properties>
+									</CXTabItem>
+									<CXTabItem Name="setting_installandupdate" Data="2" Rect="0,0,90,27" Text="安装升级" TextColor="255,255,255" TextMargin="5,0,5,0" >
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_normal.png" CutRect="0,0,90,27"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_hover.png" CutRect="0,0,90,27"></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_hover.png" CutRect="0,0,90,27"></C360Image>
+											</BkgDown>
+											<BkgPushed>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_pushed.png" CutRect="0,0,90,27"></C360Image>
+											</BkgPushed>
+										</Properties>
+									</CXTabItem>
+									<CXTabItem Name="setting_lnk" Data="3" Rect="0,0,90,27" Text="卸载设置" TextColor="255,255,255" TextMargin="5,0,5,0" >
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_normal.png" CutRect="0,0,90,27"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_hover.png" CutRect="0,0,90,27"></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_hover.png" CutRect="0,0,90,27"></C360Image>
+											</BkgDown>
+											<BkgPushed>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_pushed.png" CutRect="0,0,90,27"></C360Image>
+											</BkgPushed>
+										</Properties>
+									</CXTabItem>
+                  <CXTabItem Name="setting_lnk" Data="4" Rect="0,0,90,27" Text="快捷设置" TextColor="255,255,255" TextMargin="5,0,5,0" >
+                    <Properties>
+                      <BkgNormal>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_normal.png" CutRect="0,0,90,27"></C360Image>
+                      </BkgNormal>
+                      <BkgOn>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_hover.png" CutRect="0,0,90,27"></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_hover.png" CutRect="0,0,90,27"></C360Image>
+                      </BkgDown>
+                      <BkgPushed>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_pushed.png" CutRect="0,0,90,27"></C360Image>
+                      </BkgPushed>
+                    </Properties>
+                  </CXTabItem>
+									<CXTabItem Name="setting_others" Data="5" Rect="0,0,90,27" Text="其他设置" TextColor="255,255,255" TextMargin="5,0,5,0" >
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_normal.png" CutRect="0,0,90,27"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_hover.png" CutRect="0,0,90,27"></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_hover.png" CutRect="0,0,90,27"></C360Image>
+											</BkgDown>
+											<BkgPushed>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\tab_pushed.png" CutRect="0,0,90,27"></C360Image>
+											</BkgPushed>
+										</Properties>
+									</CXTabItem>
+								</Children>
+							</CXTabCtrl>
+							<CXDockPanel DockType="4" Name="TabContainer" Rect="0,0,200,0" Border="0,0,0,0">
+								<Properties>
+									<Background>
+										<CXBrush Color="255,255,255"></CXBrush>
+									</Background>
+								</Properties>
+							</CXDockPanel>
+						</Children>
+					</CXDockPanel>
+				</Children>
+			</CXDockPanel>
+		</Children>
+	</CSettingDialogNew>
+</UI>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<main_dlg width="320" height="240" img_src="background_green.png"   margin2="6" margin3="19"  vmargin2="110" vmargin3="114" >
+
+	<font id="1" b="1" size="32" name="Tahoma" color="255,255,0"/>
+	<font id="2" b="1" size="18" color="255,255,0"/>
+	<font id="3" size="12" color="255,255,255"/>
+	<font id="4" b="1" size="12" color="221,88,0"/>
+	<font id="5" b="1" color="255,102,0"/>
+	<font id="6" size="12" color="0,0,0"/>
+	<font id="7" b="1" size="16" color="221,88,0"/>
+
+	<font id="10" b="1" size="12" color="255,222,0"/>
+	<font id="11" b="1" color="255,222,0"/>
+	<font id="12" b="1" size="16" color="255,222,0"/>
+
+	<win_ctrl id="33273" name="lightimg" block="15"/>
+	<win_ctrl id="33274" name="lightimg" block="0" visible="0"/>
+	<win_ctrl id="33275" name="image" img_src="logo_repaire.png" x="102" y="34"/>
+	<win_ctrl id="33276" name="image" img_src="logo_restart.png" x="102" y="34" visible="0"/>
+	<win_ctrl id="33270" name="color_button" x="73" y="171" img_src="large_optimize.png" block="3" text="立即修复" col="4473924" font="yahei18" topmargin="-3"/>
+	<win_ctrl id="33271" name="color_button" x="73" y="171" img_src="large_optimize.png" block="3" text="重启电脑" col="4473924" font="yahei18" topmargin="-3"  visible="0"/>
+	<win_ctrl id="33277" name="ltext" x="64" y="146" text="{&amp;#color=0x00f0f0f0;}{&amp;#font=13}主动防御未开启，无法获取开机时间"/>
+	<win_ctrl id="33278" name="ltext" x="82" y="146" text="{&amp;#color=0x00f0f0f0;}{&amp;#font=13}修复成功，下次开机就正常了" visible="0"/>
+
+	<win_ctrl id="700" name="skinbutton" x="239" y="0"  img_src="change_skin.png" block="3" visible="0" dotImage="skin_dot.png"/>
+
+    <win_ctrl id="244" name="ltext" x="11" y="7" text="{&amp;#color=0x00f0f0f0}360开机小助手"   />
+	<win_ctrl id="245" name="button_state4" x="293" y="0"  img_src="skin_wnd_close.png" block="3" />
+	<win_ctrl id="701" name="button_state4" x="266" y="0"  img_src="app_setting.png" block="3" />
+</main_dlg>

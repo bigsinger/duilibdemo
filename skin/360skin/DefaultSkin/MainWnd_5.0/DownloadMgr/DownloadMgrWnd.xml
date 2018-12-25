@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CFloatWndDownloadMgr Name="DownloadMgrWnd" Rect="0,0,350,380" Border="0,0,0,0">
+		<Children>
+			<CXDockPanel>
+				<Properties>
+					<Background>
+						<C360Image DrawType="2" File="\MainWnd_5.0\DownloadMgr\bk.png" TileRect="20,40,80,60"></C360Image>
+					</Background>
+				</Properties>
+				<Children>
+					<CXDockPanel DockType="1" Rect="0,0,0,26" Margin="0,10,0,0">
+						<Children>
+							<CXDockPanel DockType="0" Rect="0,0,300,0" Margin="5,0,10,2">
+								<Children>
+									<CXStatic DockType="0" Text="下载管理" AutoWidth="true" AutoHeight="true" Margin="10,0,5,0" MarginType="2" NormalColor="0,0,0"></CXStatic>
+
+                  <CXDockPanel Name="PanelThunderSupport" DockType="2" Rect="0,0,200,0">
+                    <Children>
+                      <CXStatic DockType="2" Name="StaticThunder" Text="高速下载由迅雷支持" AutoWidth="true" AutoHeight="true" Margin="5,0,30,0" NormalColor="0,0,0" MarginType="2"/>
+                      <CXDockPanel DockType="2" Rect="0,0,24,24">
+                        <Properties>
+                          <Background>
+                            <C360Image DrawType="6" File="\MainWnd_5.0\ThunderSupport\icon_Thunder.png"></C360Image>
+                          </Background>
+                        </Properties>
+                      </CXDockPanel>
+                    </Children>
+                  </CXDockPanel>
+								</Children>
+							</CXDockPanel>
+							<CXDockPanel DockType="2" Rect="0,0,55,0" Margin="5,1,10,5">
+								<Children>
+									<CXButton Name="ButtonMin" DockType="2" Rect="0,0,16,16" AutoHeight="true" Margin="0,0,0,0" CursorType="1">
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\DownloadMgr\min.png" CutRect="0,0,16,16"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\DownloadMgr\min.png" CutRect="16,0,32,16" ></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\DownloadMgr\min.png" CutRect="32,0,48,16"></C360Image>
+											</BkgDown>
+										</Properties>
+									</CXButton>
+									<CXButton Name="ButtonSetting" DockType="2" Rect="0,0,16,16" AutoHeight="true" Margin="0,0,5,0" CursorType="1">
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\DownloadMgr\setting.png" CutRect="0,0,16,16"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\DownloadMgr\setting.png" CutRect="16,0,32,16" ></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\DownloadMgr\setting.png" CutRect="32,0,48,16"></C360Image>
+											</BkgDown>
+										</Properties>
+									</CXButton>
+								</Children>
+							</CXDockPanel>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel DockType="3" Rect="0,0,0,42" Margin="10,0,10,15" >
+						<Children>
+							<CXStatic DockType="0" Text="打开下载目录:" AutoWidth="true" AutoHeight="true" Margin="5,0,5,0" NormalColor="0,0,0" MarginType="2"></CXStatic>	
+							<CXStatic DockType="0" Name="StaticSoft" Text="软件" AutoWidth="true" AutoHeight="true" Underline="true" Margin="5,0,5,0" NormalColor="80,150,220" MarginType="2" CursorType="1"></CXStatic>	
+							<CXStatic DockType="0" Name="StaticApp" Text="应用" AutoWidth="true" AutoHeight="true" Underline="true" Margin="5,0,5,0" NormalColor="80,150,220" MarginType="2" CursorType="1"></CXStatic>
+              <CXStatic DockType="2" Name="StaticClear" Text="清空已下载" AutoWidth="true" AutoHeight="true" Underline="true" Margin="5,0,5,0" NormalColor="80,150,220" MarginType="2" CursorType="1"></CXStatic>	
+						</Children>
+					</CXDockPanel>
+					<CXScrollFrame Name="ScrollFrame" DockType="4" Margin="0,0,5,0" Step="100" ScrollBarOverContent="true">
+						<Properties>
+							<VBkg>
+								<C360Image File="\MainWnd_5.0\scroll_bkg.png" Transparent="true" DrawType="2" TileRect="5,20,8,70"></C360Image>
+							</VBkg>
+							<VDrawNormal>
+								<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+							</VDrawNormal>
+							<VDrawOn>
+								<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+							</VDrawOn>
+							<VDrawDown>
+								<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+							</VDrawDown>
+						</Properties>	
+						<Children>
+							<CXStackPanel Name="SectionList" Margin="0,0,-10,0" ></CXStackPanel>
+						</Children>				
+					</CXScrollFrame>
+				</Children>
+			</CXDockPanel>
+		</Children>
+	</CFloatWndDownloadMgr>
+</UI>

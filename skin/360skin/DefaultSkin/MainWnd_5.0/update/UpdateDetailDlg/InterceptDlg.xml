@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+  <CXUninstBaiduConfirmDlg Name="InterceptDlg" Rect="0,0,500,420" Border="0,0,0,0">
+
+    <Children>
+      <CXDockPanel NCHittest="2">
+        <Children>
+          <CXDockPanel DockType="1" Rect="0,0,0,90" Margin="4,4,4,0" NCHittest="2">
+            <Properties>
+              <Background>
+                <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\Update\UpdateDetailDlg\top_bkg.png"></C360Image>
+              </Background>
+            </Properties>
+            <Children>
+              <CXDockPanel Name="TopBar" DockType="1" Rect="0,0,0,22" NCHittest="2">
+                <Children>
+                  <CXButton Name="BtnClose" DockType="2" Rect="0,0,27,22" AutoHeight="true" Margin="0,0,5,0" >
+                    <Properties>
+                      <BkgNormal>
+                        <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="0,0,27,22"></C360Image>
+                      </BkgNormal>
+                      <BkgOn>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="27,0,54,22" ></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="54,0,81,22"></C360Image>
+                      </BkgDown>
+                    </Properties>
+                  </CXButton>
+                </Children>
+              </CXDockPanel>
+
+              <CXDockPanel Name="TopBar2" DockType="1" Rect="0,0,0,64" NCHittest="2" Margin="4,0,0,0"  >
+                <Children>
+                  <CXDockPanel Rect="0,0,380,50" DockType="0" AutoHeight="true" Margin="90,0,0,0" NCHittest="2">
+                    <Children>
+                      <CXStatic Text="本次纯净升级服务为您拦截 " DockType="0" Rect="0,0,240,60" AutoWidth="true"  Size="-20" Color="255,255,255" MarginType="2" NCHittest="2"> </CXStatic>
+                      <CXStatic Name="Count" Text="10" DockType="0" Size="-20" Rect="0,0,30,60" Color="255,255,0" AutoWidth="true" MarginType="2" NCHittest="2" > </CXStatic>
+                      <CXStatic Text=" 个修改项" DockType="0" Size="-20" Color="255,255,255" AutoWidth="true" NCHittest="2" > </CXStatic>
+                    </Children>
+                  </CXDockPanel>
+                </Children>
+              </CXDockPanel>
+            </Children>
+          </CXDockPanel>
+
+          <CXDockPanel  DockType="3" Rect="0,0,0,47" Margin="4,2,4,4" NCHittest="2">
+            <Properties>
+              <Background>
+                <C360Image File="\MainWnd_5.0\Update\bkg_top.png" DrawType="2" Transparent="true" TileRect="10,10,20,20">
+                </C360Image>
+              </Background>
+            </Properties>
+
+            <Children>
+              <CXCheckBox Name="CheckBox" DockType="0" Margin="15,20,0,0" Text="不再弹出" Rect="0,0,80,15" AutoHeight="true" IconRect="0,0,15,15">
+                <Properties>
+                  <UnKnownNormal>
+                    <C360Image   DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="120,0,135,15"></C360Image>
+                  </UnKnownNormal>
+                  <UnKnownOn>
+                    <C360Image  DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="120,0,135,15"></C360Image>
+                  </UnKnownOn>
+                  <UnKnownDown>
+                    <C360Image  DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="120,0,135,15"></C360Image>
+                  </UnKnownDown>
+                  <UnCheckNormal>
+                    <C360Image  Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="0,0,15,15"></C360Image>
+                  </UnCheckNormal>
+                  <UnCheckOn>
+                    <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="15,0,30,15"></C360Image>
+                  </UnCheckOn>
+                  <UnCheckDown>
+                    <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="30,0,45,15"></C360Image>
+                  </UnCheckDown>
+                  <CheckNormal>
+                    <C360Image  Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="60,0,75,15"></C360Image>
+                  </CheckNormal>
+                  <CheckOn>
+                    <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="75,0,90,15"></C360Image>
+                  </CheckOn>
+                  <CheckDown>
+                    <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="90,0,105,15"></C360Image>
+                  </CheckDown>
+                </Properties>
+              </CXCheckBox>
+              <CXButton Name="BtnOK" DockType="2" Rect="0,0,80,34" AutoHeight="true" Margin="0,9,10,0" Text="确定" TextColor="255,255,255"  TextSize="-13" >
+                <Properties>
+                  <BkgNormal>
+                    <C360Image  Transparent="true" DrawType="0"  File="\MainWnd_5.0\update\UpdateDetailDlg\btn_ok.png" CutRect="0,0,80,34"></C360Image>
+                  </BkgNormal>
+                  <BkgOn>
+                    <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\update\UpdateDetailDlg\btn_ok.png" CutRect="80,0,160,34"></C360Image>
+                  </BkgOn>
+                  <BkgDown>
+                    <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\update\UpdateDetailDlg\btn_ok.png" CutRect="160,0,240,34"></C360Image>
+                  </BkgDown>
+                </Properties>
+              </CXButton>
+            </Children>
+          </CXDockPanel>
+
+          <CXScrollFrame Name="ScrollFrame" DockType="4" Margin="4,6,4,0" Step="220" NeedMouseOn="true" >
+            <Properties>
+              <VBkg>
+                <C360Image File="\MainWnd_5.0\scroll_bkg.png" Transparent="true" DrawType="2" TileRect="5,20,8,70"></C360Image>
+              </VBkg>
+              <VDrawNormal>
+                <C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+              </VDrawNormal>
+              <VDrawOn>
+                <C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+              </VDrawOn>
+              <VDrawDown>
+                <C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+              </VDrawDown>
+
+            </Properties>
+            <Children>
+              <CXStackPanel Name="InterceptPanel" Margin="0,0,0,0" StackType="0">
+                <Children>
+
+                </Children>
+              </CXStackPanel>
+            </Children>
+
+
+          </CXScrollFrame>
+
+        </Children>
+      </CXDockPanel>
+    </Children>
+  </CXUninstBaiduConfirmDlg>
+</UI>

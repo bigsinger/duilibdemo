@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CPowerUninstallConfirmDlg Name="MainWnd" Rect="0,0,340,180" Border="0,0,0,0">
+		<Children>
+			<CXDockPanel>
+				
+				<Children>
+					<CXDockPanel Name="TopPanel" DockType="1" Rect="0,0,0,32" NCHittest="2">
+						<Children>
+							<CXStatic NCHittest="2" Text="一键卸载" Bold="true" DockType="0" AutoHeight="true" AutoWidth="true" Margin="8,8,0,0" NormalColor="255,255,255"/>
+							<CXButton AutoHeight="true" Margin="0,0,5,0" Name="BtnClose" DockType="2" Rect="0,0,27,22">
+								<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="0,0,27,22"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="27,0,54,22" ></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png"  CutRect="54,0,81,22"></C360Image>
+											</BkgDown>
+										</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Name="BottomPanel" DockType="3" Rect="0,0,0,44">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255" />
+							</Background>
+						</Properties>
+						<Children>
+							<CXButton Text="一键卸载" AutoHeight="true" Margin="180,10,0,0" Name="BtnOK" DockType="0" Rect="0,0,70,26">
+								<Properties>
+									<BkgNormal>
+										<C360Image Transparent="true" File="\PowerUninstWnd\button_state4.png" CutRect="0,0,70,26"/>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image Transparent="true" File="\PowerUninstWnd\button_state4.png" CutRect="70,0,140,26"/>
+									</BkgOn>
+									<BkgDown>
+										<C360Image Transparent="true" File="\PowerUninstWnd\button_state4.png" CutRect="140,0,210,26"/>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+							<CXButton Text="取消" AutoHeight="true" Margin="0,10,10,0" Name="BtnCancel" DockType="2" Rect="0,0,70,26">
+								<Properties>
+									<BkgNormal>
+										<C360Image Transparent="true" File="\PowerUninstWnd\button_state4.png" CutRect="0,0,70,26"/>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image Transparent="true" File="\PowerUninstWnd\button_state4.png" CutRect="70,0,140,26"/>
+									</BkgOn>
+									<BkgDown>
+										<C360Image Transparent="true" File="\PowerUninstWnd\button_state4.png" CutRect="140,0,210,26"/>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Name="MiddlePanel" DockType="4">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255" />
+							</Background>
+						</Properties>
+						<Children>
+							<CXDockPanel DockType="0" Rect="0,0,48,48" Margin="18,20,0,0">
+								<Properties>
+									<Background>
+										<C360Image File="\PowerUninstWnd\confirm_logo.png" DrawType="0" Transparent="true"/>
+									</Background>
+								</Properties>
+							</CXDockPanel>
+							<CXStatic Text="一键卸载将瞬间清除软件，无需手动卸载。" DockType="1" AutoHeight="true" AutoWidth="true" Margin="20,18,0,0" NormalColor="0,0,0"/>
+							<CXStatic Name="SoftName" Text="QPlus" DockType="1" Rect="0,0,0,30" Bold="true" Margin="20,12,8,0"  NormalColor="242,127,2"/>
+							<!--CXProgressCtrlEx AutoHeight="true" Margin="12,10,0,0" Name="ProgressFix" DockType="0" Rect="0,0,200,10" TextColor="255,255,255">
+								<Properties>
+									<Background>
+										<C360Image File="\PowerUninstWnd\progress_bkg.png" Transparent="true" DrawType="2" TileRect="10,3,22,7"></C360Image>
+									</Background>
+									<ProgressImage>
+										<C360Image File="\PowerUninstWnd\progress_fore_blue.png" Transparent="true" DrawType="2" CutRect="0,0,24,10"></C360Image>
+									</ProgressImage>
+								</Properties>
+							</CXProgressCtrlEx!-->
+						</Children>
+					</CXDockPanel>
+				</Children>
+			</CXDockPanel>
+		</Children>
+	</CPowerUninstallConfirmDlg>
+</UI>

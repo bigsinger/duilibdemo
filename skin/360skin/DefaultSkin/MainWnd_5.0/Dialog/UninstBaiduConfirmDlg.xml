@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+  <CXUninstBaiduConfirmDlg Name="UninstBaiduConfirmDlg" Rect="0,0,560,530" Border="0,0,0,0">
+		
+		<Children>
+			<CXDockPanel NCHittest="2">				
+				<Children>
+					<CXDockPanel Name="TopBar" DockType="1" Rect="0,0,0,30" NCHittest="2">
+						<Children>
+							<CXFrame Rect="0,0,16,16" DockType="0"  Margin="10,5,5,5" NCHittest="2" MarginType="2">
+								<Properties>
+									<Background>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\softmanager.png" CutRect="0,0,16,16"></C360Image>
+									</Background>
+								</Properties>
+							</CXFrame>	
+							<CXStatic Name="StaticTitle" DockType="0" Text="卸载提醒" AutoWidth="true" NCHittest="2" AutoHeight="true" Margin="0,5,0,5" NormalColor="255,255,255" MarginType="2"></CXStatic>	
+							<CXButton Name="BtnClose" DockType="2" Rect="0,0,27,22" AutoHeight="true" Margin="0,0,5,0" >
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="0,0,27,22"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="27,0,54,22" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="54,0,81,22"></C360Image>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+										
+					<CXDockPanel Name="DockPanelContainer" DockType="4" Visible="true">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+
+            <Children>
+
+              <CXDockPanel Rect="0,0,522,496" DockType="1"  Margin="0,0,0,0" NCHittest="2" MarginType="1">
+                <Children>
+                  <CXFrame Rect="0,0,522,496" DockType="1"  Margin="0,0,0,0" NCHittest="2" MarginType="1">
+                    <Properties>
+                      <Background>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\Dialog\UninstBaiduPrompt.png"></C360Image>
+                      </Background>
+                    </Properties>
+                  </CXFrame>              
+                </Children>
+              </CXDockPanel>
+
+              <CXDockPanel Rect="0,0,210,49" DockType ="3" Margin="0,0,0,20" MarginType="1">
+                <Children>  
+                  <CXStatic Rect="0,0,60,30" DockType="0" Text="" Bold="true" Margin="0,0,0,0" MarginType="2" Size="-14" NormalColor="180,180,180"></CXStatic>
+                  
+                  <CXButton Name="BtnConfirm"  DockType="0" Rect="0,0,131,49" MarginType="2">
+                    <Properties>
+                      <BkgNormal>
+                        <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\Dialog\UninstButton.png" CutRect="0,0,131,49"></C360Image>
+                      </BkgNormal>
+                      <BkgOn>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\Dialog\UninstButton.png" CutRect="132,0,263,49" ></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\Dialog\UninstButton.png"  CutRect="264,0,395,49"></C360Image>
+                      </BkgDown>
+                    </Properties>
+                  </CXButton>
+                </Children>
+              </CXDockPanel>
+              
+              
+            </Children>						
+					</CXDockPanel>
+
+				</Children>
+			</CXDockPanel>
+		</Children>
+	</CXUninstBaiduConfirmDlg>
+</UI>

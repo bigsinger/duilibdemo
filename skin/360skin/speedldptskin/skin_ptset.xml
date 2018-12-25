@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<main_dlg width="320" height="200" img_src="bk_setting_old.png"  margin2="6" margin3="7" vmargin2="40" vmargin3="42">
+	<win_ctrl id="1000" name="text" x="30" y="40" text="您可以取消订阅不需要的内容："/>
+	
+	<win_ctrl id="1001" name="ptset" x="33" y="62" image="ptnews.png" text="新闻"/>
+	<win_ctrl id="1002" name="ptset" x="129" y="62" image="ptweather.png" text="天气"/>
+	<win_ctrl id="1003" name="ptset" x="227" y="62" image="ptgame.png" text="推荐"/>
+
+	<win_ctrl id="204" name="button_state4" x="130" y="154" text="保存" img_src="btn_greenL.png" block="4"/>
+	<win_ctrl id="2" name="button_state4" x="217" y="154" text="取消" img_src="btn_greenL.png" block="4"/>
+</main_dlg>

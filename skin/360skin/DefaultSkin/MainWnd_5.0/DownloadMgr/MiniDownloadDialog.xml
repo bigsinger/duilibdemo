@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CMiniDownloadDialog Name="MiniDownloadDialog" Rect="0,0,380,380" Border="0,0,0,0">
+		<Children>
+			<CXDockPanel NCHittest="2">
+				<Properties>
+					<Background>
+						<C360Image DrawType="2" File="\MainWnd_5.0\DownloadMgr\mini_bk.png" TileRect="14,38,16,40"></C360Image>
+					</Background>
+				</Properties>
+				<Children>
+					<CXDockPanel NCHittest="2" DockType="1" Rect="0,0,0,31" Margin="0,5,0,0">
+						<Children>
+							<CXFrame NCHittest="2" DockType="0" Rect="0,0,16,16" Margin="10,5,0,0">
+								<Properties>
+									<Background>
+										<C360Image DrawType="0" File="\MainWnd_5.0\common\softmanager.png"></C360Image>
+									</Background>
+								</Properties>
+							</CXFrame>	
+							<CXDockPanel NCHittest="2" DockType="0" Rect="0,0,200,0" Margin="0,5,10,5">
+								<Children>
+									<CXStatic NCHittest="2" DockType="0" Text="由360软件管家提供高速下载" Bold="true" AutoWidth="true" AutoHeight="true" Margin="5,0,0,5" NormalColor="255,255,255"></CXStatic>	
+								</Children>
+							</CXDockPanel>
+							<CXDockPanel DockType="2" Rect="0,0,55,0" Margin="5,1,5,5">
+								<Children>
+									<CXButton Name="ButtonClose" DockType="2" Rect="0,0,23,23" AutoHeight="true" Margin="0,0,5,0" CursorType="1">
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\DownloadMgr\mini_close.png" CutRect="0,0,25,23"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\DownloadMgr\mini_close.png" CutRect="25,0,50,23" ></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\DownloadMgr\mini_close.png" CutRect="50,0,75,23"></C360Image>
+											</BkgDown>
+										</Properties>
+									</CXButton>
+									<CXButton Name="ButtonMin" DockType="2" Rect="0,0,23,23" AutoHeight="true" Margin="0,0,0,0" CursorType="1">
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\DownloadMgr\mini_min.png" CutRect="0,0,25,23"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\DownloadMgr\mini_min.png" CutRect="25,0,50,23" ></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\DownloadMgr\mini_min.png" CutRect="50,0,75,23"></C360Image>
+											</BkgDown>
+										</Properties>
+									</CXButton>
+									
+								</Children>
+							</CXDockPanel>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Name="DockPanelBottom" DockType="3" Rect="0,0,0,60" Margin="4,0,4,2" >
+						<Properties>
+							<Background>
+								<C360Image DrawType="2" File="\MainWnd_5.0\DownloadMgr\mini_bottom_bk.png" TileRect="1,38,2,40"></C360Image>
+							</Background>
+						</Properties>
+						<Children>
+							<CXFrame DockType="0" Rect="0,0,32,32" Margin="10,16,0,0">
+								<Properties>
+									<Background>
+										<C360Image DrawType="0" File="\MainWnd_5.0\DownloadMgr\mini_info.png"></C360Image>
+									</Background>
+								</Properties>
+							</CXFrame>
+							<CXDockPanel DockType="0" Rect="0,0,230,60" Margin="2,0,0,0">
+								<Children>
+									<CXStatic DockType="1" Text="温馨提示：" AutoWidth="true" AutoHeight="true" Margin="10,13,0,0" NormalColor="0,0,0"></CXStatic>	
+									<CXStatic Name="StaticUpdate" DockType="1" Rect="0,0,215,20" Margin="10,0,0,0" NormalColor="0,0,0"></CXStatic>	
+								</Children>
+							</CXDockPanel>
+							<CXButton Name="ButtonGotoUpdate" Text="查看全部" AutoHeight="true" DockType="2" Rect="0,0,60,23" Margin="0,20,21,0" CursorType="1">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\DownloadMgr\update.png" CutRect="0,0,60,23"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\DownloadMgr\update.png" CutRect="60,0,120,23" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\DownloadMgr\update.png" CutRect="120,0,180,23"></C360Image>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+					<CXScrollFrame Name="ScrollFrame" DockType="4" Margin="0,0,5,0" Step="100" ScrollBarOverContent="true">
+						<Properties>
+							<VBkg>
+								<C360Image File="\MainWnd_5.0\scroll_bkg.png" Transparent="true" DrawType="2" TileRect="5,20,8,70"></C360Image>
+							</VBkg>
+							<VDrawNormal>
+								<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+							</VDrawNormal>
+							<VDrawOn>
+								<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+							</VDrawOn>
+							<VDrawDown>
+								<C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+							</VDrawDown>
+						</Properties>	
+						<Children>
+							<CXStackPanel Name="SectionList" Margin="0,0,-10,0" ></CXStackPanel>
+						</Children>				
+					</CXScrollFrame>
+				</Children>
+			</CXDockPanel>
+		</Children>
+	</CFloatWndDownloadMgr>
+</UI>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UI>
+  <Window name="DownloadGameRecord" width="603" height="270" autosize="0">
+    <ExtraAttri>
+      <Texture img_src="..\..\Image\PublicRes\back.png" h_margin2="8" h_margin3="95" v_margin2="50" v_margin3="172" />
+      <Light img_src="..\..\Image\WebApp\BackgroundLight_Webapp_p.png"  h_margin2="8" h_margin3="95" v_margin2="50" v_margin3="172"/>
+    </ExtraAttri>
+
+    <Static  x="30" y="8" name="Title" text="下载游戏存档" class="MF_WebAppText" margin="5, 0, 0, 0"/>
+
+    <Image name="Icon" x="8" y="8" img_src="..\..\Image\PublicRes\logo.png"/>
+    <SysButton id="5000" name="sysClose" img_src="..\..\Image\PublicRes\close.png" block="4" layout_x="margin" layout_xdata="0" y="0"/>
+
+    <LText x="20" y="50" name="Tip" class="Def_LinkText" text="请点击你要下载的游戏存档，或者直接启动游戏"/>
+
+    <Image name="WebAppIcon" x="504" y="90" img_src="..\..\Image\PublicRes\logo.png"/>
+    <SysButton x="500" y="191" id="5001" name="btn_launch" img_src="..\..\Image\WebApp\launchGame.png" block="4"/>
+    <CheckBox x="20" y="235" name="chkAutoTip" text="打开游戏时自动提示读档" id="2011" img_src="..\..\Image\PublicRes\checkbox.png" block="9"/>
+
+  </Window>
+</UI>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<main_dlg width="370" height="140" img_src="bk_setcity.png"  margin2="6" margin3="7">
+	<font id="1" b="1" size="12" name="Tahoma" color="255,255,255"/>
+	<win_ctrl id="104" name="image" x="7" y="4" w = "16" h="16" img_src="logo.png"/>
+	<win_ctrl id="101" name="text" x="24" y="4" text="$<1360开机小助手-设置$>"/>
+
+	<win_ctrl id="2" name="button_state3" x="335" y="1" w="27" h="22" img_src="sys_button_close.png" block="4"/>
+	<win_ctrl id="300" name="text" x="21" y="54" text="选择城市："/>
+
+	<win_ctrl id="204" name="button_state4" x="203" y="107"  w="70" h="23" text="保存" img_src="btn_greenL.png" block="4"/>
+	<win_ctrl id="2" name="button_state4" x="280" y="107"  w="70" h="23" text="取消" img_src="btn_greenL.png" block="4"/>
+</main_dlg>

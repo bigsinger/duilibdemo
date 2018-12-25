@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CXDockPanel Name="TabSoftDownload" Margin="30,10,30,10">
+		<Children>
+
+      <CXDockPanel Rect="0,0,0,170" DockType="1" Margin="0,12,0,0" MarginType="2">
+				<Properties>
+					<Background>
+						<C360Image File="\MainWnd_5.0\SettingDlg\group_bk.png" DrawType="2" TileRect="10,20,20,30">
+						</C360Image>
+					</Background>
+				</Properties>
+				<Children>
+          <CXStatic Rect="0,0,0,20" DockType="1" Text="下载设置" Bold="true" AutoWidth="true" AutoHeight="true" Margin="15,1,1,1" NormalColor="98,170,0" MarginType="2">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+					</CXStatic>	
+					<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,12,0,0" MarginType="2">
+						<Children>
+							<CXStatic DockType="0" Text="软件下载目录（" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>				
+							<CXStatic Name="OpenSoftDir" Text="打开目录" CursorType="1" DockType="0" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="90,175,235" MarginType="2"></CXStatic>
+							<CXStatic DockType="0" Text="）| 可用磁盘空间：" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>
+							<CXStatic Name="RemainSoftDiskSpace" DockType="0" Rect="0,0,100,0" Text="0.000000000000" AutoHeight="true" Margin="5,13,0,0" NormalColor="98,170,0" MarginType="2"></CXStatic>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Rect="0,0,0,24" DockType="1" Margin="30,10,0,0" MarginType="2">
+						<Children>
+							<CXDockPanel Rect="0,0,275,20" DockType="0" Margin="0,0,0,0" MarginType="2">
+								<Properties>
+									<Background>
+										<C360Image File="\MainWnd_5.0\SettingDlg\edit.png" DrawType="2" TileRect="5,5,15,15">
+										</C360Image>
+									</Background>
+								</Properties>
+								<Children>
+									<CXEdit Name="SoftPathEdit" Rect="0,0,265,17" DockType="4"  Margin="5,1,5,1" Style="2048" Enable="false" AutoHeight="true" MarginType="2"></CXEdit>
+								</Children>
+							</CXDockPanel>
+							<CXButton Name="SelectSoftDirButton" Text="选择目录" Rect="0,0,74,24" DockType="0" AutoWidth="true" AutoHeight="true" Margin="10,5,5,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="0,0,74,24"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="74,0,148,24"></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="148,0,222,24"></C360Image>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+							<CXStatic Name="SetDefaultSoftDir" Text="恢复默认目录" CursorType="1" DockType="0" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="90,175,235" MarginType="2"></CXStatic>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Rect="0,0,0,15" DockType="1" Margin="25,0,0,0" MarginType="2">
+						<Children>
+							<CXStatic Name="SoftErrorTips" DockType="0" Rect="0,0,400,0" Text="*" AutoHeight="true" Margin="5,0,0,0" NormalColor="200,0,0" MarginType="2"></CXStatic>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,0,0,0" MarginType="2">
+						<Children>
+							<CXStatic DockType="0" Text="应用下载目录（" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>		
+							<CXStatic Name="OpenAppDir" Text="打开目录" CursorType="1" DockType="0" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="90,175,235" MarginType="2"></CXStatic>		
+							<CXStatic DockType="0" Text="）| 可用磁盘空间：" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>
+							<CXStatic Name="RemainAppDiskSpace" DockType="0" Rect="0,0,100,0" Text="0.000000000000" AutoHeight="true" Margin="5,13,0,0" NormalColor="98,170,0" MarginType="2"></CXStatic>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Rect="0,0,0,24" DockType="1" Margin="30,5,0,0" MarginType="2">
+						<Children>
+							<CXDockPanel Rect="0,0,275,20" DockType="0" Margin="0,0,0,0" MarginType="2">
+								<Properties>
+									<Background>
+										<C360Image File="\MainWnd_5.0\SettingDlg\edit.png" DrawType="2" TileRect="5,5,15,15">
+										</C360Image>
+									</Background>
+								</Properties>
+								<Children>
+									<CXEdit Name="AppPathEdit" Rect="0,0,265,17" DockType="4"  Margin="5,1,5,1" Style="2048"  Enable="false" AutoHeight="true" MarginType="2"></CXEdit>
+								</Children>
+							</CXDockPanel>
+							<CXButton Name="SelectAppDirButton" Text="选择目录" Rect="0,0,74,24" DockType="0" AutoWidth="true" AutoHeight="true" Margin="10,5,5,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="0,0,74,24"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="74,0,148,24"></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="148,0,222,24"></C360Image>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+							<CXStatic Name="SetDefaultAppDir" Text="恢复默认目录" CursorType="1" DockType="0" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="90,175,235" MarginType="2"></CXStatic>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Rect="0,0,0,15" DockType="1" Margin="25,0,0,0" MarginType="2">
+						<Children>
+							<CXStatic Name="AppErrorTips" DockType="0" Rect="0,0,400,0" Text="*" AutoHeight="true" Margin="5,0,0,0" NormalColor="200,0,0" MarginType="2"></CXStatic>
+						</Children>
+					</CXDockPanel>
+				</Children>
+			</CXDockPanel>
+			<CXDockPanel Rect="0,0,0,60" DockType="1" Margin="0,12,0,0" MarginType="2">
+				<Properties>
+					<Background>
+						<C360Image File="\MainWnd_5.0\SettingDlg\group_bk.png" DrawType="2" TileRect="10,20,20,30">
+						</C360Image>
+					</Background>
+				</Properties>
+				<Children>
+					<CXStatic Rect="0,0,0,20" DockType="1" Text="下载提示" Bold="true" AutoWidth="true" AutoHeight="true" Margin="10,1,1,1" NormalColor="98,170,0" MarginType="2">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+					</CXStatic>	
+					<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,10,0,0" MarginType="2">
+						<Children>
+							<CXStatic DockType="0" Text="下载前通过提示软件是否收费、含有插件等信息" Rect="0,0,360,20" AutoWidth="false" AutoHeight="true" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>	
+							<CXButton Name="TipsRadio" Rect="0,0,74,17" CursorType="1" DockType="0" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown>
+									<BkgNormal2>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal2>
+									<BkgOn2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn2>
+									<BkgDown2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown2>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+				</Children>
+			</CXDockPanel>
+    
+      <CXDockPanel Name="ThunderPanel" Rect="0,0,0,60" DockType="1" Margin="0,12,0,0" MarginType="2">
+        <Properties>
+          <Background>
+            <C360Image File="\MainWnd_5.0\SettingDlg\group_bk.png" DrawType="2" TileRect="10,20,20,30">
+            </C360Image>
+          </Background>
+        </Properties>
+        <Children>
+          <CXStatic Rect="0,0,0,20" DockType="1" Text="下载模式" Bold="true" AutoWidth="true" AutoHeight="true" Margin="10,1,1,1" NormalColor="98,170,0" MarginType="2">
+            <Properties>
+              <Background>
+                <CXBrush Color="255,255,255"></CXBrush>
+              </Background>
+            </Properties>
+          </CXStatic>
+          <CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,10,0,0" MarginType="2">
+            <Children>
+              <CXStatic DockType="0" Text="使用迅雷高速下载模式下载软件、游戏" Rect="0,0,360,20" AutoWidth="false" AutoHeight="true" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>
+              <CXButton Name="ThunderRadio" Rect="0,0,74,17" CursorType="1" DockType="0" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+                <Properties>
+                  <BkgNormal>
+                    <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="0,0,74,17"></C360Image>
+                  </BkgNormal>
+                  <BkgOn>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="74,0,148,17" ></C360Image>
+                  </BkgOn>
+                  <BkgDown>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="148,0,222,17"></C360Image>
+                  </BkgDown>
+                  <BkgNormal2>
+                    <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="0,0,74,17"></C360Image>
+                  </BkgNormal2>
+                  <BkgOn2>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="74,0,148,17" ></C360Image>
+                  </BkgOn2>
+                  <BkgDown2>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="148,0,222,17"></C360Image>
+                  </BkgDown2>
+                </Properties>
+              </CXButton>
+            </Children>
+          </CXDockPanel>
+        </Children>
+      </CXDockPanel>
+
+		</Children>
+	</CXDockPanel>
+
+</UI>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

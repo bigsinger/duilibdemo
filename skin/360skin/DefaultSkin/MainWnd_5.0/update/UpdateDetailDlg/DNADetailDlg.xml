@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+  <CDNADetailDlg Name="DNADetailDlg" Border="0,0,0,0">
+    <Children>
+      <CXDockPanel>
+        <Properties>
+          <Background>
+            <C360Image File="\MainWnd_5.0\update\UpdateDetailDlg\DlgTransparentBk.png" Transparent="true" DrawType="1"></C360Image>
+          </Background>
+        </Properties>
+        <Children>
+          
+          
+          <CXDockPanel Name="DlgBody" DockType="5" Rect="0,0,500,590" NCHittest="2" Margin="0,25,0,0">
+            <Properties>
+              <Background>
+                <C360Image File="\MainWnd_5.0\update\UpdateDetailDlg\MainDlgBk.png" Transparent="true" DrawType="2" TileRect="10,145,80,190"></C360Image>
+              </Background>
+            </Properties>
+            <Children>
+              
+              <CXDockPanel Name="SummaryPanel" DockType="1" Rect="0,0,0,140" Margin="4,2,4,4">
+                <Properties>
+                  <Background>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\update\UpdateDetailDlg\FlagVerImportUpdate.png"></C360Image>
+                  </Background>
+                </Properties>
+                <Children>
+
+                  <CXDockPanel DockType="1" Rect="0,0,0,30">
+                    <Children>
+                      <CXButton Name="BtnClose" AutoHeight="true" Margin="0,5,5,0" DockType="2" Rect="0,0,21,21">
+                        <Properties>
+                          <BkgNormal>
+                            <C360Image  Transparent="true" File="\MainWnd_5.0\update\UpdateDetailDlg\close.png" CutRect="0,0,20,20"></C360Image>
+                          </BkgNormal>
+                          <BkgOn>
+                            <C360Image Transparent="true" File="\MainWnd_5.0\update\UpdateDetailDlg\close.png" CutRect="21,0,41,20"></C360Image>
+                          </BkgOn>
+                          <BkgDown>
+                            <C360Image Transparent="true" File="\MainWnd_5.0\update\UpdateDetailDlg\close.png" CutRect="42,0,62,20"></C360Image>
+                          </BkgDown>
+                        </Properties>
+                      </CXButton>
+                    </Children>
+                  </CXDockPanel>
+
+                  <CXTabCtrl Name="TabCtrl" DockType="3" Rect="0,0,0,28" Margin="0,0,0,1" Select="1">
+                    <Children>
+
+                      <CXTabItem Name="TabDNA" Text="软件DNA" Rect="0,0,80,28" Margin="10,0,0,0" Data="1">
+                        <Properties>
+                          <BkgNormal>
+                            <C360Image File="\MainWnd_5.0\update\UpdateDetailDlg\btn_tab.png" CutRect="0,0,80,28"></C360Image>
+                          </BkgNormal>
+                          <BkgOn>
+                            <C360Image File="\MainWnd_5.0\update\UpdateDetailDlg\btn_tab.png" CutRect="80,0,160,28"></C360Image>
+                          </BkgOn>
+                          <BkgDown>
+                            <C360Image File="\MainWnd_5.0\update\UpdateDetailDlg\btn_tab.png" CutRect="160,0,240,28"></C360Image>
+                          </BkgDown>
+                        </Properties>
+                      </CXTabItem>
+
+                    </Children>
+                  </CXTabCtrl>
+                  
+                  <CXImageFrame Name="SoftImg" DockType="0" Rect="0,0,48,48" AutoHeight="true" AutoWidth="true" Margin="40,15,0,0" >
+                    <Properties>
+                      <Background>
+                        <C360Image DrawType="1" Transparent="true" File=""></C360Image>
+                      </Background>
+                    </Properties>
+                  </CXImageFrame>
+
+                  <CXButton Name="BtnUpdate" Text="已安装" AutoHeight="true" Margin="0,15,40,0" DockType="2" Rect="0,0,112,43" TextColor="255,255,255" TextSize="-16">
+                    <Properties>
+                      <BkgNormal>
+                        <C360Image  Transparent="true" File="\MainWnd_5.0\update\UpdateDetailDlg\btn_install.png" CutRect="0,0,111,43"></C360Image>
+                      </BkgNormal>
+                      <BkgOn>
+                        <C360Image Transparent="true" File="\MainWnd_5.0\update\UpdateDetailDlg\btn_install.png" CutRect="112,0,223,43"></C360Image>
+                      </BkgOn>
+                      <BkgDown>
+                        <C360Image Transparent="true" File="\MainWnd_5.0\update\UpdateDetailDlg\btn_install.png" CutRect="224,0,336,43"></C360Image>
+                      </BkgDown>
+                    </Properties>
+                  </CXButton>
+
+
+                  
+                  <CXDockPanel Name="MainSummaryPanel" DockType="4" Margin="20,0,0,10" >
+                    <Children>
+
+                      <CXDockPanel Name="SoftInfoPanel" DockType="4" >
+                        <Children>
+                          <CXStatic Name="SoftName" Text="--" Bold="true" Size="-13" DockType="1" Rect="0,0,0,30"></CXStatic>
+
+                          <CXStackPanel DockType="1" StackType="1" Rect="0,0,0,22" SensitiveChildSize="true" Margin="0,0,0,0">
+                            <Children>
+                              <CXStatic Text="版本：" DockType="0" Color="153,153,153" AutoWidth="true"></CXStatic>
+                              <CXStatic Name="NewVersion" Text="1.0.0.1" DockType="0" Rect="0,0,300,15"></CXStatic>
+
+                              <CXStatic Text="大小：" DockType="0" Color="153,153,153" AutoWidth="true"  Margin="10,0,0,0"></CXStatic>
+                              <CXStatic Name="SoftSize" Text="1024 M" DockType="0" Rect="0,0,200,15"></CXStatic>
+                            </Children>
+                          </CXStackPanel>
+
+                          <CXDockPanel DockType="1" Rect="0,0,0,22" Margin="0,0,0,0">
+                            <Children>
+                              <CXStatic Text="最近更新：" DockType="0" Color="153,153,153" AutoWidth="true"></CXStatic>
+                              <CXStatic Name="UpdateTime" Text="2014.04.01" DockType="0" Rect="0,0,300,15"></CXStatic>
+                            </Children>
+                          </CXDockPanel>
+
+                        </Children>
+                      </CXDockPanel>
+
+                    </Children>
+                  </CXDockPanel>
+                  
+                </Children>
+              </CXDockPanel>
+
+              <CXScrollFrame Name="DNAFrame" DockType="4" Margin="8,2,8,10">
+                <Properties>
+                  <VBkg>
+                    <C360Image File="\MainWnd_5.0\scroll_bkg.png" Transparent="true" DrawType="2" TileRect="5,20,8,70"></C360Image>
+                  </VBkg>
+                  <VDrawNormal>
+                    <C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+                  </VDrawNormal>
+                  <VDrawOn>
+                    <C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+                  </VDrawOn>
+                  <VDrawDown>
+                    <C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+                  </VDrawDown>
+                </Properties>
+                <Children>
+                  <CXStackPanel Name="DNAPanel" Margin="4,0,4,0" StackType="0">
+                    <Children>
+                    </Children>
+                  </CXStackPanel>
+                </Children>
+              </CXScrollFrame>
+
+            </Children>
+          </CXDockPanel>     
+          
+          
+        </Children>
+      </CXDockPanel>
+    </Children>
+  </CDNADetailDlg>
+</UI>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<main_dlg width="320" height="240" img_src="background_green.png"   margin2="6" margin3="19"  vmargin2="110" vmargin3="114" >
+
+	<font id="1" b="1" size="32" name="Tahoma" color="255,255,0"/>
+	<font id="2" b="1" size="18" color="255,255,0"/>
+	<font id="3" size="12" color="255,255,255"/>
+	<font id="4" b="1" size="12" color="221,88,0"/>
+	<font id="5" b="1" color="255,102,0"/>
+	<font id="6" size="12" color="0,0,0"/>
+	<font id="7" b="1" size="16" color="221,88,0"/>
+
+	<font id="10" b="1" size="12" color="255,222,0"/>
+	<font id="11" b="1" color="255,222,0"/>
+	<font id="12" b="1" size="16" color="255,222,0"/>
+
+	<win_ctrl id="33272" name="color_button" x="73" y="171" img_src="large_optimize.png" block="3" text="立即体验" col="4473924" font="yahei18" topmargin="-3"/>
+	<win_ctrl id="709" name="ltext" x="76" y="146" text="{&amp;#color=0x00f0f0f0;}{&amp;#font=13}使用360安全浏览器，上网更快～"/>
+
+	<win_ctrl id="700" name="skinbutton" x="239" y="0"  img_src="change_skin.png" block="3" visible="0" dotImage="skin_dot.png"/>
+
+    <win_ctrl id="244" name="ltext" x="11" y="7" text="{&amp;#color=0x00f0f0f0}360开机小助手"   />
+	<win_ctrl id="245" name="button_state4" x="293" y="0"  img_src="skin_wnd_close.png" block="3" />
+	<win_ctrl id="701" name="button_state4" x="266" y="0"  img_src="app_setting.png" block="3" />
+
+    <win_ctrl id="2000" name="animboottime" x="88" y="58" w="225" h="80" img_src="boottime_bk.png" minateImage="large_min.png" secondImage="large_second.png"  digitImage="large_number.png" min2image="large_minate.png" dotimage="grid_dot.png" smallnumber="grid_small_number.png" />
+</main_dlg>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CUselessPopupWnd Name="UselessPopupWnd" Rect="0,0,364,315" Border="0,0,0,0">
+		<Children>
+			<CXDockPanel NCHittest="2">
+				<Properties>
+					<Background>
+						<C360Image File="\UselessPopupWnd\bkg.png" Transparent="true" DrawType="0" >
+						</C360Image>
+					</Background>
+				</Properties>
+				<Children>
+					<CXDockPanel Name="TitleBar" DockType="1" Rect="0,0,0,28" NCHittest="2">
+						<Children>
+							<CXFrame DockType="0" AutoHeight="true" Margin="10,10,0,0" Rect="0,0,16,16">
+								<Properties>
+									<Background>
+										<C360Image File="\softmanager.png" Transparent="true" DrawType="0" >
+										</C360Image>
+									</Background>
+								</Properties>
+							</CXFrame>
+							<CXStatic NCHittest="2" Text="360软件管家 - 不常用软件提醒" DockType="0" AutoHeight="true" AutoWidth="true" Margin="8,8,0,0" NormalColor="61,143,221">
+							</CXStatic>
+							<CXButton Name="ButtonClose" AutoHeight="true" Margin="0,5,10,0"  DockType="2" Rect="0,0,21,21">
+								<Properties>
+									<BkgNormal>
+										<C360Image  Transparent="true" File="\UselessPopupWnd\btn_close.png" CutRect="0,0,21,22"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image Transparent="true" File="\UselessPopupWnd\btn_close.png" CutRect="21,0,42,22"></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image Transparent="true" File="\UselessPopupWnd\btn_close.png" CutRect="42,0,63,22"></C360Image>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel DockType="1" Rect="0,0,0,55" Margin="0,10,0,0">
+						<Children>
+							<CXFrame Rect="0,0,48,48" DockType="0" Margin="15,0,0,0">
+								<Properties>
+									<Background>
+										<C360Image File="\UselessPopupWnd\logo.png" Transparent="true" DrawType="0" >
+										</C360Image>
+									</Background>
+								</Properties>
+							</CXFrame>
+							<CXDockPanel DockType="1" Rect="0,0,0,20" Margin="10,6,0,0">
+								<Children>
+									<CXStatic Text="发现" DockType="0" AutoHeight="true" AutoWidth="true" Bold="false"></CXStatic>
+									<CXStatic Name="StaticCount" Text="6" DockType="0" AutoHeight="true" AutoWidth="true" NormalColor="240,135,53"  Bold="true" Margin="3,0,0,0"></CXStatic>
+									<CXStatic Text="款不常用软件,共占用" DockType="0" AutoHeight="true" AutoWidth="true"  Bold="false"  Margin="3,0,0,0"></CXStatic>
+									<CXStatic Name="StaticSize" Text="813.59MB" DockType="0" AutoHeight="true" AutoWidth="true" NormalColor="240,135,53"  Bold="true"  Margin="3,0,0,0"></CXStatic>
+									<CXStatic Text="空间" DockType="0" AutoHeight="true" AutoWidth="true"  Bold="false"  Margin="3,0,0,0" ></CXStatic>
+								</Children>
+							</CXDockPanel>
+							<CXStatic Text="及时清理可释放系统空间，加快运行速度!" DockType="1" AutoHeight="true" AutoWidth="true" Margin="10,2,0,0" NormalColor="128,128,128">
+							</CXStatic>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel DockType="3" Rect="0,0,0,48" Margin="0,0,0,10">         
+						<Children>
+							<CXStatic Name="StaticIgnore" Text="以后不再提醒" DockType="0" AutoHeight="true" AutoWidth="true" Margin="20,18,0,0" NormalColor="61,143,221" CursorType="1">
+							</CXStatic>
+							<CXButton Name="ButtonDetail" DockType="2" AutoHeight="true" Rect="0,0,81,32" Text="查看详情" Margin="0,8,17,0">
+								<Properties>
+									<BkgNormal>
+										<C360Image  Transparent="true" File="\UselessPopupWnd\btn_detail.png" CutRect="0,0,81,32"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image Transparent="true" File="\UselessPopupWnd\btn_detail.png" CutRect="81,0,162,32"></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image Transparent="true" File="\UselessPopupWnd\btn_detail.png" CutRect="162,0,243,32"></C360Image>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+					<CXScrollFrame Name="ScrollFrame" DockType="4" Margin="12,10,3,3" Step="51">
+						<Properties>
+									<VBkg>
+										<C360Image File="\UselessPopupWnd\scroll_bkg.png" Transparent="true" DrawType="2" TileRect="5,5,6,8"></C360Image>
+									</VBkg>
+									<VDrawNormal>
+										<C360Image File="\UselessPopupWnd\scroll.png" Transparent="true" DrawType="2" TileRect="5,5,6,8" ></C360Image>
+									</VDrawNormal>
+									<VDrawOn>
+										<C360Image File="\UselessPopupWnd\scroll.png" Transparent="true" DrawType="2" TileRect="5,5,6,8" ></C360Image>
+									</VDrawOn>
+									<VDrawDown>
+										<C360Image File="\UselessPopupWnd\scroll.png" Transparent="true" DrawType="2" TileRect="5,5,6,8" ></C360Image>
+									</VDrawDown>
+
+						</Properties>
+						<Children>
+							<CXStackPanel StackType="0" Name="StackPanel">
+								
+							</CXStackPanel>
+						</Children>
+						
+					</CXScrollFrame>
+				</Children>
+			</CXDockPanel>
+		</Children>
+	</CUselessPopupWnd>
+</UI>

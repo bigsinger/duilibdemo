@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UI>
+  <Window name="MainDlg">
+    <ExtraAttri>
+      <Texture img_src="..\..\Image\PublicRes\back.png" h_margin2="8" h_margin3="95" v_margin2="50" v_margin3="172" />
+      <!-- <Light img_src="..\PublicRes\Dlg_BackgroundLight.png"  h_margin2="8" h_margin3="9" v_margin2="50" v_margin3="51"/> -->
+    </ExtraAttri>
+
+    <Static name="Title" x="10" y="4" text="" class="MF_WebAppText" margin="0,-1,0,0" />
+
+    <SysButton id="2" name="sysClose" tooltip="关闭" img_src="..\..\Image\PublicRes\close.png" block="4" layout_x="margin" layout_xdata="0" y="0" />
+  </Window>
+</UI>

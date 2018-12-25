@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CXFeedBackDlg Name="FeedBackDlg" Rect="0,0,366,272" Border="0,0,0,0">
+		
+		<Children>
+			<CXDockPanel NCHittest="2">
+				
+				<Children>
+					<CXDockPanel Name="TopBar" DockType="1" Rect="0,0,0,30" NCHittest="2">
+						<Children>
+							<CXFrame Rect="0,0,16,16" DockType="0"  Margin="10,5,5,5" NCHittest="2" MarginType="2">
+								<Properties>
+									<Background>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\softmanager.png" CutRect="0,0,16,16"></C360Image>
+									</Background>
+								</Properties>
+							</CXFrame>	
+							<CXStatic Name="StaticTitle" DockType="0" Text="360软件管家 - 软件问题反馈" AutoWidth="true" NCHittest="2" AutoHeight="true" Margin="0,5,0,5" NormalColor="255,255,255" MarginType="2"></CXStatic>	
+							<CXButton Name="BtnClose" DockType="2" Rect="0,0,27,22" AutoHeight="true" Margin="0,0,5,0" >
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="0,0,27,22"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="27,0,54,22" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="54,0,81,22"></C360Image>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+										
+					<CXDockPanel Name="DockPanelContaner" DockType="4" Visible="true">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+						
+						<Children>
+							<CXDockPanel DockType="1" Rect="0,0,0,30" Margin="0,5,0,0" >
+								<Children>
+									<CXStatic  Name="StaticSoftName" DockType="0" AutoWidth="true" Size="-14" Border="true" AutoHeight="true" Margin="18,0,0,0" NormalColor="0,128,0" MarginType="2">
+									</CXStatic>		
+								</Children>							
+							</CXDockPanel>
+							
+							
+							
+							<CXDockPanel Rect="0,0,0,70" DockType="1" MarginType="2">
+								<Children>
+									<CXDockPanel DockType="0" Rect="0,0,60,0" >
+										<Children>
+											<CXStatic Rect="0,0,0,20" DockType="1" Text="问题：" Bold="true" Margin="18,10,0,0">	
+											</CXStatic>	
+										</Children>
+									</CXDockPanel>
+									
+									<CXDockPanel DockType="4">
+										<Children>
+											<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="0,10,0,0" MarginType="2">
+												<Children>	
+													<CXCheckBox Name="RadioErrorDownload" Radio="true" Rect="0,0,80,17" Text="无法下载" DockType="0" Check="true" IconRect="0,0,15,15" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+														<Properties>
+															<CheckNormal>
+																<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="60,0,75,15"></C360Image>
+															</CheckNormal>
+															<CheckOn>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="75,0,90,15"></C360Image>
+															</CheckOn>
+															<CheckDown>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="90,0,105,15"></C360Image>
+															</CheckDown>
+															<UnCheckNormal>
+																<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="0,0,15,15"></C360Image>
+															</UnCheckNormal>
+															<UnCheckOn>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="15,0,30,15"></C360Image>
+															</UnCheckOn>
+															<UnCheckDown>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="30,0,45,15"></C360Image>
+															</UnCheckDown>
+														</Properties>
+													</CXCheckBox>
+													<CXCheckBox Name="RadioOldVersion" Radio="true" Rect="0,0,80,17" Text="版本过旧" DockType="0" IconRect="0,0,15,15" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+														<Properties>
+															<CheckNormal>
+																<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="60,0,75,15"></C360Image>
+															</CheckNormal>
+															<CheckOn>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="75,0,90,15"></C360Image>
+															</CheckOn>
+															<CheckDown>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="90,0,105,15"></C360Image>
+															</CheckDown>
+															<UnCheckNormal>
+																<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="0,0,15,15"></C360Image>
+															</UnCheckNormal>
+															<UnCheckOn>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="15,0,30,15"></C360Image>
+															</UnCheckOn>
+															<UnCheckDown>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="30,0,45,15"></C360Image>
+															</UnCheckDown>
+														</Properties>
+													</CXCheckBox>
+													
+													<CXCheckBox Name="RadioAbstractError" Radio="true" Rect="0,0,100,17" Text="内容编辑错误" DockType="0" IconRect="0,0,15,15" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+														<Properties>
+															<CheckNormal>
+																<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="60,0,75,15"></C360Image>
+															</CheckNormal>
+															<CheckOn>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="75,0,90,15"></C360Image>
+															</CheckOn>
+															<CheckDown>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="90,0,105,15"></C360Image>
+															</CheckDown>
+															<UnCheckNormal>
+																<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="0,0,15,15"></C360Image>
+															</UnCheckNormal>
+															<UnCheckOn>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="15,0,30,15"></C360Image>
+															</UnCheckOn>
+															<UnCheckDown>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="30,0,45,15"></C360Image>
+															</UnCheckDown>
+														</Properties>
+													</CXCheckBox>
+													
+												</Children>
+											</CXDockPanel>
+											<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="0,5,0,0" MarginType="2">
+												<Children>	
+													<CXCheckBox Name="RadioRunException" Radio="true" Rect="0,0,80,17" Text="运行异常" DockType="0" IconRect="0,0,15,15" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+														<Properties>
+															<CheckNormal>
+																<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="60,0,75,15"></C360Image>
+															</CheckNormal>
+															<CheckOn>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="75,0,90,15"></C360Image>
+															</CheckOn>
+															<CheckDown>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="90,0,105,15"></C360Image>
+															</CheckDown>
+															<UnCheckNormal>
+																<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="0,0,15,15"></C360Image>
+															</UnCheckNormal>
+															<UnCheckOn>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="15,0,30,15"></C360Image>
+															</UnCheckOn>
+															<UnCheckDown>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="30,0,45,15"></C360Image>
+															</UnCheckDown>
+														</Properties>
+													</CXCheckBox>
+													
+													<CXCheckBox Name="RadioReportVirus" Radio="true" Rect="0,0,80,17" Text="软件报毒" DockType="0" IconRect="0,0,15,15" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+														<Properties>
+															<CheckNormal>
+																<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="60,0,75,15"></C360Image>
+															</CheckNormal>
+															<CheckOn>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="75,0,90,15"></C360Image>
+															</CheckOn>
+															<CheckDown>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="90,0,105,15"></C360Image>
+															</CheckDown>
+															<UnCheckNormal>
+																<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="0,0,15,15"></C360Image>
+															</UnCheckNormal>
+															<UnCheckOn>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="15,0,30,15"></C360Image>
+															</UnCheckOn>
+															<UnCheckDown>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="30,0,45,15"></C360Image>
+															</UnCheckDown>
+														</Properties>
+													</CXCheckBox>
+													
+													
+													<CXCheckBox Name="RadioOtherErrors" Radio="true" Rect="0,0,80,17" Text="其他问题" DockType="0" IconRect="0,0,15,15" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+														<Properties>
+															<CheckNormal>
+																<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="60,0,75,15"></C360Image>
+															</CheckNormal>
+															<CheckOn>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="75,0,90,15"></C360Image>
+															</CheckOn>
+															<CheckDown>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="90,0,105,15"></C360Image>
+															</CheckDown>
+															<UnCheckNormal>
+																<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="0,0,15,15"></C360Image>
+															</UnCheckNormal>
+															<UnCheckOn>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="15,0,30,15"></C360Image>
+															</UnCheckOn>
+															<UnCheckDown>
+																<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radiobutton.png" CutRect="30,0,45,15"></C360Image>
+															</UnCheckDown>
+														</Properties>
+													</CXCheckBox>
+													
+												</Children>
+											</CXDockPanel>
+										</Children>
+									</CXDockPanel>
+									
+								</Children>
+							</CXDockPanel>
+
+							<CXDockPanel DockType="1" Rect="0,0,0,88">
+								<Children>
+									<CXDockPanel DockType="0" Rect="0,0,60,0" >
+										<Children>
+											<CXStatic Rect="0,0,0,20" DockType="1" Text="说明：" Bold="true" Margin="18,0,0,0">	
+											</CXStatic>	
+										</Children>
+									</CXDockPanel>
+													
+									<CXDockPanel DockType="4">
+										<Children>
+											<CXDockPanel Rect="0,0,275,80" DockType="1" Margin="0,0,30,0" MarginType="2">
+												<Properties>
+													<Background>
+														<C360Image File="\MainWnd_5.0\SettingDlg\edit.png" DrawType="2" TileRect="5,5,15,15">
+														</C360Image>
+													</Background>
+												</Properties>
+												<Children>
+													<CXEdit Name="EditErrorDesc" Rect="0,0,265,80" DockType="4"  Style="2101316" Margin="2,1,2,1"  ></CXEdit>
+												</Children>
+											</CXDockPanel>
+										</Children>
+
+									</CXDockPanel>
+								</Children>
+							</CXDockPanel>
+							<CXDockPanel Name="DockPanelComitMsg" DockType="1" Rect="0,0,0,40" Visible="false" >
+								<Children>
+									<CXDockPanel DockType="0" Rect="0,0,16,0" Margin="58,0,0,0" >
+										<Children>
+											<CXFrame Rect="0,0,16,0" >
+												<Properties>
+													<Background>
+														<C360Image File="\MainWnd_5.0\common\icons.png" DrawType="0" CutRect="384,0,400,16">
+														</C360Image>
+													</Background>
+												</Properties>
+											</CXFrame>
+										</Children>
+									</CXDockPanel>
+									<CXDockPanel DockType="4" >
+										<Children>
+											<CXStatic Text="内容不能为空" Margin="5,0,0,0" Multiline="true" Color="255,0,0">
+											</CXStatic>
+										</Children>
+									</CXDockPanel>
+									
+								</Children>
+							</CXDockPanel>
+							
+							<CXDockPanel DockType="3" Rect="0,0,0,30" Margin="0,0,0,10">
+								<Children>
+									<CXButton Name="BtnCommit" Text="提交" DockType="2" Rect="0,0,70,26" AutoHeight="true" Margin="0,0,20,0" >
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\common\button.png" CutRect="0,0,70,26"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\button.png" CutRect="70,0,140,26" ></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\button.png"  CutRect="140,0,210,26"></C360Image>
+											</BkgDown>
+										</Properties>
+									</CXButton>
+								</Children>
+							</CXDockPanel>
+						</Children>
+						
+					</CXDockPanel>
+					<CXDockPanel Name="DockPanelSetUserName" DockType="4" Visible="false">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+						<Children>
+							<CXDockPanel DockType="1" Rect="0,0,0,40">
+								<Children>
+									<CXStatic Text="设置用户名"  Margin="22,10,0,5" Color="24,149,47" Size="-14">
+									</CXStatic>
+								</Children>
+							</CXDockPanel>
+							<CXDockPanel DockType="1" Rect="0,0,0,40" Margin="19,0,0,0" >
+								<Children>
+									<CXDockPanel DockType="0" Rect="0,0,16,0">
+										<Children>
+											<CXFrame Rect="0,0,16,0" >
+												<Properties>
+													<Background>
+														<C360Image File="\MainWnd_5.0\common\icons.png" DrawType="0" CutRect="400,0,416,16">
+														</C360Image>
+													</Background>
+												</Properties>
+											</CXFrame>
+										</Children>
+									</CXDockPanel>
+									<CXDockPanel DockType="4" >
+										<Children>
+											<CXStatic Text="您反馈的问题将提交至360论坛，请您设置论坛用户名方便工作人员回复您"  Margin="4,0,40,0" Multiline="true">
+											</CXStatic>
+										</Children>
+									</CXDockPanel>
+									
+								</Children>
+							</CXDockPanel>
+							<CXDockPanel Rect="0,0,295,25" DockType="1" Margin="35,10,40,0" MarginType="2">
+								<Properties>
+									<Background>
+										<C360Image File="\MainWnd_5.0\SettingDlg\edit.png" DrawType="2" TileRect="5,5,15,15">
+										</C360Image>
+									</Background>
+								</Properties>
+								<Children>
+									<CXEdit Name="EditUserName" DefaultText="请输入您的用户名（2-14个字符）" Rect="0,5,285,23" DockType="4"   Margin="2,1,2,1"  ></CXEdit>
+								</Children>
+							</CXDockPanel>
+							<CXDockPanel Name="DockPanelUserNameErrMsg" DockType="1" Rect="0,0,0,40" Visible="false" >
+								<Children>
+									<CXDockPanel DockType="0" Rect="0,0,16,0" Margin="38,5,0,0" >
+										<Children>
+											<CXFrame Rect="0,0,16,0" >
+												<Properties>
+													<Background>
+														<C360Image File="\MainWnd_5.0\common\icons.png" DrawType="0" CutRect="384,0,400,16">
+														</C360Image>
+													</Background>
+												</Properties>
+											</CXFrame>
+										</Children>
+									</CXDockPanel>
+									<CXDockPanel DockType="4" >
+										<Children>
+											<CXStatic Name="StaticUserNameErrMsg"  Margin="5,5,40,20"  Rect="0,0,150,20"  Color="255,0,0">
+											</CXStatic>
+										</Children>
+									</CXDockPanel>
+									
+								</Children>
+							</CXDockPanel>
+							<CXDockPanel DockType="3" Rect="0,0,0,26"  Margin="0,0,0,20" >
+								<Children>
+									<CXButton Name="BtnUserName" Text="确定" DockType="2" Rect="0,0,70,26"  Margin="0,0,20,0"  >
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\common\button.png" CutRect="0,0,70,26"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\button.png" CutRect="70,0,140,26" ></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\button.png"  CutRect="140,0,210,26"></C360Image>
+											</BkgDown>
+										</Properties>
+									</CXButton>
+								</Children>
+							</CXDockPanel>
+						</Children>
+					</CXDockPanel>
+					
+					<CXDockPanel Name="DockPanelCommited" DockType="4" Visible="false">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+						<Children>
+							<CXDockPanel DockType="5" Rect="0,0,240,60">
+								<Children>
+									<CXDockPanel DockType="1" Rect="0,0,0,34" >
+										<Children>
+											<CXFrame Name="icon1"Rect="0,0,14,14" DockType="0"  Margin="10,3,8,8">
+												<Properties>
+													<Background>
+														<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\uninstall_suc.png" CutRect="0,0,14,14"></C360Image>
+													</Background>
+												</Properties>
+											</CXFrame>
+											<CXFrame Name="icon2" Rect="0,0,16,16" DockType="0"  Margin="10,3,8,8" Visible="false" >
+												<Properties>
+													<Background>
+														<C360Image File="\MainWnd_5.0\common\icons.png" DrawType="0" CutRect="384,0,400,16"></C360Image>
+													</Background>
+												</Properties>
+											</CXFrame>
+											<CXStatic Name="StaticComit" Text="软件问题已提交， 感谢反馈！" DockType="0"  Style="4" Rect="0,0,220,17" Size="-16" Margin="0,0,0,13">
+											</CXStatic>
+										</Children>
+									</CXDockPanel>
+									<CXDockPanel DockType="1" Rect="0,0,0,20" >
+										<Children>
+											<CXStatic Name="StaticLookup" Rect="0,0,80,20" Text="点击查看" NormalColor="7,173,221" Size="-16" Underline="true" CursorType="1" MarginType="1">
+											</CXStatic>
+										</Children>
+										
+									</CXDockPanel>
+										
+								</Children>
+							</CXDockPanel>
+							<CXButton Name="BtnColse2" DockType="3" Text="关闭" TextOffset="-10,0" Rect="0,0,70,26" AutoHeight="true" Margin="264,0,20,15">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\common\button.png" CutRect="0,0,70,26"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\button.png" CutRect="70,0,140,26" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\button.png"  CutRect="140,0,210,26"></C360Image>
+									</BkgDown>
+								</Properties>
+							</CXButton>
+						</Children>
+					
+					</CXDockPanel>
+					
+					
+				</Children>
+			</CXDockPanel>
+		</Children>
+	</CXFeedBackDlg>
+</UI>

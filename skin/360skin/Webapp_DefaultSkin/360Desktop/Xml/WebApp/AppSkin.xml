@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UI>
+  <Menu name="HtmlContext" class="MF_MenuText">
+    <Background img_src="..\..\Image\Menu\Menu_Main.png" h_margin2="4" h_margin3="46" v_margin2="11" v_margin3="101"/>
+    <ItemBG img_src="..\..\Image\Menu\Menu_Selectbar.png" h_margin2="2" h_margin3="94" v_margin2="2" v_margin3="24"/>
+    <Item id="2001" text="复制"   enable="true" check="true" img_src="..\..\Image\Menu\Menu_Icon_Copy.png" block="2"/>
+    <Item id="2002" text="剪切"   enable="true" check="true" img_src="..\..\Image\Menu\Menu_Icon_Cut.png" block="2"/>
+    <Item id="2003" text="粘贴"   enable="true" check="true" img_src="..\..\Image\Menu\Menu_Icon_Paste.png" block="2"/>
+    <Item id="2004" text="全选"   enable="true" check="true" img_src="..\..\Image\Menu\Menu_Icon_Selectall.png" block="2"/>
+    <Item id="2005" text="另存为" enable="true" check="true" img_src="..\..\Image\Menu\Menu_Icon_Save.png" block="2"/>
+  </Menu>
+  <Menu name="AppShareContext" class="MF_MenuText">
+    <Background img_src="..\..\Image\Menu\Menu_Main.png" h_margin2="25" h_margin3="63" v_margin2="3" v_margin3="83"/>
+    <ItemBG img_src="..\..\Image\Menu\Menu_Selectbar.png" h_margin2="2" h_margin3="94" v_margin2="2" v_margin3="24"/>
+    <Item id="11011" text="分享给好友"   enable="true" check="false" img_src="..\..\Image\WebApp\msn.png" block="2"/>
+    <Item id="11007" text="新浪微博"   enable="true" check="false" img_src="..\..\Image\WebApp\sina-weibo.png" block="2"/>
+    <Item id="11008" text="人人网"   enable="true" check="false" img_src="..\..\Image\WebApp\renren.png" block="2"/>
+    <Item id="11009" text="网易微博"   enable="true" check="false" img_src="..\..\Image\WebApp\wangyi.png" block="2"/>
+    <!--Item id="11010" text="举报此应用"   enable="true" check="false" img_src="reportbug.png" block="2"/-->
+  </Menu>
+  <Window name="MainDlg"  width="702" height="473">
+    <ExtraAttri>
+      <Texture img_src="..\..\Image\PublicRes\back.png" h_margin2="8" h_margin3="95" v_margin2="50" v_margin3="172" />
+      <!-- <Light img_src="game\BackgroundLight_Webapp.png"  h_margin2="8" h_margin3="95" v_margin2="50" v_margin3="172"/> -->
+    </ExtraAttri>
+    <IconImage name="IconImage" x="5" y="5"/>
+    <!--<StackPanel orit="H" x="0" y="4" layout_x="margin" layout_xdata="95">
+      <Image img_src="setting.png" margin="0,0,1,0"/>
+      <LText name="Setting" text="{&amp;#a=button:5002}设置" margin="0,1,0,0"/>
+  </StackPanel>-->
+    <StackPanel orit="H" x="25" y="6">
+      <StackPanel orit="H" x="28" y="0">
+        <Static name="Title" text="Web应用" class="MF_WebAppText" margin="0,-1,0,0" />
+      </StackPanel>
+
+      <StackPanel name="BwsToolbar" orit="H" x="12" y="1" margin="10, 0, 0, 0">
+        <SysButton id="12001" name="BwsBack" 	tooltip="后退" img_src="..\..\Image\WebApp\WebB_Back.png" block="4" margin="0, -2, 0, 0"/>
+        <SysButton id="12002" name="BwsForward" tooltip="前进" img_src="..\..\Image\WebApp\WebB_Forward.png" block="4" margin="0, -2, 4, 0"/>
+        <SysButton id="12003" name="BwsRefresh" tooltip="刷新" img_src="..\..\Image\WebApp\WebB_Refresh.png" block="4" margin="0, -2, 0, 0"/>
+      </StackPanel>
+
+      <StackPanel name="AssisMgr" orit="H" x="12" y="1" margin="10, 0, 0, 0">
+        <SysButton id="12004" name="AcctMgrBtn" 	 img_src="..\..\Image\WebApp\Assist\Assis_acct_mgr.png" block="3" margin="5, -7, 0, 0"/>
+      </StackPanel>
+
+    </StackPanel>
+    <Panel name="AppViewPanel" x="1" y="26" width="300" height="200" layout_xdata="1" layout_ydata="1" layout_x="stretch" layout_y="stretch"/>
+    <StackPanel orit="H" x="0" y="0" name="TitleButton" layout_x="margin" layout_xdata="0">
+
+      <SysButton id="11039" name="appcenterButton" tooltip="更多应用" img_src="..\..\Image\WebApp\appcenter.png" block="4" margin="0, 0, 0, 0"/>
+      <SelectedButton id="11041" name="eyeprotectButton" tooltip="眼睛卫士" img_src="..\..\Image\WebApp\Eye_Protect.png" block="4" margin="0, 0, 0, 0"/>
+      <SysButton id="11003" name="SettingButton" tooltip="设置" img_src="..\..\Image\PublicRes\set.png" block="4" margin="0, 0, 4, 0"/>
+
+      <!--<SysButton id="11006" name="shareApp" tooltip="分享" img_src="share1.png" block="3" margin="0, 1, 4, 0"/>-->
+      <SysButton id="11001" name="sysMin" tooltip="最小化" img_src="..\..\Image\PublicRes\min2.png" block="4"/>
+      <SysButton id="11005" name="FullScreenButton" tooltip="全屏" img_src="..\..\Image\WebApp\fullscreenex.png" block="4"/>
+      <SysButton id="32773" name="sysMax" tooltip="最大化" tooltip1="恢复" img_src="..\..\Image\PublicRes\max2.png" block="4"/>
+      <SysButton id="11000" name="sysClose" tooltip="关闭" img_src="..\..\Image\PublicRes\close.png" block="4"/>
+    </StackPanel>
+
+    <Image name="LoadingImage" img_src="..\..\Image\WebApp\Apploading_Back.png"/>
+    <AnimImage name="AnimImage" img_src="..\..\Image\WebApp\Apploading_Loading.png" block="12"/>
+  </Window>
+
+</UI>

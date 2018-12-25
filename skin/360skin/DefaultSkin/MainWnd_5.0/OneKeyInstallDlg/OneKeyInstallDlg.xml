@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<COneKeyInstallWnd Name="OneKeyInstallDlg" Rect="0,0,520,370" Border="0,0,0,0">
+		<Children>
+			<CXDockPanel Name="BkgPanel">
+				<Properties>
+					<Background>
+						<C360Image DrawType="2" File="\MainWnd_5.0\OneKeyInstallDlg\bk.png" TileRect="4,205,512,228"></C360Image>
+					</Background>
+				</Properties>
+				<Children>
+					<CXDockPanel Name="TitlePanel" DockType="1" Rect="0,0,0,30" NCHittest="2">
+						<Children>
+							<CXDockPanel DockType="0" Rect="0,0,300,0" Margin="0,0,7,0" NCHittest="2">
+								<Children>
+									<CXFrame Rect="0,0,16,16" DockType="0"  Margin="10,5,5,5" MarginType="2" NCHittest="2">
+										<Properties>
+											<Background>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\softmanager.png" CutRect="0,0,16,16"></C360Image>
+											</Background>
+										</Properties>
+									</CXFrame>	
+									<CXStatic NCHittest="2" Name="StaticTitle" DockType="0" Text="一键安装目录设置" AutoWidth="true" AutoHeight="true" Margin="0,5,0,5" NormalColor="255,255,255" MarginType="2"></CXStatic>	
+								</Children>
+							</CXDockPanel>
+							<CXDockPanel  Name="ClosePanel" DockType="2" Rect="0,0,55,0" Margin="0,-1,7,0" NCHittest="2">
+								<Children>
+									<CXButton Name="BtnClose" DockType="2" Rect="0,0,27,22" AutoHeight="true" Margin="0,0,0,0" >
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="0,0,27,22"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="27,0,54,22" ></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="54,0,81,22"></C360Image>
+											</BkgDown>
+										</Properties>
+									</CXButton>
+								</Children>
+							</CXDockPanel>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Name="NumPanel" DockType="1" Rect="0,0,0,155" NCHittest="2"  >
+						<Children>
+							<CXDockPanel Name="AnimationPanel" NCHittest="2" DockType="1" Rect="0,0,0,58" Margin="0,18,0,0"  >
+								<Children>
+									<CXNumAnimation Name="XNumCtrl_1" DockType="2" Rect="0,0,140,60"  Margin="0,12,60,0"  ></CXNumAnimation>
+									<CXNumAnimation Name="XNumCtrl_2" DockType="2" Rect="0,0,140,60"  Margin="0,12,65,0"  ></CXNumAnimation>
+									<CXNumAnimation Name="XNumCtrl_3" DockType="0" Rect="0,0,70,60"   Margin="30,12,0,0"  ></CXNumAnimation>
+								</Children>
+							</CXDockPanel>
+							<CXDockPanel Name="NumPanel2" DockType="3" Rect="0,0,0,65" Margin="0,0,0,0"  NCHittest="2" >
+								<Children>
+									<CXStatic Name="XStaticNum" DockType="2"  NCHittest="2" AutoWidth="true"   Margin="0,0,120,8"  Size="-26" Text="18" NormalColor="255,234,30" Border="true" ></CXStatic>
+								</Children>
+							</CXDockPanel>
+							
+						</Children>
+						
+					</CXDockPanel>
+					<CXDockPanel Name="BtnExpendPanel" DockType="1" Rect="0,0,0,30" NCHittest="2" >
+						<Children>
+							<CXButton Name="BtnExpend" Rect="0,0,45,30" CursorType="1" DockType="2" Margin="0,0,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\OneKeyInstallDlg\expend.png" CutRect="0,0,45,30"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\OneKeyInstallDlg\expend.png" CutRect="45,0,90,30" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+											<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\OneKeyInstallDlg\expend.png" CutRect="90,0,135,30"></C360Image>
+									</BkgDown>
+									<BkgNormal2>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\OneKeyInstallDlg\retract.png" CutRect="0,0,45,30"></C360Image>
+									</BkgNormal2>
+									<BkgOn2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\OneKeyInstallDlg\retract.png" CutRect="45,0,90,30" ></C360Image>
+									</BkgOn2>
+									<BkgDown2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\OneKeyInstallDlg\retract.png" CutRect="90,0,135,30"></C360Image>
+									</BkgDown2>
+								</Properties>
+							</CXButton>						
+						</Children>
+					</CXDockPanel>
+					
+					<CXDockPanel Name="BottomAnimationPanel" DockType="1" Rect="0,0,520,132" Visible="true"  >
+						<Children>
+							<CXDockPanel Name="StaticSetPanel" Rect="0,0,0,20" DockType="1" Margin="40,5,0,0" MarginType="2" NCHittest="2">
+								<Children>
+									<CXStatic DockType="0" Text="软件一键安装目录" AutoWidth="true" AutoHeight="true" Margin="0,13,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>				
+									<CXStatic Name="SetDefaultSoftDir" DockType="0" Text="| 恢复默认" CursorType="1" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="51,138,229" MarginType="2"></CXStatic>
+								</Children>
+							</CXDockPanel>
+							
+							<CXDockPanel Name="EditPanel" Rect="0,0,0,24" DockType="1" Margin="40,6,0,0" MarginType="2" NCHittest="2">
+								<Children>
+									<CXDockPanel Name="CenterEditPanel" Rect="0,0,360,20" DockType="0" Margin="0,0,0,0" MarginType="2">
+										<Properties>
+											<Background>
+												<C360Image File="\MainWnd_5.0\SettingDlg\edit.png" DrawType="2" TileRect="5,5,15,15">
+												</C360Image>
+											</Background>
+										</Properties>
+										<Children>
+											<CXEdit Name="SoftPathEdit" Rect="0,0,265,17" DockType="4"  Margin="5,1,5,1" Style="2048" Enable="false" AutoHeight="true" MarginType="2"></CXEdit>
+										</Children>
+									</CXDockPanel>
+									<CXButton Name="SelectSoftDirButton" Text="更改目录" Rect="0,0,74,24" DockType="0" AutoWidth="true" AutoHeight="true" Margin="10,5,5,0" NormalColor="0,0,0" MarginType="2">
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="0,0,74,24"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="74,0,148,24"></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="148,0,222,24"></C360Image>
+											</BkgDown>
+										</Properties>
+									</CXButton>
+			
+								</Children>
+							</CXDockPanel>
+							
+							<CXDockPanel Name="DiskSpaceInfoPanel" Rect="0,0,0,20" DockType="1" Margin="40,8,0,0" MarginType="2" NCHittest="2" >
+								<Children>
+									<CXStatic Name="SoftDiskSpace" DockType="0" Text="盘可用空间：" AutoWidth="true" AutoHeight="true" Margin="0,0,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>				
+									<CXStatic Name="SpaceSize" DockType="0" Text="89.39G"  AutoWidth="true" AutoHeight="true" Margin="5,0,0,0" NormalColor="87,147,0" MarginType="2"></CXStatic>
+									<CXStatic Name="DirInfo" DockType="0" Text=" 建议选择"  AutoWidth="true" AutoHeight="true" Margin="5,0,0,0" NormalColor="157,157,157" MarginType="2"></CXStatic>
+								</Children>
+							</CXDockPanel>	
+
+							<CXDockPanel Name="BottomPanel" Rect="0,0,0,36" DockType="1" Margin="40,15,0,20" MarginType="2" NCHittest="2"  >
+								<Children>
+									<CXCheckBox Name="OneKeyPathLock" Radio="false"  DockType="0"  Rect="0,0,180,17" IconRect="0,0,15,15" Text="以后都安装到该目录下"  Margin="0,10,0,0" NormalColor="0,0,0" MarginType="2">
+										<Properties>
+											<UnCheckNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\checkbox.png" CutRect="0,0,15,15"></C360Image>
+											</UnCheckNormal>
+											<UnCheckOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\checkbox.png" CutRect="15,0,30,15" ></C360Image>
+											</UnCheckOn>
+											<UnCheckDown>
+													<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\checkbox.png" CutRect="30,0,45,15"></C360Image>
+											</UnCheckDown>
+											<CheckNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\checkbox.png" CutRect="60,0,75,15"></C360Image>
+											</CheckNormal>
+											<CheckOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\checkbox.png" CutRect="75,0,90,15" ></C360Image>
+											</CheckOn>
+											<CheckDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\checkbox.png" CutRect="90,0,105,15"></C360Image>
+											</CheckDown>
+										</Properties>
+									</CXCheckBox>
+									<CXButton Name="BtnInstall" DockType="2" Rect="0,0,110,36" Text="继续安装" TextSize="-16" TextColor="255,255,255" Margin="0,0,30,0"  MarginType="2">
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\OneKeyInstallDlg\btn.png" CutRect="0,0,110,35" ></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\OneKeyInstallDlg\btn.png" CutRect="110,0,220,35" ></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\OneKeyInstallDlg\btn.png" CutRect="220,0,330,35" ></C360Image>
+											</BkgDown>
+										</Properties>
+									</CXButton>
+								</Children>
+							</CXDockPanel>						
+						</Children>
+					</CXDockPanel>
+					
+					<CXDockPanel Name="BottomAnimationPanel2" DockType="1" Rect="0,0,520,60" Visible="false" NCHittest="2">
+						<Children>
+							<CXButton Name="BtnInstall2" DockType="2" Rect="0,0,110,36" Text="继续安装" TextSize="-16" TextColor="255,255,255" Margin="0,0,30,0"  MarginType="2">
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\OneKeyInstallDlg\btn.png" CutRect="0,0,110,35" ></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\OneKeyInstallDlg\btn.png" CutRect="110,0,220,35" ></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\OneKeyInstallDlg\btn.png" CutRect="220,0,330,35" ></C360Image>
+											</BkgDown>
+										</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+					
+					
+					
+
+
+				</Children>
+			</CXDockPanel>
+		</Children>
+	</COneKeyInstallWnd>
+</UI>

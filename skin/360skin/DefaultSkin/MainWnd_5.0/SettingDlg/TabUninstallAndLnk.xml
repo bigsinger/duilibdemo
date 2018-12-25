@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CXDockPanel Name="TabUninstallAndLnk" Margin="30,10,30,10">
+		<Children>
+			<CXDockPanel Rect="0,0,0,200" DockType="1" Margin="0,5,0,0" MarginType="2">
+				<Properties>
+					<Background>
+						<C360Image File="\MainWnd_5.0\SettingDlg\group_bk.png" DrawType="2" TileRect="10,20,20,30">
+						</C360Image>
+					</Background>
+				</Properties>
+				<Children>
+					<CXStatic Rect="0,0,0,20" DockType="1" Text="强力卸载" Bold="true" AutoWidth="true" AutoHeight="true" Margin="10,1,1,1" NormalColor="98,170,0" MarginType="2">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+					</CXStatic>	
+					<CXDockPanel Rect="0,0,0,30" DockType="1" Margin="25,10,0,0" MarginType="2">
+						<Children>
+							<CXStatic DockType="0" Text="控制面板中添加“360强力卸载”图标" CursorType="0" Rect="0,0,360,20" AutoWidth="false" AutoHeight="true" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>	
+							<CXButton Name="UninstToControlPane" Rect="0,0,74,17" CursorType="1" DockType="0" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown>
+									<BkgNormal2>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal2>
+									<BkgOn2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn2>
+									<BkgDown2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown2>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Rect="0,0,0,30" DockType="1" Margin="25,5,0,0" MarginType="2">
+						<Children>
+							<CXStatic DockType="0" Text="开始菜单中添加“强力卸载电脑中的软件”菜单项" Rect="0,0,360,20" AutoWidth="false" AutoHeight="true" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>	
+							<CXButton Name="UninstToStartMenu" Rect="0,0,74,17" CursorType="1" DockType="0" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown>
+									<BkgNormal2>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal2>
+									<BkgOn2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn2>
+									<BkgDown2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown2>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Rect="0,0,0,30" Name="UninstToDesktopRightClickMenuFrame" DockType="1" Margin="25,5,0,0" MarginType="2">
+						<Children>
+							<CXStatic DockType="0" Text="桌面快捷方式右键添加“强力卸载此软件”选项" Rect="0,0,360,20" AutoWidth="false" AutoHeight="true" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>	
+							<CXButton Name="UninstToDesktopRightClickMenu" CursorType="1" Rect="0,0,74,17" DockType="0" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown>
+									<BkgNormal2>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal2>
+									<BkgOn2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn2>
+									<BkgDown2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown2>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+          <CXDockPanel Rect="0,0,0,30" DockType="1" Margin="25,5,0,0" MarginType="2">
+            <Children>
+              <CXStatic DockType="0" Text="软件一键卸载功能" Rect="0,0,360,20" AutoWidth="false" AutoHeight="true" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>
+              <CXButton Name="PowerUninst" CursorType="1" Rect="0,0,74,17" DockType="0" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+                <Properties>
+                  <BkgNormal>
+                    <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="0,0,74,17"></C360Image>
+                  </BkgNormal>
+                  <BkgOn>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="74,0,148,17" ></C360Image>
+                  </BkgOn>
+                  <BkgDown>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="148,0,222,17"></C360Image>
+                  </BkgDown>
+                  <BkgNormal2>
+                    <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="0,0,74,17"></C360Image>
+                  </BkgNormal2>
+                  <BkgOn2>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="74,0,148,17" ></C360Image>
+                  </BkgOn2>
+                  <BkgDown2>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="148,0,222,17"></C360Image>
+                  </BkgDown2>
+                </Properties>
+              </CXButton>
+            </Children>
+          </CXDockPanel>
+
+          <CXDockPanel Rect="0,0,0,30" DockType="1" Margin="25,5,0,0" MarginType="2">
+            <Children>
+              <CXStatic DockType="0" Text="软件卸载后强力清扫功能" Rect="0,0,360,20" AutoWidth="false" AutoHeight="true" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>
+              <CXButton Name="UninstFltSpan" Rect="0,0,74,17" CursorType="1" DockType="0" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+                <Properties>
+                  <BkgNormal>
+                    <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="0,0,74,17"></C360Image>
+                  </BkgNormal>
+                  <BkgOn>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="74,0,148,17" ></C360Image>
+                  </BkgOn>
+                  <BkgDown>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="148,0,222,17"></C360Image>
+                  </BkgDown>
+                  <BkgNormal2>
+                    <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="0,0,74,17"></C360Image>
+                  </BkgNormal2>
+                  <BkgOn2>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="74,0,148,17" ></C360Image>
+                  </BkgOn2>
+                  <BkgDown2>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="148,0,222,17"></C360Image>
+                  </BkgDown2>
+                </Properties>
+              </CXButton>
+            </Children>
+          </CXDockPanel>
+				</Children>
+			</CXDockPanel>
+		</Children>
+	</CXDockPanel>
+
+</UI>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

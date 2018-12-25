@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+  <COneKeyCollInstalled Name="OneKeyColl" Rect="0,0,480,430" Border="0,0,0,0">
+
+    <Children>
+      <CXDockPanel Name="RootPanel" NCHittest="2">
+        <Children>
+          <CXDockPanel Name="Caption" NCHittest="2" DockType="1" Rect="0,0,0,30">
+              <Children>
+                <CXFrame Rect="0,0,16,16" DockType="0"  Margin="10,5,5,5" MarginType="2" NCHittest="2">
+                  <Properties>
+                    <Background>
+                      <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\common\softmanager.png" CutRect="0,0,16,16"></C360Image>
+                    </Background>
+                  </Properties>
+                </CXFrame>
+                <CXStatic NCHittest="2" Name="StaticTitle" DockType="0" Text="360软件管家 - 软件收藏" AutoWidth="true" AutoHeight="true" Margin="0,5,0,5" NormalColor="255,255,255" MarginType="2"></CXStatic>
+
+
+                <CXDockPanel DockType="2" Rect="0,0,55,0" Margin="0,-1,7,0" NCHittest="2">
+                  <Children>
+                    <CXButton Name="BtnClose" DockType="2" Rect="0,0,27,22" AutoHeight="true" Margin="0,0,0,0" >
+                      <Properties>
+                        <BkgNormal>
+                          <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="0,0,27,22"></C360Image>
+                        </BkgNormal>
+                        <BkgOn>
+                          <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="27,0,54,22" ></C360Image>
+                        </BkgOn>
+                        <BkgDown>
+                          <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\sysbtn_close.png" CutRect="54,0,81,22"></C360Image>
+                        </BkgDown>
+                      </Properties>
+                    </CXButton>
+                  </Children>
+                </CXDockPanel>
+              </Children>
+          </CXDockPanel>
+          <CXDockPanel Name="Caption2" DockType="1" Rect="0,0,0,70">
+            <Properties>
+              <Background>
+                <CXBrush Color="238,238,238"/>
+              </Background>
+            </Properties>
+            <Children>
+
+              <CXFrame Name="Icon" Rect="0,0,48,48" Margin="20,16,0,0"  DockType="0" MarginType="1">
+                <Properties>
+                  <Background>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SoftSchedule\OneKeyIcon.png" CutRect="0,0,48,48"></C360Image>
+                  </Background>
+                </Properties>
+              </CXFrame>
+              <CXStatic Name="Title" Text="收藏已安装软件到我的装机单"
+                        Rect="0,0,300,20" Bold="1"
+                        AutoWidth="1" AutoHeight="1"
+                        Margin="5,6,0,0" MarginType="1"
+                        DockType="0" Size="-16" Color="50,50,50"/>
+            </Children>
+          </CXDockPanel>
+
+          <CXDockPanel Name="Caption" DockType="1" Rect="0,0,0,1">
+            <Properties>
+              <Background>
+                <CXBrush Color="200,200,200"/>
+              </Background>
+            </Properties>
+          </CXDockPanel>
+          
+          <CXDockPanel Name="Bottom" DockType="3" Rect="0,0,0,40">
+            <Properties>
+              <Background>
+                <CXBrush Color="238,238,238"/>
+              </Background>
+            </Properties>
+            <Children>
+
+              <CXCheckBox Name="CheckBoxAll" DockType="0" Margin="15,20,0,0" Text="全选" Rect="0,0,54,15" AutoHeight="true" TextColor="37,116,194"  IconRect="0,0,15,15" MarginType="2">
+                <Properties>
+                  <UnKnownNormal>
+                    <C360Image   DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="120,0,135,15"></C360Image>
+                  </UnKnownNormal>
+                  <UnKnownOn>
+                    <C360Image  DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="120,0,135,15"></C360Image>
+                  </UnKnownOn>
+                  <UnKnownDown>
+                    <C360Image  DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="120,0,135,15"></C360Image>
+                  </UnKnownDown>
+                  <UnCheckNormal>
+                    <C360Image  Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="0,0,15,15"></C360Image>
+                  </UnCheckNormal>
+                  <UnCheckOn>
+                    <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="15,0,30,15"></C360Image>
+                  </UnCheckOn>
+                  <UnCheckDown>
+                    <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="30,0,45,15"></C360Image>
+                  </UnCheckDown>
+                  <CheckNormal>
+                    <C360Image  Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="60,0,75,15"></C360Image>
+                  </CheckNormal>
+                  <CheckOn>
+                    <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="75,0,90,15"></C360Image>
+                  </CheckOn>
+                  <CheckDown>
+                    <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="90,0,105,15"></C360Image>
+                  </CheckDown>
+                  <UnKnownNormal>
+                    <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\checkbox.png" CutRect="120,0,135,15"></C360Image>
+                  </UnKnownNormal>
+                </Properties>
+              </CXCheckBox>
+
+              <CXButton Name="ButtonCollAll" DockType="2" Rect="0,0,110,31" Text="收藏全部已选" AutoHeight="true" Margin="0,9,10,0" TextColor="255,255,255"  TextSize="-13" MarginType="2">
+                <Properties>
+                  <BkgNormal>
+                    <C360Image  Transparent="true" DrawType="0"  File="\MainWnd_5.0\update\button_update_all.png" CutRect="0,0,110,31"></C360Image>
+                  </BkgNormal>
+                  <BkgOn>
+                    <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\update\button_update_all.png" CutRect="110,0,220,31"></C360Image>
+                  </BkgOn>
+                  <BkgDown>
+                    <C360Image Transparent="true" DrawType="0"  File="\MainWnd_5.0\update\button_update_all.png" CutRect="220,0,330,31"></C360Image>
+                  </BkgDown>
+                </Properties>
+              </CXButton>
+              
+            </Children>
+          </CXDockPanel>
+          
+          <CXDockPanel Name="Caption"  DockType="3" Rect="0,0,0,1">
+            <Properties>
+              <Background>
+                <CXBrush Color="200,200,200"/>
+              </Background>
+            </Properties>
+          </CXDockPanel>
+
+
+          <CXScrollFrame Name="ScrollContent" DockType="4" Rect="0,0,0,0">
+            <Properties>
+              <Background>
+                <CXBrush Color="255,255,255"/>
+              </Background>
+            </Properties>
+            <Children>
+              <CXStackPanel Name="StackContent">
+                
+              </CXStackPanel>
+            </Children>
+          </CXScrollFrame>
+        </Children>
+      </CXDockPanel>
+    </Children>
+  </COneKeyCollInstalled>
+</UI>

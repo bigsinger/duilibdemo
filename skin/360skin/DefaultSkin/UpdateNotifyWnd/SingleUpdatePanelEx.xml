@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+  <CXDockPanel Name="SingleUpdatePanelEx" DockType="4" Margin="0,0,0,0">
+    <Properties>
+      <Background>
+        <C360Image File="\UpdateNotifyWnd\MainDlgBk.png" Transparent="true" DrawType="2" TileRect="2,82,5,88"></C360Image>
+      </Background>
+    </Properties>
+    <Children>
+		<CXDockPanel Name="SummaryPanel" DockType="1" Rect="0,0,0,78">
+			<Children>
+				<CXDockPanel Name="LeftPanel" DockType="0" Rect="0,0,74,0">
+					<Children>
+						<CXImageFrame Name="SoftImg" DockType="0" Rect="0,0,48,48" AutoHeight="true" MarginType="2" Margin="15,15,10,0">
+							<Properties>
+								<Background>
+									<C360Image DrawType="1" Transparent="true" File=""></C360Image>
+								</Background>
+							</Properties>
+						</CXImageFrame>
+					</Children>
+				 </CXDockPanel>
+				 
+				<CXDockPanel Name="DownloadPanel" DockType="2" Rect="0,0,286,74" Visible="false">
+				</CXDockPanel>
+				
+				<CXDockPanel Name="RightPanel" DockType="4" >
+					<Children>
+						<CXButton Name="BtnUpdate" Text="立即升级" AutoHeight="true" Margin="0,25,20,0" DockType="2" MarginType="1" Bold="true" Rect="0,0,90,27" TextColor="255,255,255" TextSize="-14">
+							<Properties>
+							  <BkgNormal>
+								<C360Image  Transparent="true" File="\UpdateNotifyWnd\btnUpdate.png" CutRect="0,0,90,27"></C360Image>
+							  </BkgNormal>
+							  <BkgOn>
+								<C360Image Transparent="true" File="\UpdateNotifyWnd\btnUpdate.png" CutRect="90,0,180,27"></C360Image>
+							  </BkgOn>
+							  <BkgDown>
+								<C360Image Transparent="true" File="\UpdateNotifyWnd\btnUpdate.png" CutRect="180,0,270,27"></C360Image>
+							  </BkgDown>
+							</Properties>
+						</CXButton>
+						<CXDockPanel Name="SoftInfoPanel" DockType="4" >
+							<Children>
+							  <CXStatic Name="SoftName" Text="--" DockType="1" Bold="true" Size="-15" Rect="0,0,165,0" Margin="0,16,0,5" AutoHeight="true" ></CXStatic>
+
+							  <CXDockPanel DockType="1" Rect="0,0,0,22">
+								<Children>
+								  <CXStatic Text="大小：" DockType="0" AutoWidth="true"></CXStatic>
+								  <CXStatic Name="SoftSize" Text="0 M" DockType="0" AutoWidth="true"></CXStatic>
+								</Children>
+							  </CXDockPanel>
+							</Children>
+						</CXDockPanel>
+					</Children>
+				</CXDockPanel>
+				
+			</Children>
+		</CXDockPanel>
+
+      <CXScrollFrame Name="ContentFrame" DockType="4" Margin="0,5,3,5">
+        <Properties>
+          <VBkg>
+            <C360Image File="\MainWnd_5.0\scroll_bkg.png" Transparent="true" DrawType="2" TileRect="5,20,8,70"></C360Image>
+          </VBkg>
+          <VDrawNormal>
+            <C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+          </VDrawNormal>
+          <VDrawOn>
+            <C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+          </VDrawOn>
+          <VDrawDown>
+            <C360Image File="\MainWnd_5.0\scroll.png" Transparent="true" DrawType="2" TileRect="5,7,8,15" ></C360Image>
+          </VDrawDown>
+        </Properties>
+        <Children>
+          <CXStackPanel Name="ContentPanel" Margin="4,0,4,0" StackType="0">
+            <Children>              
+              <CXStackPanel StackType="1" Rect="0,0,0,22" SensitiveChildSize="true" Margin="20,6,0,0">
+                <Children>
+                  <CXStatic Name="ImportUpdate" Text="重要更新" Visible="false" Color="255,102,0" Bold="true" AutoWidth="true" AutoHeight="true" Margin="0,0,5,0"></CXStatic>
+
+                  <CXStatic Text="版本：" DockType="0" AutoWidth="true"></CXStatic>
+                  <CSoftVersionCtrl Name="OldVersion" DockType="0" Rect="0,0,100,0" AutoWidth="true"></CSoftVersionCtrl>
+                  <CXStatic Text=" → " DockType="0" Color="153,153,153" AutoWidth="true" Margin="5,0,5,0"></CXStatic>
+                  <CSoftVersionCtrl Name="NewVersion" DockType="0" Rect="0,0,100,0" AutoWidth="true"></CSoftVersionCtrl>
+                </Children>
+              </CXStackPanel>
+
+              <CXStatic Name="UpdateScreenshotStatic" Text="新版亮点" Color="153,153,153" Margin="5,6,0,0"></CXStatic>
+
+              <CPicGallery Name="UpdateScreenshot" Rect="0,0,0,266" Margin="15,6,0,3" TextColor="0,0,0" LoadingAnimationFile="\UpdateNotifyWnd\loading.png" LoadingAnimationCount="12" SlideShowDelay="5">
+                <Properties>
+                  <LeftNormal>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\left_btn.png"></C360Image>
+                  </LeftNormal>
+                  <LeftOn>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\left_btn.png"></C360Image>
+                  </LeftOn>
+                  <LeftDown>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\left_btn.png"></C360Image>
+                  </LeftDown>
+                  <RightNormal>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\right_btn.png"></C360Image>
+                  </RightNormal>
+                  <RightOn>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\right_btn.png"></C360Image>
+                  </RightOn>
+                  <RightDown>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\right_btn.png"></C360Image>
+                  </RightDown>
+                  <!--<TextBk>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\TextTransparentBk.png" DrawType="1"></C360Image>
+                  </TextBk>-->
+                  <DotNormal>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\dot.png" DrawType="0" CutRect="14,0,28,14"></C360Image>
+                  </DotNormal>
+                  <DotSelect>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\dot.png" DrawType="0" CutRect="0,0,14,14"></C360Image>
+                  </DotSelect>
+                  <PicBorder>
+                    <C360Image File="\UpdateNotifyWnd\pic_border.png" Transparent="true" DrawType="2" TileRect="15,15,75,75" ></C360Image>
+                  </PicBorder>
+                </Properties>
+              </CPicGallery>
+
+              <CXStatic Text="更新内容" Color="153,153,153" Margin="5,6,0,0"></CXStatic>
+
+              <CXStatic Name="UpdateDesc" Multiline="true" AutoHeight="true" AutoWidth="true" Margin="20,6,0,10"></CXStatic>
+
+              <CXStatic Name="SoftScreenshotStatic" Text="软件截图" Color="153,153,153" Margin="5,6,0,0"></CXStatic>
+
+              <CPicGallery Name="SoftScreenshot" Rect="0,0,0,266" Margin="15,6,0,3" TextColor="0,0,0" LoadingAnimationFile="\UpdateNotifyWnd\loading.png" LoadingAnimationCount="12" SlideShowDelay="5">
+                <Properties>
+                  <LeftNormal>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\left_btn.png"></C360Image>
+                  </LeftNormal>
+                  <LeftOn>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\left_btn.png"></C360Image>
+                  </LeftOn>
+                  <LeftDown>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\left_btn.png"></C360Image>
+                  </LeftDown>
+                  <RightNormal>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\right_btn.png"></C360Image>
+                  </RightNormal>
+                  <RightOn>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\right_btn.png"></C360Image>
+                  </RightOn>
+                  <RightDown>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\right_btn.png"></C360Image>
+                  </RightDown>
+                  <!--<TextBk>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\TextTransparentBk.png" DrawType="1"></C360Image>
+                  </TextBk>-->
+                  <DotNormal>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\dot.png" DrawType="0" CutRect="14,0,28,14"></C360Image>
+                  </DotNormal>
+                  <DotSelect>
+                    <C360Image Transparent="true" File="\UpdateNotifyWnd\dot.png" DrawType="0" CutRect="0,0,14,14"></C360Image>
+                  </DotSelect>
+                  <PicBorder>
+                    <C360Image File="\UpdateNotifyWnd\pic_border.png" Transparent="true" DrawType="2" TileRect="15,15,75,75" ></C360Image>
+                  </PicBorder>
+                </Properties>
+              </CPicGallery>
+            </Children>
+          </CXStackPanel>
+        </Children>
+      </CXScrollFrame>
+
+    </Children>
+  </CXDockPanel>
+
+</UI>

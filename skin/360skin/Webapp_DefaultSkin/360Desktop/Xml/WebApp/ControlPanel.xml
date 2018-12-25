@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UI>
+  <Menu name="AppShareContext" class="MF_MenuText">
+    <Background img_src="..\..\Image\Menu\Menu_Main.png" h_margin2="25" h_margin3="63" v_margin2="3" v_margin3="83"/>
+    <ItemBG img_src="..\..\Image\Menu\Menu_Selectbar.png" h_margin2="2" h_margin3="94" v_margin2="2" v_margin3="24"/>
+    <Item id="11011" text="分享给好友"   enable="true" check="false" img_src="..\..\Image\WebApp\msn.png" block="2"/>
+    <Item id="11007" text="新浪微博"   enable="true" check="false" img_src="..\..\Image\WebApp\sina-weibo.png" block="2"/>
+    <Item id="11008" text="人人网"   enable="true" check="false" img_src="..\..\Image\WebApp\renren.png" block="2"/>
+    <Item id="11009" text="网易微博"   enable="true" check="false" img_src="..\..\Image\WebApp\wangyi.png" block="2"/>
+    <!--Item id="11010" text="举报此应用"   enable="true" check="false" img_src="reportbug.png" block="2"/-->
+  </Menu>
+  <Window name="ControlPanel" height="24" autosize="0">
+    <ExtraAttri>
+      <Texture img_src="..\..\Image\WebApp\controlpanel_bk.png" bTile="true"/>
+    </ExtraAttri>
+
+    <StackPanel name="ControlPanel" orit="H" x="0" y="0" layout_x="margin" layout_xdata="-100">
+      <SysButton id="11006" name="shareApp" tooltip="分享" img_src="..\..\Image\WebApp\share.png" block="4" margin="13, 2, 0, 0"/>
+      <SysButton id="11023" name="setlevel" tooltip="评分" img_src="..\..\Image\WebApp\score.png" block="4" margin="13, 2, 0, 0"/>
+      <SysButton id="11010" name="Impeach" tooltip="反馈" img_src="..\..\Image\WebApp\feedback.png" block="4" margin="13, 2, 0, 0"/>
+      <SysButton id="11024" name="HideRecommend" tooltip="隐藏" img_src="..\..\Image\WebApp\game\shrink.png" block="4" margin="23, 2, 0, 0"/>
+      <SysButton id="11024" name="ShowRecommend" tooltip="显示" img_src="..\..\Image\WebApp\game\expand.png" block="4" margin="0, 2, 0, 0"/>
+    </StackPanel>
+
+  </Window>
+</UI>

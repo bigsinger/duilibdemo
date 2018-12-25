@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UI>
+  <Window name="MainDlg" width="381" height="88">
+    <ExtraAttri>
+      <texture img_src="..\..\Image\WebApp\installchromebk.png" margin2="6" margin3="13"/>
+    </ExtraAttri>
+
+    <LText x="20" y="18" name="Info" class="DownloadChromeTip" text="{&amp;#font=4}正在下载360极速浏览器{&amp;#/font}" margin="5, 0, 0, 0"/>
+    <Button_state4 id="5002" name="buttonCancel" h_margin2="28" h_margin3="29" v_margin2="10" v_margin3="11" layout_y="margin" layout_x="margin" layout_ydata="18" layout_xdata="25" img_src="..\..\Image\PublicRes\button_state4.png" block="4" text=" 取消 " color="0,0,0"/>
+
+  </Window>
+</UI>

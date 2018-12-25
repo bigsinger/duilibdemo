@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<main_dlg width="320" height="245" img_src="background_green.png"   margin2="6" margin3="19"  vmargin2="110" vmargin3="114" >
+
+	<font id="1" b="1" size="32" name="Tahoma" color="255,255,0"/>
+	<font id="2" b="1" size="18" color="255,255,0"/>
+	<font id="3" size="12" color="102,102,102"/>
+	<font id="4" b="1" size="12" color="221,88,0"/>
+	<font id="5" color="255,102,0"/>
+	<font id="6" size="12" color="78,156,39"/>
+	<font id="7" size="12" color="255,255,255"/>
+	<font id="8" size="12" color="138,138,138"/>
+	<font id="9" size="12" color="47,140,0"/>
+
+    <win_ctrl id="240"  name="image" x="1" y="29" img_src="anzai_green.png" />
+	<win_ctrl id="180" name="text" x="10" y="120" text="360开机小助手恭喜您:"/>
+	<win_ctrl id="99"  name="image" x="200" y="118" img_src="gold.png"/>
+	<win_ctrl id="98"  name="image" x="223" y="118" img_src="gold.png"/>
+	<win_ctrl id="97"  name="image" x="246" y="118" img_src="gold.png"/>
+	<win_ctrl id="96"  name="image" x="269" y="118" img_src="gold.png"/>
+	<win_ctrl id="95"  name="image" x="292" y="118" img_src="gold.png"/>
+
+	<win_ctrl id="399"  name="image" x="200" y="118" img_src="gray_star.png"/>
+	<win_ctrl id="398"  name="image" x="223" y="118" img_src="gray_star.png"/>
+	<win_ctrl id="397"  name="image" x="246" y="118" img_src="gray_star.png"/>
+	<win_ctrl id="396"  name="image" x="269" y="118" img_src="gray_star.png"/>
+	<win_ctrl id="395"  name="image" x="292" y="118" img_src="gray_star.png"/>
+
+	<win_ctrl id="102" name="ltext" x="10" y="204" text="{&amp;#a=button:32772}设置"/>
+	<win_ctrl id="32771" name="color_button" x="237" y="200" text="立即优化" img_src="btn_green.png" block="4" col="16777215" />
+
+	<win_ctrl id="651"  name="image" x="11" y="272" img_src="line_dot.png"/>
+
+	<win_ctrl id="228" name="text" x="11" y="148" line-height="5" text="$<3您的开机速度击败了全国$> $<4%d%%$> $<3的电脑！$>"/>
+	<win_ctrl id="229" name="text" x="11" y="148" line-height="5" text="$<3您的开机速度击败了全国$> $<4%d%%$> $<3的电脑，特此授予您$>$<5五星$n级神机$>$<3称号！$>"/>	
+        <win_ctrl id="243" name="ltext" x="90" y="83" text="{&amp;#a=button:32812}{&amp;#acolor=0x00FFFFFF}详情&gt;&gt;"   />
+        <win_ctrl id="244" name="ltext" x="11" y="7" text="{&amp;#color=0x00FFFFFF}360开机小助手"   />
+	<win_ctrl id="245" name="button_state4" x="288" y="1"  img_src="sys_button_close.png" block="4" />
+        <win_ctrl id="2000" name="boottime" x="90" y="40" w="225" h="32" img_src="boottime_bk.png" titleImage="boottime_title.png" minateImage="minate.png" secondImage="second.png"  digitImage="Boottime_number.png" min2image="min.png" />
+
+
+</main_dlg>

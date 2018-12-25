@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UI>
+  <Window name="UploadGameRecord" width="470" height="170" autosize="0">
+    <ExtraAttri>
+      <Texture img_src="..\..\Image\PublicRes\back.png" h_margin2="8" h_margin3="95" v_margin2="50" v_margin3="172" />
+      <Light img_src="..\..\Image\WebApp\BackgroundLight_Webapp_p.png"  h_margin2="8" h_margin3="95" v_margin2="50" v_margin3="172"/>
+    </ExtraAttri>
+
+    <Static  x="30" y="8" name="Title" text="上传游戏存档" class="MF_WebAppText" margin="5, 0, 0, 0"/>
+
+    <Image name="Icon" x="8" y="8" img_src="..\..\Image\PublicRes\logo.png"/>
+    <SysButton id="5000" name="sysClose" img_src="..\..\Image\PublicRes\close.png" block="4" layout_x="margin" layout_xdata="0" y="0"/>
+
+    <LText x="120" y="70" name="Tip" class="Def_LinkText" text="上传当前游戏的进度存档："/>
+
+    <Image name="WebAppIcon" x="20" y="60" img_src="..\..\Image\PublicRes\logo.png"/>
+
+    <StackPanel x="120" y="100" orit="H">
+      <Edit id="4001" name="editRecord" text="" width="250" height="25" img_src="..\..\Image\WebApp\edit_background.png" h_margin2="7" h_margin3="9" v_margin2="12" v_margin3="13" block="1" margin="0,0,4,0"/>
+      <button_state4 id="5001" name="btn_upload" img_src="..\..\Image\PublicRes\button_state4.png" block="4" margin="3,1,0,0" text="上传"/>
+    </StackPanel>
+  </Window>
+</UI>

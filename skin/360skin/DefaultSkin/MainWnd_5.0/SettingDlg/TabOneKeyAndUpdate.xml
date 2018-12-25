@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UI version="1.0">
+	<CXDockPanel Name="TabOneKeyAndUpdate" Margin="30,10,30,10">
+		<Children>
+			<CXDockPanel Rect="0,0,0,225" DockType="1" Margin="0,12,0,0" MarginType="2">
+				<Properties>
+					<Background>
+						<C360Image File="\MainWnd_5.0\SettingDlg\group_bk.png" DrawType="2" TileRect="10,20,20,30">
+						</C360Image>
+					</Background>
+				</Properties>
+				<Children>
+					<CXStatic Rect="0,0,0,20" DockType="1" Text="一键安装\升级" Bold="true" AutoWidth="true" AutoHeight="true" Margin="10,1,1,1" NormalColor="98,170,0" MarginType="2">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+					</CXStatic>
+          <CXDockPanel Name="PureUpdatePanel" Rect="0,0,0,20" DockType="1" Margin="25,5,0,0" MarginType="2">
+            <Children>
+              <CXStatic DockType="0" Text="软件纯净安装、纯净升级功能" Rect="0,0,360,20" AutoWidth="false" AutoHeight="true" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>
+              <CXButton Name="OpenPureUpdate" Rect="0,0,74,17" DockType="0" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+                <Properties>
+                  <BkgNormal>
+                    <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="0,0,74,17"></C360Image>
+                  </BkgNormal>
+                  <BkgOn>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="74,0,148,17" ></C360Image>
+                  </BkgOn>
+                  <BkgDown>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="148,0,222,17"></C360Image>
+                  </BkgDown>
+                  <BkgNormal2>
+                    <C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="0,0,74,17"></C360Image>
+                  </BkgNormal2>
+                  <BkgOn2>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="74,0,148,17" ></C360Image>
+                  </BkgOn2>
+                  <BkgDown2>
+                    <C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="148,0,222,17"></C360Image>
+                  </BkgDown2>
+                </Properties>
+              </CXButton>
+            </Children>
+          </CXDockPanel>
+					<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,10,0,0" MarginType="2">
+						<Children>
+							<CXStatic DockType="0" Text="下载完成后自动运行软件的安装程序" Rect="0,0,360,20" AutoWidth="false" AutoHeight="true" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>	
+							<CXButton Name="AutorunRadio" Rect="0,0,74,17" DockType="0" Margin="5,7,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown>
+									<BkgNormal2>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal2>
+									<BkgOn2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn2>
+									<BkgDown2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown2>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+          <CXDockPanel Rect="0,0,0,160" Name="OneKeyFuncFrame" DockType="1" Margin="0,5,0,0" MarginType="2">
+						<Children>
+							<CXDockPanel Rect="0,0,0,30" DockType="1" Margin="25,0,0,0" MarginType="2">
+								<Children>
+									<CXStatic DockType="0" Text="软件一键安装、一键升级功能" Rect="0,0,360,20" AutoWidth="false" AutoHeight="true" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>	
+									<CXButton Name="OpenOneKey" Rect="0,0,74,17" CursorType="1" DockType="0" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+										<Properties>
+											<BkgNormal>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="0,0,74,17"></C360Image>
+											</BkgNormal>
+											<BkgOn>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="74,0,148,17" ></C360Image>
+											</BkgOn>
+											<BkgDown>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="148,0,222,17"></C360Image>
+											</BkgDown>
+											<BkgNormal2>
+												<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="0,0,74,17"></C360Image>
+											</BkgNormal2>
+											<BkgOn2>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="74,0,148,17" ></C360Image>
+											</BkgOn2>
+											<BkgDown2>
+												<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="148,0,222,17"></C360Image>
+											</BkgDown2>
+										</Properties>
+									</CXButton>
+								</Children>
+							</CXDockPanel>
+							<CXFrame Rect="0,0,0,3" DockType="1"  Margin="25,5,30,5" MarginType="2">
+								<Properties>
+									<Background>
+										<C360Image DrawType="5" Transparent="true" File="\MainWnd_5.0\SettingDlg\line.png" CutRect="0,0,434,3"></C360Image>
+									</Background>
+								</Properties>
+							</CXFrame>	
+							<CXDockPanel Rect="0,0,0,100" Name="OneKeyPathFrame" DockType="1" Margin="0,0,0,0" MarginType="2">
+								<Children>
+									<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,5,0,0" MarginType="2">
+										<Children>
+											<CXStatic DockType="0" Text="将一键安装的软件安装至此目录（" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>				
+											<CXStatic Name="OpenOneKeyDir" Text="打开目录" CursorType="1" DockType="0" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="90,175,235" MarginType="2"></CXStatic>
+											<CXStatic DockType="0" Text="）" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>
+											<!--CXStatic DockType="0" Text="）| 可用磁盘空间：" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>
+											<CXStatic Name="RemainOneKeyDiskSpace" DockType="0" Rect="0,0,100,0" Text="1.000" AutoHeight="true" Margin="5,13,0,0" NormalColor="98,170,0" MarginType="2"></CXStatic-->
+										</Children>
+									</CXDockPanel>
+									<CXDockPanel Rect="0,0,0,24" DockType="1" Margin="30,5,0,0" MarginType="2">
+										<Children>
+											<CXDockPanel Rect="0,0,275,20" DockType="0" Margin="0,0,0,0" MarginType="2">
+												<Properties>
+													<Background>
+														<C360Image File="\MainWnd_5.0\SettingDlg\edit.png" DrawType="2" TileRect="5,5,15,15">
+														</C360Image>
+													</Background>
+												</Properties>
+												<Children>
+													<CXEdit Name="OneKeyPathEdit" Rect="0,0,265,17" DockType="4"  Margin="5,1,5,1" Style="2048" Enable="false"  AutoHeight="true" MarginType="2"  ></CXEdit>
+												</Children>
+											</CXDockPanel>
+											<CXButton Name="SelectOneKeyDirButton" Text="选择目录" Rect="0,0,74,24" DockType="0" AutoWidth="true" AutoHeight="true" Margin="10,5,5,0" NormalColor="0,0,0" MarginType="2">
+												<Properties>
+													<BkgNormal>
+														<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="0,0,74,24"></C360Image>
+													</BkgNormal>
+													<BkgOn>
+														<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="74,0,148,24"></C360Image>
+													</BkgOn>
+													<BkgDown>
+														<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\button.png" CutRect="148,0,222,24"></C360Image>
+													</BkgDown>
+												</Properties>
+											</CXButton>
+											<CXStatic Name="SetDefaultOneKeyDir" Text="恢复默认目录" CursorType="1" DockType="0" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="90,175,235" MarginType="2"></CXStatic>
+										</Children>
+									</CXDockPanel>
+									<CXDockPanel Rect="0,0,0,15" DockType="1" Margin="25,0,0,0" MarginType="2">
+										<Children>
+											<CXStatic Name="ErrorTips" DockType="0" Rect="0,0,400,0" Text="*" AutoHeight="true" Margin="5,0,0,0" NormalColor="200,0,0" MarginType="2"></CXStatic>
+										</Children>
+									</CXDockPanel>
+									<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,0,0,0" MarginType="2">
+										<Children>
+											<CXCheckBox Name="OneKeyPathLock" Radio="false" Rect="0,0,135,17" IconRect="0,0,15,15" Text="以后都安装至此目录" DockType="0" Margin="5,0,0,0" NormalColor="0,0,0" MarginType="2">
+												<Properties>
+													<CheckNormal>
+														<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\checkbox.png" CutRect="0,0,15,15"></C360Image>
+													</CheckNormal>
+													<CheckOn>
+														<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\checkbox.png" CutRect="15,0,30,15" ></C360Image>
+													</CheckOn>
+													<CheckDown>
+														<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\checkbox.png" CutRect="30,0,45,15"></C360Image>
+													</CheckDown>
+													<UnCheckNormal>
+														<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\checkbox.png" CutRect="60,0,75,15"></C360Image>
+													</UnCheckNormal>
+													<UnCheckOn>
+														<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\checkbox.png" CutRect="75,0,90,15" ></C360Image>
+													</UnCheckOn>
+													<UnCheckDown>
+														<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\checkbox.png" CutRect="90,0,105,15"></C360Image>
+													</UnCheckDown>
+												</Properties>
+											</CXCheckBox>
+										</Children>
+									</CXDockPanel>
+								</Children>
+							</CXDockPanel>
+						</Children>
+					</CXDockPanel>
+				</Children>
+			</CXDockPanel>
+			<CXDockPanel Rect="0,0,0,90" DockType="1" Margin="0,12,0,0" MarginType="2">
+				<Properties>
+					<Background>
+						<C360Image File="\MainWnd_5.0\SettingDlg\group_bk.png" DrawType="2" TileRect="10,20,20,30">
+						</C360Image>
+					</Background>
+				</Properties>
+				<Children>
+					<CXStatic Rect="0,0,0,20" DockType="1" Text="升级设置" Bold="true" AutoWidth="true" AutoHeight="true" Margin="10,1,1,1" NormalColor="98,170,0" MarginType="2">
+						<Properties>
+							<Background>
+								<CXBrush Color="255,255,255"></CXBrush>
+							</Background>
+						</Properties>
+					</CXStatic>
+					<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,10,0,0" MarginType="2">
+						<Children>
+							<CXStatic DockType="0" Text="智能升级提醒功能（建议打开）" Rect="0,0,360,20" AutoWidth="false" AutoHeight="true" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2"></CXStatic>	
+							<CXButton Name="AutoUpdateRemind" Rect="0,0,74,17" CursorType="1" DockType="0" Margin="5,5,0,0" NormalColor="0,0,0" MarginType="2">
+								<Properties>
+									<BkgNormal>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal>
+									<BkgOn>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn>
+									<BkgDown>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_on.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown>
+									<BkgNormal2>
+										<C360Image DrawType="0"  Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="0,0,74,17"></C360Image>
+									</BkgNormal2>
+									<BkgOn2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="74,0,148,17" ></C360Image>
+									</BkgOn2>
+									<BkgDown2>
+										<C360Image DrawType="0" Transparent="true" File="\MainWnd_5.0\SettingDlg\radio_off.png" CutRect="148,0,222,17"></C360Image>
+									</BkgDown2>
+								</Properties>
+							</CXButton>
+						</Children>
+					</CXDockPanel>
+					<CXDockPanel Rect="0,0,0,20" DockType="1" Margin="25,5,0,0" MarginType="2">
+						<Children>
+							<CXStatic DockType="0" Text="根据软件更新频率，智能调整软件升级提醒的内容及周期" AutoWidth="true" AutoHeight="true" Margin="5,13,0,0" NormalColor="140,140,140" MarginType="2"></CXStatic>
+						</Children>
+					</CXDockPanel>
+				</Children>
+			</CXDockPanel>			
+		</Children>
+	</CXDockPanel>
+
+</UI>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
