@@ -1,0 +1,410 @@
+/*<--
+-->*/
+ImmBitrateCalc
+{
+	qproperty-contentMargin:url(16,16,16,16);
+}
+
+ImProfileNameDialog
+{
+  qproperty-contentMargin:url(10,20,10,20);
+}
+
+ProfilePropertyWindow {
+	min-width: 200px;
+	min-height: 600px;
+}
+
+/*simple setting panel*/
+ProfilePropertyWindow[imwidget_is_window="true"]
+{
+	padding:-50px -21px -30px -21px;	
+}
+
+ProfilePropertyWindow > ImProfilePropertyWidget
+{
+	padding:10px 0px 0px 0px;
+}
+
+ImProfilePropertyWidget
+{
+	qproperty-defaultInfoTextColor:"88|88|88";
+}
+
+ImAbstractPropertyBrowser#propertyBrowser {
+	border-image: url();
+	background-color: transparent;
+	border: 0px solid red;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+QScrollArea#vc_pb_scrollarea {
+	border: 0px;
+}
+
+QTextEdit#vc_pb_tips  {
+	background-color: transparent;
+	color: #333333;
+}
+
+QFrame#propToolBar 
+{
+	border: 0px ;
+	max-height: 33px;
+	min-height: 33px;
+}
+
+QFrame#propToolBar QLabel {
+	font: bold;
+}
+
+QPushButton#profile_property_widget_menu_button {
+	border-image: url();
+	padding: 0px;
+	border: 0px;
+	font-size:18px;
+	text-align: right;
+}
+QTabBar#tabProfileGroup::tab {
+     background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                                 stop: 0.1 #696969, stop: 0.2 #696969,
+                                 stop: 0.5 #696969, stop: 1.0 #696969);     
+     border: 1px solid #C4C4C3;
+     border-bottom-color: #C2C7CB; /* same as the pane color */
+     border-top-left-radius: 1px;
+     border-top-right-radius: 1px;
+     min-width: 24px;
+     max-width: 24px;
+     min-height: 120px;
+     max-height: 120px;
+     padding: 0px;
+     color: rgb(255,255,255);
+     border-image: url(0);
+     border-width: 0px 0px 0px 0px;
+     
+     font-weight: bold;
+     font-family: arial;
+}
+
+ QTabBar#tabProfileGroup::tab:!selected:hover {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #515151, stop: 0.4 #515151,
+                                 stop: 0.5 #515151, stop: 1.0 #515151);
+     border-image: url();
+     border-width: 0px 0px 0px 0px;                                 
+  	 	
+ }
+ 
+  QTabBar#tabProfileGroup::tab:selected {
+     background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+ 								 	 stop: 0.1 #3abaef, stop: 0.2 #ffffff,
+                                 stop: 0.5 #ffffff, stop: 1.0 #ffffff);
+     border-image: url();
+     border-width: 0px 0px 0px 0px;      
+	  color: rgb(85,85,85);
+                         
+ }
+
+ QTabBar#tabProfileGroup::tab:!selected {
+ 	     border-image: url();
+    	 border-width:0px 0px 0px 0px;    
+ 	     margin-top: 0px;   
+ }
+ 
+QPushButton#profile_property_widget_menu_button::menu-indicator {
+	subcontrol-origin: padding;
+	subcontrol-position: right;
+	padding-left: 3px;
+}
+
+QPushButton#profile_property_widget_menu_button:!hover {
+	background: transparent;
+}
+
+QToolButton#makePropFloatBtn{
+	border-image: url();
+	padding: 0px;
+	background-image: url("$SKIN_DIR/btn_profile_showadv.png");
+	border: 0px;
+	min-height: 24px;
+	max-height: 24px;
+	max-width: 24px;
+	min-width: 24px;
+	
+}
+
+QToolButton#makePropFloatBtn:hover {
+	background-image: url("$SKIN_DIR/btn_profile_showadv_h.png");
+}
+
+QToolButton#makePropFloatBtn:pressed {
+	background-image: url("$SKIN_DIR/btn_profile_showadv_p.png");
+}
+
+QToolButton#makePropFloatBtn:disabled {
+	background-image: url("$SKIN_DIR/btn_profile_showadv_d.png");
+}
+
+QToolButton#makePropFloatBtn:checked {
+	background-image: url("$SKIN_DIR/btn_profile_hideadv.png");
+}
+
+QToolButton#makePropFloatBtn:checked:hover {
+	background-image: url("$SKIN_DIR/btn_profile_hideadv_h.png");
+}
+
+QToolButton#makePropFloatBtn:checked:pressed {
+	background-image: url("$SKIN_DIR/btn_profile_hideadv_p.png");
+}
+
+QToolButton#makePropFloatBtn:checked:disabled {
+	background-image: url("$SKIN_DIR/btn_profile_hideadv_d.png");
+}
+
+QToolButton#switchPropModeBtn {
+	border-image: url();
+	padding: 0px;
+	background-image: url("$SKIN_DIR/tbn_switchpropmode.png");
+	border: 0px;
+	min-height: 19px;
+	max-height: 19px;
+}
+
+QToolButton#switchPropModeBtn:hover {
+	background-image: url("$SKIN_DIR/tbn_switchpropmode_hover.png");
+}
+
+QToolButton#switchPropModeBtn:pressed {
+	background-image: url("$SKIN_DIR/tbn_switchpropmode_pressed.png");
+}
+
+QToolButton#switchPropModeBtn:disabled {
+	background-image: url("$SKIN_DIR/tbn_switchpropmode_disabled.png");
+}
+
+/* advanced settting panel */
+ImAbstractPropertyBrowser#advPropertyBrowser {
+	border: 0px;
+	background: transparent;
+	margin: 3px 0px 0px 0px;
+}
+
+ImTreePropertyBrowser QLineEdit 
+{
+	padding: 0px -5px 0px -5px;
+}
+
+ImTreePropertyBrowser QComboBox 
+{
+	padding: 0px -25px 0px -5px;
+}
+
+ImTreePropertyBrowser QComboBox:!editable 
+{
+	padding:0px -25px 0px -2px;
+}
+
+ImTreePropertyBrowser QCheckBox
+{
+	spacing: 8px;
+}
+
+ImTreePropertyBrowser QDateTimeEdit 
+{
+  padding-right: -5px;
+  padding-left: -5px;
+}
+
+ProfilePropertyWindow QFrame#propToolBar {
+	border-image: url();
+	background: transparent;
+	border: 0px;
+	max-height: 22px;
+	min-height: 22px;
+}
+
+ImProfilePropertyWidget QPushButton#profile_property_widget_menu_button{
+	color: #585858;
+}
+
+ImProfilePropertyWidget QPushButton#profile_property_widget_menu_button:focus {
+	color: #585858;
+}
+
+ImProfilePropertyWidget QPushButton#profile_property_widget_menu_button:hover {
+	color: #585858;
+}
+
+ImProfilePropertyWidget QPushButton#profile_property_widget_menu_button:pressed {
+	color: #585858;
+}
+
+/* ImProfileComboBox ***/
+ImProfileComboBox {
+	qproperty-minViewWidth : 400;
+	qproperty-maxViewWidth : 600;
+}
+
+ImHoverButton#ImHoverDown {
+	image: url($SKIN_DIR/dropdown.png);
+}
+
+ImHoverButton#ImHoverUp {
+	image: url($SKIN_DIR/dropup.png);
+}
+ImProfilePropertyWidget QGroupBox 
+ {
+ 	 border-image:url();
+     border-top: 2px solid transparent;
+     margin-top: 8px;
+ }
+
+ImProfilePropertyWidget QGroupBox::title {
+     subcontrol-origin: padding;
+     position: absolute;
+     top: -12px;
+     left: 4px;
+     padding-left:4px;
+     padding-right:4px;
+	 color:rgb(0,0,0);
+ }
+ 
+ ImItemListBox {
+     qproperty-selectActiveTextColor:rgb(35,35,35);
+     qproperty-selectInactiveTextColor:rgb(35,35,35);
+     color:rgb($SKIN_COLOR_RGB);
+     /*qproperty-alternatingRowColors:1;*/
+     background-color:rgb(255,255,255);
+ } 
+
+ ImItemListBox::item:alternate {
+     background: #FF0000;
+ }
+
+ ImItemListBox::item:selected:active {
+     background: #7fc1ff;
+     color:rgb(26,62,94);
+ }
+ ImItemListBox::item:selected:!active {
+     background: rgb(220,240,255);
+     color:rgb(26,62,94);
+ }
+
+  ImItemListBox::item:selected:hover {
+     background: #dcf0ff;
+     color:rgb(26,62,94);
+ }
+
+ ImProfileListView::item {
+	min-height: 24px;
+	max-height: 24px;
+    background-color:#ffffff;
+    color:#515151;
+ }
+
+ ImProfileListView {
+     color:rgb($SKIN_COLOR_RGB);
+     background-color:#ffffff;
+ } 
+
+ ImProfileListView::item:alternate {
+    background-color:#f6f6f6;
+    color:#515151;
+ }
+
+ ImProfileListView::item:selected:active {
+    background-color:#3abaef;
+    color:white;
+ }
+ ImProfileListView::item:selected:!active {
+    background-color:#3abaef;
+    color:white;
+ }
+ 
+ImGroupBoxPropertyBrowser QLineEdit:disabled {
+   color: #c5c5c5;
+}
+ 
+ImMultiBtnEdit QPushButton#addBtn {
+	border-image: url($SKIN_DIR/open.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+	min-width: 24px;
+	min-height: 24px;
+	max-width: 24px;
+	max-height: 24px;
+	margin: 1px 1px 1px 1px;
+}
+
+ImMultiBtnEdit QPushButton#addBtn:hover {
+	border-image: url($SKIN_DIR/open_h.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+ImMultiBtnEdit QPushButton#addBtn:pressed {
+	border-image: url($SKIN_DIR/open_p.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+ImMultiBtnEdit QPushButton#addBtn:disabled {
+	border-image: url($SKIN_DIR/open_d.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+
+
+ImMultiBtnEdit QPushButton#delBtn {
+	border-image: url($SKIN_DIR/delete.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+	min-width: 24px;
+	min-height: 24px;
+	max-width: 24px;
+	max-height: 24px;
+	margin: 1px 1px 1px 1px;
+}
+
+ImMultiBtnEdit QPushButton#delBtn:hover {
+	border-image: url($SKIN_DIR/delete_h.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px
+}
+
+ImMultiBtnEdit QPushButton#delBtn:pressed {
+	border-image: url($SKIN_DIR/delete_p.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+ImMultiBtnEdit QPushButton#delBtn:disabled {
+	border-image: url($SKIN_DIR/delete_d.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+
+
+ImMultiBtnEdit QPushButton#saveBtn {
+	border-image: url($SKIN_DIR/saveas.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+	min-width: 24px;
+	min-height: 24px;
+	max-width: 24px;
+	max-height: 24px;
+	margin: 0px 0px 0px 0px;
+}
+
+ImMultiBtnEdit QPushButton#saveBtn:hover {
+	border-image: url($SKIN_DIR/saveas_h.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+ImMultiBtnEdit QPushButton#saveBtn:pressed {
+	border-image: url($SKIN_DIR/saveas_p.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+ImMultiBtnEdit QPushButton#saveBtn:disabled {
+	border-image: url($SKIN_DIR/saveas_d.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+CustomizedComboBox QAbstractItemView::item {
+	min-height: 22px;
+}

@@ -1,0 +1,275 @@
+/*<--
+-->*/
+
+ImmBitrateCalc
+{
+	qproperty-contentMargin:url(6,6,6,6);
+	min-width: 270px;
+	max-width: 270px;
+	min-height: 240px;
+	max-height: 240px;
+}
+
+ImProfileNameDialog
+{
+  qproperty-contentMargin:url(10,10,10,10);
+}
+
+ProfilePropertyWindow {
+	min-width: 200px;
+	min-height: 600px;
+}
+
+/*simple setting panel*/
+ProfilePropertyWindow[imwidget_is_window="true"]
+{
+	qproperty-contentMargin:url(6,6,6,6);
+}
+
+ImAbstractPropertyBrowser#propertyBrowser {
+	border-image: url();
+	background-color: transparent;
+	border: 0px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+QScrollArea#vc_pb_scrollarea {
+	border: 0px;
+}
+
+QTextEdit#vc_pb_tips  {
+	background-color: transparent;
+	color: #333333;
+}
+
+QFrame#propToolBar {
+	max-height: 33px;
+	min-height: 33px;
+	padding: 0px 4px;
+}
+
+QFrame#propToolBar QLabel {
+	font: bold;
+}
+
+
+QPushButton#profile_property_widget_menu_button {
+	border-image: url();
+	padding: 0px;
+	margin: 0px 10px 0px 0px;
+	border: 0px;
+	font: bold;
+	text-align: right;
+}
+
+QPushButton#profile_property_widget_menu_button::menu-indicator {
+	subcontrol-origin: padding;
+	subcontrol-position: right;
+	left: 3px;
+}
+
+QPushButton#profile_property_widget_menu_button:!hover {
+	background: transparent;
+}
+
+QToolButton#makePropFloatBtn{
+	border-image: url();
+	padding: 0px;
+	background-image: url("$SKIN_DIR/../ZnO/btn_profile_showadv.png");
+	border: 0px;
+	min-height: 24px;
+	max-height: 24px;
+	max-width: 24px;
+	min-width: 24px;
+	
+}
+
+QToolButton#makePropFloatBtn:hover {
+	background-image: url("$SKIN_DIR/../ZnO/btn_profile_showadv_h.png");
+}
+
+QToolButton#makePropFloatBtn:pressed {
+	background-image: url("$SKIN_DIR/../ZnO/btn_profile_showadv_p.png");
+}
+
+QToolButton#makePropFloatBtn:disabled {
+	background-image: url("$SKIN_DIR/../ZnO/btn_profile_showadv_d.png");
+}
+
+QToolButton#makePropFloatBtn:checked {
+	background-image: url("$SKIN_DIR/../ZnO/btn_profile_hideadv.png");
+}
+
+QToolButton#makePropFloatBtn:checked:hover {
+	background-image: url("$SKIN_DIR/../ZnO/btn_profile_hideadv_h.png");
+}
+
+QToolButton#makePropFloatBtn:checked:pressed {
+	background-image: url("$SKIN_DIR/../ZnO/btn_profile_hideadv_p.png");
+}
+
+QToolButton#makePropFloatBtn:checked:disabled {
+	background-image: url("$SKIN_DIR/../ZnO/btn_profile_hideadv_d.png");
+}
+
+QToolButton#switchPropModeBtn {
+	border-image: url();
+	padding: 0px;
+	background-image: url("$SKIN_DIR/../ZnO/tbn_switchpropmode.png");
+	border: 0px;
+	min-height: 19px;
+	max-height: 19px;
+}
+
+QToolButton#switchPropModeBtn:hover {
+	background-image: url("$SKIN_DIR/../ZnO/tbn_switchpropmode_hover.png");
+}
+
+QToolButton#switchPropModeBtn:pressed {
+	background-image: url("$SKIN_DIR/../ZnO/tbn_switchpropmode_pressed.png");
+}
+
+QToolButton#switchPropModeBtn:disabled {
+	background-image: url("$SKIN_DIR/../ZnO/tbn_switchpropmode_disabled.png");
+}
+
+/* advanced settting panel */
+ImAbstractPropertyBrowser#advPropertyBrowser {
+	border: 0px;
+	background: transparent;
+	margin: 3px 0px 0px 0px;
+}
+
+ ImItemListBox::item:alternate {
+     background: #FF0000;
+ }
+
+ ImItemListBox::item:selected:active {
+     background: #7fc1ff;
+     color:rgb(26,62,94);
+ }
+ ImItemListBox::item:selected:!active {
+     background: rgb(198,227,255);
+     color:rgb(26,62,94);
+ }
+
+  ImItemListBox::item:selected:hover {
+     background: #dce9f2;
+     color:rgb(26,62,94);
+ }
+
+/* ImProfileComboBox ***/
+ImProfileComboBox {
+	qproperty-minViewWidth : 450;
+	qproperty-maxViewWidth : 650;
+}
+
+ImHoverButton#ImHoverDown 
+{
+	max-height: 18px;
+	min-height: 18px;
+	border: 1px solid rgb(205,205,205);
+	background: white;
+	image: url($SKIN_DIR/../ZnO/dropdown.png);
+}
+
+ImHoverButton#ImHoverUp 
+{
+	max-height: 18px;
+	min-height: 18px;
+	border: 1px solid rgb(205,205,205);
+	background: white;
+	image: url($SKIN_DIR/../ZnO/dropup.png);
+}
+
+ImMultiBtnEdit QPushButton#addBtn {
+	border-image: url($SKIN_DIR/../ZnO/open.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+	min-width: 24px;
+	min-height: 24px;
+	max-width: 24px;
+	max-height: 24px;
+	margin: 1px 1px 1px 1px;
+}
+
+ImMultiBtnEdit QPushButton#addBtn:hover {
+	border-image: url($SKIN_DIR/../ZnO/open_h.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+ImMultiBtnEdit QPushButton#addBtn:pressed {
+	border-image: url($SKIN_DIR/../ZnO/open_p.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+ImMultiBtnEdit QPushButton#addBtn:disabled {
+	border-image: url($SKIN_DIR/../ZnO/open_d.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+
+
+ImMultiBtnEdit QPushButton#delBtn {
+	border-image: url($SKIN_DIR/../ZnO/delete.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+	min-width: 24px;
+	min-height: 24px;
+	max-width: 24px;
+	max-height: 24px;
+	margin: 1px 1px 1px 1px;
+}
+
+ImMultiBtnEdit QPushButton#delBtn:hover {
+	border-image: url($SKIN_DIR/../ZnO/delete_h.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+ImMultiBtnEdit QPushButton#delBtn:pressed {
+	border-image: url($SKIN_DIR/../ZnO/delete_p.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+ImMultiBtnEdit QPushButton#delBtn:disabled {
+	border-image: url($SKIN_DIR/../ZnO/delete_d.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+
+
+ImMultiBtnEdit QPushButton#saveBtn {
+	border-image: url($SKIN_DIR/../ZnO/saveas.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+	min-width: 24px;
+	min-height: 24px;
+	max-width: 24px;
+	max-height: 24px;
+	margin: 1px 1px 1px 1px;
+}
+
+ImMultiBtnEdit QPushButton#saveBtn:hover {
+	border-image: url($SKIN_DIR/../ZnO/saveas_h.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+ImMultiBtnEdit QPushButton#saveBtn:pressed {
+	border-image: url($SKIN_DIR/../ZnO/saveas_p.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+ImMultiBtnEdit QPushButton#saveBtn:disabled {
+	border-image: url($SKIN_DIR/../ZnO/saveas_d.png) 0 0 0 0;
+	border-width: 0px 0px 0px 0px;
+}
+
+ImSearchLineEdit {
+	border:1px solid rgb(130,135,144);
+}
+ 
+ImSearchLineEdit:disabled{
+	border: 1px solid rgb(205,205,205);
+}
+
+CustomizedComboBox QAbstractItemView::item {
+	min-height: 22px;
+}

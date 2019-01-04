@@ -1,0 +1,38 @@
+#title
+{
+	left:190px;
+	top:25px;
+	width:260px;
+	height:40px;
+	border-width:thin;
+	position:relative;
+}
+
+
+#step1_icon_text
+{
+  left: 100px;
+	top: 65px;
+	width:460px;
+	height:25px;
+	border-width:thin;
+	position:relative;
+}
+#step2_icon_text
+{
+    left: 100px;
+	top: 75px;
+	width:460px;
+	height:25px;
+	border-width:thin;
+	position:relative;
+}
+#step3_icon_text
+{
+    left: 100px;
+	top: 85px;
+	width:460px;
+	height:25px;
+	border-width:thin;
+	position:relative;
+}

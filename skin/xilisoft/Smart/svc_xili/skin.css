@@ -1,0 +1,959 @@
+/*<--
+name		= "svc_xili"
+name_zh_CN	= "svc_xili"
+name_zh_TW	= "svc_xili"
+name_fr	= "svc_xili"
+name_de = "svc_xili"
+name_ja = "svc_xili"
+
+systitlebar = false
+titlebar_text_alignment	=  justify
+skin_color_rgb			= 83,87,90
+sizing_border_width = 6,12
+sizing_border_offset = 3,3
+buddies_spacing = 0,0,0,0,20
+font_size_level			= 4
+font_size_level1		= 24px, 22px, 20px, 18px, 16px
+font_size_level2		= 20px, 18px, 16px, 14px, 12px
+font_size_level3		= 16px, 14px, 12px, 10px, 8px
+font_size_level4		= 13px, 11px, 10px, 8px, 6px
+font_size_level5		= 12px, 10px, 8px, 6px, 4px
+
+-->*/
+
+/*********** titlebar skin start************/
+ImWidgetFrame#imWidgetFrame {
+    /*qproperty-skinMaskImage:url($SKIN_DIR/mask.png);
+	qproperty-skinMaskMargin:url(55,35,56,35);*/
+	background:white;
+}
+
+ImTitleBar {
+	border-image: url($SKIN_DIR/title_bar_bg.png) 40 5 0 5 repeat;
+	border-width: 40px 5px 0px 5px;
+	padding:-40px -5px 0px -5px;
+    min-height:40px;
+    max-height:40px;
+    margin-left:0px;
+    margin-right:0px;
+	background:transparent;
+}
+
+ImTitleBar QLabel#sysIconLabel{
+	max-width:22px;
+	min-width:22px;
+	max-height:24px;
+	min-height:24px;
+	margin:0px 0px 0px 14px;
+}
+
+ImTitleBar QLabel#titleText{
+    color:black;
+    font: 14px bold "Segoe UI";
+}
+
+ImTitleBar QFrame#titleseperator{
+	min-width:0px;
+	max-width:0px;
+}
+
+/**** system button ******/
+ImTitleBar QToolButton#menuButton {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_menu.png) 0 0 22 0;
+	border-width:0px 0px 22px 0px;
+	padding:0px 0px -22px 0px;
+	min-width: 20px;
+	max-width: 20px;
+	min-height: 20px;
+	max-height: 20px;
+	margin:0px 8px 0px 0px;
+}
+
+ImTitleBar QToolButton#menuButton:hover {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_menu_h.png);
+}
+
+ImTitleBar QToolButton#menuButton:pressed {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_menu_p.png);
+}
+
+ImTitleBar QToolButton#menuButton:disabled {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_menu_d.png);
+}
+ImTitleBar QToolButton#minButton {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_min.png);
+	min-width: 20px;
+	max-width: 20px;
+	min-height: 20px;
+	max-height: 20px;
+	margin:0px 8px 0px 0px;
+}
+
+ImTitleBar QToolButton#minButton:hover {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_min_h.png);
+}
+
+ImTitleBar QToolButton#minButton:pressed {
+    border-image: url($SKIN_DIR/titlebar/sysbtn_min_p.png);
+}
+
+ImTitleBar QToolButton#minButton:disabled {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_min_d.png);
+}
+
+ImTitleBar QToolButton#maxButton {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_max.png);
+	min-width: 20px;
+	max-width: 20px;
+	min-height: 20px;
+	max-height: 20px;
+	margin:0px 8px 0px 0px;
+}
+
+ImTitleBar QToolButton#maxButton:hover {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_max_h.png);
+}
+
+ImTitleBar QToolButton#maxButton:pressed {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_max_p.png);
+}
+
+ImTitleBar QToolButton#maxButton:disabled {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_max_d.png);
+}
+
+ImTitleBar QToolButton#restoreButton {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_reduce.png);
+	min-width: 20px;
+	max-width: 20px;
+	min-height: 20px;
+	max-height: 20px;
+	margin:0px 8px 0px 0px;
+}
+
+ImTitleBar QToolButton#restoreButton:hover {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_reduce_h.png);
+}
+
+ImTitleBar QToolButton#restoreButton:pressed {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_reduce_p.png);
+}
+
+ImTitleBar QToolButton#restoreButton:disabled {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_reduce_d.png);
+}
+
+ImTitleBar QToolButton#closeButton {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_close.png);
+	min-width: 20px;
+	max-width: 20px;
+	min-height: 20px;
+	max-height: 20px;
+	margin:0px 12px 0px 0px;
+}
+
+ImTitleBar QToolButton#closeButton:hover {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_close_h.png);
+}
+
+ImTitleBar QToolButton#closeButton:pressed {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_close_p.png);
+}
+
+ImTitleBar QToolButton#closeButton:disabled {
+	border-image: url($SKIN_DIR/titlebar/sysbtn_close_d.png);
+}
+
+ImTitleBar QToolButton#bugButton123{
+    border-width:0px 0px 5px 0px;
+    margin:-5px 0px 0px 0px;
+}
+
+ImWidgetFrame#imfc_updatewindow_frame ImTitleBar {
+	border-image: url($SKIN_DIR/dialog_bg.png) 40 4 0 4;
+	border-width: 40px 4px 0px 4px;
+	padding:-40px -4px 0px -4px;
+    min-height:40px;
+    max-height:40px;
+}
+
+ImWidgetFrame#imfc_updatewindow_frame {
+	border-image: url($SKIN_DIR/dialog_bg.png) 40 4 4 4;
+	border-width: 40px 4px 4px 4px;
+	padding:-40px -4px -4px -4px;
+	/*qproperty-skinMaskImage:url($SKIN_DIR/mask.png);
+	qproperty-skinMaskMargin:url(45,30,40,30);*/
+	background-color:transparent;
+}
+
+ImWidgetFrame#imfc_updatewindow_frame QFrame#line_2{
+    border-image: url($SKIN_DIR/update_line.png);
+}
+
+ImWidgetFrame#imfc_updatewindow_frame QFrame#line{
+    border-image: url($SKIN_DIR/update_line.png);
+}
+
+
+xiliUpdateWindow#imfc_updatewindow{
+	border-image: url($SKIN_DIR/dialog_bg_4.png) 0 4 4 4;
+	border-width: 0px 4px 4px 4px;
+	padding:-0px -4px -4px -4px;
+	background-color:transparent;
+}
+xiliUpdateWindow#imfc_updatewindow QWidget#centralWidget QLabel{
+	background-color:transparent;
+	font: 14px "Verdana";
+}
+xiliUpdateWindow#imfc_updatewindow QWidget#centralWidget QPushButton{
+    padding:-5px 0px -5px 0px;
+    min-height:28px;
+    max-height:28px;
+}
+xiliUpdateWindow#imfc_updatewindow QWidget#verticalStackedWidgetPage1 QFrame#frame_Web{
+    border-style: none;
+    border-width: 0;
+}
+xiliUpdateWindow#imfc_updatewindow QWidget#verticalStackedWidgetPage1 QWebView{
+    background-color:white;
+}
+xiliUpdateWindow#imfc_updatewindow QWidget#verticalStackedWidget{
+	margin: 5px 10px 5px 10px;
+    background-color:transparent;
+}
+xiliUpdateWindow#imfc_updatewindow QWidget#verticalStackedWidgetPage1 QLabel#label_importance{
+	margin-right: 300px;
+}
+xiliUpdateWindow#imfc_updatewindow QWidget#verticalStackedWidgetPage1 QLabel#label_name{
+	font: bold 14px "Verdana";
+}
+
+xiliUpdateWindow#imfc_updatewindow QWidget#downloading QLabel#download_status{
+	font: bold 14px "Verdana";
+	min-width: 400px;
+}
+xiliUpdateWindow#imfc_updatewindow QWidget#install QLabel#label_4{
+	font: bold 14px "Verdana";
+}
+xiliUpdateWindow#imfc_updatewindow QWidget#install QTextBrowser#textBrowser{
+    color:black;
+    font: 12px "Arial";
+	border: none 0 transparent;
+	background-color:white;
+}
+xiliUpdateWindow#imfc_updatewindow QWidget#install_local QTextBrowser#textBrowser_2{
+    color:black;
+    font: 12px "Arial";
+	border: none 0 transparent;
+	background-color:white;
+}
+
+
+
+QDialog ImTitleBar {
+    min-height:40px;
+    max-height:40px;
+    margin-left:0px;
+    margin-right:0px;
+	background:rgb(245, 245, 245, 0);
+}
+
+
+ImDialog{
+	border-image: url($SKIN_DIR/dialog_bg.png) 40 4 4 4;
+	border-width: 40px 4px 4px 4px;
+	padding:-40px -4px -4px -4px;
+	/*qproperty-skinMaskImage:url($SKIN_DIR/mask.png);
+	qproperty-skinMaskMargin:url(45,30,40,30);*/
+	background-color:transparent;
+}
+
+ImDialog ImTitleBar {
+	border-image: url();
+    min-height:40px;
+    max-height:40px;
+}
+
+ImAboutDlg {
+	max-width:400px;
+	min-width:400px;
+	max-height:260px;
+	min-height:260px;
+}
+
+ImAboutDlg QLabel {
+   color: black;
+   font: 12px "Segoe UI";
+}
+
+ImMessageBox QLabel#label_icon {
+	max-width:0px;
+	min-width:0px;
+}
+
+ImMessageBox QLabel#label {
+   color: black;
+   font: 16px "Segoe UI";
+   margin: 0px 10px 12px 5px;
+}
+
+ImMessageBox QDialogButtonBox {
+    qproperty-centerButtons: "true";
+}
+/*
+ImMessageBox QPushButton {
+	color: white;
+	font: 18px;
+}
+*/
+ImMessageBox QPushButton#cancelBtn {
+    border-image:url($SKIN_DIR/button/button_orange.png) 3 3 3 3;
+    border-width:3px 3px 3px 3px;
+    padding:-3px -3px -3px -3px;
+    min-width:70px;
+    min-height:28px;
+    max-height:28px;
+	color: white;
+	margin-left: 12px;
+}
+
+ImMessageBox QPushButton#cancelBtn:hover{
+    border-image:url($SKIN_DIR/button/button_orange_h.png);
+}
+
+ImMessageBox QPushButton#cancelBtn:pressed{
+    border-image:url($SKIN_DIR/button/button_orange_p.png);
+}
+
+ImMessageBox QPushButton#cancelBtn:disabled{
+    border-image:url($SKIN_DIR/button/button_orange_d.png);
+    color: rgb(45, 46, 48);
+}
+
+ImMessageBox QPushButton#noBtn {
+    border-image:url($SKIN_DIR/button/button_orange.png) 3 3 3 3;
+    border-width:3px 3px 3px 3px;
+    padding:-3px -3px -3px -3px;
+    min-width:70px;
+    min-height:28px;
+    max-height:28px;
+	color: white;
+	margin-left: 12px;
+}
+
+ImMessageBox QPushButton#noBtn:hover{
+    border-image:url($SKIN_DIR/button/button_orange_h.png);
+}
+
+ImMessageBox QPushButton#noBtn:pressed{
+    border-image:url($SKIN_DIR/button/button_orange_p.png);
+}
+
+ImMessageBox QPushButton#noBtn:disabled{
+    border-image:url($SKIN_DIR/button/button_orange_d.png);
+    color: rgb(45, 46, 48);
+}
+
+xilicheckupdate QLabel#label {
+   color: black;
+   font: 16px "Segoe UI";
+}
+
+xilicheckupdate QProgressBar {
+   margin: 10px 0px 0px 0px;
+}
+
+xilicheckupdate QPushButton {
+   margin: 15px 0px 0px 0px;
+}
+
+
+/*
+ImAboutDlg QLabel#label_log {
+	max-height:120px;
+	min-height:120px;
+}
+
+ImAboutDlg QLabel#label_copyright {
+	padding: 20px 0px 0px 0px;
+}
+
+ImAboutDlg QLabel#label_register {
+	padding: 20px 0px 0px 0px;
+}
+*/
+
+
+/*
+ImTitleBar QLabel#sysIconLabel{
+	max-width:22px;
+	max-width:22px;
+	max-height:24px;
+	min-height:24px;
+	margin:0px 0px 0px 14px;
+}
+
+ImTitleBar QLabel#titleText{
+    color:black;
+    font: 12px "Verdana";
+}
+
+ImTitleBar QFrame#titleseperator{
+	min-width:0px;
+	max-width:0px;
+}
+*/
+
+/*
+ImDialog QWidget{
+   color:black;
+   font: 12px "Arial";
+}
+*/
+
+ImDialog QWidget:disabled{
+    color: grey;
+}
+
+/* 
+ImDialog QComboBox QAbstractItemView {
+   color: black;
+    border: 1px solid rgb(105, 107, 110);
+    background-color: rgb(105, 107, 110);
+    selection-background-color: rgb(155, 158, 164);
+}
+*/
+
+QMenu{
+    color:rgb(68, 68, 68);
+    font: 14px "Segoe UI";
+    background-color: white;
+    border: 1px solid rgb(185, 185, 185);
+    padding: 6px;
+}
+
+QMenu::item {
+    padding: 2px 18px 2px 18px;
+    /*border: 0px solid transparent;*/
+    border-radius: 0px; 
+}
+
+QMenu::item:selected{
+     /*border-color: rgba(10, 137, 255, 100);*/
+     color: white;
+     background: rgb(77, 175, 124);
+}
+
+QMenu::item:disabled{
+     color: rgb(185, 185, 185);
+}
+
+QMenu::separator {
+    height: 1px;
+    background: rgb(185, 185, 185);
+    margin: 7px 7px 7px 7px;
+}
+ 
+ImRegDialog {
+    padding: 0px 105px 0px 105px;
+}
+
+ImRegDialog QGroupBox {
+    /*border-image:url($SKIN_DIR/groupbox_bg.png)3 3 3 3;
+    border-width:3px 3px 3px 3px;
+    padding:-3px -3px -3px -3px;
+    margin-top: 8px;*/
+    padding:20px 0px 0px 0px;
+    border: 0px solid transparent;
+    color:black;
+    font: 19px "Segoe UI";
+}
+
+ImRegDialog QLabel {
+    color:black;
+    font: 13px "Segoe UI";
+}
+
+ImRegDialog QLabel#label_2 {
+    font: bold 13px "Segoe UI";
+    margin: 0px 0px 0px 8px;
+}
+
+ImRegDialog QLabel#nameLabel {
+    margin: 0px 0px 0px 8px;
+}
+
+ImRegDialog QLabel#licenseCodeLabel {
+    margin: 0px 0px 0px 8px;
+}
+
+ImRegDialog QLineEdit {
+    font: 13px "Segoe UI";
+    margin: 0px 0px 0px 0px;
+}
+
+ImRegDialog QPushButton#btn_Cancel {
+    margin: 5px 0px 0px 0px;
+}
+
+ImRegDialog QPushButton#btn_OK {
+    margin: 5px 5px 0px 0px;
+}
+
+
+/*ImRegDialog QLabel#buylink_0 {
+    color: red;
+    font: 8px "Segoe UI";
+}
+
+ImRegDialog QLabel#buylink_1 {
+    color: red;
+    font: 8px "Segoe UI";
+}
+
+
+QGroupBox::title {
+    subcontrol-origin: padding;
+    position: absolute;
+    top: -8px;
+    left: 19px;
+    padding-left:4px;
+    padding-right:4px;
+    color:black;
+    font: 18px "Segoe UI";
+}
+ */
+
+/*********** titlebar skin end ************/
+
+/*********** scrollbar skin start ************/
+QScrollBar:vertical {
+    border-image: url($SKIN_DIR/scrollbar/scrollbar_vertical_bg.png) 5 0 5 0;
+    border-width:5px 0px 5px 0px;
+    padding:-5px 0px -5px 0px;
+    min-width:8px;
+    max-width:8px;
+    background:transparent;
+}
+
+QScrollBar::handle:vertical {
+    border-image: url($SKIN_DIR/scrollbar/scrollbar_vertical.png) 4 0 4 0;
+    border-width:4px 0px 4px 0px;
+    padding:-4px 0px -4px 0px;
+    min-width:4px;
+    max-width:4px;
+    margin:2px 2px 2px 2px;
+    min-height:18px;
+}
+
+QScrollBar::handle:vertical:hover {
+    border-image: url($SKIN_DIR/scrollbar/scrollbar_vertical_h.png) 4 0 4 0;
+    border-width:4px 0px 4px 0px;
+    padding:-4px 0px -4px 0px;
+}
+
+QScrollBar::handle:vertical:pressed {
+    border-image: url($SKIN_DIR/scrollbar/scrollbar_vertical_p.png) 4 0 4 0;
+    border-width:4px 0px 4px 0px;
+    padding:-4px 0px -4px 0px;
+}
+
+QScrollBar::add-line:vertical {
+    height: 10px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+    background:transparent;
+}
+
+QScrollBar::sub-line:vertical {
+    height: 10px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+    background:transparent;
+}
+
+/*QScrollBar::up-arrow:vertical{
+    border-image: url($SKIN_DIR/scrollbar/dropdown.png);
+    width: 10px;
+    height: 7px;
+}
+
+QScrollBar::up-arrow:vertical:hover{
+    border-image: url($SKIN_DIR/scrollbar/dropdown_h.png);
+    width: 10px;
+    height: 7px;
+}
+
+QScrollBar::up-arrow:vertical:pressed{
+    border-image: url($SKIN_DIR/scrollbar/dropdown_p.png);
+    width: 10px;
+    height: 7px;
+}
+
+QScrollBar::up-arrow:vertical:disabled{
+    border-image: url($SKIN_DIR/scrollbar/dropdown_d.png);
+    width: 10px;
+    height: 7px;
+}
+
+QScrollBar::down-arrow:vertical{
+    border-image: url($SKIN_DIR/scrollbar/dropup.png);
+    width: 10px;
+    height: 7px;
+}
+
+QScrollBar::down-arrow:vertical:hover{
+    border-image: url($SKIN_DIR/scrollbar/dropup_h.png);
+    width: 10px;
+    height: 7px;
+}
+
+QScrollBar::down-arrow:vertical:pressed{
+    border-image: url($SKIN_DIR/scrollbar/dropup_p.png);
+    width: 10px;
+    height: 7px;
+}
+
+QScrollBar::down-arrow:vertical:disabled{
+    border-image: url($SKIN_DIR/scrollbar/dropup_d.png);
+    width: 10px;
+    height: 7px;
+}
+*/
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+/*********** scrollbar skin end ************/
+
+/*********** button skin start ************/
+QPushButton {
+    border-image:url($SKIN_DIR/button/pushbutton.png) 3 3 3 3;
+    border-width:3px 3px 3px 3px;
+    padding:-3px -3px -3px -3px;
+    min-width:70px;
+    min-height:26px;
+    max-height:26px;
+	color: white;
+	font: 14px;
+}
+
+QPushButton:hover{
+    border-image:url($SKIN_DIR/button/pushbutton_h.png);
+}
+
+QPushButton:pressed{
+    border-image:url($SKIN_DIR/button/pushbutton_p.png);
+}
+
+QPushButton:disabled{
+    border-image:url($SKIN_DIR/button/pushbutton_d.png);
+    color: rgb(45, 46, 48);
+}
+
+
+/*QPushButton#pushButton_cancel {
+    border-image:url($SKIN_DIR/button/button_orange.png) 3 3 3 3;
+    border-width:3px 3px 3px 3px;
+    padding:-3px -3px -3px -3px;
+    min-width:90px;
+    min-height:28px;
+    max-height:28px;
+	color: white;
+	font: 16px "Segoe UI";
+}
+
+QPushButton#pushButton_cancel:hover{
+    border-image:url($SKIN_DIR/button/button_orange_h.png);
+}
+
+QPushButton#pushButton_cancel:pressed{
+    border-image:url($SKIN_DIR/button/button_orange_p.png);
+}
+
+QPushButton#pushButton_cancel:disabled{
+    border-image:url($SKIN_DIR/button/button_orange_d.png);
+    color: rgb(45, 46, 48);
+}
+
+
+QPushButton#pushButton_close {
+    border-image:url($SKIN_DIR/button/button_orange.png) 3 3 3 3;
+    border-width:3px 3px 3px 3px;
+    padding:-3px -3px -3px -3px;
+    min-width:90px;
+    min-height:28px;
+    max-height:28px;
+	color: white;
+	font: 16px "Segoe UI";
+}
+
+QPushButton#pushButton_close:hover{
+    border-image:url($SKIN_DIR/button/button_orange_h.png);
+}
+
+QPushButton#pushButton_close:pressed{
+    border-image:url($SKIN_DIR/button/button_orange_p.png);
+}
+
+QPushButton#pushButton_close:disabled{
+    border-image:url($SKIN_DIR/button/button_orange_d.png);
+    color: rgb(45, 46, 48);
+}
+
+
+QPushButton#btn_Cancel {
+    border-image:url($SKIN_DIR/button/button_orange.png) 3 3 3 3;
+    border-width:3px 3px 3px 3px;
+    padding:-3px -3px -3px -3px;
+    min-width:90px;
+    min-height:28px;
+    max-height:28px;
+	color: white;
+	font: 16px "Segoe UI";
+}
+
+QPushButton#btn_Cancel:hover{
+    border-image:url($SKIN_DIR/button/button_orange_h.png);
+}
+
+QPushButton#btn_Cancel:pressed{
+    border-image:url($SKIN_DIR/button/button_orange_p.png);
+}
+
+QPushButton#btn_Cancel:disabled{
+    border-image:url($SKIN_DIR/button/button_orange_d.png);
+    color: rgb(45, 46, 48);
+}
+*/
+
+QPushButton#cancelBtn {
+    border-image:url($SKIN_DIR/button/button_orange.png) 3 3 3 3;
+    border-width:3px 3px 3px 3px;
+    padding:-4px -3px -2px -3px;
+    min-width:70px;
+    min-height:26px;
+    max-height:26px;
+	color: white;
+	font: 14px "Segoe UI";
+}
+
+QPushButton#cancelBtn:hover{
+    border-image:url($SKIN_DIR/button/button_orange_h.png);
+}
+
+QPushButton#cancelBtn:pressed{
+    border-image:url($SKIN_DIR/button/button_orange_p.png);
+}
+
+QPushButton#cancelBtn:disabled{
+    border-image:url($SKIN_DIR/button/button_orange_d.png);
+    color: rgb(45, 46, 48);
+}
+
+
+/*********** button skin end ************/
+
+/*********** radiobutton skin start ************/
+QRadioButton::indicator {
+    width: 14px;
+    height: 14px;
+}
+
+RadioButton::indicator::unchecked {
+    image: url($SKIN_DIR/radiobutton/radiobutton_unchecked.png);
+}
+
+QRadioButton::indicator:unchecked:hover {
+    image: url($SKIN_DIR/radiobutton/radiobutton_unchecked_h.png);
+}
+
+QRadioButton::indicator:unchecked:pressed {
+    image: url($SKIN_DIR/radiobutton/radiobutton_unchecked_p.png);
+}
+
+QRadioButton::indicator:unchecked::disabled {
+    image: url($SKIN_DIR/radiobutton/radiobutton_unchecked_d.png);
+}
+
+RadioButton::indicator::checked {
+    image: url($SKIN_DIR/radiobutton/radiobutton_checked.png);
+}
+
+QRadioButton::indicator:checked:hover {
+    image: url($SKIN_DIR/radiobutton/radiobutton_checked_h.png);
+}
+
+QRadioButton::indicator:checked:pressed {
+    image: url($SKIN_DIR/radiobutton/radiobutton_checked_p.png);
+}
+
+QRadioButton::indicator::checked::disabled {
+    image: url($SKIN_DIR/radiobutton/radiobutton_checked_d.png);
+}
+/*********** radiobutton skin end ************/
+
+/*********** LineEdit skin start ************/
+QLineEdit {
+    border-image: url($SKIN_DIR/edit/line_edit.png) 3 3 3 3;
+    border-width:3px 3px 3px 3px;
+    padding: 0px -3px 0px -3px;
+    min-height:34px;
+    max-height:34px;
+}
+/*********** LineEdit skin end ************/
+
+/*********** combobox skin start ************/
+QComboBox{
+    border-image: url($SKIN_DIR/combobox/combobox.png) 2 26 2 2;
+    border-width:2px 26px 2px 2px;
+    padding:-2px -26px -2px 5px;
+    min-height:26px;
+    max-height:26px;
+    font: 13px "Segoe UI";
+    color: rgb(103, 113, 128);
+    /*background-color: white;*/
+}
+
+QComboBox:on{
+    border-image: url($SKIN_DIR/combobox/combobox.png) 2 26 2 2;
+    border-width:2px 26px 2px 2px;
+}
+
+QComboBox:focus{
+    border-image: url($SKIN_DIR/combobox/combobox_f.png) 2 26 2 2;
+    border-width:2px 26px 2px 2px;
+}
+
+QComboBox:hover{
+    border-image: url($SKIN_DIR/combobox/combobox_h.png) 2 26 2 2;
+    border-width:2px 26px 2px 2px;
+}
+
+/*QComboBox:pressed{
+    border-image: url($SKIN_DIR/combobox/combobox_p.png) 2 26 2 2;
+    border-width:2px 26px 2px 2px;
+}
+*/
+QComboBox:disabled{
+    border-image: url($SKIN_DIR/combobox/combobox_d.png) 2 26 2 2;
+    border-width:2px 26px 2px 2px;
+    /*background-color: transparent;*/
+}
+
+QComboBox::down-arrow{
+     image: url($SKIN_DIR/combobox/combobox_arrow.png);
+}
+
+QComboBox::down-arrow:focus{
+     image: url($SKIN_DIR/combobox/combobox_arrow.png);
+}
+
+QComboBox::down-arrow:hover{
+     image: url($SKIN_DIR/combobox/combobox_arrow_h.png);
+}
+
+QComboBox::down-arrow:pressed{
+     image: url($SKIN_DIR/combobox/combobox_arrow_p.png);
+}
+
+QComboBox::down-arrow:disabled{
+     image: url($SKIN_DIR/combobox/combobox_arrow_d.png);
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: border;
+    subcontrol-position: right;
+    width: 26px;
+	height: 26px;
+    border-left-style: solid;
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid rgb(155, 158, 164);/*105, 107, 110);*/
+    outline: 0px;
+    background-color: white;
+    selection-background-color: rgb(155, 158, 164);
+}
+
+/*********** combobox skin end ************/
+
+
+/***************/
+/* ProgressBar */
+/***************/
+QProgressBar {
+    border-image: url($SKIN_DIR/progressbar/progressbar_bg.png) 2 2 2 3;
+    border-width: 2px 2px 2px 2px;
+    min-height:12px;
+    max-height:12px;
+    text-align: center;
+    font: 11px "Arial";
+    color: rgb(105, 105, 105);
+}
+
+QProgressBar::chunk {
+    border-image: url($SKIN_DIR/progressbar/progressbar.png) repeat repeat;
+}
+
+QSizeGrip {
+     image: url($SKIN_DIR/sizegrip.png);
+     min-width: 13px;
+     min-height:13px;
+}
+
+/*** QCheckBox ***/
+
+ QCheckBox {
+     spacing: 5px;
+     color: black;
+ }
+ QCheckBox:disabled {
+    color: rgb(198,197,201);
+ }
+
+ QCheckBox::indicator {
+     width: 13px;
+     height: 13px;
+ }
+ 
+ QCheckBox::indicator:indeterminate {
+ 	image: url($SKIN_DIR/checkbox/checkbox_indeterminate.png);
+}
+
+ QCheckBox::indicator:indeterminate:disabled {
+ 	image: url($SKIN_DIR/checkbox/checkbox_indeterminate_d.png);
+}
+
+ QCheckBox::indicator:unchecked {
+     image: url($SKIN_DIR/checkbox/checkbox_unchecked.png);
+ }
+
+ QCheckBox::indicator:unchecked:hover {
+     image: url($SKIN_DIR/checkbox/checkbox_unchecked_h.png);
+ }
+
+ QCheckBox::indicator:unchecked:pressed {
+     image: url($SKIN_DIR/checkbox/checkbox_unchecked_p.png);
+ }
+ 
+ QCheckBox::indicator:unchecked::disabled {
+     image: url($SKIN_DIR/checkbox/checkbox_unchecked_d.png);
+ }
+
+ QCheckBox::indicator:checked {
+     image: url($SKIN_DIR/checkbox/checkbox_checked.png);
+ }
+
+ QCheckBox::indicator:checked:hover {
+     image: url($SKIN_DIR/checkbox/checkbox_checked_h.png);
+ }
+
+
+ QCheckBox::indicator:checked:pressed {
+     image: url($SKIN_DIR/checkbox/checkbox_checked_p.png);
+ }
+ 
+ QCheckBox::indicator:checked::disabled {
+     image: url($SKIN_DIR/checkbox/checkbox_checked_d.png);
+ }

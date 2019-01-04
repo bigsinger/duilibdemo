@@ -1,0 +1,45 @@
+/*<--
+-->*/
+
+ImPopWidget{
+	min-width: 240px;
+	max-width: 240px;
+}
+
+/* for VC */
+QFrame#inputFrame QComboBox
+{
+	min-width: 200px;
+	max-width: 400px;
+}
+
+ImmDVDSettingDialog {
+	min-width: 420px;
+	max-width: 420px;
+	min-height: 320px;
+	max-height: 320px;
+}
+
+
+ImChooseColumnDialog {
+	min-width: 400px;
+	max-width: 400px;
+	min-height: 420px;
+	max-height: 420px;	
+}
+
+ImmNormalizerDialog
+{
+	min-width: 300px;
+	max-width: 300px;
+	min-height: 210px;
+	max-height: 210px;
+}
+
+QFrame#cpuFrame QLabel#labelCpuUsage
+{
+	min-width:75px;
+	width:75px;
+	max-width:75px;
+}
+

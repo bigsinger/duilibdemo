@@ -1,0 +1,101 @@
+/*<--
+-->*/
+
+ImmTaskItemView::item {
+	min-height: 20px;
+	max-height: 20px;
+}
+
+QTreeView#taskList{
+    background-color:#ffffff;
+    border-color:#464950;
+    qproperty-alternatingRowColors:0;
+}
+
+QTreeView#taskList::item:selected:active{
+	  margin: 0px;
+	  color:white;
+}
+
+QTreeView#taskList::item:alternate {
+    color:#515151;
+}
+
+QTreeView#taskList::item {
+    color:#515151;
+}
+
+QTreeView#taskList::item:hover {
+    color:#515151;
+ }
+
+QTreeView#taskList::item:selected {
+    color:white;
+}
+
+QTreeView#taskList::item:selected:active{
+	  margin: 0px;
+}
+
+ImmTaskItemView::item {
+	min-height: 20px;
+	max-height: 20px;
+}
+
+QTreeView#taskList QLineEdit {
+	border-image: url();
+    border-width:0px;
+    padding: 0px;
+    margin-top: 0px;
+    min-height: 18px;
+	max-height: 18px;
+}
+
+QProgressDialog#IMM_IMPORT_PROGRESSDIALOG {
+	min-width : 400px;
+	max-width : 400px;
+	min-height : 100px;
+	max-height : 100px;
+}
+
+QProgressDialog QProgressBar {
+	text-align: center;
+}
+
+
+/* task info window*/
+ImmTaskInfoWindow[imwidget_is_window="true"]
+{
+	qproperty-contentMargin:url(10,10,10,10);
+	qproperty-activedCss: "<style type='text/css'>body{background-color: rgb(255,255,255); color: #585858;}</style>";
+	qproperty-deactivedCss: "<style type='text/css'>body{background-color: rgb(242,242,242);color: #585858;}</style>";
+}
+
+/*log view*/
+ImmTaskLogWindow[imwidget_is_window="true"]
+{
+	qproperty-contentMargin:url(10,10,10,10);
+}
+
+ImmTaskLogWindow[imwidget_is_window="true"] QTextBrowser
+{
+	border: 0px solid red;
+	background-color:rgb(242,242,242);
+}
+
+ImmTaskLogWindow[imwidget_is_window="true"] QTextBrowser:active
+{
+	border: 0px;
+	background-color:rgb(255,255,255);
+}
+
+ImChooseColumnDialog
+{
+	qproperty-contentMargin:url(10,10,10,10);
+	min-height: 400px;
+}
+
+ImmDVDSettingDialog
+{
+  qproperty-contentMargin:url(10,14,10,14);
+}

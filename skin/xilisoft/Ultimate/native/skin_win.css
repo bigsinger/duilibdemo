@@ -1,0 +1,18 @@
+﻿/*<--
+-->*/
+
+* {
+	font-family: "$FONT_FAMILY";
+	font-size: $FONT_SIZE_SUB_LEVEL2;
+}
+
+
+ImTitleBar > QLabel#titleText {
+	font-family: "$FONT_FAMILY";
+	font-size: $FONT_SIZE_SUB_LEVEL1;
+}
+
+xiliUpdateWindow#imfc_updatewindow QFrame#frame_Web
+{
+    border: 1px solid rgb(160,160,160);
+}

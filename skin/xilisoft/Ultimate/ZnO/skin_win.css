@@ -1,0 +1,132 @@
+﻿/*<--
+-->*/
+
+* {
+	font-family: "$FONT_FAMILY";
+	font-size: $FONT_SIZE_SUB_LEVEL2;
+}
+
+
+ImTitleBar > QLabel#titleText {
+	font-family: "$FONT_FAMILY";
+	font-size: $FONT_SIZE_SUB_LEVEL1;
+}
+
+QListView {
+	background-color:rgb(255,255,255);
+} 
+
+QWebView{
+    border-image:url($SKIN_DIR/bg.png)1;
+    border-width:1px;
+}
+
+QTabWidget::pane { 
+     border-image: url($SKIN_DIR/tab_bg.png) 13 13 13 13;
+     border-width: 13px 13px 13px 13px;
+     padding:-11px;
+     margin-top:-2px;
+ }
+
+ QTabWidget::tab-bar {
+     left: 0px;
+     top: 0px;
+ }
+ 
+ QTabBar::tab {
+     color: rgb(66,77,93);
+     border-image: url($SKIN_DIR/tabbutton.png) 17 17 7 17;
+     border-width:17px 17px 7px 17px;
+     min-width: 69px;
+     max-width: 69px;
+	 min-height:13px;
+	 max-height:13px;
+     padding:-10px -10px 0px -10px;
+ }
+
+ QTabBar::tab:!selected:hover {
+     border-image: url($SKIN_DIR/tabbutton_h.png) 17 17 7 17;
+     border-width:17px 17px 7px 17px;
+ }
+ 
+ QTabBar::tab:selected {
+	 border-image: url($SKIN_DIR/tabbutton_f.png) 17 17 7 17;
+     border-width:17px 17px 7px 17px;
+     color:#4c515d;
+ }
+
+ QTabBar::tab:first:selected {
+     margin-bottom: -1px; 	
+ }
+
+ QTabBar::tab:!selected {
+	 border-image: url($SKIN_DIR/tabbutton.png) 17 17 7 17;
+     border-width:17px 17px 7px 17px;
+     margin-top: 3px;
+ }
+ 
+ /*** QSpinBox  QDoubleSpinBox  QDateTimeEdit ***/
+ QSpinBox,QDoubleSpinBox,QDateTimeEdit {
+     color:rgb(88,88,88);
+     
+     padding-right: -5px; /* make room for the arrows */
+     padding-left: -4px;
+     border-image: url($SKIN_DIR/edit_combobox.png) 5;
+     border-width: 5px;
+     min-height:12px;
+	 max-height:12px;
+ }
+ QSpinBox:disabled,QDoubleSpinBox:disabled,QDateTimeEdit:disabled {
+     border-image: url($SKIN_DIR/edit_combobox_d.png) 5;
+     border-width: 5px;
+     color: #c5c5c5;
+ }
+
+ QSpinBox::up-button,QDoubleSpinBox::up-button,QDateTimeEdit::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* position at the top right corner */
+
+     width: 21px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+     height:9px;
+     border-image: url($SKIN_DIR/spin_up.png) 1;
+     border-width: 1px;
+ }
+
+ QSpinBox::up-button:disabled,QDoubleSpinBox::up-button:disabled,QDateTimeEdit::up-button:disabled {
+     border-image: url($SKIN_DIR/spin_up_d.png) 1;
+ }
+
+ QSpinBox::up-button:hover,QDoubleSpinBox::up-button:hover,QDateTimeEdit::up-button:hover {
+     border-image: url($SKIN_DIR/spin_up_h.png) 1;
+ }
+
+ QSpinBox::up-button:pressed,QDoubleSpinBox::up-button:pressed,QDateTimeEdit::up-button:pressed {
+     border-image: url($SKIN_DIR/spin_up_p.png) 1;
+ }
+
+
+ QSpinBox::down-button,QDoubleSpinBox::down-button,QDateTimeEdit::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* position at bottom right corner */
+
+     width: 21px;
+     height:9px;
+     border-image: url($SKIN_DIR/spin_down.png) 1;
+     border-width: 1px;
+ }
+
+ QSpinBox::down-button:disabled,QDoubleSpinBox::down-button:disabled,QDateTimeEdit::down-button:disabled {
+     border-image: url($SKIN_DIR/spin_down_d.png) 1;
+ }
+
+ QSpinBox::down-button:hover,QDoubleSpinBox::down-button:hover,QDateTimeEdit::down-button:hover {
+     border-image: url($SKIN_DIR/spin_down_h.png) 1;
+ }
+
+ QSpinBox::down-button:pressed,QDoubleSpinBox::down-button:pressed,QDateTimeEdit::down-button:pressed {
+     border-image: url($SKIN_DIR/spin_down_p.png) 1;
+ }
+
+ QSpinBox::down-arrow:off,QDoubleSpinBox::down-arrow:off,QDateTimeEdit::down-arrow:off { /* off state when value in min */
+    image: url($SKIN_DIR/spin_down_d.png);
+ }

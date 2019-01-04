@@ -1,0 +1,44 @@
+/*<--
+-->*/
+
+* {
+	font-family: "$FONT_FAMILY";
+	font-size: $FONT_SIZE_SUB_LEVEL2;
+}
+
+
+ImTitleBar > QLabel#titleText {
+	font-family: "$FONT_FAMILY";
+	font-size: $FONT_SIZE_SUB_LEVEL1;
+}
+
+/*--------------------------QToolButton with menu----------------------------*/
+ QToolButton[popupMode="1"] {
+     border-image:url($SKIN_DIR/menubutton.png)3 12 5 3;
+     border-width:3px 12px 5px 3px;
+     padding:-3px 0px -5px -3px;
+     min-height:26px;
+     max-height:26px;
+ }
+ 
+ QToolButton[popupMode="1"]:focus {
+     border-image:url($SKIN_DIR/menubutton_f.png)3 12 5 3;
+     border-width:3px 12px 5px 3px;
+ }
+ 
+ QToolButton[popupMode="1"]:pressed {
+     border-image:url($SKIN_DIR/menubutton_p.png)3 12 5 3;
+     border-width:3px 12px 5px 3px;
+ }
+
+ QToolButton::menu-button {
+     border-image:url();
+     width:11px;
+ }
+ QToolButton::menu-button:pressed {
+     border-image:url();
+ }
+
+ QToolButton::menu-arrow {
+     image: url();
+ }

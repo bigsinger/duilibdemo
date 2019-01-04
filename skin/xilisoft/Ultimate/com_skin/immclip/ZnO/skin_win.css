@@ -1,0 +1,14 @@
+/*<--
+-->*/
+
+ImClipDialog ImClipSegmentCtrl[no_mac_qt_48="true"]#clip_segmentctrl {
+	 border: 1px solid #9ca3ae;
+	 background-color: rgba(255,255,255, 100%);
+	 border-image: url();
+	 background-image: url();
+	 margin: 6px 7px 0px 7px;
+}
+
+ImClipSegmentCtrl#clip_segmentctrl::item:selected {
+  background: #3399FF;
+}

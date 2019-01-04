@@ -1,0 +1,446 @@
+/*<--
+-->*/
+
+/*** ImClipDialog */
+ImClipDialog 
+{
+	qproperty-contentMargin:url(1,3,4,3);
+	min-width: 705px;
+}
+
+
+ImClipSegmentCtrl#clip_segmentctrl::item QLabel#clip_seg_name,ImClipSegmentCtrl#clip_segmentctrl::item QLabel#clip_lb_start,ImClipSegmentCtrl#clip_segmentctrl::item QLabel#clip_lb_end{
+	color:black;
+	margin-left:12px;
+	margin-right:10px;
+}
+
+ImClipSegmentCtrl#clip_segmentctrl::item QLabel#clip_lb_duration
+{
+	color:black;
+	margin-left:15px;
+	margin-right:12px;
+}
+
+ImClipDialog QSplitter#splitter::handle:vertical{
+	image: url();
+	border-image:url();
+	border-width:0px;
+	background-image: url("$SKIN_DIR/bg_splitter_v.png");
+	margin:0px 3px 0px 3px;
+	height:1px;
+}
+
+ImSliderBar {
+		margin : 0px;
+		border-width : 0px;
+}
+
+ImSliderBar#clip_slider {
+	    border-width : 5px 1px 4px 1px;
+		qproperty-horiMargin : 15;
+		qproperty-foreTop : 12;
+		qproperty-fore : "$SKIN_DIR/sliderblock_h_bg.png";
+		qproperty-clipForeTop : 12;
+		qproperty-clipFore : "$SKIN_DIR/sliderblock_h_bg_gone_s.png";
+		qproperty-clipForeSelected : "$SKIN_DIR/sliderblock_h_bg_gone_s.png";
+		qproperty-clipStart : "$SKIN_DIR/segment_begin.png";
+		qproperty-clipEnd : "$SKIN_DIR/segment_end.png";
+		qproperty-clipTagTop : 17;
+		qproperty-thumbTop : 4;
+		qproperty-thumb : "$SKIN_DIR/thumb.png";
+		qproperty-disableThumb : "$SKIN_DIR/thumb_d.png";
+		min-height: 32px;
+		max-height: 32px;
+}
+
+ImSliderBar#clip_segment_slider {
+		qproperty-horiMargin : 10;
+		qproperty-foreTop : 2;
+		qproperty-fore : "$SKIN_DIR/sliderblock_h_bg.png";
+		qproperty-clipForeTop : 2;
+		qproperty-clipFore : "$SKIN_DIR/sliderblock_h_bg_gone.png";
+		qproperty-clipForeSelected : "$SKIN_DIR/sliderblock_h_bg_gone_s.png";
+		min-height: 12px;
+		max-height: 12px;
+}
+
+ImClipDialog QFrame#player_toolbar{
+	border-width : 5px 1px 4px 1px;
+	min-height: 31px;
+	max-height: 31px;
+}
+
+ImClipDialog QFrame#clip_info_frame{
+	margin : 0px 3px 2px 3px;
+	border-image: url($SKIN_DIR/bg_toolbar.png) 5 1 4 1;
+	border-width : 5px 1px 4px 1px;
+	padding: 0px 6px 0px 6px;
+	min-height: 34px;
+	max-height: 34px;
+}
+
+/*ImClipDialog QToolButton,ImClipDialog QToolButton:hover, ImClipDialog QToolButton:pressed, ImClipDialog QToolButton:disabled {
+	border-image: url();
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+}*/
+
+ImClipDialog QToolButton#clip_play,
+ImClipDialog QToolButton#clip_play_all_segments,
+ImClipDialog QToolButton#clip_prev_mark,
+ImClipDialog QToolButton#clip_next_mark,
+ImClipDialog QToolButton#clip_prev_frame,
+ImClipDialog QToolButton#clip_next_frame,
+ImClipDialog QToolButton#clip_start_point,
+ImClipDialog QToolButton#clip_end_point,
+ImClipDialog QToolButton#clip_add_clip,
+ImClipDialog QToolButton#clip_video_split
+{
+	min-width: 31px;
+	min-height:31px;
+	max-width: 31px;
+	max-height:31px;
+	background-repeat: no-repeat;
+	border-image: url();
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	margin-bottom:3px;
+}
+
+ImClipDialog QToolButton#clip_play_all_segments {
+	background-image: url($SKIN_DIR/btn_previewbar_playall.png) no-repeat;
+	
+}
+ImClipDialog QToolButton#clip_play_all_segments:hover {
+	background-image: url($SKIN_DIR/btn_previewbar_playall_h.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_play_all_segments:pressed {
+	background-image: url($SKIN_DIR/btn_previewbar_playall_p.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_play_all_segments:disabled {
+	background-image: url($SKIN_DIR/btn_previewbar_playall_d.png) no-repeat;
+}
+
+ImClipDialog QToolButton#clip_prev_mark 
+{
+	background-image: url($SKIN_DIR/btn_previewbar_previousm.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_prev_mark:hover {
+	background-image: url($SKIN_DIR/btn_previewbar_previousm_h.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_prev_mark:pressed {
+	background-image: url($SKIN_DIR/btn_previewbar_previousm_p.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_prev_mark:disabled {
+	background-image: url($SKIN_DIR/btn_previewbar_previousm_d.png) no-repeat;
+}
+
+ImClipDialog QToolButton#clip_prev_frame
+{
+	background-image: url($SKIN_DIR/btn_previewbar_prevfm.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_prev_frame:hover {
+	background-image: url($SKIN_DIR/btn_previewbar_prevfm_h.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_prev_frame:pressed {
+	background-image: url($SKIN_DIR/btn_previewbar_prevfm_p.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_prev_frame:disabled {
+	background-image: url($SKIN_DIR/btn_previewbar_prevfm_d.png) no-repeat;
+}
+
+ImClipDialog QToolButton#clip_next_mark {
+	background-image: url($SKIN_DIR/btn_previewbar_nextm.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_next_mark:hover {
+	background-image: url($SKIN_DIR/btn_previewbar_nextm_h.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_next_mark:pressed {
+	background-image: url($SKIN_DIR/btn_previewbar_nextm_p.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_next_mark:disabled {
+	background-image: url($SKIN_DIR/btn_previewbar_nextm_d.png) no-repeat;
+}
+
+ImClipDialog QToolButton#clip_next_frame{
+	background-image: url($SKIN_DIR/btn_previewbar_nextfm.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_next_frame:hover {
+	background-image: url($SKIN_DIR/btn_previewbar_nextfm_h.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_next_frame:pressed {
+	background-image: url($SKIN_DIR/btn_previewbar_nextfm_p.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_next_frame:disabled {
+	background-image: url($SKIN_DIR/btn_previewbar_nextfm_d.png) no-repeat;
+}
+
+ImClipDialog QToolButton#clip_start_point 
+{
+	background-image: url($SKIN_DIR/btn_previewbar_start.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_start_point:hover {
+	background-image: url($SKIN_DIR/btn_previewbar_start_h.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_start_point:pressed {
+	background-image: url($SKIN_DIR/btn_previewbar_start_p.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_start_point:disabled {
+	background-image: url($SKIN_DIR/btn_previewbar_start_d.png) no-repeat;
+}
+
+ImClipDialog QToolButton#clip_end_point 
+{
+	background-image: url($SKIN_DIR/btn_previewbar_end.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_end_point:hover {
+	background-image: url($SKIN_DIR/btn_previewbar_end_h.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_end_point:pressed {
+	background-image: url($SKIN_DIR/btn_previewbar_end_p.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_end_point:disabled {
+	background-image: url($SKIN_DIR/btn_previewbar_end_d.png) no-repeat;
+}
+
+ImClipDialog QToolButton#clip_add_clip
+{
+	background-image: url($SKIN_DIR/btn_previewbar_new.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_add_clip:hover {
+	background-image: url($SKIN_DIR/btn_previewbar_new_h.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_add_clip:pressed {
+	background-image: url($SKIN_DIR/btn_previewbar_new_p.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_add_clip:disabled {
+	background-image: url($SKIN_DIR/btn_previewbar_new_d.png) no-repeat;
+}
+
+/*toolbar buttons*/
+ImClipDialog QPushButton#clip_moveup, ImClipDialog QPushButton#clip_movedown, ImClipDialog QPushButton#clip_new_clip, ImClipDialog QPushButton#clip_segment_delete {
+	min-width: 24px;
+	min-height: 24px;
+	max-width: 24px;
+	max-height: 24px;
+	background-repeat: no-repeat;
+	border-image: url();
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+}
+
+ImClipDialog QPushButton#clip_new_clip {
+	background-image: url($SKIN_DIR/btn_toolbar_new.png);
+}
+ImClipDialog QPushButton#clip_new_clip:hover {
+	background-image: url($SKIN_DIR/btn_toolbar_new_h.png);
+}
+ImClipDialog QPushButton#clip_new_clip:pressed {
+	background-image: url($SKIN_DIR/btn_toolbar_new_p.png);
+}
+ImClipDialog QPushButton#clip_new_clip:disabled {
+	background-image: url($SKIN_DIR/btn_toolbar_new_d.png);
+}
+
+ImClipDialog QPushButton#clip_segment_delete {
+	background-image: url($SKIN_DIR/btn_toolbar_del.png);
+}
+ImClipDialog QPushButton#clip_segment_delete:hover {
+	background-image: url($SKIN_DIR/btn_toolbar_del_h.png);
+}
+ImClipDialog QPushButton#clip_segment_delete:pressed {
+	background-image: url($SKIN_DIR/btn_toolbar_del_p.png);
+}
+ImClipDialog QPushButton#clip_segment_delete:disabled {
+	background-image: url($SKIN_DIR/btn_toolbar_del_d.png);
+}
+
+ImClipDialog QPushButton#clip_moveup {
+	background-image: url($SKIN_DIR/btn_toolbar_up.png);
+}
+ImClipDialog QPushButton#clip_moveup:hover {
+	background-image: url($SKIN_DIR/btn_toolbar_up_h.png);
+}
+ImClipDialog QPushButton#clip_moveup:pressed {
+	background-image: url($SKIN_DIR/btn_toolbar_up_p.png);
+}
+ImClipDialog QPushButton#clip_moveup:disabled {
+	background-image: url($SKIN_DIR/btn_toolbar_up_d.png);
+}
+
+ImClipDialog QPushButton#clip_movedown {
+	background-image: url($SKIN_DIR/btn_toolbar_down.png);
+}
+ImClipDialog QPushButton#clip_movedown:hover {
+	background-image: url($SKIN_DIR/btn_toolbar_down_h.png);
+}
+ImClipDialog QPushButton#clip_movedown:pressed {
+	background-image: url($SKIN_DIR/btn_toolbar_down_p.png);
+}
+ImClipDialog QPushButton#clip_movedown:disabled {
+	background-image: url($SKIN_DIR/btn_toolbar_down_d.png);
+}
+
+
+ImClipDialog QDateTimeEdit {
+	   max-width:115px;
+     padding-right: -17px;
+     padding-left: 0px;
+     border-image: url($SKIN_DIR/edit_combobox.png) 5 10 5 7;
+     border-width: 5px 10px 5px 7px;
+     min-height:12px;
+	   max-height:12px; 
+ }
+ ImClipDialog QDateTimeEdit:disabled {
+     border-image: url($SKIN_DIR/spinbox_bg_d.png) 5 10 5 7;
+     border-width: 5px 10px 5px 7px; 
+ }
+
+ ImClipDialog QSpinBox::down-button:disabled,QDoubleSpinBox::down-button:disabled,QDateTimeEdit::down-button:disabled {
+     border-image: url();
+     border-width:0px;
+ }
+ 
+ ImClipDialog QSpinBox::up-button:disabled,QDoubleSpinBox::up-button:disabled,QDateTimeEdit::up-button:disabled {
+     border-image: url();
+     border-width:0px;
+ }
+
+ ImClipDialog QDateTimeEdit:disabled{
+	background: transparent;
+	background-image: url();
+	border-image: url();
+	color:black;
+}
+
+/*QSlider*/
+ImClipDialog QSlider {
+	min-width: 60px;
+	max-width: 60px;
+}
+
+ImClipDialog QFrame#clip_segmentwidget_frame{
+	margin: 0px;
+	padding: 0px 0px 0px 6px;
+	border-image: url($SKIN_DIR/bg_segmentlist_item_sel.png) 1px 0px;
+	border-width: 1px 0px;
+}
+
+ImClipDialog QFrame#clip_segmentwidget_frame:disabled{
+	border-image: url($SKIN_DIR/bg_segmentlist_item.png) 1px 0px;
+}
+
+ImClipDialog QFrame#clip_bottom_frame{
+	margin: 0px 0px 10px 0px;
+}
+
+ImClipDialog ImClipSegmentCtrl#clip_segmentctrl:item {
+	min-height: 50px;
+	max-height: 50px;
+}
+ 
+ImmClipPlayer QLabel#vc_preview_duration_lbl {
+	margin-left: 6px;
+	min-width: 163px;
+}
+
+ImmClipPlayer QFrame#clip_player_viewport {
+	margin: 0px 6px 0px 6px;
+}
+
+ImmClipPlayer#imWidget
+{
+	    margin : 0px 3px;
+	    border-image: url($SKIN_DIR/bg_clip_player.png) 5 1 4 1;
+	    border-width : 5px 1px 4px 1px;
+}
+
+ImClipDialog QFrame#clip_segmentwidget_frame:disabled QLabel
+{
+	color: rgb(88,88,88);
+}
+
+ImClipDialog ImTitleBar#imTitleBar
+{
+	margin-bottom:0px;
+}
+
+ImClipDialog QFrame#clip_segmentwidget_frame:disabled QTimeEdit
+{
+	color: rgb(88,88,88);
+}
+
+QToolButton#clip_show_clip{
+	border-image: url();
+	padding: 0px;
+	background-image: url("$SKIN_DIR/btn_clip_down.png");
+	border: 0px;
+	min-height: 24px;
+	max-height: 24px;
+	max-width: 24px;
+	min-width: 24px;
+	
+}
+
+QToolButton#clip_show_clip:hover {
+	background-image: url("$SKIN_DIR/btn_clip_down_h.png");
+}
+
+QToolButton#clip_show_clip:pressed {
+	background-image: url("$SKIN_DIR/btn_clip_down_p.png");
+}
+
+QToolButton#clip_show_clip:disabled {
+	background-image: url("$SKIN_DIR/btn_clip_down_d.png");
+}
+
+QToolButton#clip_show_clip:checked {
+	background-image: url("$SKIN_DIR/btn_clip_up.png");
+}
+
+QToolButton#clip_show_clip:checked:hover {
+	background-image: url("$SKIN_DIR/btn_clip_up_h.png");
+}
+
+QToolButton#clip_show_clip:checked:pressed {
+	background-image: url("$SKIN_DIR/btn_clip_up_p.png");
+}
+
+QToolButton#clip_show_clip:checked:disabled {
+	background-image: url("$SKIN_DIR/btn_clip_up_d.png");
+}
+
+ImClipDialog QLabel#clip_segment_thumb
+{
+    min-width:80px;
+	max-width:80px;
+    min-height: 48px;
+	min-height: 48px;
+	margin-bottom:3px;
+	margin-left:3px;
+	margin-right:3px;
+	padding-left:-5px;
+}
+
+ImClipDialog QToolButton#vc_preview_stop_btn,ImClipDialog QToolButton#vc_preview_play_btn
+{
+	margin-bottom:3px;
+}
+
+ImClipDialog QToolButton#clip_video_split
+{
+	background-image: url($SKIN_DIR/clip_video_split.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_video_split:hover {
+	background-image: url($SKIN_DIR/clip_video_split_h.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_video_split:pressed {
+	background-image: url($SKIN_DIR/clip_video_split_p.png) no-repeat;
+}
+ImClipDialog QToolButton#clip_video_split:disabled {
+	background-image: url($SKIN_DIR/clip_video_split_d.png) no-repeat;
+}

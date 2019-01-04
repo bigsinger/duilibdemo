@@ -1,0 +1,407 @@
+/*<--
+-->*/
+
+/*ImMediaPreviewWidget QToolButton,
+ImMediaPreviewWidget QToolButton:hover,
+ImMediaPreviewWidget QToolButton:pressed,
+ImMediaPreviewWidget QToolButton:disabled 
+{
+	border-image: url();
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	
+}*/
+
+QToolButton#vc_preview_play_btn,
+QToolButton#vc_preview_pause_btn,
+QToolButton#vc_preview_stop_btn,
+QToolButton#vc_preview_mute_btn,
+QToolButton#vc_preview_unmute_btn,
+QToolButton#vc_preview_displayswitch_btn,
+QToolButton#vc_preview_snapshot_btn,
+QToolButton#vc_preview_opensnapshotfolder_btn 
+{
+	min-width: 31px;
+	min-height: 31px;
+	max-width: 31px;
+	max-height: 31px;
+	border-image: url();
+	padding: 0px -5px 0px 5px;
+	border-width: 0px;
+	border-radius: 0px;
+}
+
+QToolButton#vc_preview_play_btn 
+{
+	/*margin-left: 6px;*/
+	background-image: url("$SKIN_DIR/btn_preview_play.png");
+}
+QToolButton#vc_preview_play_btn:focus 
+{
+	background-image: url("$SKIN_DIR/btn_preview_play_h.png");
+}
+QToolButton#vc_preview_play_btn:hover 
+{
+	background-image: url("$SKIN_DIR/btn_preview_play_h.png");
+}
+QToolButton#vc_preview_play_btn:pressed 
+{
+	background-image: url("$SKIN_DIR/btn_preview_play_p.png");
+}
+QToolButton#vc_preview_play_btn:disabled 
+{
+	background-image: url("$SKIN_DIR/btn_preview_play_d.png");
+}
+
+QToolButton#vc_preview_pause_btn 
+{
+	/*margin-left: 6px;*/
+	background-image: url("$SKIN_DIR/btn_preview_pause.png");
+}
+QToolButton#vc_preview_pause_btn:hover 
+{
+	background-image: url("$SKIN_DIR/btn_preview_pause_h.png");
+}
+QToolButton#vc_preview_pause_btn:pressed 
+{
+	background-image: url("$SKIN_DIR/btn_preview_pause_p.png");
+}
+QToolButton#vc_preview_pause_btn:disabled 
+{
+	background-image: url("$SKIN_DIR/btn_preview_pause_d.png");
+}
+
+QToolButton#vc_preview_stop_btn 
+{
+	background-image: url("$SKIN_DIR/btn_preview_stop.png");
+}
+QToolButton#vc_preview_stop_btn:hover 
+{
+	background-image: url("$SKIN_DIR/btn_preview_stop_h.png");
+}
+QToolButton#vc_preview_stop_btn:pressed 
+{
+	background-image: url("$SKIN_DIR/btn_preview_stop_p.png");
+}
+QToolButton#vc_preview_stop_btn:disabled 
+{
+	background-image: url("$SKIN_DIR/btn_preview_stop_d.png");
+}
+
+QToolButton#vc_preview_mute_btn 
+{
+	background-image: url("$SKIN_DIR/btn_preview_mute.png");
+}
+QToolButton#vc_preview_mute_btn:hover 
+{
+	background-image: url("$SKIN_DIR/btn_preview_mute_h.png");
+}
+QToolButton#vc_preview_mute_btn:pressed 
+{
+	background-image: url("$SKIN_DIR/btn_preview_mute_p.png");
+}
+QToolButton#vc_preview_mute_btn:disabled 
+{
+	background-image: url("$SKIN_DIR/btn_preview_mute_d.png");
+}
+
+QToolButton#vc_preview_mute_btn
+{
+	padding: -2px 0px 0px 0px;
+
+}
+
+QToolButton#vc_preview_unmute_btn 
+{
+	background-image: url("$SKIN_DIR/btn_preview_unmute.png");
+}
+QToolButton#vc_preview_unmute_btn:hover 
+{
+	background-image: url("$SKIN_DIR/btn_preview_unmute_h.png");
+}
+QToolButton#vc_preview_unmute_btn:pressed 
+{
+	background-image: url("$SKIN_DIR/btn_preview_unmute_p.png");
+}
+QToolButton#vc_preview_unmute_btn:disabled 
+{
+	background-image: url("$SKIN_DIR/btn_preview_unmute_d.png");
+}
+
+
+QToolButton#vc_preview_displayswitch_btn 
+{
+	background-image: url("$SKIN_DIR/btn_preview_displayswitch.png");
+	background-repeat: no-repeat;
+}
+QToolButton#vc_preview_displayswitch_btn:hover 
+{
+	background-image: url("$SKIN_DIR/btn_preview_displayswitch_h.png");
+	background-repeat: no-repeat;
+}
+QToolButton#vc_preview_displayswitch_btn:pressed 
+{
+	background-image: url("$SKIN_DIR/btn_preview_displayswitch_p.png");
+	background-repeat: no-repeat;
+}
+QToolButton#vc_preview_displayswitch_btn:disabled 
+{
+	background-image: url("$SKIN_DIR/btn_preview_displayswitch_d.png");
+	background-repeat: no-repeat;
+}
+
+
+
+QToolButton#vc_preview_displayswitch_btn:checked
+{
+	background-image: url("$SKIN_DIR/btn_preview_effect.png");
+	background-repeat: no-repeat;
+}
+QToolButton#vc_preview_displayswitch_btn:checked:hover 
+{
+	background-image: url("$SKIN_DIR/btn_preview_effect_h.png");
+	background-repeat: no-repeat;
+}
+QToolButton#vc_preview_displayswitch_btn:checked:pressed 
+{
+	background-image: url("$SKIN_DIR/btn_preview_effect_p.png");
+	background-repeat: no-repeat;
+}
+QToolButton#vc_preview_displayswitch_btn:checked:disabled 
+{
+	background-image: url("$SKIN_DIR/btn_preview_effect_d.png");
+	background-repeat: no-repeat;
+}
+
+QToolButton#vc_preview_displayswitch_btn 
+{
+	padding: -6px 0px 0px 0px;
+	margin-left:-1px;
+	margin-right:-10px;
+}
+
+
+QToolButton#vc_preview_snapshot_btn 
+{
+	background-image: url("$SKIN_DIR/btn_preview_snapshot.png");
+	background-repeat: no-repeat;
+}
+QToolButton#vc_preview_snapshot_btn:hover 
+{
+	background-image: url("$SKIN_DIR/btn_preview_snapshot_h.png");
+	background-repeat: no-repeat;
+}
+QToolButton#vc_preview_snapshot_btn:pressed 
+{
+	background-image: url("$SKIN_DIR/btn_preview_snapshot_p.png");
+	background-repeat: no-repeat;
+}
+QToolButton#vc_preview_snapshot_btn:disabled 
+{
+	background-image: url("$SKIN_DIR/btn_preview_snapshot_d.png");
+	background-repeat: no-repeat;
+}
+
+QToolButton#vc_preview_snapshot_btn::menu-button 
+{
+	border-width: 0px;
+	border-image: url();
+	background-image: url($SKIN_DIR/btn_preview_opensnapshotfolder.png);
+	background-repeat: no-repeat;
+	border-radius: 0px;
+	padding: 0px;
+	width: 14px;
+}
+QToolButton#vc_preview_snapshot_btn::menu-button:hover 
+{
+	background-image: url($SKIN_DIR/btn_preview_opensnapshotfolder_h.png);
+}
+QToolButton#vc_preview_snapshot_btn::menu-button:pressed 
+{
+	background-image: url($SKIN_DIR/btn_preview_opensnapshotfolder_p.png);
+}
+QToolButton#vc_preview_snapshot_btn::menu-arrow 
+{	
+ 	image: url();
+}
+
+QToolButton#vc_preview_snapshot_btn 
+{
+	padding: -6px 5px 0px 0px;
+	margin-left: 0px;
+}
+
+/*** QSlider horizontal***/
+/*
+ImMediaPreviewWidget QSlider#player_vol_slider 
+{
+	min-width: 40px;
+	max-width: 120px;
+}
+*/
+
+/*ImMediaPreviewWidget QSlider#player_vol_slider::groove:horizontal {
+     border-image: url($SKIN_DIR/volume_bg.png) 1 2 1 2;
+     border-width: 1px 2px 1px 2px;
+     height:3px;
+ }
+
+
+ImMediaPreviewWidget QSlider#player_vol_slider::sub-page:horizontal 
+{
+	border-image: url($SKIN_DIR/sliderblock_volume_bg_gone.png) 1;
+	border-width:1px;
+	margin:4px 0px 5px 0px;
+}
+
+ImMediaPreviewWidget QSlider#player_seek_slider::sub-page:horizontal 
+{
+	border-image: url($SKIN_DIR/sliderblock_progress_bg_gone.png) 1;
+	border-width:1px;
+	margin:4px 0px 5px 0px;
+}
+
+ImMediaPreviewWidget QSlider#player_vol_slider::handle:horizontal 
+{
+	border-image: url($SKIN_DIR/sliderblock_volume_t.png) 4 4 4 4;
+    border-width:4px 4px 4px 4px;
+    width:3px;  
+    margin:-5px -4px -5px -5px;
+ }*/
+ 
+ImMediaPlayer#vc_preview_widget 
+{
+	border-width: 26px 8px 70px 4px;
+	border-image: url("$SKIN_DIR/bg_preview.png") 26 8 70 4;
+	padding-bottom: -66px;
+	padding-top:-26px;
+	margin: 0px 0px 0px 0px;
+}
+
+ImMediaPlayer#vc_preview_widget QLabel#vc_preview_duration_lbl
+{
+	margin-top: 4px;
+}
+
+QToolButton#vc_preview_popup_view_btn, 
+QToolButton#vc_preview_popup_view_btn:hover, 
+QToolButton#vc_preview_popup_view_btn:pressed, 
+QToolButton#vc_preview_popup_view_btn:disabled,
+QToolButton#vc_preview_menu_btn, 
+QToolButton#vc_preview_menu_btn:hover, 
+QToolButton#vc_preview_menu_btn:pressed, 
+QToolButton#vc_preview_menu_btn:disabled 
+{
+	border-image: url();
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	background-repeat: no-repeat;
+	min-width: 24px;
+	min-height: 24px;
+	max-width: 24px;
+	max-height: 24px;
+}
+
+QToolButton#vc_preview_popup_view_btn 
+{
+	background-image: url("$SKIN_DIR/btn_preview_popup.png");
+}
+
+QToolButton#vc_preview_popup_view_btn:hover 
+{
+	background-image: url("$SKIN_DIR/btn_preview_popup_h.png");
+}
+
+QToolButton#vc_preview_popup_view_btn:pressed 
+{
+	background-image: url("$SKIN_DIR/btn_preview_popup_p.png");
+}
+
+QToolButton#vc_preview_popup_view_btn:disabled 
+{
+	background-image: url("$SKIN_DIR/btn_preview_popup_d.png");
+}
+
+QPushButton#vc_preview_menu_btn 
+{
+	border-image: url();
+	margin-right: 6px;
+	padding: 0px 5px 0px 0px;
+	border: 0px;
+	text-align: right;
+}
+
+QPushButton#vc_preview_menu_btn::menu-indicator 
+{
+	subcontrol-origin: padding;
+	subcontrol-position: right;
+}
+
+QFrame#vc_preview_widget_titlebar 
+{
+	border-image: url();
+	margin: 2px 0px 4px 0px;
+}
+
+ImMediaPlayer QFrame#player_toolbar 
+{
+	padding: 0px -4px 0px 0px;
+}
+
+QFrame#vc_preview_widget_titlebar QLabel 
+{
+	font-size:18px;
+	
+}
+
+
+ImMediaPlayer#playerWindow 
+{
+	qproperty-contentMargin:url(5,0,0,0);
+	padding: -40px -22px -20px -22px;
+	min-height: 300px;
+	min-width: 400px;
+}
+
+ImMediaPlayer#vc_preview_widget QPushButton#vc_preview_menu_btn
+{
+	color: #585858;
+}
+
+QFrame#dummyviewport 
+{
+	border-image: url();
+	background-color:rgb(0,0,0);
+}
+
+QSlider#player_seek_slider::groove:horizontal {
+	border-image: url($SKIN_DIR/sliderblock_t_bg.png) 0 1 0 1;
+	border-width: 0px 1px 0px 1px;
+	height:16px;
+}
+
+QSlider#player_seek_slider::handle:horizontal {
+	background-image: url($SKIN_DIR/sliderblock_t.png);
+	width:10px;  
+	height:16px;
+	margin:0px -4px 0px -4px;   
+ }
+ 
+ QSlider#player_seek_slider::handle:horizontal:pressed {
+	background-image: url($SKIN_DIR/sliderblock_t_p.png);
+	width:10px;  
+	height:16px;
+}
+ 
+ QSlider#player_seek_slider::sub-page:horizontal {
+	border-image: url($SKIN_DIR/sliderblock_h_bg_gone.png) 0 1 0 1;
+	border-width: 0px 1px 0px 1px;
+	height:16px; 
+	margin:1px 0px 1px 0px;
+}
+
+ImMediaPlayer#playerWindow QToolButton#vc_preview_displayswitch_btn {
+	margin-right: 2px;
+}

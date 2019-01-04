@@ -1,0 +1,1075 @@
+﻿/*<--
+-->*/
+ImWidgetFrame#imWidgetFrame  {
+	padding:0px 6px 0px 6px;
+}
+
+ImWidgetFrame#imWidgetFrame > QFrame#leftFrame {
+	min-width: 564px;
+}
+
+QFrame#rightFrame {
+	border-width: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+QFrame#propFrame {
+
+}
+
+QFrame#previewFrame {
+	margin-right: -4px;
+}
+
+ImMediaEncoderPropertyView#mediaEncoderPropertyWidget {
+	background: transparent;
+	border-width: 0px;
+}
+
+/*输出到设备按钮*/
+ QToolButton#outDeviceButton,QToolButton#outputdevicesButton {
+	border-image: url();
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	background-image: url($SKIN_DIR/../ZnO/btn_output_outDevice.png);
+	background-repeat: no-repeat;
+	min-width: 72px;
+	min-height: 22px;
+	max-width: 72px;
+	max-height: 22px;
+}
+
+
+QToolButton#outDeviceButton::menu-indicator,QToolButton#outputdevicesButton::menu-indicator
+{
+    subcontrol-origin: padding;
+	subcontrol-position: center right;
+
+}
+
+QToolButton#outDeviceButton:hover,QToolButton#outputdevicesButton:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_output_outDevice_h.png);
+}
+
+QToolButton#outDeviceButton:pressed,QToolButton#outputdevicesButton:pressed{
+	background-image: url($SKIN_DIR/../ZnO/btn_output_outDevice_p.png);
+}
+
+QToolButton#outDeviceButton:disabled,QToolButton#outputdevicesButton:disabled{
+	background-image: url($SKIN_DIR/../ZnO/btn_output_outDevice_d.png);
+}
+
+ QToolButton#outDeviceButton::menu-button,QToolButton#outputdevicesButton::menu-button {
+     image:url($SKIN_DIR/../ZnO/menubutton_right.png)7;
+	 border-width:7px;
+	 padding:-7px -9px -7px -7px;
+	 width:23px;
+ }
+ 
+ QToolButton#outDeviceButton::menu-button:focus,QToolButton#outputdevicesButton::menu-button:focus {
+     border-image:url($SKIN_DIR/../ZnO/menubutton_right.png)7;
+	 border-width:7px;
+ }
+ QToolButton#outDeviceButton::menu-button:hover,QToolButton#outputdevicesButton::menu-button:hover {
+     border-image:url($SKIN_DIR/../ZnO/menubutton_right_h.png) 7;
+	 border-width:7px;
+ }
+ QToolButton#outDeviceButton::menu-button:pressed,QToolButton#outputdevicesButton::menu-button:pressed {
+     border-image:url($SKIN_DIR/../ZnO/menubutton_right_p.png) 7;
+	 border-width:7px;
+ }
+ QToolButton#outDeviceButton::menu-button:disabled,QToolButton#outputdevicesButton::menu-button:disabled {
+     border-image:url($SKIN_DIR/../ZnO/menubutton_right_d.png)7;
+	 border-width:7px;
+ }
+ 
+  QToolButton#outDeviceButton::menu-arrow,QToolButton#outputdevicesButton::menu-arrow {
+	 padding-top:-1px;
+	 padding-left:1px;
+     image: url();
+ }
+ QToolButton#outDeviceButton::menu-arrow:hover,QToolButton#outputdevicesButton::menu-arrow :hover {
+	 padding-top:-1px;
+	 padding-left:1px;
+     image: url();
+ }
+ QToolButton#outDeviceButton::menu-arrow:pressed,QToolButton#outputdevicesButton::menu-arrow :pressed {
+	 padding-top:-1px;
+	 padding-left:1px;
+     image: url();
+ }
+ QToolButton#outDeviceButton::menu-arrow:disabled,QToolButton#outputdevicesButton::menu-arrow:disabled {
+	 padding-top:-1px;
+	 padding-left:1px;
+     image: url();
+ }
+
+
+/*** Command Bar */
+ImCommandBar 
+{
+	padding: -5px -10px -4px -10px;
+	border-width: 5px 12px;
+	border-image: url($SKIN_DIR/../ZnO/bg_commandbar.png) 5px 12px ;
+	max-height: 70px;
+}
+
+/*** Toolbar Buttons */
+ImCommandBar QToolButton, ImCommandBar QToolButton:focus, ImCommandBar QToolButton:hover, ImCommandBar QToolButton:pressed, ImCommandBar QToolButton:disabled, 
+ImCommandBar QToolButton[popupMode="1"],ImCommandBar QToolButton[popupMode="1"]:focus, ImCommandBar QToolButton[popupMode="1"]:hover,
+ImCommandBar QToolButton[popupMode="1"]:pressed, ImCommandBar QToolButton[popupMode="1"]:disabled {
+	border-image: url();
+	margin: 0px;
+	border: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding: 30px 0px 0px 0px;
+	min-width: 50px;
+}
+
+ImCommandBar .QToolButton {
+	min-height: 43px;
+	max-height: 43px;
+}
+
+ImCommandBar QToolButton[popupMode="1"] {
+	padding: 30px 12px 0px 12px;
+}
+
+/*** menuBtn */
+ImCommandBar QToolButton::menu-button,ImCommandBar QToolButton::menu-button:focus, ImCommandBar QToolButton::menu-button:hover, ImCommandBar QToolButton::menu-button:pressed {
+	border-width: 0px;
+	border-image: url();
+	background-repeat: no-repeat;
+	border-radius: 0px;
+	padding: 8px 0px 0px 0px;
+	width: 18px;
+}
+
+ImCommandBar QToolButton::menu-button {
+	background-image: url($SKIN_DIR/../ZnO/menubtn_commandbar.png);
+}
+ImCommandBar QToolButton::menu-button:hover {
+	background-image: url($SKIN_DIR/../ZnO/menubtn_commandbar_h.png);
+}
+ImCommandBar QToolButton::menu-button:pressed {
+	background-image: url($SKIN_DIR/../ZnO/menubtn_commandbar_p.png);
+}
+
+ ImCommandBar QToolButton::menu-arrow {
+
+     image: url();
+ }
+ ImCommandBar QToolButton::menu-arrow:hover {
+
+     image: url();
+ }
+ ImCommandBar QToolButton::menu-arrow:pressed {
+
+     image: url();
+ }
+ ImCommandBar QToolButton::menu-arrow:disabled {
+     image: url();
+ }
+ 
+/*** addBtn */
+ImCommandBar QToolButton#addBtn {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_add.png);
+}
+ImCommandBar QToolButton#addBtn:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_add_h.png);
+}
+ImCommandBar QToolButton#addBtn:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_add_p.png);
+}
+ImCommandBar QToolButton#addBtn:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_add_d.png);
+}
+
+/** by songcan 2010-01-28 **/
+ImCommandBar QToolButton[_for_dr = "true"]#addBtn {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_adddvd.png);
+}
+ImCommandBar QToolButton[_for_dr = "true"]#addBtn:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_adddvd_h.png);
+}
+ImCommandBar QToolButton[_for_dr = "true"]#addBtn:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_adddvd_p.png);
+}
+ImCommandBar QToolButton[_for_dr = "true"]#addBtn:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_adddvd_d.png);
+}
+
+/** by zhaoxianwu 2011-04-21 **/
+ImCommandBar QToolButton[_for_bdr = "true"]#addBtn {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_addbd.png);
+}
+ImCommandBar QToolButton[_for_bdr = "true"]#addBtn:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_addbd_h.png);
+}
+ImCommandBar QToolButton[_for_bdr = "true"]#addBtn:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_addbd_p.png);
+}
+ImCommandBar QToolButton[_for_bdr = "true"]#addBtn:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_addbd_d.png);
+}
+
+/*** addCdBtn */
+ImCommandBar QToolButton#addCdBtn {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_addcd.png);
+}
+ImCommandBar QToolButton#addCdBtn:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_addcd_h.png);
+}
+ImCommandBar QToolButton#addCdBtn:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_addcd_p.png);
+}
+ImCommandBar QToolButton#addCdBtn:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_addcd_d.png);
+}
+
+/*** addDvdBtn */
+ImCommandBar QToolButton#addDvdBtn {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_adddvd.png);
+}
+ImCommandBar QToolButton#addDvdBtn:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_adddvd_h.png);
+}
+ImCommandBar QToolButton#addDvdBtn:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_adddvd_p.png);
+}
+ImCommandBar QToolButton#addDvdBtn:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_adddvd_d.png);
+}
+ 
+/*** removeBtn */
+ImCommandBar QToolButton#removeBtn {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_remove.png);
+}
+ImCommandBar QToolButton#removeBtn:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_remove_h.png);
+}
+ImCommandBar QToolButton#removeBtn:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_remove_p.png);
+}
+ImCommandBar QToolButton#removeBtn:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_remove_d.png);
+}
+
+/*** getInfoBtn */
+ImCommandBar QToolButton#getInfoBtn {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_getinfo.png);
+}
+ImCommandBar QToolButton#getInfoBtn:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_getinfo_h.png);
+}
+ImCommandBar QToolButton#getInfoBtn:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_getinfo_p.png);
+}
+ImCommandBar QToolButton#getInfoBtn:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_getinfo_d.png);
+}
+
+/*** clipBtn */
+ImCommandBar QToolButton#clipBtn {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_clip.png);
+}
+ImCommandBar QToolButton#clipBtn:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_clip_h.png);
+}
+ImCommandBar QToolButton#clipBtn:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_clip_p.png);
+}
+ImCommandBar QToolButton#clipBtn:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_clip_d.png);
+}
+
+/*** joinBtn */
+ImCommandBar QToolButton#joinBtn {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_join.png);
+}
+ImCommandBar QToolButton#joinBtn:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_join_h.png);
+}
+ImCommandBar QToolButton#joinBtn:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_join_p.png);
+}
+ImCommandBar QToolButton#joinBtn:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_join_d.png);
+}
+
+/*** effectBtn */
+ImCommandBar QToolButton#effectBtn {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_effect.png);
+}
+ImCommandBar QToolButton#effectBtn:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_effect_h.png);
+}
+ImCommandBar QToolButton#effectBtn:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_effect_p.png);
+}
+ImCommandBar QToolButton#effectBtn:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_effect_d.png);
+}
+
+/*** addProfileBtn */
+ImCommandBar QToolButton#addProfileBtn {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_addprofile.png);
+}
+ImCommandBar QToolButton#addProfileBtn:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_addprofile_h.png);
+}
+ImCommandBar QToolButton#addProfileBtn:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_addprofile_p.png);
+}
+ImCommandBar QToolButton#addProfileBtn:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_addprofile_d.png);
+}
+
+/*** startBtn */
+ImCommandBar QToolButton#startBtn {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_start.png);
+}
+ImCommandBar QToolButton#startBtn:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_start_h.png);
+}
+ImCommandBar QToolButton#startBtn:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_start_p.png);
+}
+ImCommandBar QToolButton#startBtn:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_start_d.png);
+}
+
+/*** pauseBtn */
+ImCommandBar QToolButton#pauseBtn {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_pause.png);
+}
+ImCommandBar QToolButton#pauseBtn:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_pause_h.png);
+}
+ImCommandBar QToolButton#pauseBtn:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_pause_p.png);
+}
+ImCommandBar QToolButton#pauseBtn:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_pause_d.png);
+}
+
+/*** stopBtn */
+ImCommandBar QToolButton#stopBtn {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_stop.png);
+}
+ImCommandBar QToolButton#stopBtn:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_stop_h.png);
+}
+ImCommandBar QToolButton#stopBtn:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_stop_p.png);
+}
+ImCommandBar QToolButton#stopBtn:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_stop_d.png);
+}
+
+/*** CommandBar Seperator */
+QFrame#fileframe,QFrame#actionframe
+{
+	border-image:url($SKIN_DIR/../ZnO/toolbar_icon_bg.png) 6 6 6 6;
+	border-width:6px 6px 6px 6px;
+}
+
+QFrame#editframe {
+	padding-top: 6px;
+}
+
+QToolButton#logButton {
+	border-image: url();
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	background-image: url($SKIN_DIR/../ZnO/btn_output_showlog.png);
+	min-width: 24px;
+	min-height: 24px;
+	max-width: 24px;
+	max-height: 24px;
+}
+QToolButton#logButton:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_output_showlog_h.png);
+}
+
+QToolButton#logButton:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_output_showlog_p.png);
+}
+
+QToolButton#logButton:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_output_showlog_d.png);
+}
+
+QFrame#statusFrame {
+	margin: 0px 0px 5px 0px;
+	padding: 0px 0px 0px 6px;
+}
+
+QFrame#cpuFrame
+{
+	border-image: url("$SKIN_DIR/bg_cpu.png") 4px 2px;
+	border-width: 4px 2px;
+	padding-right: 6px;
+	min-height: 22px; 
+  padding-top:-1px;
+}
+
+QFrame#cpuFrame QLabel#labelCpuUsage
+{
+	min-width: 70px;
+}
+
+QFrame#inputFrame
+{
+	border-image: url($SKIN_DIR/../ZnO/audio_bg.png) 2px;
+	border-width: 2px;
+	padding: -2px 0px 4px 0px;
+}
+
+QFrame#inputFrame QLabel#subtitleLabel
+{
+	margin-left: 10px;
+}
+
+QFrame#inputFrame QLabel#angleLabel
+{
+	margin-left: 10px;
+}
+
+QFrame#outputFrame {
+	  padding-right: 6px;
+    border-image: url("$SKIN_DIR/../ZnO/line.png") 1 1 2 1;
+    border-width: 1px 1px 2px 1px;
+}
+
+QFrame#profileframe {
+    border-image: url("$SKIN_DIR/../ZnO/profile_icon_bg.png") 5;
+    border-width: 5px;
+    background: transparent;
+    padding: -5px;
+}
+
+QFrame#bottomFrame {
+	background: rgb(244, 246, 248);
+}
+
+/*join dialog*/
+ImmJointItemEditorDialog
+{
+	min-width: 780px;
+	qproperty-contentMargin:url(6,6,6,6);
+}
+
+ImmJointItemEditorDialog  QFrame#leftFrame {
+	min-width: 320px;
+}
+
+ImmJointItemEditorDialog  QFrame#rightFrame 
+{
+	min-width: 350px;
+}
+ImmJointItemEditorDialog QToolButton, ImmJointItemEditorDialog QToolButton:hover, ImmJointItemEditorDialog QToolButton:pressed, ImmJointItemEditorDialog QToolButton:disabled {
+	border-image: url();
+	padding: 0px;
+	border: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	background-repeat: no-repeat;
+	min-width: 31px;
+	max-width: 31px;
+	min-height: 31px;
+	max-height: 31px;
+}
+
+ImmJointItemEditorDialog ImMediaPreviewWidget QFrame#player_toolbar 
+{
+	margin: 6px 0px;
+}
+
+/*add button*/
+ImmJointItemEditorDialog QPushButton#addBtn
+{
+	border-image: url();
+	padding: 0px;
+	border: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	min-height:24px;
+    max-height:24px;
+    min-width:24px;
+    max-width:24px; 
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_add.png");
+}
+
+ImmJointItemEditorDialog QPushButton#addBtn:hover
+{
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_add_h.png");
+}
+
+ImmJointItemEditorDialog QPushButton#addBtn:pressed
+{
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_add_p.png");
+}
+
+ImmJointItemEditorDialog QPushButton#addBtn:disabled
+{
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_add_d.png");
+}
+
+/*del button*/
+ImmJointItemEditorDialog QPushButton#removeBtn
+{
+	border-image: url();
+	padding: 0px;
+	border: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	min-height:24px;
+    max-height:24px;
+    min-width:24px;
+    max-width:24px; 
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del.png");
+}
+
+ImmJointItemEditorDialog QPushButton#removeBtn:hover
+{
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del_h.png");
+}
+
+ImmJointItemEditorDialog QPushButton#removeBtn:pressed
+{
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del_p.png");
+}
+
+ImmJointItemEditorDialog QPushButton#removeBtn:disabled
+{
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del_d.png");
+}
+
+/*moveup button*/
+ImmJointItemEditorDialog QPushButton#upBtn
+{
+	border-image: url();
+	padding: 0px;
+	border: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	min-height:24px;
+    max-height:24px;
+    min-width:24px;
+    max-width:24px; 
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_up.png");
+}
+
+ImmJointItemEditorDialog QPushButton#upBtn:hover
+{
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_up_h.png");
+}
+
+ImmJointItemEditorDialog QPushButton#upBtn:pressed
+{
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_up_p.png");
+}
+
+ImmJointItemEditorDialog QPushButton#upBtn:disabled
+{
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_up_d.png");
+}
+
+/*movedown button*/
+ImmJointItemEditorDialog QPushButton#downBtn
+{
+	border-image: url();
+	padding: 0px;
+	border: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	min-height:24px;
+    max-height:24px;
+    min-width:24px;
+    max-width:24px; 
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_down.png");
+}
+
+ImmJointItemEditorDialog QPushButton#downBtn:hover
+{
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_down_h.png");
+}
+
+ImmJointItemEditorDialog QPushButton#downBtn:pressed
+{
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_down_p.png");
+}
+
+ImmJointItemEditorDialog QPushButton#downBtn:disabled
+{
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_down_d.png");
+}
+
+QToolButton#clockwizeRotateBtn 
+{
+	min-height: 24px;
+	max-height: 24px;
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_cw.png");
+}
+QToolButton#clockwizeRotateBtn:hover {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_cw_h.png");
+}
+QToolButton#clockwizeRotateBtn:pressed {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_cw_p.png");
+}
+QToolButton#clockwizeRotateBtn:disabled {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_cw_d.png");
+}
+
+QToolButton#counterClockwizeRotateBtn 
+{
+	min-height: 24px;
+	max-height: 24px;
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_ccw.png");
+}
+QToolButton#counterClockwizeRotateBtn:hover {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_ccw_h.png");
+}
+QToolButton#counterClockwizeRotateBtn:pressed {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_ccw_p.png");
+}
+QToolButton#counterClockwizeRotateBtn:disabled {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_ccw_d.png");
+}
+
+QToolButton#flipHorizontalBtn 
+{
+	min-height: 24px;
+	max-height: 24px;
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_fliph.png");
+}
+QToolButton#flipHorizontalBtn:hover {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_fliph_h.png");
+}
+QToolButton#flipHorizontalBtn:pressed {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_fliph_p.png");
+}
+QToolButton#flipHorizontalBtn:disabled {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_fliph_d.png");
+}
+
+QToolButton#flipVerticalBtn 
+{
+	min-height: 24px;
+	max-height: 24px;
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_flipv.png");
+}
+QToolButton#flipVerticalBtn:hover {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_flipv_h.png");
+}
+QToolButton#flipVerticalBtn:pressed {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_flipv_p.png");
+}
+QToolButton#flipVerticalBtn:disabled {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_flipv_d.png");
+}
+
+QToolButton#saveProfileButton, QToolButton#browseButton
+{
+	min-width: 96px;
+	min-height: 24px;
+	max-height: 24px;
+}
+
+QToolButton#openButton
+{
+	min-width: 88px;
+	min-height: 24px;
+	max-height: 24px;
+}
+
+/*ImPreferencesDialog*/
+ImPreferencesDialog
+{
+	qproperty-contentMargin:url(6,6,6,6);
+}
+
+ImPreferencesDialog QToolButton#outputbrowseButton
+{
+	min-width: 58px;
+}
+
+
+ImPreferencesDialog QComboBox#defaultformatComboBox
+{
+	max-width: 140px;
+	min-width: 140px;
+}
+
+ImPreferencesDialog QComboBox#checkupdatesComboBox
+{
+	max-width: 140px;
+	min-width: 140px;
+}
+
+ImPreferencesDialog QComboBox#customizecoreComboBox
+{
+	max-width: 60px;
+	min-width: 60px;
+}
+
+ImPreferencesDialog QSpinBox#maxprocessesSpinBox
+{
+	max-width: 80px;
+	min-width: 80px;
+}
+
+ImPreferencesDialog QSpinBox#maxrunningprocessesSpinBox
+{
+	max-width: 80px;
+	min-width: 80px;
+}
+
+ImPreferencesDialog QPushButton#generalrestorePushButton, ImPreferencesDialog QPushButton#convertrestorePushButton , ImPreferencesDialog QPushButton#dvdRestorePushButton, ImPreferencesDialog QPushButton#othersrestorePushButton
+{
+	min-width: 120px;
+}
+
+ImmJointItemPlayer QToolButton#clip_prev_mark, ImmJointItemPlayer QToolButton#clip_next_mark {
+	border-image: url();
+	padding: 0px;
+	border: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	min-width: 31px;
+	max-width: 31px;
+	min-height: 31px;
+	max-height: 31px;
+}
+
+ImmJointItemPlayer QToolButton#clip_prev_mark 
+{
+	background-image: url($SKIN_DIR/../ZnO/btn_previewbar_previous.png) no-repeat;
+}
+ImmJointItemPlayer QToolButton#clip_prev_mark:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_previewbar_previous_h.png) no-repeat;
+}
+ImmJointItemPlayer QToolButton#clip_prev_mark:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_previewbar_previous_p.png) no-repeat;
+}
+ImmJointItemPlayer QToolButton#clip_prev_mark:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_previewbar_previous_d.png) no-repeat;
+}
+
+ImmJointItemPlayer QToolButton#clip_next_mark {
+	background-image: url($SKIN_DIR/../ZnO/btn_previewbar_next.png) no-repeat;
+}
+ImmJointItemPlayer QToolButton#clip_next_mark:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_previewbar_next_h.png) no-repeat;
+}
+ImmJointItemPlayer QToolButton#clip_next_mark:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_previewbar_next_p.png) no-repeat;
+}
+ImmJointItemPlayer QToolButton#clip_next_mark:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_previewbar_next_d.png) no-repeat;
+}
+
+QToolButton#btnCuda {
+	border-image: url();
+	border-width: 0px;
+	border-radius: 0px;
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_cuda_off.png);
+	background-repeat: no-repeat;
+	min-width: 80px;
+	min-height: 20px;
+	max-width: 80px;
+	max-height: 20px;
+	padding:0px;
+}
+
+QToolButton#btnCuda:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_cuda_off_h.png);
+}
+
+QToolButton#btnCuda:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_cuda_off_p.png);
+}
+
+QToolButton#btnCuda:checked {
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_cuda_on.png);
+}
+
+QToolButton#btnCuda:checked:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_cuda_on_h.png);
+}
+
+QToolButton#btnCuda:checked:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_cuda_on_p.png);
+}
+
+QToolButton#btnCuda:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_cuda_d.png);
+}
+
+QToolButton#btnATI {
+	border-image: url();
+	border-width: 0px;
+	border-radius: 0px;
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_ati_off.png);
+	background-repeat: no-repeat;
+	min-width: 80px;
+	min-height: 20px;
+	max-width: 80px;
+	max-height: 20px;
+	padding:0px;
+}
+
+QToolButton#btnATI:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_ati_off_h.png);
+}
+
+QToolButton#btnATI:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_ati_off_p.png);
+}
+
+QToolButton#btnATI:checked {
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_ati_on.png);
+}
+
+QToolButton#btnATI:checked:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_ati_on_h.png);
+}
+
+QToolButton#btnATI:checked:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_ati_on_p.png);
+}
+
+QToolButton#btnATI:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_ati_off_d.png);
+}
+
+/*设置 按钮*/
+QFrame#cpuFrame QPushButton#btnPreferences {
+	border-image: url();
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_preferences.png);
+	background-repeat: no-repeat;
+	min-width: 24px;
+	min-height: 24px;
+	max-width: 24px;
+	max-height: 24px;
+}
+
+QFrame#cpuFrame QPushButton#btnPreferences:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_preferences_h.png);
+}
+
+QFrame#cpuFrame QPushButton#btnPreferences:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_preferences_p.png);
+}
+
+QFrame#cpuFrame QPushButton#btnPreferences:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_cpu_preferences_d.png);
+}
+
+
+
+ImmDestErrorDialog
+{
+    qproperty-contentMargin:url(6,6,6,6);
+}
+
+ImProgressStatusBar 
+{
+   	 qproperty-defaultTextDocCss: "body { color: rgb(0,0,0); }";
+   	 min-height: 16px;
+     max-height: 16px;
+}
+
+ImRenameDialog
+{
+    qproperty-contentMargin:url(6,6,6,6);
+}
+
+QSplitter::handle:horizontal {
+	image: url("$SKIN_DIR/../../ZnO/splitter_handle_h.png");
+	border-image: url("$SKIN_DIR/../../ZnO/bg_splitter_h.png") 1px 1px 1px 1px;
+	border-width: 1px 1px 1px 1px;
+}
+
+QSplitter::handle:vertical {
+	image: url("$SKIN_DIR/../../ZnO/splitter_handle_v.png");
+	border-image: url("$SKIN_DIR/../../ZnO/bg_splitter_v.png") 1px 1px 1px 1px;
+	border-width: 1px 1px 1px 1px;
+}
+
+ImPreferencesDialog QLineEdit#outputLineEdit
+{
+	min-width:225px;
+}
+
+ImUploadErrorInfoDialog#ImUploadErrorInfoDialog
+{
+	min-width:500px;
+	max-width:500px;
+	min-height:400px;
+	max-height:400px;
+	qproperty-contentMargin:url(10,12,15,12);
+}
+
+ ImPreferencesDialog ImPowerOptionWidget#PowerOptionWidget QGroupBox#groupBox {
+     padding-top:0px;
+     margin-top:8px;
+     padding-bottom:-5px;
+ }
+
+ ImPreferencesDialog ImPowerOptionWidget#PowerOptionWidget QGroupBox#groupBox::title {
+     subcontrol-origin: padding;
+     position: absolute;
+     top: -8px;
+     left:8px;
+ }
+ 
+ 
+ ImmTaskInfoWindow QScrollBar:vertical {
+      min-width: 17px;
+      max-width: 17px;
+  }
+
+QToolButton#xtoolButton {
+	border-image: url();
+	padding: 0px;
+	margin: 0px;
+	background-repeat: no-repeat;
+	border-width: 0px;
+	border-radius: 0px;
+	background-image: url($SKIN_DIR/../ZnO/miniwin.png);
+	min-width: 15px;
+	min-height: 15px;
+	max-width: 15px;
+	max-height: 15px;
+}
+
+QToolButton#xtoolButton {
+	background-image: url($SKIN_DIR/../ZnO/miniwin.png);
+}
+QToolButton#xtoolButton:hover {
+	background-image: url($SKIN_DIR/../ZnO/miniwin_h.png);
+}
+QToolButton#xtoolButton:pressed {
+	background-image: url($SKIN_DIR/../ZnO/miniwin_p.png);
+}
+QToolButton#xtoolButton:disabled {
+	background-image: url($SKIN_DIR/../ZnO/miniwin_d.png);
+}
+
+QPushButton#btnViewLarge {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	border-image: url();
+	border-width: 0px;
+	border-radius: 0px;
+	background-repeat: no-repeat;
+	min-width: 26px;
+	min-height: 26px;
+	max-width: 26px;
+	max-height: 26px;
+
+}
+
+QPushButton#btnViewLarge {
+	background-image: url($SKIN_DIR/../ZnO/large.png);
+}
+QPushButton#btnViewLarge:hover {
+	background-image: url($SKIN_DIR/../ZnO/large_h.png);
+}
+QPushButton#btnViewLarge:pressed {
+	background-image: url($SKIN_DIR/../ZnO/large_p.png);
+}
+QPushButton#btnViewLarge:disabled {
+	background-image: url($SKIN_DIR/../ZnO/large_d.png);
+}
+
+QPushButton#btnViewLarge:checked {
+	background-image: url($SKIN_DIR/../ZnO/large_f.png);
+}
+QPushButton#btnViewLarge:checked:hover {
+	background-image: url($SKIN_DIR/../ZnO/large_f.png);
+}
+QPushButton#btnViewLarge:checked:pressed {
+	background-image: url($SKIN_DIR/../ZnO/large_f.png);
+}
+QPushButton#btnViewLarge:checked:disabled {
+	background-image: url($SKIN_DIR/../ZnO/large_p_d.png);
+}
+
+
+
+QPushButton#btnViewNormal {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	border-image: url();
+	border-width: 0px;
+	border-radius: 0px;
+	background-image: url($SKIN_DIR/../ZnO/normal.png);
+	background-repeat: no-repeat;
+	min-width: 26px;
+	min-height: 26px;
+	max-width: 26px;
+	max-height: 26px;
+
+}
+
+QPushButton#btnViewNormal {
+	background-image: url($SKIN_DIR/../ZnO/normal.png);
+}
+QPushButton#btnViewNormal:hover {
+	background-image: url($SKIN_DIR/../ZnO/normal_h.png);
+}
+QPushButton#btnViewNormal:pressed {
+	background-image: url($SKIN_DIR/../ZnO/normal_p.png);
+}
+QPushButton#btnViewNormal:disabled {
+	background-image: url($SKIN_DIR/../ZnO/normal_d.png);
+}
+
+QPushButton#btnViewNormal:checked {
+	background-image: url($SKIN_DIR/../ZnO/normal_f.png);
+}
+QPushButton#btnViewNormal:checked:hover {
+	background-image: url($SKIN_DIR/../ZnO/normal_f.png);
+}
+QPushButton#btnViewNormal:checked:pressed {
+	background-image: url($SKIN_DIR/../ZnO/normal_f.png);
+}
+QPushButton#btnViewNormal:checked:disabled {
+	background-image: url($SKIN_DIR/../ZnO/normal_p_d.png);
+}
+
+
+/*** effectBtn */
+ImCommandBar QToolButton#btn3D {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_3d.png);
+}
+ImCommandBar QToolButton#btn3D:hover {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_3d_h.png);
+}
+ImCommandBar QToolButton#btn3D:pressed {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_3d_p.png);
+}
+ImCommandBar QToolButton#btn3D:disabled {
+	background-image: url($SKIN_DIR/../ZnO/btn_commandbar_3d_d.png);
+}
+
+.QComboBox QAbstractItemView::item {
+	min-height: 22px;
+}
+
+QMenu#saveProfileMenu {
+	min-width: 120px;
+}

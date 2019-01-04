@@ -1,0 +1,177 @@
+/*<--
+support_customize_font = true
+font_size_level			= 4
+font_size_level1		= 24px, 22px, 20px, 18px, 16px
+font_size_level2		= 20px, 18px, 16px, 14px, 12px
+font_size_level3		= 16px, 14px, 12px, 10px, 8px
+font_size_level4		= 13px, 11px, 10px, 8px, 6px
+font_size_level5		= 12px, 10px, 8px, 6px, 4px
+
+-->*/
+
+QMenu::item:disabled {
+	color: rgba(0,0,0,30%); 
+}
+
+/*** QProgressBar ***/
+QProgressBar 
+{
+    border-image: url($SKIN_DIR/progressbar_bg.png) 3;
+    border-width: 3px;
+    text-align: center;
+}
+
+QProgressBar::chunk 
+{
+    border-image: url($SKIN_DIR/progressbar.png) 3;
+    border-width: 3x;
+}
+
+ImWidgetFrame{    
+	padding:0px 0px 0px 0px;	
+}
+ImMainWindow{
+qproperty-contentMargin:url(0,0,0,0);
+}
+
+ImDialog{
+	qproperty-contentMargin:url(0,0,0,0);
+}
+ImWidget[imwidget_is_window="true"]  {
+	qproperty-contentMargin:url(0,0,0,0);
+}
+
+ImPopWidget{
+/*	border-image: url($SKIN_DIR/miniwin.png) 5;
+    border-width: 5px;	
+*/}
+ImPopWidget QWidget#frame{
+    border-image: url($SKIN_DIR/miniwin_top.png) 2;
+    border-width: 2px;
+	  padding: 0px 4px -5px 5px;
+}
+
+ImPopWidget QLabel#titleLabel {
+	color:white; 
+}
+
+ImPopWidget QWidget#textLabel{
+    border-image: url($SKIN_DIR/miniwin_bottom.png) 5;
+    border-width: 5px;
+}
+
+ImPopWidget QToolButton#closeButton {
+	border-image: url();
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	background-image: url($SKIN_DIR/miniwin_clo.png);
+	min-width: 15px;
+	min-height: 15px;
+	max-width: 15px;
+	max-height: 15px;
+	margin-left:3px;
+	margin-right:3px;
+}
+
+ImPopWidget QToolButton#closeButton:hover {
+	background-image: url($SKIN_DIR/miniwin_clo_h.png);
+}
+
+ImPopWidget QToolButton#closeButton:pressed {
+	background-image: url($SKIN_DIR/miniwin_clo_d.png);
+}
+
+ImPopWidget QToolButton#closeButton:disabled {
+	background-image: url($SKIN_DIR/miniwin_clo.png);
+}
+
+QPushButton:disabled {
+	color: rgb(198,197,201);
+}
+
+QCheckBox:disabled {
+    color: rgb(198,197,201);
+ }
+ 
+ QRadioButton:disabled {
+    color: rgb(198,197,201);
+ }
+ /*** about dialog for app store ***/
+ImDialog[is_appstore="true"] QLabel#label_copyright{
+    padding-top:-50px;
+	
+}
+ImDialog[is_appstore="true"] QLabel#label_regester{
+    padding-bottom:10px;
+	
+}
+ImDialog[is_appstore="true"] QLabel#label_log{
+  padding-top:-20px;
+}
+ImDialog[is_appstore="true"]#aboutDialog{
+    min-height:220px;		
+}
+
+/*** QTreeView ***/
+ QTreeView {
+     qproperty-alternatingRowColors:1;
+     alternate-background-color: rgb(246,246,246);
+     background-color:rgb(255,255,255);
+     show-decoration-selected: 1;
+     color:rgb($SKIN_COLOR_RGB);
+ }
+
+ QTreeView::branch:has-children:!has-siblings:closed,
+ QTreeView::branch:closed:has-children:has-siblings {
+         border-image: none;
+         background-image: url($SKIN_DIR/../ZnO/branch_closed.png);
+         background-repeat:no-repeat;
+         background-position:center;
+ }
+
+ QTreeView::branch:open:has-children:!has-siblings,
+ QTreeView::branch:open:has-children:has-siblings  {
+         border-image: none;
+         background-image: url($SKIN_DIR/../ZnO/branch_open.png);
+         background-repeat:no-repeat;
+         background-position:center;
+ }
+ QTreeView::branch:has-children:!has-siblings:closed:selected,
+ QTreeView::branch:closed:has-children:has-siblings:selected,
+ QTreeView::branch:open:has-children:!has-siblings:selected,
+ QTreeView::branch:open:has-children:has-siblings:selected 
+ {
+      background-color:#3abaef;
+ }
+ 
+ QTreeView::branch:!has-children:selected
+ {
+      background-color:#3abaef;
+ }
+ 
+ QTreeView::item:hover,
+ QTreeView::branch:has-children:!has-siblings:closed:!selected:hover,
+ QTreeView::branch:closed:has-children:has-siblings:!selected:hover,
+ QTreeView::branch:open:has-children:!has-siblings:!selected:hover,
+ QTreeView::branch:open:has-children:has-siblings:!selected:hover,
+ QTreeView::branch:!has-children:!selected:hover
+ {
+      background-color:#dcf0ff;
+ }
+ 
+QTreeView::item:selected{
+    background-color:#3abaef;
+}
+ 
+ QTreeView::item:selected:active{
+    background-color:#3abaef;
+		color:rgb(71,81,92);
+}
+ QTreeView::item:selected:!active{
+    background-color:#3abaef;
+  color:rgb(71,81,92);
+}
+ QTreeView::item:disabled{
+ 		color: #c5c5c5;
+}

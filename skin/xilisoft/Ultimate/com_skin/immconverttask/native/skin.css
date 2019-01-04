@@ -1,0 +1,59 @@
+/*<--
+-->*/
+
+QTreeView#taskList {
+	qproperty-alternatingRowColors:0;
+}
+
+QTreeView#taskList::item:selected:active{
+	  margin: 0px;
+}
+
+ImmTaskItemView::item {
+	min-height: 22px;
+	max-height: 22px;
+}
+
+QHeaderView::section:horizontal 
+{
+	min-height: 20px;
+	max-height: 20px;
+}
+
+QProgressDialog#IMM_IMPORT_PROGRESSDIALOG {
+	min-width : 400px;
+	max-width : 400px;
+}
+
+QProgressDialog QProgressBar {
+	text-align: center;
+}
+
+ImmTaskInfoWindow[imwidget_is_window="true"]
+{
+	qproperty-activedCss: "<style type='text/css'></style>";
+	qproperty-deactivedCss: "<style type='text/css'></style>";
+	qproperty-contentMargin:url(6,6,6,6);
+}
+
+ImmTaskLogWindow[imwidget_is_window="true"]
+{
+  qproperty-contentMargin:url(6,6,6,6);
+}
+
+
+ImChooseColumnDialog
+{
+	qproperty-contentMargin:url(10,10,10,10);
+	min-height: 400px;
+}
+
+
+ImmDVDSettingDialog
+{
+  qproperty-contentMargin:url(10,10,10,10);
+}
+
+ImmTaskItemView ImProfileComboBox {
+	max-height: 25px;
+}

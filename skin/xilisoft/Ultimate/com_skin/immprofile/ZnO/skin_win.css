@@ -1,0 +1,7 @@
+/*<--
+-->*/
+
+ImTreePropertyBrowser QTreeView::item
+{
+	min-height: 20px;
+}

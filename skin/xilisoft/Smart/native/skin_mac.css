@@ -1,0 +1,132 @@
+﻿/*<--
+-->*/
+
+ QComboBox QAbstractItemView{
+    min-height:40px;
+	margin:5px 0px -15px 0px ;
+ }
+
+/*** QToolButton ***/
+ QToolButton {
+        color:rgb($SKIN_COLOR_RGB);
+        border-image: url($SKIN_DIR/pushbutton.png) 8 7 8 7;
+        border-top: 8px transparent;
+        border-bottom: 8px transparent;
+        border-right: 7px transparent;
+        border-left: 7px transparent;
+        min-width: 56px;
+
+        padding:-5px -2px -5px -2px;
+}
+.QToolButton {
+    min-height: 16px;
+    max-height: 16px;
+}
+QToolButton:focus {
+        color: rgb($SKIN_COLOR_RGB);
+        border-image: url($SKIN_DIR/pushbutton_f.png) 8 7 8 7;
+        border-top: 8px transparent;
+        border-bottom: 8px transparent;
+        border-right: 7px transparent;
+        border-left: 7px transparent;
+}
+
+QToolButton:hover {
+        color: white;
+        border-image: url($SKIN_DIR/pushbutton_h.png) 8 7 8 7;
+        border-top: 8px transparent;
+        border-bottom: 8px transparent;
+        border-right: 7px transparent;
+        border-left: 7px transparent;
+}
+
+QToolButton:pressed {
+        color: white;
+        border-image: url($SKIN_DIR/pushbutton_p.png) 8 7 8 7;
+        border-top: 8px transparent;
+        border-bottom: 8px transparent;
+        border-right: 7px transparent;
+        border-left: 7px transparent;
+}
+
+QToolButton:disabled {
+        color: #a7a6aa;
+        border-image: url($SKIN_DIR/pushbutton_d.png) 8 7 8 7;
+        border-top: 8px transparent;
+        border-bottom: 8px transparent;
+        border-right: 7px transparent;
+        border-left: 7px transparent;
+}
+
+/*--------------------------QToolButton with menu----------------------------*/
+ QToolButton[popupMode="1"] {
+     border-image:url($SKIN_DIR/menubutton_mac.png)7 30 7 7;
+     border-width:7px 30px 7px 7px;
+     padding:-7px;
+     min-height:22px;
+     max-height:22px;
+     color:rgb($SKIN_COLOR_RGB);
+ }
+  QToolButton[popupMode="1"]:focus {
+        color:rgb($SKIN_COLOR_RGB);
+    border-image:url($SKIN_DIR/menubutton_f_mac.png)7 30 7 7;
+    border-width:7px 30px 7px 7px;
+ }
+
+ QToolButton[popupMode="1"]:hover {
+        color:white;
+    border-image:url($SKIN_DIR/menubutton_h_mac.png)7 30 7 7;
+    border-width:7px 30px 7px 7px;
+ }
+
+ QToolButton[popupMode="1"]:pressed {
+         color:white;
+     border-image:url($SKIN_DIR/menubutton_p_mac.png)7 30 7 7;
+     border-width:7px 30px 7px 7px;
+ }
+ QToolButton[popupMode="1"]:disabled {
+         color: #a7a6aa;
+     border-image:url($SKIN_DIR/menubutton_d_mac.png)7 30 7 7;
+     border-width:7px 30px 7px 7px;
+ }
+
+ QToolButton::menu-button {
+     border-image:url($SKIN_DIR/menubutton_right.png)7;
+     border-width:7px;
+     padding:-7px;
+     width:22px;
+ }
+ QToolButton::menu-button:focus {
+     border-image:url($SKIN_DIR/menubutton_right_f.png)7;
+     border-width:7px;
+ }
+ QToolButton::menu-button:hover {
+     border-image:url($SKIN_DIR/menubutton_right_h.png)7;
+     border-width:7px;
+ }
+ QToolButton::menu-button:pressed {
+     border-image:url($SKIN_DIR/menubutton_right_p.png)7;
+     border-width:7px;
+ }
+ QToolButton::menu-button:disabled {
+     border-image:url($SKIN_DIR/menubutton_right_d.png)7;
+     border-width:7px;
+ }
+
+ QToolButton::menu-arrow {
+     padding-top:1px;
+     padding-right:2px;
+     image: url($SKIN_DIR/combobox_arrow_c.png);
+ }
+ QToolButton::menu-arrow:hover {
+     padding-top:1px;
+     image: url($SKIN_DIR/combobox_arrow_h.png);
+ }
+ QToolButton::menu-arrow:pressed {
+     padding-top:1px;
+     image: url($SKIN_DIR/combobox_arrow_p.png);
+ }
+ QToolButton::menu-arrow:disabled {
+     padding-top:1px;
+     image: url($SKIN_DIR/combobox_arrow_d.png);
+ }

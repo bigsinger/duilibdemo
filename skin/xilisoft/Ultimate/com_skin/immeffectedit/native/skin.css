@@ -1,0 +1,687 @@
+/*<--
+helpline_color     = 255, 0, 0
+virtualline_color = 255,255, 200
+activeitem_color = 240,240,240
+-->*/
+
+ImEffectEditDialog 
+{
+	min-width: 796px;
+	min-height: 680px;
+	qproperty-contentMargin:url(6,6,6,6);
+}
+
+ImEffectEditDialog QFrame#leftFrame {
+	border: 0px solid red;
+	min-width: 366px;
+	max-width: 366px;
+}
+
+ImEffectEditDialog QFrame#rightFrame
+{
+	min-width: 380px;
+}
+
+ImEffectEditDialog QFrame#rightFrame QFrame#preViewFrame{
+}
+
+/*toolbuttons*/
+QToolButton#moveUpBtn, QToolButton#moveDownBtn, 
+QToolButton#addTrackBtn, QToolButton#delAudioTrackBtn,
+QToolButton#addSubFileBtn, QToolButton#delSubtitleBtn,
+QToolButton#addTextWmBtn, QToolButton#addImageWmBtn, QToolButton#delWmBtn,
+QToolButton#vc_preview_edit_btn, QToolButton#vc_preview_compare_btn
+{
+    border-image:url();
+    min-height:24px;
+    max-height:24px;
+    min-width:24px;
+    max-width:24px; 
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border: 0px 0px 0px 0px;
+    background-repeat: no-repeat;
+}
+
+/*EffectEffectsSetting*/
+QToolButton#moveUpBtn {
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_up.png");
+}
+QToolButton#moveUpBtn:hover {
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_up_h.png");
+}
+QToolButton#moveUpBtn:pressed {
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_up_p.png");
+}
+QToolButton#moveUpBtn:disabled {
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_up_d.png");
+}
+
+QToolButton#moveDownBtn {
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_down.png");
+}
+QToolButton#moveDownBtn:hover {
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_down_h.png");
+}
+QToolButton#moveDownBtn:pressed {
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_down_p.png");
+}
+QToolButton#moveDownBtn:disabled
+{
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_down_d.png");
+}
+
+/*audio setting*/
+QToolButton#addTrackBtn {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_add.png");
+}
+QToolButton#addTrackBtn:hover {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_add_h.png");
+}
+QToolButton#addTrackBtn:pressed {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_add_p.png");
+}
+QToolButton#addTrackBtn:disabled {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_add_d.png");
+}
+
+QToolButton#delAudioTrackBtn {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del.png");
+}
+QToolButton#delAudioTrackBtn:hover {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del_h.png");
+}
+QToolButton#delAudioTrackBtn:pressed {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del_p.png");
+}
+QToolButton#delAudioTrackBtn:disabled {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del_d.png");
+}
+
+/*EffectSubtitleSetting*/
+QToolButton#addSubFileBtn {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_add.png");
+}
+QToolButton#addSubFileBtn:hover {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_add_h.png");
+}
+QToolButton#addSubFileBtn:pressed {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_add_p.png");
+}
+QToolButton#addSubFileBtn:disabled {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_add_d.png");
+}
+
+QToolButton#delSubtitleBtn {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del.png");
+}
+QToolButton#delSubtitleBtn:hover {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del_h.png");
+}
+QToolButton#delSubtitleBtn:pressed {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del_p.png");
+}
+QToolButton#delSubtitleBtn:disabled {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del_d.png");
+}
+
+/*EffectWatermarkSetting*/
+QToolButton#addTextWmBtn {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_text_mark.png");
+}
+QToolButton#addTextWmBtn:hover {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_text_mark_h.png");
+}
+QToolButton#addTextWmBtn:disabled {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_text_mark_d.png");
+}
+QToolButton#addTextWmBtn:pressed {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_text_mark_p.png");
+}
+
+QToolButton#addImageWmBtn {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_img_mark.png");
+}
+QToolButton#addImageWmBtn:hover {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_img_mark_h.png");
+}
+QToolButton#addImageWmBtn:pressed {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_img_mark_p.png");
+}
+QToolButton#addImageWmBtn:disabled {
+	background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_img_mark_d.png");
+}
+
+QToolButton#delWmBtn {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del.png");
+}
+QToolButton#delWmBtn:hover {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del_h.png");
+}
+QToolButton#delWmBtn:pressed {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del_p.png");
+}
+QToolButton#delWmBtn:disabled {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_del_d.png");
+}
+
+QToolButton#vc_preview_edit_btn {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_sel_single.png");
+}
+QToolButton#vc_preview_edit_btn:hover {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_sel_single_h.png");
+}
+QToolButton#vc_preview_edit_btn:pressed {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_sel_single_p.png");
+}
+QToolButton#vc_preview_edit_btn:disabled {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_sel_single_d.png");
+}
+
+QToolButton#vc_preview_compare_btn {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_sel_double.png");
+}
+QToolButton#vc_preview_compare_btn:hover {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_sel_double_h.png");
+}
+QToolButton#vc_preview_compare_btn:pressed {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_sel_double_p.png");
+}
+QToolButton#vc_preview_compare_btn:disabled {
+    background-image: url("$SKIN_DIR/../ZnO/btn_effectedit_sel_double_d.png");
+}
+
+QCheckBox #effectItemCheckbox{
+     spacing: 0px;
+ }
+ 
+ImEffectEditDialog ImEffectTreeWidget{		
+	min-width: 148px;
+	max-width: 148px;
+	alternate-background-color: transparent;
+	background-color: transparent;
+	background-image:url($SKIN_DIR/../ZnO/bg_tab_ctrl.png);
+	background-repeat: repeat-y;
+	background-position: bottom right;
+	min-height:336px;
+	padding-bottom:0px;/*p共同避免出现滚动条*/
+	margin-bottom:0px;
+}
+
+ImEffectEditDialog ImEffectTreeWidget::item{		
+	margin:0px 0px 0px 0px;
+	border:0px;
+	padding:-3px 0px -1px -1px;/*4 = 3 + 1(-1px)*/
+	min-height: 52px;/*45+3+2+1*/
+	max-height: 52px;
+	/*background-color: rgb(218,222,226);*/
+}
+
+ImEffectEditDialog ImEffectTreeWidget::item:selected:active, ImEffectTreeWidget::item:selected:!active{
+  /*background-color: rgb(218,222,226);*/
+  padding:-3px -1px -1px -1px;
+}
+
+ImEffectEditDialog ImEffectTreeWidget::item:!selected {
+	background-image:url($SKIN_DIR/../ZnO/bg_tab_ctrl.png);	
+	background-repeat: repeat-y;
+    background-position: bottom right;
+}
+
+ImEffectEditDialog QFrame#effectTabItem
+{
+	margin:0px 2px 0px 0px;	
+	padding:3px 0px 0px 0px;
+	border: 0px solid red;
+	border-width: 0px 0px 3px 0px;
+	border-image:url($SKIN_DIR/../ZnO/bg_tab_item.png) 0px 0px 3px 0px;
+}
+
+ImEffectSettingBase  QSpinBox
+{
+    min-width: 55;
+}
+
+QLabel#effectedit_audio_embeded
+{
+	background-image: url("$SKIN_DIR/../embeded_audio.png");	
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+QLabel#effectedit_audio_custom
+{
+	background-image: url("$SKIN_DIR/../custom_audio.png");	
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+QLabel#effectedit_subtitle_embeded
+{
+	background-image: url("$SKIN_DIR/../embeded_subtitle.png");	
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+QLabel#effectedit_subtitle_custom
+{
+	background-image: url("$SKIN_DIR/../custom_subtitle.png");	
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+QLabel#effectedit_text_wm
+{
+	background-image: url("$SKIN_DIR/../text_watermark.png");	
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+QLabel#effectedit_image_wm
+{
+	background-image: url("$SKIN_DIR/../image_watermark.png");
+    background-repeat: no-repeat;	
+	background-position: center;
+}
+
+QToolButton#btn2dto3d, 
+QToolButton#btn3dto3d,
+QToolButton#btnRemove3d
+{
+    min-height:80px;
+    max-height:80px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border-width: 10px 10px 10px 120px;
+}
+
+QToolButton#btn3dto3d, QToolButton#btnRemove3d {
+	margin: 20px 0px 0px 0px;
+}
+
+QToolButton#btn2dto3d {
+    border-image: url("$SKIN_DIR/../ZnO/2dto3d.png") 10 10 10 120;
+}
+QToolButton#btn2dto3d:hover {
+    border-image: url("$SKIN_DIR/../ZnO/2dto3d_h.png") 10 10 10 120;
+}
+QToolButton#btn2dto3d:pressed {
+    border-image: url("$SKIN_DIR/../ZnO/2dto3d_p.png") 10 10 10 120;
+}
+QToolButton#btn2dto3d:disabled {
+    border-image: url("$SKIN_DIR/../ZnO/2dto3d_d.png") 10 10 10 120;
+}
+
+QToolButton#btn3dto3d {
+    border-image: url("$SKIN_DIR/../ZnO/3dto3d.png") 10 10 10 120;
+}
+QToolButton#btn3dto3d:hover {
+    border-image: url("$SKIN_DIR/../ZnO/3dto3d_h.png") 10 10 10 120;
+}
+QToolButton#btn3dto3d:pressed {
+    border-image: url("$SKIN_DIR/../ZnO/3dto3d_p.png") 10 10 10 120;
+}
+QToolButton#btn3dto3d:disabled {
+    border-image: url("$SKIN_DIR/../ZnO/3dto3d_d.png") 10 10 10 120;
+}
+
+QToolButton#btnRemove3d {
+    border-image: url("$SKIN_DIR/../ZnO/3d_remove.png") 10 10 10 120;
+}
+QToolButton#btnRemove3d:hover {
+    border-image: url("$SKIN_DIR/../ZnO/3d_remove_h.png") 10 10 10 120;
+}
+QToolButton#btnRemove3d:pressed {
+    border-image: url("$SKIN_DIR/../ZnO/3d_remove_p.png") 10 10 10 120;
+}
+QToolButton#btnRemove3d:disabled {
+    border-image: url("$SKIN_DIR/../ZnO/3d_remove_d.png") 10 10 10 120;
+}
+
+QFrame#frame2dto3d,QFrame#frame3dto3d,QFrame#frameRemoveSetting {
+	margin: 0px 0px 0px 120px;
+}
+
+QLabel#label2dto3dTitle, QLabel#label3dto3dTitle, QLabel#labelRemove3dTitle {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+QLabel#label3dto3dTitle, QLabel#labelRemove3dTitle {
+	margin: 10px 0px 0px -4px;
+}
+
+Im3dWizard {
+	qproperty-contentMargin:url(0,0,12,0);
+}
+
+Im3dWizard QFrame#wizard_frame
+{
+	padding:15px 0px 0px 0px; 
+}
+
+QFrame#frameDepth {
+	min-height: 25px;
+	max-height: 25px;
+}
+
+Im3dWizard QToolButton#wizardBtnCancel {
+	margin-right: 14px;
+}
+
+/*//// 3d button //////////////////////////////////////////////////////////////////*/
+QToolButton#btnStart,
+QToolButton#btnPause,
+QToolButton#btnStop,
+QToolButton#btnMute,
+QToolButton#btnUnMute
+{
+	min-width: 31px;
+	min-height: 31px;
+	max-width: 31px;
+	max-height: 31px;
+	border-image: url();
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+}
+
+QToolButton#btnStart 
+{
+	margin-left:8px;
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_play.png");
+}
+
+QToolButton#btnStart:focus 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_play_h.png");
+}
+
+QToolButton#btnStart:hover 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_play_h.png");
+}
+QToolButton#btnStart:pressed 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_play_p.png");
+}
+QToolButton#btnStart:disabled 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_play_d.png");
+}
+
+QToolButton#btnPause 
+{
+	margin-left:8px;
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_pause.png");
+}
+QToolButton#btnPause:hover 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_pause_h.png");
+}
+QToolButton#btnPause:pressed 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_pause_p.png");
+}
+QToolButton#btnPause:disabled 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_pause_d.png");
+}
+
+QToolButton#btnStop 
+{
+	margin-left:5px;
+	margin-right:4px;
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_stop.png");
+}
+QToolButton#btnStop:hover 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_stop_h.png");
+}
+QToolButton#btnStop:pressed 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_stop_p.png");
+}
+QToolButton#btnStop:disabled 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_stop_d.png");
+}
+
+QToolButton#btnMute 
+{
+	margin-right:5px;
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_mute.png");
+}
+QToolButton#btnMute:hover 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_mute_h.png");
+}
+QToolButton#btnMute:pressed 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_mute_p.png");
+}
+QToolButton#btnMute:disabled 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_mute_d.png");
+}
+
+QToolButton#btnUnMute 
+{
+    margin-right:5px;
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_unmute.png");
+}
+QToolButton#btnUnMute:hover 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_unmute_h.png");
+}
+QToolButton#btnUnMute:pressed 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_unmute_p.png");
+}
+QToolButton#btnUnMute:disabled 
+{
+	background-image: url("$SKIN_DIR/../../immplayer/ZnO/btn_preview_unmute_d.png");
+}
+
+QToolButton#btnRotation 
+{
+		border-image: url();
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	min-height: 24px;
+	max-height: 24px;
+	min-width: 24px;
+	max-width: 24px;
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_cw.png");
+}
+QToolButton#btnRotation:hover 
+{
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_cw_h.png");
+}
+QToolButton#btnRotation:pressed {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_cw_p.png");
+}
+QToolButton#btnRotation:disabled {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_cw_d.png");
+}
+
+QToolButton#btnContraRotation 
+{
+			border-image: url();
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	min-height: 24px;
+	max-height: 24px;
+	min-width: 24px;
+	max-width: 24px;
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_ccw.png");
+}
+QToolButton#btnContraRotation:hover {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_ccw_h.png");
+}
+QToolButton#btnContraRotation:pressed {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_ccw_p.png");
+}
+QToolButton#btnContraRotation:disabled {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_rotate_ccw_d.png");
+}
+
+QToolButton#btnHFlip 
+{
+			border-image: url();
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	min-height: 24px;
+	max-height: 24px;
+	min-width: 24px;
+	max-width: 24px;
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_fliph.png");
+}
+QToolButton#btnHFlip:hover {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_fliph_h.png");
+}
+QToolButton#btnHFlip:pressed {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_fliph_p.png");
+}
+QToolButton#btnHFlip:disabled {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_fliph_d.png");
+}
+
+QToolButton#btnVFlip 
+{
+			border-image: url();
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 0px;
+	min-height: 24px;
+	max-height: 24px;
+	min-width: 24px;
+	max-width: 24px;
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_flipv.png");
+}
+QToolButton#btnVFlip:hover {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_flipv_h.png");
+}
+QToolButton#btnVFlip:pressed {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_flipv_p.png");
+}
+QToolButton#btnVFlip:disabled {
+	background-image: url("$SKIN_DIR/../ZnO/btn_join_flipv_d.png");
+}
+
+QToolButton#btnColorShow,
+QToolButton#btnHSplit,
+QToolButton#btnHSplitHalf,
+QToolButton#btnVSplit,
+QToolButton#btnVSplitHalf,
+QToolButton#btnShutter3d
+{
+         min-width: 50px;
+         min-height: 50px;
+         max-width: 50px;
+         max-height: 50px;
+         border-image: url();
+         padding: 0px;
+         border-width: 0px;
+         border-radius: 0px;
+}
+
+QToolButton#btnColorShow {
+         background-image: url($SKIN_DIR/../ZnO/btn_color_show.png) no-repeat;
+}
+QToolButton#btnColorShow:hover {
+         background-image: url($SKIN_DIR/../ZnO/btn_color_show_h.png) no-repeat;
+}
+QToolButton#btnColorShow:pressed {
+         background-image: url($SKIN_DIR/../ZnO/btn_color_show_p.png) no-repeat;
+}
+QToolButton#btnColorShow:disabled {
+         background-image: url($SKIN_DIR/../ZnO/btn_color_show_d.png) no-repeat;
+}
+QToolButton#btnColorShow:checked {
+         background-image: url($SKIN_DIR/../ZnO/btn_color_show_c.png) no-repeat;
+}
+
+QToolButton#btnHSplit {
+         background-image: url($SKIN_DIR/../ZnO/btn_hsplit.png) no-repeat;
+}
+QToolButton#btnHSplit:hover {
+         background-image: url($SKIN_DIR/../ZnO/btn_hsplit_h.png) no-repeat;
+}
+QToolButton#btnHSplit:pressed {
+         background-image: url($SKIN_DIR/../ZnO/btn_hsplit_p.png) no-repeat;
+}
+QToolButton#btnHSplit:disabled {
+         background-image: url($SKIN_DIR/../ZnO/btn_hsplit_d.png) no-repeat;
+}
+QToolButton#btnHSplit:checked {
+         background-image: url($SKIN_DIR/../ZnO/btn_hsplit_c.png) no-repeat;
+}
+
+QToolButton#btnHSplitHalf {
+         background-image: url($SKIN_DIR/../ZnO/btn_hsplit_half.png) no-repeat;
+}
+QToolButton#btnHSplitHalf:hover {
+         background-image: url($SKIN_DIR/../ZnO/btn_hsplit_half_h.png) no-repeat;
+}
+QToolButton#btnHSplitHalf:pressed {
+         background-image: url($SKIN_DIR/../ZnO/btn_hsplit_half_p.png) no-repeat;
+}
+QToolButton#btnHSplitHalf:disabled {
+         background-image: url($SKIN_DIR/../ZnO/btn_hsplit_half_d.png) no-repeat;
+}
+QToolButton#btnHSplitHalf:checked {
+         background-image: url($SKIN_DIR/../ZnO/btn_hsplit_half_c.png) no-repeat;
+}
+
+QToolButton#btnVSplit {
+         background-image: url($SKIN_DIR/../ZnO/btn_vsplit.png) no-repeat;
+}
+QToolButton#btnVSplit:hover {
+         background-image: url($SKIN_DIR/../ZnO/btn_vsplit_h.png) no-repeat;
+}
+QToolButton#btnVSplit:pressed {
+         background-image: url($SKIN_DIR/../ZnO/btn_vsplit_p.png) no-repeat;
+}
+QToolButton#btnVSplit:disabled {
+         background-image: url($SKIN_DIR/../ZnO/btn_vsplit_d.png) no-repeat;
+}
+QToolButton#btnVSplit:checked {
+         background-image: url($SKIN_DIR/../ZnO/btn_vsplit_c.png) no-repeat;
+}
+
+
+QToolButton#btnVSplitHalf {
+         background-image: url($SKIN_DIR/../ZnO/btn_vsplit_half.png) no-repeat;
+}
+QToolButton#btnVSplitHalf:hover {
+         background-image: url($SKIN_DIR/../ZnO/btn_vsplit_half_h.png) no-repeat;
+}
+QToolButton#btnVSplitHalf:pressed {
+         background-image: url($SKIN_DIR/../ZnO/btn_vsplit_half_p.png) no-repeat;
+}
+QToolButton#btnVSplitHalf:disabled {
+         background-image: url($SKIN_DIR/../ZnO/btn_vsplit_half_d.png) no-repeat;
+}
+QToolButton#btnVSplitHalf:checked {
+         background-image: url($SKIN_DIR/../ZnO/btn_vsplit_half_c.png) no-repeat;
+}
+QToolButton#btnShutter3d {
+         background-image: url($SKIN_DIR/../ZnO/btn_shutter.png) no-repeat;
+}
+QToolButton#btnShutter3d:hover {
+         background-image: url($SKIN_DIR/../ZnO/btn_shutter_h.png) no-repeat;
+}
+QToolButton#btnShutter3d:pressed {
+         background-image: url($SKIN_DIR/../ZnO/btn_shutter_p.png) no-repeat;
+}
+QToolButton#btnShutter3d:disabled {
+         background-image: url($SKIN_DIR/../ZnO/btn_shutter_d.png) no-repeat;
+}
+QToolButton#btnShutter3d:checked {
+         background-image: url($SKIN_DIR/../ZnO/btn_shutter_c.png) no-repeat;
+}

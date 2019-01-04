@@ -1,0 +1,94 @@
+/*<--
+
+-->*/
+
+
+ImWidgetFrame#imWidgetFrame{
+        background: transparent;
+}
+
+ImWidget[imwidget_is_window="true"] {
+    background: transparent;
+}
+ImDialog{
+    background: transparent;
+}
+
+xiliUpdateWindow#imfc_updatewindow QPushButton#pushButton_cancel{
+    margin: 0px 0px 0px 0px;
+}
+xiliUpdateWindow#imfc_updatewindow QPushButton#pushButton_update,
+xiliUpdateWindow#imfc_updatewindow QPushButton#pushButton_3,
+xiliUpdateWindow#imfc_updatewindow QPushButton#pushButton_5{
+    margin: 0px 0px 0px 12px;
+}
+
+/*ImMessageBox QLabel#label {
+   font: 16px "Arial Narrow";
+}*/
+ImMessageBox QPushButton#okBtn{
+    margin-left: 12px;
+}
+ImMessageBox QPushButton#yesBtn{
+    margin-left: 12px;
+}
+ImMessageBox QPushButton#noBtn{
+    margin-left: 0px;
+}
+ImMessageBox QPushButton#cancelBtn{
+    margin-left: 0px;
+}
+
+ImMacTitleButton QToolButton{
+        border-image: url() 0 0 0 0;
+        border: 0px;
+        min-width: 16px;
+        max-width: 16px;
+        min-height: 16px;
+        max-height: 16px;
+	padding: 0px;
+        background: transparent;
+}
+
+ImMacTitleButton QToolButton:hover {
+	border-image: url() 0 0 0 0;
+	border: 0px;	
+} 
+
+ImMacTitleButton QToolButton:pressed {
+	border-image: url() 0 0 0 0;
+	border: 0px;	
+} 
+ImMacTitleButton QToolButton:disabled {
+	border-image: url() 0 0 0 0;
+	border: 0px;	
+}
+
+ImTitleBar ImMacTitleButton{
+        margin:0px 0px 0px 3px;
+        max-width: 64px;
+        min-width: 64px;
+        max-height: 16px;
+        min-height: 16px;
+        qproperty-closeImage:url($SKIN_DIR/titlebar/sysbtn_close_mac.png,$SKIN_DIR/titlebar/sysbtn_close_h_mac.png,$SKIN_DIR/titlebar/sysbtn_close_p_mac.png,$SKIN_DIR/titlebar/sysbtn_btn_inactive_mac.png);
+        qproperty-minImage:url($SKIN_DIR/titlebar/sysbtn_min_mac.png,$SKIN_DIR/titlebar/sysbtn_min_h_mac.png,$SKIN_DIR/titlebar/sysbtn_min_p_mac.png,$SKIN_DIR/titlebar/sysbtn_btn_inactive_mac.png);
+        qproperty-maxImage:url($SKIN_DIR/titlebar/sysbtn_max_mac.png,$SKIN_DIR/titlebar/sysbtn_max_h_mac.png,$SKIN_DIR/titlebar/sysbtn_max_p_mac.png,$SKIN_DIR/titlebar/sysbtn_btn_inactive_mac.png);
+        background: transparent;
+}
+
+
+QComboBox QAbstractItemView {
+    border: 3px solid white;
+    selection-background-color: rgb(55, 95, 230);
+}
+
+ImAboutDlg {
+	max-width:400px;
+	min-width:400px;
+	max-height:290px;
+	min-height:290px;
+}
+
+ImRegDialog QPushButton#btn_Cancel {
+	margin-left: 10px;
+}
