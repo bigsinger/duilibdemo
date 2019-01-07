@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="800,600" caption="0,0,0,64" roundcorner="4,4"> 
+    <Font name="宋体" size="13" bold="true" />
+    <Font name="宋体" size="12" bold="true" underline="true"/>
+    <Font name="宋体" size="12" />
+    <Font name="宋体" size="22" bold="true"/>
+    <VerticalLayout bkimage="file='bg.png' corner='6,97,6,29'" inset="1,0,1,0"> 
+		<HorizontalLayout name="appCaption" height="64">
+			<HorizontalLayout name="captionTitle" childpadding="6"> 
+				<Control width="10" />	<!-- 占空位，占据左边10个单位大小空位 -->
+				<VerticalLayout>
+					<Control height="20" />
+					<Label text="Demo演示窗体" textcolor="#FF447AA1" width="200" font="3" />
+				</VerticalLayout>
+			</HorizontalLayout>
+			<HorizontalLayout name="captionSysBtn" width="126" height="24" inset="0,1,0,0">
+				<Button name="menuBtn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_menu.png' source='52,0,78,17'" hotimage="file='sys_dlg_menu.png' source='26,0,52,17'" pushedimage="file='sys_dlg_menu.png' source='0,0,26,17'"/>
+				<Button name="minBtn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_min.png' source='52,0,78,17'" hotimage="file='sys_dlg_min.png' source='26,0,52,17'" pushedimage="file='sys_dlg_min.png' source='0,0,26,17'"/>
+				<Button name="maxBtn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_max.png' source='52,0,78,17'" hotimage="file='sys_dlg_max.png' source='26,0,52,18'" pushedimage="file='sys_dlg_max.png' source='0,0,26,17'"/>
+				<Button name="restoreBtn" visible="false" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_restore.png' source='52,0,78,17'" hotimage="file='sys_dlg_restore.png' source='26,0,52,17'" pushedimage="file='sys_dlg_restore.png' source='0,0,26,17'" />
+				<Button name="closeBtn" maxwidth="45" maxheight="17" normalimage="file='sys_dlg_close.png' source='90,0,135,17'" hotimage="file='sys_dlg_close.png' source='45,0,90,17'" pushedimage="file='sys_dlg_close.png' source='0,0,45,17'"/>
+			</HorizontalLayout>
+		</HorizontalLayout> <!-- 标题区结束 -->
+		
+		<HorizontalLayout bkcolor="#FFFFFFFF">
+		</HorizontalLayout> <!-- 客户区结束 -->
+		<HorizontalLayout height="4" />
+	</VerticalLayout>
+</Window>
