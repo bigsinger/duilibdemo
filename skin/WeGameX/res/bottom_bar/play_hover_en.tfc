@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<FrameAnimations>
+    <FrameAnimation>
+        <Frame Source="play_hover_en_1_9.png" Rectangle="0,0,247,60" Time="40" />
+        <Frame Source="play_hover_en_1_9.png" Rectangle="247,0,494,60" Time="40" />
+        <Frame Source="play_hover_en_1_9.png" Rectangle="494,0,741,60" Time="40" />
+        <Frame Source="play_hover_en_1_9.png" Rectangle="0,60,247,120" Time="40" />
+        <Frame Source="play_hover_en_1_9.png" Rectangle="247,60,494,120" Time="40" />
+        <Frame Source="play_hover_en_1_9.png" Rectangle="494,60,741,120" Time="40" />
+        <Frame Source="play_hover_en_1_9.png" Rectangle="0,120,247,180" Time="40" />
+        <Frame Source="play_hover_en_1_9.png" Rectangle="247,120,494,180" Time="40" />
+        <Frame Source="play_hover_en_1_9.png" Rectangle="494,120,741,180" Time="40" />
+    </FrameAnimation>
+    <Custom>
+        <Property Name="Loop" Value="1" />
+        <Property Name="StopAt" Value="8" />
+    </Custom>
+</FrameAnimations>

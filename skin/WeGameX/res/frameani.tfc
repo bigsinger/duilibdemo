@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<FrameAnimations>
+    <FrameAnimation>
+        <Frame Source="frameani_1_17.png" Rectangle="0,400,32,1024" Time="100" />
+        <Frame Source="frameani_1_17.png" Rectangle="32,400,64,1024" Time="100" />
+        <Frame Source="frameani_1_17.png" Rectangle="64,400,96,1024" Time="100" />
+        <Frame Source="frameani_1_17.png" Rectangle="96,400,128,1024" Time="100" />
+        <Frame Source="frameani_1_17.png" Rectangle="128,400,160,1024" Time="100" />
+        <Frame Source="frameani_1_17.png" Rectangle="160,400,192,1024" Time="100" />
+        <Frame Source="frameani_1_17.png" Rectangle="192,400,224,1024" Time="100" />
+    </FrameAnimation>
+</FrameAnimations>

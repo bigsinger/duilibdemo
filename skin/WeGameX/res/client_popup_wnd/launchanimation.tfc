@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<FrameAnimations>
+    <FrameAnimation>
+        <Frame Source="launchanimation_1_40.png" Rectangle="0,0,62,62" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="62,0,124,62" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="124,0,186,62" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="186,0,248,62" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="248,0,310,62" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="310,0,372,62" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="372,0,434,62" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="0,62,62,124" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="62,62,124,124" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="124,62,186,124" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="186,62,248,124" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="248,62,310,124" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="310,62,372,124" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="372,62,434,124" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="0,124,62,186" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="62,124,124,186" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="124,124,186,186" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="186,124,248,186" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="248,124,310,186" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="310,124,372,186" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="372,124,434,186" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="0,186,62,248" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="62,186,124,248" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="124,186,186,248" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="186,186,248,248" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="248,186,310,248" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="310,186,372,248" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="372,186,434,248" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="0,248,62,310" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="62,248,124,310" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="124,248,186,310" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="186,248,248,310" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="248,248,310,310" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="310,248,372,310" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="372,248,434,310" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="0,310,62,372" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="62,310,124,372" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="124,310,186,372" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="186,310,248,372" Time="40" />
+        <Frame Source="launchanimation_1_40.png" Rectangle="248,310,310,372" Time="40" />
+    </FrameAnimation>
+</FrameAnimations>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<FrameAnimations>
+    <FrameAnimation>
+        <Frame Source="dance_1_4.png" Rectangle="0,0,64,64" Time="100" />
+        <Frame Source="dance_1_4.png" Rectangle="64,0,128,64" Time="100" />
+        <Frame Source="dance_1_4.png" Rectangle="0,64,64,128" Time="100" />
+        <Frame Source="dance_1_4.png" Rectangle="64,64,128,128" Time="100" />
+    </FrameAnimation>
+</FrameAnimations>

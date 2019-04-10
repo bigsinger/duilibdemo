@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<FrameAnimations>
+    <FrameAnimation>
+        <Frame Source="loading_1_3.png" Rectangle="0,0,32,16" Time="100" />
+        <Frame Source="loading_1_3.png" Rectangle="32,0,64,16" Time="100" />
+        <Frame Source="loading_1_3.png" Rectangle="0,16,32,32" Time="100" />
+    </FrameAnimation>
+</FrameAnimations>

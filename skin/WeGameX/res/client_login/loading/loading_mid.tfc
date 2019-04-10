@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<FrameAnimations>
+    <FrameAnimation>
+        <Frame Source="loading_1_11.png" Rectangle="0,0,100,100" Time="30" />
+        <Frame Source="loading_1_11.png" Rectangle="100,0,200,100" Time="30" />
+        <Frame Source="loading_1_11.png" Rectangle="200,0,300,100" Time="30" />
+        <Frame Source="loading_1_11.png" Rectangle="300,0,400,100" Time="30" />
+        <Frame Source="loading_1_11.png" Rectangle="0,100,100,200" Time="30" />
+        <Frame Source="loading_1_11.png" Rectangle="100,100,200,200" Time="30" />
+        <Frame Source="loading_1_11.png" Rectangle="200,100,300,200" Time="30" />
+        <Frame Source="loading_1_11.png" Rectangle="300,100,400,200" Time="30" />
+        <Frame Source="loading_1_11.png" Rectangle="0,200,100,300" Time="30" />
+        <Frame Source="loading_1_11.png" Rectangle="100,200,200,300" Time="30" />
+        <Frame Source="loading_1_11.png" Rectangle="200,200,300,300" Time="30" />
+    </FrameAnimation>
+</FrameAnimations>

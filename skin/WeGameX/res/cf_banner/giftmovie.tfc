@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<FrameAnimations>
+    <FrameAnimation>
+        <Frame Source="giftmovie_1_48.png" Rectangle="0,0,64,64" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="64,0,128,64" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="128,0,192,64" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="192,0,256,64" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="256,0,320,64" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="320,0,384,64" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="384,0,448,64" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="448,0,512,64" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="0,64,64,128" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="64,64,128,128" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="128,64,192,128" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="192,64,256,128" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="256,64,320,128" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="320,64,384,128" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="384,64,448,128" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="448,64,512,128" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="0,128,64,192" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="64,128,128,192" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="128,128,192,192" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="192,128,256,192" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="256,128,320,192" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="320,128,384,192" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="384,128,448,192" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="448,128,512,192" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="0,192,64,256" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="64,192,128,256" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="128,192,192,256" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="192,192,256,256" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="256,192,320,256" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="320,192,384,256" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="384,192,448,256" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="448,192,512,256" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="0,256,64,320" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="64,256,128,320" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="128,256,192,320" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="192,256,256,320" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="256,256,320,320" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="320,256,384,320" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="384,256,448,320" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="448,256,512,320" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="0,320,64,384" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="64,320,128,384" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="128,320,192,384" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="192,320,256,384" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="256,320,320,384" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="320,320,384,384" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="384,320,448,384" Time="100" />
+        <Frame Source="giftmovie_1_48.png" Rectangle="448,320,512,384" Time="100" />
+    </FrameAnimation>
+</FrameAnimations>

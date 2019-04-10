@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "GB2312"?>
+<ScrollBarImage>
+    <ImageFile Name = "ScrollBar\VScrollBar.png" />
+    <Images>
+        <Image State = "NextButton_Disable"    left = "96" top = "107" right = "109" bottom = "120" />
+        <Image State = "PreButton_Disable"    left = "96" top = "27" right = "109" bottom = "28" />
+        <Image State = "PreButton_Hover"    left = "50" top = "27" right = "63" bottom = "28" />
+        <Image State = "Thumb_Disable_First"    left = "96" top = "50" right = "109" bottom = "63" />
+        <Image State = "Thumb_Disable_Center"    left = "96" top = "67" right = "109" bottom = "68" />
+        <Image State = "Thumb_Disable_Last"    left = "96" top = "84" right = "109" bottom = "97" />
+        <Image State = "Thumb_Hover_Center"    left = "50" top = "67" right = "63" bottom = "68" />
+        <Image State = "Thumb_Hover_First"    left = "50" top = "50" right = "63" bottom = "63" />
+        <Image State = "Thumb_Hover_Last"    left = "50" top = "84" right = "63" bottom = "97" />
+        <Image State = "Thumb_Normal_Last"    left = "27" top = "84" right = "40" bottom = "97" />
+        <Image State = "Thumb_Press_Last"    left = "73" top = "84" right = "86" bottom = "97" />
+        <Image State = "Thumb_Press_Center"    left = "73" top = "67" right = "86" bottom = "68" />
+        <Image State = "Thumb_Press_First"    left = "73" top = "50" right = "86" bottom = "63" />
+        <Image State = "Thumb_Normal_Center"    left = "27" top = "67" right = "40" bottom = "68" />
+        <Image State = "Thumb_Normal_First"    left = "27" top = "50" right = "40" bottom = "63" />
+        <Image State = "PreButton_Normal"    left = "27" top = "27" right = "40" bottom = "28" />
+        <Image State = "PreButton_Press"    left = "73" top = "27" right = "86" bottom = "28" />
+        <Image State = "NextButton_Press"    left = "73" top = "107" right = "86" bottom = "120" />
+        <Image State = "NextButton_Normal"    left = "27" top = "107" right = "40" bottom = "120" />
+        <Image State = "NextButton_Hover"    left = "50" top = "107" right = "63" bottom = "120" />
+        <Image State = "SlippedChannel_Normal_First"    left = "96" top = "50" right = "109" bottom = "63" />
+        <Image State = "SlippedChannel_Normal_Center"    left = "96" top = "67" right = "109" bottom = "80" />
+        <Image State = "SlippedChannel_Normal_Last"    left = "96" top = "84" right = "109" bottom = "97" />
+        <Image State = "UnslippedChannel_Normal_First"    left = "96" top = "50" right = "109" bottom = "63" />
+        <Image State = "UnslippedChannel_Normal_Center"    left = "96" top = "67" right = "109" bottom = "80" />
+        <Image State = "UnslippedChannel_Normal_Last"    left = "96" top = "84" right = "109" bottom = "97" />
+    </Images>
+</ScrollBarImage>

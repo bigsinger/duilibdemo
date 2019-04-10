@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<FrameAnimations>
+    <FrameAnimation>
+        <Frame Source="PNG5_1_14.png" Rectangle="0,0,908,79" Time="100" />
+        <Frame Source="PNG5_1_14.png" Rectangle="0,79,908,158" Time="100" />
+        <Frame Source="PNG5_1_14.png" Rectangle="0,158,908,237" Time="100" />
+        <Frame Source="PNG5_1_14.png" Rectangle="0,237,908,316" Time="100" />
+        <Frame Source="PNG5_1_14.png" Rectangle="0,316,908,395" Time="100" />
+        <Frame Source="PNG5_1_14.png" Rectangle="0,395,908,474" Time="100" />
+        <Frame Source="PNG5_1_14.png" Rectangle="0,474,908,553" Time="100" />
+        <Frame Source="PNG5_1_14.png" Rectangle="0,553,908,632" Time="100" />
+        <Frame Source="PNG5_1_14.png" Rectangle="0,632,908,711" Time="100" />
+        <Frame Source="PNG5_1_14.png" Rectangle="0,711,908,790" Time="100" />
+        <Frame Source="PNG5_1_14.png" Rectangle="0,790,908,869" Time="100" />
+        <Frame Source="PNG5_1_14.png" Rectangle="0,869,908,948" Time="100" />
+        <Frame Source="PNG5_1_14.png" Rectangle="0,948,908,1027" Time="100" />
+        <Frame Source="PNG5_15_28.png" Rectangle="0,0,908,79" Time="100" />
+        <Frame Source="PNG5_15_28.png" Rectangle="0,79,908,158" Time="100" />
+        <Frame Source="PNG5_15_28.png" Rectangle="0,158,908,237" Time="100" />
+        <Frame Source="PNG5_15_28.png" Rectangle="0,237,908,316" Time="100" />
+        <Frame Source="PNG5_15_28.png" Rectangle="0,316,908,395" Time="100" />
+        <Frame Source="PNG5_15_28.png" Rectangle="0,395,908,474" Time="100" />
+        <Frame Source="PNG5_15_28.png" Rectangle="0,474,908,553" Time="100" />
+        <Frame Source="PNG5_15_28.png" Rectangle="0,553,908,632" Time="100" />
+        <Frame Source="PNG5_15_28.png" Rectangle="0,632,908,711" Time="100" />
+        <Frame Source="PNG5_15_28.png" Rectangle="0,711,908,790" Time="100" />
+        <Frame Source="PNG5_15_28.png" Rectangle="0,790,908,869" Time="100" />
+        <Frame Source="PNG5_15_28.png" Rectangle="0,869,908,948" Time="100" />
+        <Frame Source="PNG5_15_28.png" Rectangle="0,948,908,1027" Time="100" />
+        <Frame Source="PNG5_29_41.png" Rectangle="0,0,908,79" Time="100" />
+        <Frame Source="PNG5_29_41.png" Rectangle="908,0,1816,79" Time="100" />
+        <Frame Source="PNG5_29_41.png" Rectangle="1816,0,2724,79" Time="100" />
+        <Frame Source="PNG5_29_41.png" Rectangle="2724,0,3632,79" Time="100" />
+        <Frame Source="PNG5_29_41.png" Rectangle="0,79,908,158" Time="100" />
+        <Frame Source="PNG5_29_41.png" Rectangle="908,79,1816,158" Time="100" />
+        <Frame Source="PNG5_29_41.png" Rectangle="1816,79,2724,158" Time="100" />
+        <Frame Source="PNG5_29_41.png" Rectangle="2724,79,3632,158" Time="100" />
+        <Frame Source="PNG5_29_41.png" Rectangle="0,158,908,237" Time="100" />
+        <Frame Source="PNG5_29_41.png" Rectangle="908,158,1816,237" Time="100" />
+        <Frame Source="PNG5_29_41.png" Rectangle="1816,158,2724,237" Time="100" />
+        <Frame Source="PNG5_29_41.png" Rectangle="2724,158,3632,237" Time="100" />
+        <Frame Source="PNG5_29_41.png" Rectangle="0,237,908,316" Time="100" />
+    </FrameAnimation>
+</FrameAnimations>

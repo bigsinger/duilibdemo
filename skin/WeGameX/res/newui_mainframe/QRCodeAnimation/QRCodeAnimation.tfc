@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<FrameAnimations>
+    <FrameAnimation>
+        <Frame Source="01.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="02.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="03.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="04.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="05.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="06.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="07.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="08.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="09.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="10.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="11.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="12.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="13.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="14.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="15.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="16.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="17.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="18.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="19.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="20.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="21.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="22.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="23.png" Rectangle="0,0,31,31" Time="100" />
+        <Frame Source="24.png" Rectangle="0,0,31,31" Time="100" />
+    </FrameAnimation>
+</FrameAnimations>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<FrameAnimations>
+    <FrameAnimation>
+        <Frame Source="01.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="02.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="03.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="04.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="05.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="06.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="07.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="08.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="09.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="10.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="11.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="12.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="13.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="14.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="15.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="16.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="17.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="18.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="19.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="20.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="21.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="22.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="23.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="24.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="25.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="26.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="27.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="28.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="29.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="30.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="31.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="32.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="33.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="34.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="35.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="36.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="37.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="38.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="39.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="40.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="41.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="42.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="43.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="44.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="45.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="46.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="47.png" Rectangle="0,0,46,7" Time="41" />
+        <Frame Source="48.png" Rectangle="0,0,46,7" Time="41" />
+    </FrameAnimation>
+</FrameAnimations>

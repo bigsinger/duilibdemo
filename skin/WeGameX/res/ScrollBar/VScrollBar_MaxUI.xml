@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "GB2312"?>
+<ScrollBarImage>
+    <ImageFile Name = "newui_mainframe\mainframe.png" />
+    <Images>
+        <Image State = "Thumb_Hover_First"    left = "246" top = "10" right = "254" bottom = "18" />
+        <Image State = "Thumb_Hover_Center"    left = "246" top = "22" right = "254" bottom = "30" />
+        <Image State = "Thumb_Hover_Last"    left = "246" top = "34" right = "254" bottom = "42" />
+        <Image State = "Thumb_Press_First"    left = "261" top = "10" right = "269" bottom = "18" />
+        <Image State = "Thumb_Press_Center"    left = "261" top = "22" right = "269" bottom = "30" />
+        <Image State = "Thumb_Press_Last"    left = "261" top = "34" right = "269" bottom = "42" />
+        <Image State = "Thumb_Normal_First"    left = "231" top = "10" right = "239" bottom = "18" />
+        <Image State = "Thumb_Normal_Center"    left = "231" top = "22" right = "239" bottom = "30" />
+        <Image State = "Thumb_Normal_Last"    left = "231" top = "34" right = "239" bottom = "42" />
+    </Images>
+</ScrollBarImage>

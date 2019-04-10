@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<FrameAnimations>
+    <FrameAnimation>
+        <Frame Source="home_flashing_1_30.png" Rectangle="0,0,80,80" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="80,0,160,80" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="160,0,240,80" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="240,0,320,80" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="320,0,400,80" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="400,0,480,80" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="0,80,80,160" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="80,80,160,160" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="160,80,240,160" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="240,80,320,160" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="320,80,400,160" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="400,80,480,160" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="0,160,80,240" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="80,160,160,240" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="160,160,240,240" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="240,160,320,240" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="320,160,400,240" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="400,160,480,240" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="0,240,80,320" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="80,240,160,320" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="160,240,240,320" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="240,240,320,320" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="320,240,400,320" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="400,240,480,320" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="0,320,80,400" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="80,320,160,400" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="160,320,240,400" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="240,320,320,400" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="320,320,400,400" Time="30" />
+        <Frame Source="home_flashing_1_30.png" Rectangle="400,320,480,400" Time="30" />
+    </FrameAnimation>
+	<Custom>
+        <Property Name="Loop" Value="1" />
+        <Property Name="StopAt" Value="29" />
+    </Custom>
+</FrameAnimations>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<FrameAnimations>
+    <FrameAnimation>
+        <Frame Source="Animation_1_24.png" Rectangle="0,0,48,11" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="48,0,96,11" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="96,0,144,11" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="144,0,192,11" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="192,0,240,11" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="0,11,48,22" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="48,11,96,22" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="96,11,144,22" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="144,11,192,22" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="192,11,240,22" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="0,22,48,33" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="48,22,96,33" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="96,22,144,33" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="144,22,192,33" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="192,22,240,33" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="0,33,48,44" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="48,33,96,44" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="96,33,144,44" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="144,33,192,44" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="192,33,240,44" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="0,44,48,55" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="48,44,96,55" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="96,44,144,55" Time="100" />
+        <Frame Source="Animation_1_24.png" Rectangle="144,44,192,55" Time="100" />
+    </FrameAnimation>
+</FrameAnimations>

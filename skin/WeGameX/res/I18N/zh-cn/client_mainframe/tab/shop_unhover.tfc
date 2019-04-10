@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<FrameAnimations>
+    <FrameAnimation>
+        <Frame Source="shop_unhover_1_7.png" Rectangle="0,0,78,78" Time="30" />
+        <Frame Source="shop_unhover_1_7.png" Rectangle="78,0,156,78" Time="30" />
+        <Frame Source="shop_unhover_1_7.png" Rectangle="156,0,234,78" Time="30" />
+        <Frame Source="shop_unhover_1_7.png" Rectangle="0,78,78,156" Time="30" />
+        <Frame Source="shop_unhover_1_7.png" Rectangle="78,78,156,156" Time="30" />
+        <Frame Source="shop_unhover_1_7.png" Rectangle="156,78,234,156" Time="30" />
+        <Frame Source="shop_unhover_1_7.png" Rectangle="0,156,78,234" Time="30" />
+    </FrameAnimation>
+    <Custom>
+        <Property Name="Loop" Value="1" />
+        <Property Name="StopAt" Value="6" />
+    </Custom>
+</FrameAnimations>

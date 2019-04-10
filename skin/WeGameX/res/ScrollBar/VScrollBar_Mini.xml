@@ -1,0 +1,15 @@
+﻿<?xml version = "1.0" encoding = "GB2312"?>
+<ScrollBarImage>
+    <ImageFile Name = "newui_mainframe\mini_mode.png" />
+    <Images>
+        <Image State = "Thumb_Hover_First"    left = "386" top = "193" right = "394" bottom = "199" />
+        <Image State = "Thumb_Hover_Center"    left = "386" top = "209" right = "394" bottom = "215" />
+        <Image State = "Thumb_Hover_Last"    left = "386" top = "225" right = "394" bottom = "232" />
+        <Image State = "Thumb_Normal_First"    left = "368" top = "193" right = "376" bottom = "199" />
+        <Image State = "Thumb_Normal_Center"    left = "368" top = "209" right = "376" bottom = "215" />
+        <Image State = "Thumb_Normal_Last"    left = "368" top = "225" right = "376" bottom = "231" />
+        <Image State = "Thumb_Press_First"    left = "368" top = "193" right = "376" bottom = "199" />
+        <Image State = "Thumb_Press_Center"    left = "368" top = "209" right = "376" bottom = "215" />
+        <Image State = "Thumb_Press_Last"    left = "368" top = "225" right = "376" bottom = "231" />
+    </Images>
+</ScrollBarImage>

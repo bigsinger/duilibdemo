@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "GB2312"?>
+<ScrollBarImage>
+    <ImageFile Name = "client_login\login.png" />
+    <Images>
+        <Image State = "Thumb_Hover_Center"    left="194" top="464" right="198" bottom="474" />
+        <Image State = "Thumb_Hover_First"    left="0" top="0" right="4" bottom="8" />
+        <Image State = "Thumb_Hover_Last"    left="0" top="0" right="4" bottom="8" />
+
+        <Image State = "Thumb_Normal_Center"    left="194" top="464" right="198" bottom="474" />
+        <Image State = "Thumb_Normal_First"    left="0" top="0" right="4" bottom="8" />
+        <Image State = "Thumb_Normal_Last"    left="0" top="0" right="4" bottom="8" />
+
+        <Image State = "Thumb_Press_Center"    left="194" top="464" right="198" bottom="474" />
+        <Image State = "Thumb_Press_First"    left="0" top="0" right="4" bottom="8" />
+        <Image State = "Thumb_Press_Last"    left="0" top="0" right="4" bottom="8" />
+
+        <Image State = "UnslippedChannel"    left="185" top="464" right="189" bottom="474" />
+        <Image State = "UnslippedChannel"    left="185" top="464" right="189" bottom="474" />
+        <Image State = "SlippedChannell"    left="185" top="476" right="189" bottom="490" />
+        <!--Image State = "UnslippedChannel"    left="185" top="464" right="189" bottom="474" /-->
+    </Images>
+</ScrollBarImage>

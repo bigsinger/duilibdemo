@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<FrameAnimations>
+    <FrameAnimation>
+        <Frame Source="download_1_35.png" Rectangle="0,0,100,34" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="100,0,200,34" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="200,0,300,34" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="300,0,400,34" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="400,0,500,34" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="500,0,600,34" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="0,34,100,68" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="100,34,200,68" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="200,34,300,68" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="300,34,400,68" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="400,34,500,68" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="500,34,600,68" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="0,68,100,102" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="100,68,200,102" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="200,68,300,102" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="300,68,400,102" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="400,68,500,102" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="500,68,600,102" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="0,102,100,136" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="100,102,200,136" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="200,102,300,136" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="300,102,400,136" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="400,102,500,136" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="500,102,600,136" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="0,136,100,170" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="100,136,200,170" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="200,136,300,170" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="300,136,400,170" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="400,136,500,170" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="500,136,600,170" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="0,170,100,204" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="100,170,200,204" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="200,170,300,204" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="300,170,400,204" Time="35" />
+        <Frame Source="download_1_35.png" Rectangle="400,170,500,204" Time="35" />
+    </FrameAnimation>
+</FrameAnimations>
